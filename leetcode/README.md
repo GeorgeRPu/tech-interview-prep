@@ -39,4 +39,4 @@ Solution
 [description of solution]
 ```
 
-Non-obvious solutions must include reasonsing explaining how a reader could develop that solution on their own. Any math should be in LaTeX.
+Non-obvious solutions must include reasonsing explaining how a reader could develop that solution on their own. Any math should use unicode symbols if possible.
