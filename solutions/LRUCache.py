@@ -5,11 +5,30 @@ https://leetcode.com/problems/lru-cache/
 
 Solution
 --------
-We want all get(key) and put(key, value) operations to be O(1). This
+We want all ``get(key)`` and ``put(key, value)`` operations to be :math:`O(1)`. This
 nessecitaties the use of a hashmap. The hashmap key-value pairs must be orderd
 by usage in a list. Because list insertion and removal need to be done with
 every get and put, we use a linked list. Once we exceed our fixed capacity, we
 discard the items from the linked list and hashmap.
+
+Test
+----
+>>> from LRUCache import LRUCache
+>>> cache = LRUCache(2)
+>>> cache.put('1', 'a')
+>>> cache.put('2', 'b')
+>>> cache.get('1')
+'a'
+>>> cache.put('3', 'c')
+>>> cache.get('2')
+'Key 2 was not found'
+>>> cache.put('4', 'd')
+>>> cache.get('1')
+'Key 1 was not found'
+>>> cache.get('3')
+'c'
+>>> cache.get('4')
+'d'
 """
 
 from __future__ import annotations
@@ -17,6 +36,8 @@ from typing import Dict, List, Optional
 
 
 class Node:
+    """Entry in the LRU cache
+    """
 
     def __init__(self, key: str, value: str):
         self.key: str = key
@@ -33,6 +54,8 @@ class Node:
 
 
 class LinkedList:
+    """Linked list of entries in the LRU cache
+    """
 
     def __init__(self):
         self.head: Optional[Node] = None
@@ -69,6 +92,8 @@ class LinkedList:
 
 
 class LRUCache:
+    """Implemented using a hashmap and a linked list
+    """
 
     def __init__(self, capacity: int):
         self.capacity: int = capacity
@@ -103,18 +128,3 @@ class LRUCache:
             strings.append(str(node))
             node = node.next
         return '{' + ', '.join(strings) + '}'
-
-
-cache = LRUCache(2)
-cache.put('1', 'a')
-cache.put('2', 'b')
-print(cache)
-print(cache.get('1'))   # return 1
-cache.put('3', 'c')
-print(cache)
-print(cache.get('2'))   # return Key 2 was not found
-cache.put('4', 'd')
-print(cache)
-print(cache.get('1'))   # return Key 1 was not found
-print(cache.get('3'))   # return 3
-print(cache.get('4'))   # return 4

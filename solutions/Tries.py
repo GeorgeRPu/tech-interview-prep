@@ -1,7 +1,6 @@
 from __future__ import annotations
-from typing import List, Optional
 
-"""
+__doc__ = """
 Problem
 -------
 https://www.hackerrank.com/challenges/ctci-contacts/problem
@@ -10,25 +9,43 @@ Solution
 --------
 https://www.youtube.com/watch?v=zIjfhVPRZCg
 
-TL;DR A trie is a tree filled such that each node is a character and successive
+A trie is a tree filled such that each node is a character and successive
 characters in words are descendents. Tries can be used for dictionary
 autocompletion. By scanning descendant branches, we can list all words that
 start with a given substring. The root is a special start of sequence (SOS)
 character and the ends of words are denoted using a special end of sequence
-character (EOS).
+character (EOS). ::
 
-                  l - e - EOS
-                /
-SOS - a - p - p - EOS
-        \
-          x - e - EOS
+                    l - e - EOS
+                   /
+    SOS - a - p - p - EOS
+           \\
+            x - e - EOS
+
+
+Test
+----
+>>> from Tries import Trie
+>>> trie = Trie()
+>>> trie.add('apple')
+>>> trie.add('axiom')
+>>> trie.add('animal')
+>>> trie.add('bees')
+>>> trie.strings_starting_with('a')
+['apple', 'axiom', 'animal']
+>>> trie.strings_starting_with('b')
+['bees']
 """
+
+from typing import List, Optional
 
 SOS_char = '<'
 EOS_char = '>'
 
 
 class Node:
+    """Node in the trie.
+    """
 
     def __init__(self, char: str):
         self.char: str = char
@@ -54,6 +71,8 @@ class Node:
 
 
 class Trie:
+    """Implemented as a n-ary tree of nodes.
+    """
 
     def __init__(self):
         self.root = Node(SOS_char)
@@ -82,11 +101,3 @@ class Trie:
             else:
                 return []
         return node.descendant_strings(string[:-1])
-
-
-trie = Trie()
-trie.add('apple')
-trie.add('axiom')
-trie.add('animal')
-trie.add('bees')
-print(trie.strings_starting_with(''))
