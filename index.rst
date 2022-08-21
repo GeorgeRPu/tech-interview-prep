@@ -18,6 +18,7 @@ Tech Interview Prep!
    MissingNumber
    PascalsTriangle
    Permutations
+   RomanToInteger
    Tries
    TwoSum
 
