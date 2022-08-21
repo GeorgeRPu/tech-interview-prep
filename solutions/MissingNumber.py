@@ -12,8 +12,9 @@ Let :math:`m \in \{1, ..., n\}` be the missing number. Since ``nums``
 .. math::
 
     \begin{align}
-    sum(\mathtt{nums}) &= \left( \sum_{i=1}^{n} i \right) - m \\
-    m &= \sum_{i=1}^{n} i - sum(\mathtt{nums})
+    \DeclareMathOperator{\sumof}{sumof}
+    \sumof(nums) &= \left( \sum_{i=1}^{n} i \right) - m \\
+    m &= \sum_{i=1}^{n} i - \sumof(nums)
     \end{align}
 
 Use the formula
