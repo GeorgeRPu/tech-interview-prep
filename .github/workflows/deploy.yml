@@ -41,7 +41,7 @@ jobs:
           pip install --upgrade --requirement requirements.txt
       - name: Make
         run: |
-          make html
+          make clean && make doctest && make html
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
