@@ -39,8 +39,6 @@ class Node:
         return self.val < node.val
 
     def __eq__(self, node: object) -> bool:
-        if not isinstance(node, Node):
-            return NotImplemented
         return self.val == node.val
 
     def __str__(self) -> str:

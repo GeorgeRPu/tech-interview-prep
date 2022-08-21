@@ -15,6 +15,7 @@ Tech Interview Prep!
 
    LongestCommonPrefix
    LRUCache
+   Merge2SortedLists
    MergeKSortedLists
    MissingNumber
    PascalsTriangle
