@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Tech-Interview-Prep's documentation!
-===============================================
+Tech Interview Prep!
+====================
 
 .. toctree::
    :maxdepth: 2
@@ -19,6 +19,7 @@ Welcome to Tech-Interview-Prep's documentation!
    PascalsTriangle
    Permutations
    Tries
+   TwoSum
 
 Indices and tables
 ------------------
