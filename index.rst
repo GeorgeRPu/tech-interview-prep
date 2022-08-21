@@ -13,6 +13,7 @@ Tech Interview Prep!
 .. autosummary::
    :toctree: generated
 
+   LongestCommonPrefix
    LRUCache
    MergeKSortedLists
    MissingNumber
