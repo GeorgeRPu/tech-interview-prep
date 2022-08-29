@@ -21,6 +21,7 @@ Tech Interview Prep!
    PascalsTriangle
    Permutations
    RomanToInteger
+   StrStr
    Tries
    TwoSum
 

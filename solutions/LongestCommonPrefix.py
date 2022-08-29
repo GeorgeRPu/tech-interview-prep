@@ -1,7 +1,7 @@
 """
 Problem
 -------
-https://leetcode.com/problems/longest-common-prefix/submissions/
+https://leetcode.com/problems/longest-common-prefix/
 
 Solution
 --------
