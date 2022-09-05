@@ -20,6 +20,7 @@ Tech Interview Prep!
    MissingNumber
    PascalsTriangle
    Permutations
+   PlusOne
    RomanToInteger
    StrStr
    Tries
