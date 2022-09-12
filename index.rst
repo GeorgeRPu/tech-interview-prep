@@ -13,6 +13,7 @@ Tech Interview Prep!
 .. autosummary::
    :toctree: generated
 
+   ClimbingStairs
    LongestCommonPrefix
    LRUCache
    Merge2SortedLists
