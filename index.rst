@@ -18,6 +18,7 @@ Tech Interview Prep!
    LRUCache
    Merge2SortedLists
    MergeKSortedLists
+   MergeSortedArray
    MissingNumber
    PascalsTriangle
    Permutations
