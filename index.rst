@@ -13,6 +13,7 @@ Tech Interview Prep!
 .. autosummary::
    :toctree: generated
 
+   BinaryTreeInorderTraversal
    ClimbingStairs
    LongestCommonPrefix
    LRUCache
