@@ -43,18 +43,18 @@ SOS_char = '<'
 EOS_char = '>'
 
 
-class Node:
+class TrieNode:
     """Node in the trie.
     """
 
     def __init__(self, char: str):
         self.char: str = char
-        self.children: List[Node] = []
+        self.children: List[TrieNode] = []
 
-    def add_child(self, node: Node):
+    def add_child(self, node: TrieNode):
         self.children.append(node)
 
-    def get_child(self, char) -> Optional[Node]:
+    def get_child(self, char) -> Optional[TrieNode]:
         for child in self.children:
             if char == child.char:
                 return child
@@ -75,7 +75,7 @@ class Trie:
     """
 
     def __init__(self):
-        self.root = Node(SOS_char)
+        self.root = TrieNode(SOS_char)
 
     def add(self, string: str):
         node = self.root
@@ -84,10 +84,10 @@ class Trie:
             if child is not None:
                 node = child
             else:
-                new_node = Node(char)
+                new_node = TrieNode(char)
                 node.add_child(new_node)
                 node = new_node
-        EOS = Node(EOS_char)
+        EOS = TrieNode(EOS_char)
         node.add_child(EOS)
 
     def strings_starting_with(self, string: str) -> List[str]:
