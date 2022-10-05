@@ -26,6 +26,7 @@ Tech Interview Prep!
    PlusOne
    RomanToInteger
    StrStr
+   SymmetricTree
    Tries
    TwoSum
 

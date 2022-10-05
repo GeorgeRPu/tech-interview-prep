@@ -8,9 +8,9 @@ Solution
 For an inorder traversal, visit the left subtree, then the root, then the right
 subtree recursively. ::
 
-         Root (2)
+         root (2)
         /        \\
-    Left (1)  Right (3)
+    left (1)  right (3)
 
 Test
 ----
