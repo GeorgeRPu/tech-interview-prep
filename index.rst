@@ -17,6 +17,7 @@ Tech Interview Prep!
    ClimbingStairs
    LongestCommonPrefix
    LRUCache
+   MaximumDepthOfBinaryTree
    Merge2SortedLists
    MergeKSortedLists
    MergeSortedArray
