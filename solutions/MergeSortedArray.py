@@ -36,6 +36,9 @@ from typing import List
 
 
 def merge(nums1: List[int], m: int, nums2: List[int], n: int):
+    """Merge the n-length array ``nums2`` into the (m + n)-length array
+    ``nums1``.
+    """
     # shift all the elements of nums1 to be flush with the end of the list
     for i in range(m + n - 1, n - 1, -1):
         nums1[i] = nums1[i - n]

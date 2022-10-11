@@ -39,6 +39,8 @@ from typing import Optional
 
 
 class TreeNode:
+    """Node in a binary tree.
+    """
 
     def __init__(self, val, left=None, right=None):
         self.val = val
@@ -47,10 +49,18 @@ class TreeNode:
 
 
 def isSymmetric(root: Optional[TreeNode]) -> bool:
-    return check_subtrees(root.left, root.right)
+    """Returns whether a binary tree is symmetric.
+    """
+    if root is None:
+        return True
+    else:
+        return check_subtrees(root.left, root.right)
 
 
 def check_subtrees(left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
+    """Returns whether the left and right subtrees are mirror images of each
+    other.
+    """
     if left is right is None:
         return True
     elif left is None and right is not None:

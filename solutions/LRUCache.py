@@ -36,7 +36,7 @@ from typing import Dict, List, Optional
 
 
 class Node:
-    """Entry in the LRU cache
+    """Entry in the LRU cache.
     """
 
     def __init__(self, key: str, value: str):
@@ -54,7 +54,7 @@ class Node:
 
 
 class LinkedList:
-    """Linked list of entries in the LRU cache
+    """Linked list of entries in the LRU cache.
     """
 
     def __init__(self):
@@ -92,7 +92,7 @@ class LinkedList:
 
 
 class LRUCache:
-    """Implemented using a hashmap and a linked list
+    """Implemented using a hashmap and a linked list.
     """
 
     def __init__(self, capacity: int):

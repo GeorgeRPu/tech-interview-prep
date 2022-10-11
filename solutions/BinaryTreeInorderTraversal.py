@@ -30,6 +30,8 @@ from typing import List, Optional
 
 
 class TreeNode:
+    """Node in a binary tree.
+    """
 
     def __init__(self, val, left=None, right=None) -> None:
         self.val = val
@@ -38,7 +40,7 @@ class TreeNode:
 
 
 def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
-    """
+    """Traverse a binary tree in order from left to right.
     """
     if root is None:
         return []

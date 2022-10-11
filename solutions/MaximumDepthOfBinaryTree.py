@@ -23,6 +23,9 @@ from typing import Optional
 
 
 class TreeNode:
+    """Node in a binary tree.
+    """
+
     def __init__(self, val, left=None, right=None):
         self.val = val
         self.left = left
@@ -30,6 +33,8 @@ class TreeNode:
 
 
 def maxDepth(root: Optional[TreeNode]) -> int:
+    """Find the maximum depth or total height of a binary tree.
+    """
     if root is None:
         return 0
     return 1 + max(maxDepth(root.left), maxDepth(root.right))
