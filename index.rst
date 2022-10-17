@@ -15,6 +15,7 @@ Tech Interview Prep!
 
    BinaryTreeInorderTraversal
    ClimbingStairs
+   FizzBuzz
    LongestCommonPrefix
    LRUCache
    MaximumDepthOfBinaryTree
