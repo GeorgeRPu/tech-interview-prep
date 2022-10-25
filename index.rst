@@ -15,6 +15,7 @@ Tech Interview Prep!
 
    BinaryTreeInorderTraversal
    ClimbingStairs
+   ConvertSortedArrayToBST
    FizzBuzz
    LongestCommonPrefix
    LRUCache
