@@ -10,6 +10,10 @@ of ``nums[1:]``. If we prepend ``nums[1]`` to these permutations, we now have
 all permutations of ``nums`` that start with ``nums[1]``. Doing this for each
 :math:`n` in ``nums``, we can generate every permutation of ``nums``.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Permutations.py
+
 Test
 ----
 >>> from Permutations import permutations

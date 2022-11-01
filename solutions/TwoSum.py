@@ -13,6 +13,10 @@ smaller ``nums[j]`` by decrementing ``j``. Stop when ``twosum == target``. This
 algorithm can find the ``twosum`` in :math:`O(n \\log n)` time and no extra
 space.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/TwoSum.py
+
 Test
 ----
 >>> from TwoSum import two_sum

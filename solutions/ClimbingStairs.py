@@ -10,6 +10,10 @@ must be either a 1 or a 2 step jump. Thus ::
 
     climbStairs(n) = climbStairs(n - 1) + climbStairs(n - 2)
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ClimbingStairs.py
+
 Test
 ----
 >>> from ClimbingStairs import climbStairs

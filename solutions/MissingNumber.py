@@ -27,6 +27,10 @@ to calculate the the sum
 from 1 to :math:`n` quickly. Note that :math:`n` is one more than the number of
 elements in ``nums``.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MissingNumber.py
+
 Test
 ----
 >>> from MissingNumber import missing_number

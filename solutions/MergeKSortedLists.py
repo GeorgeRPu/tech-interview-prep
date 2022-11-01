@@ -12,6 +12,10 @@ Solution
 Same as merge 2 sorted linked lists: pick the smallest head and add it to the
 end of the new list.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MergeKSortedLists.py
+
 Test
 ----
 >>> from MergeKSortedLists import from_list, merge_k_lists

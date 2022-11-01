@@ -11,6 +11,10 @@ Create the new list by selecting the minimum node of ``list1`` and ``list2``,
 checking if either is ``None``. Set the ``next`` field of the previous node to
 the minimum node. Advance the ``list1``/``list2`` and previous node pointers.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Merge2SortedLists.py
+
 Test
 ----
 >>> from Merge2SortedLists import from_list, merge_2_lists

@@ -11,6 +11,10 @@ the result list is ``nums1``. Naively merging the lists into ``nums1`` would
 overwrite entries in ``nums1`` that we still need to compare. To get around this,
 shift the entries in ``nums1`` to the end of the list, and then merge the lists.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MergeSortedArray.py
+
 Test
 ----
 >>> from MergeSortedArray import merge

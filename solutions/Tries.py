@@ -22,6 +22,9 @@ character (EOS). ::
            \\
             x - e - EOS
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Tries.py
 
 Test
 ----

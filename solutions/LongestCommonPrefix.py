@@ -8,6 +8,10 @@ Solution
 Iterate through each character in the shortest string and check if it is in all
 other strings in ``strs``.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/LongestCommonPrefix.py
+
 Test
 ----
 >>> from LongestCommonPrefix import longest_common_prefix

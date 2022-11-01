@@ -23,6 +23,10 @@ recursion, until both children are ``null``. ::
 The - nodes should be equal in value, while the + subtrees, and * subtrees should be
 mirror images.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/SymmetricTree.py
+
 Test
 ----
 >>> from SymmetricTree import TreeNode, isSymmetric

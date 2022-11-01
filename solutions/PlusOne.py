@@ -8,6 +8,10 @@ Solution
 Add 1 to the end of the array. Start from the least signfinicant digit and
 carry any 1s to the next digit.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/PlusOne.py
+
 Test
 ----
 >>> from PlusOne import plusOne

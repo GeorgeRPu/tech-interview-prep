@@ -16,6 +16,10 @@ Right align the normal presentation of Pascal's Triangle. ::
 Observe that a middle entry is the sum of the entry directly above and to the
 north-west. The first/last entry is always 1.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/PascalsTriangle.py
+
 Test
 ----
 >>> from PascalsTriangle import generate_pascals_triangle

@@ -10,6 +10,10 @@ the 1/4 and 3/4 elements as the left and right children, and so on. Find the
 middle element of ``nums`` and divide ``nums`` into two halves. Repeat on the
 left half to form the left subtree and the right half to form the right subtree.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ConvertSortedArrayToBST.py
+
 Test
 ----
 >>> from ConvertSortedArrayToBST import sortedArrayToBST, tree2list

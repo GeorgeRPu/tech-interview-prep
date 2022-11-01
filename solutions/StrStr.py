@@ -8,6 +8,10 @@ Solution
 Iterate through each character in ``haystack`` and check if the substring
 ``haystack[i:i + len(needle)]`` is equal to ``needle``.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/StrStr.py
+
 Test
 ----
 >>> from StrStr import strStr

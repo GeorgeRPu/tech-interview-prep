@@ -11,6 +11,10 @@ by usage in a list. Because list insertion and removal need to be done with
 every get and put, we use a linked list. Once we exceed our fixed capacity, we
 discard the items from the linked list and hashmap.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/LRUCache.py
+
 Test
 ----
 >>> from LRUCache import LRUCache
