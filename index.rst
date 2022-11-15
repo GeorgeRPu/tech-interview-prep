@@ -18,6 +18,7 @@ Tech Interview Prep!
    ClimbingStairs
    ConvertSortedArrayToBST
    FizzBuzz
+   IntersectionOfTwoLinkedLists
    LongestCommonPrefix
    LRUCache
    MaximumDepthOfBinaryTree
