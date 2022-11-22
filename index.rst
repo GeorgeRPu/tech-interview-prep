@@ -22,6 +22,7 @@ Tech Interview Prep!
    LinkedListCycle
    LongestCommonPrefix
    LRUCache
+   MajorityElement
    MaximumDepthOfBinaryTree
    Merge2SortedLists
    MergeKSortedLists
