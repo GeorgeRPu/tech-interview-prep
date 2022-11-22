@@ -17,6 +17,7 @@ Tech Interview Prep!
    BinaryTreeInorderTraversal
    ClimbingStairs
    ConvertSortedArrayToBST
+   FirstUniqueCharacterInAString
    FizzBuzz
    IntersectionOfTwoLinkedLists
    LinkedListCycle
