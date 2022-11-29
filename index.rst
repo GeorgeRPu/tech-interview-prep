@@ -32,6 +32,7 @@ Tech Interview Prep!
    PascalsTriangle
    Permutations
    PlusOne
+   Pow
    RomanToInteger
    StrStr
    SymmetricTree
