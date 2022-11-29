@@ -33,6 +33,7 @@ Tech Interview Prep!
    Permutations
    PlusOne
    Pow
+   ReverseLinkedList
    RomanToInteger
    StrStr
    SymmetricTree
