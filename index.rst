@@ -29,6 +29,7 @@ Tech Interview Prep!
    MergeKSortedLists
    MergeSortedArray
    MissingNumber
+   PalindromeLinkedList
    PascalsTriangle
    Permutations
    PlusOne
