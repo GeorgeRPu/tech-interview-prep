@@ -33,6 +33,7 @@ Tech Interview Prep!
    Permutations
    PlusOne
    Pow
+   PowerOfThree
    ReverseLinkedList
    RomanToInteger
    StrStr
