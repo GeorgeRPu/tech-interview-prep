@@ -41,6 +41,7 @@ Tech Interview Prep!
    SymmetricTree
    Tries
    TwoSum
+   ValidAnagram
    ValidPalindrome
 
 Indices and tables
