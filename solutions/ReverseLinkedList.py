@@ -9,6 +9,10 @@ Track the current ``node`` and ``prev`` node. At each step, store ``node.next``
 in a temporary variable. Set ``node.next`` to ``prev`` and then advance
 ``prev`` and ``node``.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ReverseLinkedList.py
+
 Test
 ----
 >>> from ReverseLinkedList import ListNode, reverseList
