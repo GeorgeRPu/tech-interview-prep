@@ -35,6 +35,7 @@ Tech Interview Prep!
    PlusOne
    Pow
    PowerOfThree
+   ReverseString
    ReverseLinkedList
    RomanToInteger
    StrStr
