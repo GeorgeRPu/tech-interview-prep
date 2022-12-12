@@ -19,6 +19,7 @@ Tech Interview Prep!
    ConvertSortedArrayToBST
    FirstUniqueCharacterInAString
    FizzBuzz
+   IntersectionOfTwoArraysII
    IntersectionOfTwoLinkedLists
    LinkedListCycle
    LongestCommonPrefix
