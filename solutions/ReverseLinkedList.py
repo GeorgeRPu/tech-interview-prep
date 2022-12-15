@@ -13,6 +13,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ReverseLinkedList.py
 
+.. literalinclude:: ../solutions/ReverseLinkedList.py
+    :language: python
+    :lines: 34-
+
 Test
 ----
 >>> from ReverseLinkedList import ListNode, reverseList

@@ -12,6 +12,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/LongestCommonPrefix.py
 
+.. literalinclude:: ../solutions/LongestCommonPrefix.py
+    :language: python
+    :lines: 29-
+
 Test
 ----
 >>> from LongestCommonPrefix import longest_common_prefix

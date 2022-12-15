@@ -12,6 +12,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MajorityElement.py
 
+.. literalinclude:: ../solutions/MajorityElement.py
+    :language: python
+    :lines: 30-
+
 Test
 ----
 >>> from MajorityElement import majorityElement

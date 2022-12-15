@@ -12,6 +12,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MaximumDepthOfBinaryTree.py
 
+.. literalinclude:: ../solutions/MaximumDepthOfBinaryTree.py
+    :language: python
+    :lines: 30-
+
 Test
 ----
 >>> from MaximumDepthOfBinaryTree import TreeNode, maxDepth

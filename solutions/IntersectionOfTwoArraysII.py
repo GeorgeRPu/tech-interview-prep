@@ -18,6 +18,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/IntersectionOfTwoArrays.py
 
+.. literalinclude:: ../solutions/IntersectionOfTwoArraysII.py
+    :language: python
+    :lines: 34-
+
 Test
 ----
 >>> from IntersectionOfTwoArraysII import intersect

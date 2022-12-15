@@ -14,6 +14,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ConvertSortedArrayToBST.py
 
+.. literalinclude:: ../solutions/ConvertSortedArrayToBST.py
+    :language: python
+    :lines: 32-
+
 Test
 ----
 >>> from ConvertSortedArrayToBST import sortedArrayToBST, tree2list

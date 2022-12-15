@@ -20,6 +20,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/PascalsTriangle.py
 
+.. literalinclude:: ../solutions/PascalsTriangle.py
+    :language: python
+    :lines: 36-
+
 Test
 ----
 >>> from PascalsTriangle import generate_pascals_triangle

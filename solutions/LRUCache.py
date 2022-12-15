@@ -15,6 +15,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/LRUCache.py
 
+.. literalinclude:: ../solutions/LRUCache.py
+    :language: python
+    :lines: 42-
+
 Test
 ----
 >>> from LRUCache import LRUCache

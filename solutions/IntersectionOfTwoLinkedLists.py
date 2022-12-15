@@ -12,6 +12,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/IntersectionOfTwoLinkedLists.py
 
+.. literalinclude:: ../solutions/IntersectionOfTwoLinkedLists.py
+    :language: python
+    :lines: 36-
+
 Test
 ----
 >>> from IntersectionOfTwoLinkedLists import ListNode, getIntersectionNode

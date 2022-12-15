@@ -13,6 +13,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/PowerOfThree.py
 
+.. literalinclude:: ../solutions/PowerOfThree.py
+    :language: python
+    :lines: 32-
+
 Test
 ----
 >>> from PowerOfThree import isPowerOfThree

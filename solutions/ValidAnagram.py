@@ -14,6 +14,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ValidAnagram.py
 
+.. literalinclude:: ../solutions/ValidAnagram.py
+    :language: python
+    :lines: 31-
+
 Test
 ----
 >>> from ValidAnagram import isAnagram

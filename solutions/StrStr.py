@@ -12,6 +12,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/StrStr.py
 
+.. literalinclude:: ../solutions/StrStr.py
+    :language: python
+    :lines: 29-
+
 Test
 ----
 >>> from StrStr import strStr

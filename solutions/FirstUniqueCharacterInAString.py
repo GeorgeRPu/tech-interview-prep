@@ -13,6 +13,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/FirstUniqueCharacterInAString.py
 
+.. literalinclude:: ../solutions/FirstUniqueCharacterInAString.py
+    :language: python
+    :lines: 32-
+
 Test
 ----
 >>> from FirstUniqueCharacterInAString import firstUniqChar

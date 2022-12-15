@@ -15,6 +15,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/RomanToInteger.py
 
+.. literalinclude:: ../solutions/RomanToInteger.py
+    :language: python
+    :lines: 34-
+
 Test
 ----
 >>> from RomanToInteger import roman_to_int

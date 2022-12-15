@@ -14,6 +14,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ReverseString.py
 
+.. literalinclude:: ../solutions/ReverseString.py
+    :language: python
+    :lines: 35-
+
 Test
 ----
 >>> from ReverseString import reverseString

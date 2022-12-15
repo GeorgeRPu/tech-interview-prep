@@ -31,6 +31,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MissingNumber.py
 
+.. literalinclude:: ../solutions/MissingNumber.py
+    :language: python
+    :lines: 51-
+
 Test
 ----
 >>> from MissingNumber import missing_number

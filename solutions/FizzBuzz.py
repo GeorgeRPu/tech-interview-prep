@@ -18,6 +18,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/FizzBuzz.py
 
+.. literalinclude:: ../solutions/FizzBuzz.py
+    :language: python
+    :lines: 32-
+
 Test
 ----
 >>> from FizzBuzz import fizzBuzz

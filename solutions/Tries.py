@@ -26,6 +26,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Tries.py
 
+.. literalinclude:: ../solutions/Tries.py
+    :language: python
+    :lines: 47-
+
 Test
 ----
 >>> from Tries import Trie

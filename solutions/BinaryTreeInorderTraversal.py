@@ -16,6 +16,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/BinaryTreeInorderTraversal.py
 
+.. literalinclude:: ../solutions/BinaryTreeInorderTraversal.py
+    :language: python
+    :lines: 37-
+
 Test
 ----
 >>> from BinaryTreeInorderTraversal import inorderTraversal, TreeNode

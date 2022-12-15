@@ -13,6 +13,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/LinkedListCycle.py
 
+.. literalinclude:: ../solutions/LinkedListCycle.py
+    :language: python
+    :lines: 36-
+
 Test
 ----
 >>> from LinkedListCycle import ListNode, hasCycle

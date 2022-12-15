@@ -14,6 +14,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Permutations.py
 
+.. literalinclude:: ../solutions/Permutations.py
+    :language: python
+    :lines: 32-
+
 Test
 ----
 >>> from Permutations import permutations

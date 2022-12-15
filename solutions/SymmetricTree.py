@@ -27,6 +27,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/SymmetricTree.py
 
+.. literalinclude:: ../solutions/SymmetricTree.py
+    :language: python
+    :lines: 46-
+
 Test
 ----
 >>> from SymmetricTree import TreeNode, isSymmetric

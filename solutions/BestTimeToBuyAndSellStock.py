@@ -23,6 +23,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/BestTimeToBuyAndSellStock.py
 
+.. literalinclude:: ../solutions/BestTimeToBuyAndSellStock.py
+    :language: python
+    :lines: 40-
+
 Test
 ----
 >>> from BestTimeToBuyAndSellStock import maxProfit

@@ -14,6 +14,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ClimbingStairs.py
 
+.. literalinclude:: ../solutions/ClimbingStairs.py
+    :language: python
+    :lines: 30-
+
 Test
 ----
 >>> from ClimbingStairs import climbStairs

@@ -15,6 +15,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Merge2SortedLists.py
 
+.. literalinclude:: ../solutions/Merge2SortedLists.py
+    :language: python
+    :lines: 32-
+
 Test
 ----
 >>> from Merge2SortedLists import from_list, merge_2_lists

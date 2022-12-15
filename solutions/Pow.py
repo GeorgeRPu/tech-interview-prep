@@ -24,6 +24,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Pow.py
 
+.. literalinclude:: ../solutions/Pow.py
+    :language: python
+    :lines: 43-
+
 Test
 ----
 >>> from Pow import myPow

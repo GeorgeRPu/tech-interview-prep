@@ -16,6 +16,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MergeKSortedLists.py
 
+.. literalinclude:: ../solutions/MergeKSortedLists.py
+    :language: python
+    :lines: 34-
+
 Test
 ----
 >>> from MergeKSortedLists import from_list, merge_k_lists

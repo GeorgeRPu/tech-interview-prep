@@ -17,6 +17,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/TwoSum.py
 
+.. literalinclude:: ../solutions/TwoSum.py
+    :language: python
+    :lines: 35-
+
 Test
 ----
 >>> from TwoSum import two_sum

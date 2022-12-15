@@ -11,6 +11,14 @@ palindrome. We do this by using two pointers ``i`` and ``j`` at the beginning
 of ``s`` and at the end of ``s``. When both pointers are on non-alphanumeric
 characters, move them inwards.
 
+Code
+----
+https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ValidPalindrome.py
+
+.. literalinclude:: ../solutions/ValidPalindrome.py
+    :language: python
+    :lines: 36-
+
 Test
 ----
 >>> from ValidPalindrome import isPalindrome

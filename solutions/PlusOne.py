@@ -12,6 +12,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/PlusOne.py
 
+.. literalinclude:: ../solutions/PlusOne.py
+    :language: python
+    :lines: 28-
+
 Test
 ----
 >>> from PlusOne import plusOne

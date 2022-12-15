@@ -15,6 +15,10 @@ Code
 ----
 https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MergeSortedArray.py
 
+.. literalinclude:: ../solutions/MergeSortedArray.py
+    :language: python
+    :lines: 43-
+
 Test
 ----
 >>> from MergeSortedArray import merge
