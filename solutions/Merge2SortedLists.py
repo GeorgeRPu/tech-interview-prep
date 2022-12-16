@@ -13,7 +13,7 @@ the minimum node. Advance the ``list1``/``list2`` and previous node pointers.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Merge2SortedLists.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/Merge2SortedLists.py
 
 .. literalinclude:: ../solutions/Merge2SortedLists.py
     :language: python

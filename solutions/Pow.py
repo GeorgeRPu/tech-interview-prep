@@ -22,7 +22,7 @@ negative.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Pow.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/Pow.py
 
 .. literalinclude:: ../solutions/Pow.py
     :language: python

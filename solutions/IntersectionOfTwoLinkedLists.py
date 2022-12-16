@@ -10,7 +10,7 @@ check if any node in the second linked list with ``headB`` is in the set.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/IntersectionOfTwoLinkedLists.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/IntersectionOfTwoLinkedLists.py
 
 .. literalinclude:: ../solutions/IntersectionOfTwoLinkedLists.py
     :language: python

@@ -12,7 +12,7 @@ all permutations of ``nums`` that start with ``nums[1]``. Doing this for each
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Permutations.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/Permutations.py
 
 .. literalinclude:: ../solutions/Permutations.py
     :language: python

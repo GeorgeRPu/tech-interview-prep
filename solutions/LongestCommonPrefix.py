@@ -10,7 +10,7 @@ other strings in ``strs``.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/LongestCommonPrefix.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/LongestCommonPrefix.py
 
 .. literalinclude:: ../solutions/LongestCommonPrefix.py
     :language: python

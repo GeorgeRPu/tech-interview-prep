@@ -12,7 +12,7 @@ must be either a 1 or a 2 step jump. Thus ::
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ClimbingStairs.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ClimbingStairs.py
 
 .. literalinclude:: ../solutions/ClimbingStairs.py
     :language: python

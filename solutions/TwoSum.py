@@ -15,7 +15,7 @@ space.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/TwoSum.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/TwoSum.py
 
 .. literalinclude:: ../solutions/TwoSum.py
     :language: python

@@ -11,7 +11,7 @@ in a temporary variable. Set ``node.next`` to ``prev`` and then advance
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ReverseLinkedList.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ReverseLinkedList.py
 
 .. literalinclude:: ../solutions/ReverseLinkedList.py
     :language: python

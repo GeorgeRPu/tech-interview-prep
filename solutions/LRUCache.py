@@ -13,7 +13,7 @@ discard the items from the linked list and hashmap.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/LRUCache.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/LRUCache.py
 
 .. literalinclude:: ../solutions/LRUCache.py
     :language: python

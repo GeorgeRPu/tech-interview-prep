@@ -14,7 +14,7 @@ end of the new list.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MergeKSortedLists.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MergeKSortedLists.py
 
 .. literalinclude:: ../solutions/MergeKSortedLists.py
     :language: python

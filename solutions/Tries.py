@@ -24,7 +24,7 @@ character (EOS). ::
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/Tries.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/Tries.py
 
 .. literalinclude:: ../solutions/Tries.py
     :language: python

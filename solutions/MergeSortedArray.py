@@ -13,7 +13,7 @@ shift the entries in ``nums1`` to the end of the list, and then merge the lists.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MergeSortedArray.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MergeSortedArray.py
 
 .. literalinclude:: ../solutions/MergeSortedArray.py
     :language: python

@@ -14,7 +14,7 @@ subtree recursively. ::
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/BinaryTreeInorderTraversal.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/BinaryTreeInorderTraversal.py
 
 .. literalinclude:: ../solutions/BinaryTreeInorderTraversal.py
     :language: python

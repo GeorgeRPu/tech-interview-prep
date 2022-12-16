@@ -12,7 +12,7 @@ left half to form the left subtree and the right half to form the right subtree.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ConvertSortedArrayToBST.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ConvertSortedArrayToBST.py
 
 .. literalinclude:: ../solutions/ConvertSortedArrayToBST.py
     :language: python

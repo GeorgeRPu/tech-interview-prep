@@ -11,7 +11,7 @@ the first unique character.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/FirstUniqueCharacterInAString.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/FirstUniqueCharacterInAString.py
 
 .. literalinclude:: ../solutions/FirstUniqueCharacterInAString.py
     :language: python

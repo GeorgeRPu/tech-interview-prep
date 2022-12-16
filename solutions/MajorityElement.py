@@ -10,7 +10,7 @@ break early once the count of an element exceeds :math:`\\lfloor n/2 \\rfloor`.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MajorityElement.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MajorityElement.py
 
 .. literalinclude:: ../solutions/MajorityElement.py
     :language: python

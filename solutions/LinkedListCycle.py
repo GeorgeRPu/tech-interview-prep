@@ -11,7 +11,7 @@ then ``b`` must have wrapped around the linked list and caught up to ``a``.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/LinkedListCycle.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/LinkedListCycle.py
 
 .. literalinclude:: ../solutions/LinkedListCycle.py
     :language: python

@@ -11,7 +11,7 @@ Note that, if :math:`n = 3^x`, :math:`n` can never be negative. For positive
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/PowerOfThree.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/PowerOfThree.py
 
 .. literalinclude:: ../solutions/PowerOfThree.py
     :language: python

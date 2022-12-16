@@ -16,7 +16,7 @@ list.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/IntersectionOfTwoArrays.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/IntersectionOfTwoArrays.py
 
 .. literalinclude:: ../solutions/IntersectionOfTwoArraysII.py
     :language: python

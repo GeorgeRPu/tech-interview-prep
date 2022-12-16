@@ -11,7 +11,7 @@ inwards if ``list[i] == list[j]``.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/PalindromeLinkedList.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/PalindromeLinkedList.py
 
 .. literalinclude:: ../solutions/PalindromeLinkedList.py
     :language: python

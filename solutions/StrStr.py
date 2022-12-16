@@ -10,7 +10,7 @@ Iterate through each character in ``haystack`` and check if the substring
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/StrStr.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/StrStr.py
 
 .. literalinclude:: ../solutions/StrStr.py
     :language: python

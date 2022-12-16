@@ -16,7 +16,7 @@ whether we need to print the index.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/FizzBuzz.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/FizzBuzz.py
 
 .. literalinclude:: ../solutions/FizzBuzz.py
     :language: python

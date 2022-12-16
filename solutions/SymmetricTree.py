@@ -25,7 +25,7 @@ mirror images.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/SymmetricTree.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SymmetricTree.py
 
 .. literalinclude:: ../solutions/SymmetricTree.py
     :language: python

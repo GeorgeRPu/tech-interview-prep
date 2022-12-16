@@ -10,7 +10,7 @@ tree is the 1 plus the maximum of the heights of the left and right subtrees.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/MaximumDepthOfBinaryTree.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MaximumDepthOfBinaryTree.py
 
 .. literalinclude:: ../solutions/MaximumDepthOfBinaryTree.py
     :language: python

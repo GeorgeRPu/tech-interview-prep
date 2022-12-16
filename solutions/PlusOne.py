@@ -10,7 +10,7 @@ carry any 1s to the next digit.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/PlusOne.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/PlusOne.py
 
 .. literalinclude:: ../solutions/PlusOne.py
     :language: python

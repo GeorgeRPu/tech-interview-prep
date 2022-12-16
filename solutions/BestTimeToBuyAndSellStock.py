@@ -21,7 +21,7 @@ We update ``buy_price`` only when we find a lower price.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/BestTimeToBuyAndSellStock.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/BestTimeToBuyAndSellStock.py
 
 .. literalinclude:: ../solutions/BestTimeToBuyAndSellStock.py
     :language: python

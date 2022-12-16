@@ -12,7 +12,7 @@ contanins 0's, then ``s`` and ``t`` are anagrams.
 
 Code
 ----
-https://github.com/GeorgeRPu/Tech-Interview-Prep/blob/main/solutions/ValidAnagram.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ValidAnagram.py
 
 .. literalinclude:: ../solutions/ValidAnagram.py
     :language: python
