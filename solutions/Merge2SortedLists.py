@@ -21,9 +21,9 @@ https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/Merge2Sorte
 
 Test
 ----
->>> from Merge2SortedLists import from_list, merge_2_lists
->>> head1 = from_list([1, 2, 4])
->>> head2 = from_list([1, 3, 4])
+>>> from Merge2SortedLists import ListNode, merge_2_lists
+>>> head1 = ListNode.from_list([1, 2, 4])
+>>> head2 = ListNode.from_list([1, 3, 4])
 >>> head = merge_2_lists(head1, head2)
 >>> print(head)
 1 -> 1 -> 2 -> 3 -> 4 -> 4
@@ -32,45 +32,35 @@ Test
 from typing import List, Optional, Tuple
 
 
-class Node:
+class ListNode:
     """Node in a linked list.
     """
 
-    def __init__(self, val: int, next: Optional[Node] = None):
+    def __init__(self, val: int, next: Optional[ListNode] = None):
         self.val = val
         self.next = next
-
-    def __lt__(self, node: Node) -> bool:
-        return self.val < node.val
-
-    def __eq__(self, node: object) -> bool:
-        return self.val == node.val
 
     def __str__(self) -> str:
         return str(self.val) + (' -> ' + str(self.next) if self.next is not None else '')
 
-
-def from_list(lst: List[int]) -> Optional[Node]:
-    """Create a linked list from a list of integers.
-    """
-    head: Optional[Node] = None
-    prev_node: Optional[Node] = None
-    for el in lst:
-        node = Node(el)
-        if head is None:
-            head = node
-        elif prev_node is not None:
-            prev_node.next = node
-            prev_node = node
-        prev_node = node
-    return head
+    @classmethod
+    def from_list(cls, list: List[int]) -> Optional[ListNode]:
+        head: Optional[ListNode] = None
+        for el in list:
+            if head is None:
+                head = ListNode(el)
+                node = head
+            else:
+                node.next = ListNode(el)
+                node = node.next
+        return head
 
 
-def merge_2_lists(list1: Optional[Node], list2: Optional[Node]) -> Optional[Node]:
+def merge_2_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
     """Merge two sorted linked lists.
     """
-    new_head: Optional[Node] = None
-    prev_node: Optional[Node] = None
+    new_head: Optional[ListNode] = None
+    prev_node: Optional[ListNode] = None
 
     while list1 is not None or list2 is not None:
         node, list1, list2 = minimum(list1, list2)
@@ -84,7 +74,7 @@ def merge_2_lists(list1: Optional[Node], list2: Optional[Node]) -> Optional[Node
     return new_head
 
 
-def minimum(list1: Optional[Node], list2: Optional[Node]) -> Tuple[Optional[Node]]:
+def minimum(list1: Optional[ListNode], list2: Optional[ListNode]) -> Tuple[Optional[ListNode]]:
     """Return the minimum node of ``list1`` and ``list2`` and advances the that
     pointer.
     """
@@ -94,7 +84,7 @@ def minimum(list1: Optional[Node], list2: Optional[Node]) -> Tuple[Optional[Node
         return list2, None, None
     elif list2 is None:
         return list1, None, None
-    elif list1 < list2:
+    elif list1.val < list2.val:
         return list1, list1.next, list2
     else:
         return list2, list1, list2.next

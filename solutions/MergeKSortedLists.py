@@ -22,10 +22,10 @@ https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MergeKSorte
 
 Test
 ----
->>> from MergeKSortedLists import from_list, merge_k_lists
->>> head1 = from_list([1, 5, 6])
->>> head2 = from_list([2, 3, 7])
->>> head3 = from_list([2, 4, 8])
+>>> from MergeKSortedLists import ListNode, merge_k_lists
+>>> head1 = ListNode.from_list([1, 5, 6])
+>>> head2 = ListNode.from_list([2, 3, 7])
+>>> head3 = ListNode.from_list([2, 4, 8])
 >>> head = merge_k_lists([head1, head2, head3])
 >>> print(head)
 1 -> 2 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
@@ -35,15 +35,15 @@ import heapq
 from typing import List, Optional
 
 
-class Node:
+class ListNode:
     """Node in a linked list.
     """
 
-    def __init__(self, val: int, next: Optional[Node] = None):
+    def __init__(self, val: int, next: Optional[ListNode] = None):
         self.val = val
         self.next = next
 
-    def __lt__(self, node: Node) -> bool:
+    def __lt__(self, node: ListNode) -> bool:
         return self.val < node.val
 
     def __eq__(self, node: object) -> bool:
@@ -52,30 +52,28 @@ class Node:
     def __str__(self) -> str:
         return str(self.val) + (' -> ' + str(self.next) if self.next is not None else '')
 
-
-def from_list(lst: List[int]) -> Optional[Node]:
-    """Create a linked list from a list of integers.
-    """
-    head: Optional[Node] = None
-    prev_node: Optional[Node] = None
-    for el in lst:
-        node = Node(el)
-        if head is None:
-            head = node
-        elif prev_node is not None:
-            prev_node.next = node
+    @classmethod
+    def from_list(cls, list: List[int]) -> Optional[ListNode]:
+        head: Optional[ListNode] = None
+        prev_node: Optional[ListNode] = None
+        for el in list:
+            node = ListNode(el)
+            if head is None:
+                head = node
+            elif prev_node is not None:
+                prev_node.next = node
+                prev_node = node
             prev_node = node
-        prev_node = node
-    return head
+        return head
 
 
-def merge_k_lists(heads: List[Optional[Node]]) -> Optional[Node]:
+def merge_k_lists(heads: List[Optional[ListNode]]) -> Optional[ListNode]:
     """Merge k sorted linked lists.
     """
-    not_none_heads: List[Node] = [head for head in heads if head is not None]
+    not_none_heads: List[ListNode] = [head for head in heads if head is not None]
     heapq.heapify(not_none_heads)
-    new_head: Optional[Node] = None
-    prev_node: Optional[Node] = None
+    new_head: Optional[ListNode] = None
+    prev_node: Optional[ListNode] = None
     while len(not_none_heads) > 0:
         node = heapq.heappop(not_none_heads)
         if new_head is None:

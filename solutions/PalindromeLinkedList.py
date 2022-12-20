@@ -1,4 +1,6 @@
-"""
+from __future__ import annotations
+
+__doc__ = """
 Problem
 -------
 https://leetcode.com/problems/palindrome-linked-list/
@@ -15,28 +17,42 @@ https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/PalindromeL
 
 .. literalinclude:: ../solutions/PalindromeLinkedList.py
     :language: python
-    :lines: 32-
+    :lines: 34-
 
 Test
 ----
 >>> from PalindromeLinkedList import ListNode, isPalindrome
->>> head = ListNode(1, ListNode(2, ListNode(2, ListNode(1))))
+>>> head = ListNode.from_list([1, 2, 2, 1])
 >>> isPalindrome(head)
 True
->>> head = ListNode(1, ListNode(2))
+>>> head = ListNode.from_list([1, 2])
 >>> isPalindrome(head)
 False
 """
 
 
-from typing import Optional
+from typing import List, Optional
 
 
 class ListNode:
+    """Node in a linked list.
+    """
 
-    def __init__(self, val=0, next=None):
+    def __init__(self, val: int, next: Optional[ListNode] = None):
         self.val = val
         self.next = next
+
+    @classmethod
+    def from_list(cls, list: List[int]) -> Optional[ListNode]:
+        head: Optional[ListNode] = None
+        for el in list:
+            if head is None:
+                head = ListNode(el)
+                node = head
+            else:
+                node.next = ListNode(el)
+                node = node.next
+        return head
 
 
 def isPalindrome(head: Optional[ListNode]) -> bool:
