@@ -42,6 +42,7 @@ Tech Interview Prep!
    RomanToInteger
    StrStr
    SymmetricTree
+   ThreeSum
    Tries
    TwoSum
    ValidAnagram
