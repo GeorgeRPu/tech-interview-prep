@@ -37,6 +37,7 @@ Tech Interview Prep!
    PlusOne
    Pow
    PowerOfThree
+   RemoveNthNodeFromEndOfList
    ReverseString
    ReverseLinkedList
    RomanToInteger
