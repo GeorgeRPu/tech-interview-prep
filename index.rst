@@ -41,6 +41,7 @@ Tech Interview Prep!
    ReverseString
    ReverseLinkedList
    RomanToInteger
+   StringToInteger
    StrStr
    SymmetricTree
    ThreeSum
