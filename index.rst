@@ -20,6 +20,7 @@ Tech Interview Prep!
    ConvertSortedArrayToBST
    FirstUniqueCharacterInAString
    FizzBuzz
+   GenerateParentheses
    IntersectionOfTwoArraysII
    IntersectionOfTwoLinkedLists
    LinkedListCycle
