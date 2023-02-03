@@ -21,10 +21,10 @@ https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ConvertSort
 Test
 ----
 >>> from ConvertSortedArrayToBST import sortedArrayToBST, tree2list
->>> root = sortedArrayToBST([-10,-3,0,5,9])
+>>> root = sortedArrayToBST([-10, -3, 0, 5, 9])
 >>> tree2list(root)
 [0, -3, -10, 9, 5]
->>> root = sortedArrayToBST([1,3])
+>>> root = sortedArrayToBST([1, 3])
 >>> tree2list(root)
 [3, 1]
 """
