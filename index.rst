@@ -18,6 +18,7 @@ Tech Interview Prep!
    BinaryTreeInorderTraversal
    ClimbingStairs
    ConvertSortedArrayToBST
+   FindFirstAndLastPositionOfElementInSortedArray
    FirstUniqueCharacterInAString
    FizzBuzz
    GenerateParentheses
