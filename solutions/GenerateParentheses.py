@@ -28,8 +28,9 @@ https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/GeneratePar
 Test
 ----
 >>> from GenerateParentheses import generateParenthesis
->>> generateParenthesis(3)
-['((()))', '(()())', '(())()', '()(())', '()()()']
+>>> paren = generateParenthesis(3)
+>>> set(paren) == {'((()))', '(()())', '(())()', '()(())', '()()()'}
+True
 >>> generateParenthesis(1)
 ['()']
 """
