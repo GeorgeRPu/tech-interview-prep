@@ -44,6 +44,7 @@ Tech Interview Prep!
    ReverseString
    ReverseLinkedList
    RomanToInteger
+   SearchRotatedArray
    StringToInteger
    StrStr
    SymmetricTree
