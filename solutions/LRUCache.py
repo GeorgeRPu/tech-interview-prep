@@ -9,7 +9,9 @@ We want all ``get(key)`` and ``put(key, value)`` operations to be :math:`O(1)`. 
 nessecitaties the use of a hashmap. The hashmap key-value pairs must be orderd
 by usage in a list. Because list insertion and removal need to be done with
 every get and put, we use a linked list. Once we exceed our fixed capacity, we
-discard the items from the linked list and hashmap.
+discard the items from the linked list and hashmap. To simplify the linked list
+implementation, we use a dummy head and tail node whose keys are negative
+values.
 
 Code
 ----
@@ -23,80 +25,24 @@ Test
 ----
 >>> from LRUCache import LRUCache
 >>> cache = LRUCache(2)
->>> cache.put('1', 'a')
->>> cache.put('2', 'b')
->>> cache.get('1')
-'a'
->>> cache.put('3', 'c')
->>> cache.get('2')
-'Key 2 was not found'
->>> cache.put('4', 'd')
->>> cache.get('1')
-'Key 1 was not found'
->>> cache.get('3')
-'c'
->>> cache.get('4')
-'d'
+>>> cache.put(1, 1)
+>>> cache.put(2, 2)
+>>> cache.get(1)
+1
+>>> cache.put(3, 3)
+>>> cache.get(2)
+-1
+>>> cache.put(4, 4)
+>>> cache.get(1)
+-1
+>>> cache.get(3)
+3
+>>> cache.get(4)
+4
 """
 
 from __future__ import annotations
 from typing import Dict, List, Optional
-
-
-class Node:
-    """Entry in the LRU cache.
-    """
-
-    def __init__(self, key: str, value: str):
-        self.key: str = key
-        self.value: str = value
-        self.next: Optional[Node] = None
-        self.prev: Optional[Node] = None
-
-    def __str__(self) -> str:
-        return f'{self.key}: {self.value}'
-
-    def none_ref(self):
-        self.next = None
-        self.prev = None
-
-
-class LinkedList:
-    """Linked list of entries in the LRU cache.
-    """
-
-    def __init__(self):
-        self.head: Optional[Node] = None
-        self.tail: Optional[Node] = None
-
-    def appendleft(self, node: Node):
-        node.none_ref()
-        if self.tail is None:
-            self.tail = node
-        if self.head is None:
-            self.head = node
-        else:
-            self.head.prev = node
-            node.next = self.head
-            self.head = node
-
-    def remove(self, node: Node):
-        if node.prev is None:
-            self.head = node.next
-        else:
-            node.prev.next = node.next
-        if node.next is None:
-            self.tail = node.prev
-        else:
-            node.next.prev = node.next
-
-    def __str__(self) -> str:
-        node = self.head
-        strings: List[str] = []
-        while node is not None:
-            strings.append(str(node))
-            node = node.next
-        return ' -> '.join(strings)
 
 
 class LRUCache:
@@ -109,25 +55,31 @@ class LRUCache:
         self.dict: Dict[str, Node] = {}
         self.ll: LinkedList = LinkedList()
 
-    def get(self, key: str) -> str:
+    def get(self, key: int) -> int:
         try:
             node = self.dict[key]
             self.ll.remove(node)
             self.ll.appendleft(node)
             return node.value
         except KeyError:
-            return f'Key {key} was not found'
+            return -1
 
-    def put(self, key: str, value: str):
-        node = Node(key, value)
-        self.dict[key] = node
-        self.ll.appendleft(node)
-        self.length += 1
-        tail = self.ll.tail
-        if self.length > self.capacity and tail is not None:
-            self.ll.remove(tail)
-            del self.dict[tail.key]
-            self.length -= 1
+    def put(self, key: int, value: int):
+        try:
+            node = self.dict[key]
+            node.value = value
+            self.ll.remove(node)
+            self.ll.appendleft(node)
+        except KeyError:
+            node = Node(key, value)
+            self.dict[key] = node
+            self.ll.appendleft(node)
+            self.length += 1
+            if self.length > self.capacity:
+                lru = self.ll.tail.prev
+                self.ll.remove(lru)
+                del self.dict[lru.key]
+                self.length -= 1
 
     def __str__(self) -> str:
         node = self.ll.head
@@ -136,3 +88,54 @@ class LRUCache:
             strings.append(str(node))
             node = node.next
         return '{' + ', '.join(strings) + '}'
+
+
+class Node:
+    """Entry in the LRU cache.
+    """
+
+    def __init__(self, key: int, value: int):
+        self.key: int = key
+        self.value: int = value
+        self.next: Optional[Node] = None
+        self.prev: Optional[Node] = None
+
+    def __str__(self) -> str:
+        return f'{self.key}: {self.value}'
+
+    def __repr__(self) -> str:
+        return f'Node({self.key}, {self.value})'
+
+    def none_ref(self):
+        self.next = None
+        self.prev = None
+
+
+class LinkedList:
+    """Linked list of entries in the LRU cache.
+    """
+
+    def __init__(self):
+        self.head = Node(-1, -1)
+        self.tail = Node(-2, -2)
+        self.head.next = self.tail
+        self.tail.prev = self.head
+
+    def appendleft(self, node: Node):
+        node.none_ref()
+        node.next = self.head.next
+        node.next.prev = node
+        node.prev = self.head
+        self.head.next = node
+
+    def remove(self, node: Node):
+        node.prev.next = node.next
+        node.next.prev = node.prev
+
+    def __str__(self) -> str:
+        node = self.head
+        strings: List[str] = []
+        while node is not None:
+            strings.append(str(node))
+            node = node.next
+        return '[' + ', '.join(strings[1:-1]) + ']'
