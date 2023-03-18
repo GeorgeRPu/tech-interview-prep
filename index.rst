@@ -26,6 +26,7 @@ Tech Interview Prep!
    GenerateParentheses
    IntersectionOfTwoArraysII
    IntersectionOfTwoLinkedLists
+   LengthOfLongestSubstring
    LetterCombinationsOfAPhoneNumber
    LinkedListCycle
    LongestCommonPrefix
