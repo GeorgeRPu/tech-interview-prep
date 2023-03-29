@@ -48,6 +48,7 @@ Tech Interview Prep!
    ReverseString
    ReverseLinkedList
    RomanToInteger
+   RotateImage
    SearchRotatedArray
    StringToInteger
    StrStr
