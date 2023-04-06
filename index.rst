@@ -52,6 +52,7 @@ Tech Interview Prep!
    SearchRotatedArray
    StringToInteger
    StrStr
+   Subsets
    SymmetricTree
    ThreeSum
    Tries
