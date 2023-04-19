@@ -34,6 +34,7 @@ Tech Interview Prep!
    MajorityElement
    MaximumDepthOfBinaryTree
    Merge2SortedLists
+   MergeIntervals
    MergeKSortedLists
    MergeSortedArray
    MissingNumber
