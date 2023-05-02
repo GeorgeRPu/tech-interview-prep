@@ -62,6 +62,7 @@ Tech Interview Prep!
    TwoSum
    ValidAnagram
    ValidPalindrome
+   ValidSudoku
 
 Indices and tables
 ------------------
