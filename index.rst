@@ -19,6 +19,7 @@ Tech Interview Prep!
    ClimbingStairs
    ContainerWithMostWater
    ConvertSortedArrayToBST
+   CountPrimes
    DeleteNodeInALinkedList
    DivideTwoIntegers
    FindFirstAndLastPositionOfElementInSortedArray
