@@ -25,6 +25,7 @@ Tech Interview Prep!
    FindFirstAndLastPositionOfElementInSortedArray
    FirstUniqueCharacterInAString
    FizzBuzz
+   GameOfLife
    GenerateParentheses
    IntersectionOfTwoArraysII
    IntersectionOfTwoLinkedLists
