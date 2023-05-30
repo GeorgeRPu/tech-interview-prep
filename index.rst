@@ -17,6 +17,7 @@ Tech Interview Prep!
    BestTimeToBuyAndSellStock
    BinaryTreeInorderTraversal
    BinaryTreeLevelOrderTraversal
+   BinaryTreeZigzagLevelOrderTraversal
    ClimbingStairs
    ConstructBinaryTreeFromPreorderAndInorderTraversal
    ContainerWithMostWater
