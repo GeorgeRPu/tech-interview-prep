@@ -1,4 +1,4 @@
-Sphinx
+Sphinx==6.2.1
 sphinx-copybutton
 sphinx-prompt
 sphinx-rtd-theme
