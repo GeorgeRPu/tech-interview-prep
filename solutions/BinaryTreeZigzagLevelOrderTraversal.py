@@ -23,11 +23,11 @@ Test
 >>> from BinaryTreeZigzagLevelOrderTraversal import zigzagLevelOrder, TreeNode
 >>> root = TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))
 >>> zigzagLevelOrder(root)
->>> [[3], [20, 9], [15, 7]]
+[[3], [20, 9], [15, 7]]
 >>> zigzagLevelOrder(TreeNode(1))
->>> [[1]]
+[[1]]
 >>> zigzagLevelOrder(None)
->>> []
+[]
 """
 
 from typing import List, Optional
