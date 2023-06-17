@@ -36,6 +36,7 @@ Tech Interview Prep!
    LetterCombinationsOfAPhoneNumber
    LinkedListCycle
    LongestCommonPrefix
+   LongestPalindromicSubstring
    LRUCache
    MajorityElement
    MaximumDepthOfBinaryTree
