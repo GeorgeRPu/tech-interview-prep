@@ -31,6 +31,7 @@ Tech Interview Prep!
    FizzBuzz
    GameOfLife
    GenerateParentheses
+   GroupAnagrams
    IntersectionOfTwoArraysII
    IntersectionOfTwoLinkedLists
    LengthOfLongestSubstring
