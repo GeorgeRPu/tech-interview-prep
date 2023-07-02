@@ -60,6 +60,7 @@ Tech Interview Prep!
    RomanToInteger
    RotateImage
    SearchRotatedArray
+   SetMatrixZeroes
    StringToInteger
    StrStr
    Subsets
