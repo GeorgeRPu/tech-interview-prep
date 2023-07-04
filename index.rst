@@ -13,6 +13,7 @@ Tech Interview Prep!
 .. autosummary::
    :toctree: generated
 
+   AddBinary
    AddTwoNumbers
    BestTimeToBuyAndSellStock
    BinaryTreeInorderTraversal
