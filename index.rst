@@ -63,6 +63,7 @@ Tech Interview Prep!
    RotateImage
    SearchRotatedArray
    SetMatrixZeroes
+   SortList
    StringToInteger
    StrStr
    Subsets
