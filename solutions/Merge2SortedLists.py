@@ -45,7 +45,7 @@ class ListNode:
 
     @classmethod
     def from_list(cls, list: List[int]) -> Optional[ListNode]:
-        head: Optional[ListNode] = None
+        head = None
         for el in list:
             if head is None:
                 head = ListNode(el)
@@ -59,8 +59,8 @@ class ListNode:
 def merge_2_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
     """Merge two sorted linked lists.
     """
-    new_head: Optional[ListNode] = None
-    prev_node: Optional[ListNode] = None
+    new_head = None
+    prev_node = None
 
     while list1 is not None or list2 is not None:
         node, list1, list2 = minimum(list1, list2)
