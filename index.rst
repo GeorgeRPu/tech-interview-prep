@@ -56,6 +56,7 @@ Tech Interview Prep!
    Pow
    PowerOfThree
    RemoveDuplicatesFromSortedArrayII
+   RemoveElement
    RemoveNthNodeFromEndOfList
    ReverseInteger
    ReverseString
