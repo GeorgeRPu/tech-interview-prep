@@ -35,6 +35,7 @@ Tech Interview Prep!
    GroupAnagrams
    IntersectionOfTwoArraysII
    IntersectionOfTwoLinkedLists
+   IsSubsequence
    LengthOfLastWord
    LengthOfLongestSubstring
    LetterCombinationsOfAPhoneNumber
