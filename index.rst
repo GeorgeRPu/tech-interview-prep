@@ -61,8 +61,9 @@ Tech Interview Prep!
    RemoveElement
    RemoveNthNodeFromEndOfList
    ReverseInteger
-   ReverseString
    ReverseLinkedList
+   ReverseString
+   ReverseWordsInAString
    RomanToInteger
    RotateImage
    SearchRotatedArray
