@@ -80,6 +80,7 @@ Tech Interview Prep!
    ValidAnagram
    ValidPalindrome
    ValidSudoku
+   ZigZagConversion
 
 Indices and tables
 ------------------
