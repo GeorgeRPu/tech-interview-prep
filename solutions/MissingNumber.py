@@ -37,21 +37,21 @@ https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MissingNumb
 
 Test
 ----
->>> from MissingNumber import missing_number
+>>> from MissingNumber import missingNumber
 >>> list1 = list(range(4))
 >>> list1.remove(2)
->>> missing_number(list1)
+>>> missingNumber(list1)
 2
 >>> list2 = list(range(100))
 >>> list2.remove(47)
->>> missing_number(list2)
+>>> missingNumber(list2)
 47
 """
 
 from typing import List
 
 
-def missing_number(nums: List[int]) -> int:
+def missingNumber(nums: List[int]) -> int:
     """Find the single missing number in a list of integers.
     """
     n = len(nums)

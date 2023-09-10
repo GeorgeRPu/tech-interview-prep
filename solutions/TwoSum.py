@@ -23,19 +23,19 @@ https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/TwoSum.py
 
 Test
 ----
->>> from TwoSum import two_sum
->>> two_sum([2,7,11,15], 9)
+>>> from TwoSum import twoSum
+>>> twoSum([2,7,11,15], 9)
 [0, 1]
->>> two_sum([3,2,4], 6)
+>>> twoSum([3,2,4], 6)
 [1, 2]
->>> two_sum([3, 3], 6)
+>>> twoSum([3, 3], 6)
 [0, 1]
 """
 
 from typing import List
 
 
-def two_sum(nums: List[int], target: int) -> List[int]:
+def twoSum(nums: List[int], target: int) -> List[int]:
     """Find two numbers in ``nums`` that add up to ``target``.
     """
     nums = list(enumerate(nums))  # keep track of the orignal indices

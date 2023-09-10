@@ -26,17 +26,17 @@ https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/PascalsTria
 
 Test
 ----
->>> from PascalsTriangle import generate_pascals_triangle
->>> generate_pascals_triangle(3)
+>>> from PascalsTriangle import generate
+>>> generate(3)
 [[1], [1, 1], [1, 2, 1]]
->>> generate_pascals_triangle(6)
+>>> generate(6)
 [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1], [1, 5, 10, 10, 5, 1]]
 """
 
 from typing import List
 
 
-def generate_pascals_triangle(n_rows: int) -> List[List[int]]:
+def generate(n_rows: int) -> List[List[int]]:
     """Generate Pascal's Triangle with ``n_rows``.
     """
     rows = [[1]]

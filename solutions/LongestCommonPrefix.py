@@ -18,10 +18,10 @@ https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/LongestComm
 
 Test
 ----
->>> from LongestCommonPrefix import longest_common_prefix
->>> longest_common_prefix(['flower', 'flow', 'flight'])
+>>> from LongestCommonPrefix import longestCommonPrefix
+>>> longestCommonPrefix(['flower', 'flow', 'flight'])
 'fl'
->>> longest_common_prefix(['dog', 'racecar', 'car'])
+>>> longestCommonPrefix(['dog', 'racecar', 'car'])
 ''
 """
 
@@ -29,7 +29,7 @@ Test
 from typing import List
 
 
-def longest_common_prefix(strs: List[str]) -> str:
+def longestCommonPrefix(strs: List[str]) -> str:
     """Find longest common prefix of all strings in ``strs``.
     """
     shortest = min(strs, key=len)
