@@ -2,7 +2,7 @@
 
 Personal technical interview preparation resources.
 
-Page link: https://georgerpu.github.io/tech-interview-prep/
+Page link: https://georgerpu.github.io/Tech-Interview-Prep/
 
 ## Installation
 
