@@ -34,6 +34,7 @@ Tech Interview Prep!
    GameOfLife
    GenerateParentheses
    GroupAnagrams
+   HIndex
    IntegerToRoman
    IntersectionOfTwoArraysII
    IntersectionOfTwoLinkedLists
