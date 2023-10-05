@@ -39,6 +39,7 @@ Tech Interview Prep!
    IntersectionOfTwoArraysII
    IntersectionOfTwoLinkedLists
    IsSubsequence
+   JumpGame
    LengthOfLastWord
    LengthOfLongestSubstring
    LetterCombinationsOfAPhoneNumber
