@@ -63,6 +63,7 @@ Tech Interview Prep!
    Pow
    PowerOfThree
    ProductOfArrayExceptSelf
+   RansomNote
    RemoveDuplicatesFromSortedArrayII
    RemoveElement
    RemoveNthNodeFromEndOfList
