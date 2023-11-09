@@ -28,10 +28,10 @@ Test
 True
 >>> random_set.remove(2)
 False
->>> random_set.insert(2)
-True
 >>> random_set.getRandom()
 1
+>>> random_set.insert(2)
+True
 >>> random_set.remove(1)
 True
 >>> random_set.insert(2)
