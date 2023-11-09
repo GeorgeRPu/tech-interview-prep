@@ -32,6 +32,7 @@ Tech Interview Prep!
    FirstUniqueCharacterInAString
    FizzBuzz
    GameOfLife
+   GasStation
    GenerateParentheses
    GroupAnagrams
    HIndex
