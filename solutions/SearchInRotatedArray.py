@@ -34,15 +34,15 @@ Initialize ``left`` and ``right`` to the start and end of the array.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SearchRotatedArray.py
+https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SearchInRotatedArray.py
 
-.. literalinclude:: ../solutions/SearchRotatedArray.py
+.. literalinclude:: ../solutions/SearchInRotatedArray.py
     :language: python
     :lines: 54-
 
 Test
 ----
->>> from SearchRotatedArray import search
+>>> from SearchInRotatedArray import search
 >>> search([4, 5, 6, 7, 0, 1, 2], 0)
 4
 >>> search([4, 5, 6, 7, 0, 1, 2], 3)

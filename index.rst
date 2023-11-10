@@ -73,7 +73,7 @@ Tech Interview Prep!
    ReverseWordsInAString
    RomanToInteger
    RotateImage
-   SearchRotatedArray
+   SearchInRotatedArray
    SetMatrixZeroes
    SingleNumberII
    SortList
