@@ -78,6 +78,7 @@ Tech Interview Prep!
    SetMatrixZeroes
    SingleNumberII
    SortList
+   Sqrtx
    StringToInteger
    StrStr
    Subsets
