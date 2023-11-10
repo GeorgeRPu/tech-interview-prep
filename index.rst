@@ -35,6 +35,7 @@ Tech Interview Prep!
    GasStation
    GenerateParentheses
    GroupAnagrams
+   HappyNumber
    HIndex
    InsertDeleteGetRandomO1
    IntegerToRoman
