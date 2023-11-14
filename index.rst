@@ -41,6 +41,7 @@ Tech Interview Prep!
    IntegerToRoman
    IntersectionOfTwoArraysII
    IntersectionOfTwoLinkedLists
+   IsomorphicStrings
    IsSubsequence
    JumpGame
    LengthOfLastWord
