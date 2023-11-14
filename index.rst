@@ -90,6 +90,7 @@ Tech Interview Prep!
    TwoSumII
    ValidAnagram
    ValidPalindrome
+   ValidParentheses
    ValidSudoku
    ZigZagConversion
 
