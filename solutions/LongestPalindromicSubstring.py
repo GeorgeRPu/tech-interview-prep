@@ -36,25 +36,34 @@ def longestPalindrome(s: str) -> str:
     """Return the longest palindromic substring of ``s``.
     """
     longest_substr = ''
-    for i, char in enumerate(s):
-        for j in range(1, 3):
-            start = i
-            end = i + j
-            substr = s[start:end]
-            while is_palindrome(substr) and in_bounds(start, end, s):
-                if len(substr) > len(longest_substr):
-                    longest_substr = substr
-
-                start -= 1
-                end += 1
-                substr = s[start:end]
+    for center, char in enumerate(s):
+        longest_substr = longestPalindromeAtCenter(s, center, longest_substr=longest_substr)
+        longest_substr = longestPalindromeAtCenter(s, center, offset=1, longest_substr=longest_substr)
 
     return longest_substr
 
 
-def is_palindrome(substr):
-    return substr == substr[::-1]
+def longestPalindromeAtCenter(s, center, offset=0, longest_substr=''):
+    """Return the longest palindromic substring of ``s`` centered at
+    ``center``.
+    """
+    i = 0
+    start = center - i
+    end = center + i + offset
+    while 0 <= start and end <= len(s):
+        if s[start] != s[end - 1]:
+            break
+        elif 2 * i + offset > len(longest_substr):
+            longest_substr = s[start:center + i + offset]
+
+        i += 1
+        start, end = getSubstringBounds(center, i, offset)
+
+    return longest_substr
 
 
-def in_bounds(start, end, s):
-    return start >= 0 and end <= len(s)
+def getSubstringBounds(center, i, offset=0):
+    """Calculate the start and end indices of a substring centered at
+    ``center`` with radius ``i``.
+    """
+    return center - i, center + i + offset
