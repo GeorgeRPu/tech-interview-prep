@@ -93,6 +93,7 @@ Tech Interview Prep!
    ValidPalindrome
    ValidParentheses
    ValidSudoku
+   WordPattern
    ZigZagConversion
 
 Indices and tables
