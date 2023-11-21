@@ -61,6 +61,7 @@ Tech Interview Prep!
    MergeSortedArray
    MissingNumber
    PalindromeLinkedList
+   PalindromeNumber
    PascalsTriangle
    Permutations
    PlusOne
