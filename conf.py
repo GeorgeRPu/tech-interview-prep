@@ -12,7 +12,9 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('./solutions'))
+sys.path.append(os.path.abspath('./solutions/easy'))
+sys.path.append(os.path.abspath('./solutions/medium'))
+sys.path.append(os.path.abspath('./solutions/hard'))
 
 
 # -- Project information -----------------------------------------------------
@@ -29,6 +31,7 @@ author = 'George Pu'
 # ones.
 extensions = [
     'sphinx_copybutton',
+    'sphinx_design',
     'sphinx-prompt',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
