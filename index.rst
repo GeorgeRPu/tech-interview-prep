@@ -47,6 +47,7 @@ A collection of solutions to (software engineering) technical interview question
          ReverseString
          RomanToInteger
          RotateImage
+         SameTree
          SearchInRotatedArray
          SetMatrixZeroes
          SingleNumberII
