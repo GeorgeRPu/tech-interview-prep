@@ -28,6 +28,7 @@ A collection of solutions to (software engineering) technical interview question
          FizzBuzz
          HappyNumber
          IntersectionOfTwoLinkedLists
+         InvertBinaryTree
          IsomorphicStrings
          IsSubsequence
          LengthOfLastWord
