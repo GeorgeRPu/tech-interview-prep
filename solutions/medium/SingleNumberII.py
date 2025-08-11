@@ -14,11 +14,10 @@ unsigned integers to 2's complement by subtracting :math:`2^{32}`.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SingleNumberII.py
 
 .. literalinclude:: ../solutions/medium/SingleNumberII.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

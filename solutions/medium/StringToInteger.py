@@ -15,11 +15,10 @@ Track the value of the integer as in separate ``sign`` and ``value`` variables.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/StringToInteger.py
 
 .. literalinclude:: ../solutions/medium/StringToInteger.py
     :language: python
-    :lines: 39-
+    :lines: 33-
 
 Test
 ----

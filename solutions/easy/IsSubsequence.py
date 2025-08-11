@@ -11,11 +11,10 @@ appears in ``t`` in order.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/IsSubsequence.py
 
 .. literalinclude:: ../solutions/easy/IsSubsequence.py
     :language: python
-    :lines: 30-
+    :lines: 27-
 
 Test
 ----

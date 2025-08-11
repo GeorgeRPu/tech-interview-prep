@@ -10,11 +10,10 @@ tree is the 1 plus the maximum of the heights of the left and right subtrees.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MaximumDepthOfBinaryTree.py
 
 .. literalinclude:: ../solutions/easy/MaximumDepthOfBinaryTree.py
     :language: python
-    :lines: 30-
+    :lines: 27-
 
 Test
 ----
@@ -27,7 +26,6 @@ Test
 2
 """
 
-from typing import Optional
 
 
 class TreeNode:
@@ -40,7 +38,7 @@ class TreeNode:
         self.right = right
 
 
-def maxDepth(root: Optional[TreeNode]) -> int:
+def maxDepth(root: TreeNode | None) -> int:
     """Find the maximum depth or total height of a binary tree.
     """
     if root is None:

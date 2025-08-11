@@ -32,9 +32,8 @@ author = 'George Pu'
 extensions = [
     'sphinx_copybutton',
     'sphinx_design',
-    'sphinx-prompt',
+    'sphinx_prompt',
     'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
     'sphinx.ext.doctest',
     'sphinx.ext.duration',
     'sphinx.ext.mathjax',

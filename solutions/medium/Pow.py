@@ -22,11 +22,10 @@ negative.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/Pow.py
 
 .. literalinclude:: ../solutions/medium/Pow.py
     :language: python
-    :lines: 43-
+    :lines: 40-
 
 Test
 ----

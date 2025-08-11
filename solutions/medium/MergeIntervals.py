@@ -17,11 +17,10 @@ is because the merged intervals are all disjoint and sorted from left to right.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MergeIntervals.py
 
 .. literalinclude:: ../solutions/medium/MergeIntervals.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

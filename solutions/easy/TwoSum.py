@@ -15,11 +15,10 @@ space.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/TwoSum.py
 
 .. literalinclude:: ../solutions/easy/TwoSum.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

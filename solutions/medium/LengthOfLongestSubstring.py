@@ -16,11 +16,10 @@ substring. Once we find a duplicate character, reset the seen characters.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/LengthOfLongestSubstring.py
 
 .. literalinclude:: ../solutions/medium/LengthOfLongestSubstring.py
     :language: python
-    :lines: 37-
+    :lines: 34-
 
 Test
 ----

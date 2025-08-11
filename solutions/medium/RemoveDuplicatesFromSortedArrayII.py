@@ -14,11 +14,10 @@ ahead to the next element by incrementing an offset. If the current element
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/RemoveDuplicatesFromSortedArrayII.py
 
 .. literalinclude:: ../solutions/medium/RemoveDuplicatesFromSortedArrayII.py
     :language: python
-    :lines: 36-
+    :lines: 33-
 
 Test
 ----

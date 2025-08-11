@@ -1,126 +1,106 @@
 Tech Interview Prep!
 ====================
 
-.. toctree::
-   :maxdepth: 1
-
 A collection of solutions to (software engineering) technical interview questions.
 
-.. grid:: 1
+.. toctree::
+   :maxdepth: 1
+   :caption: Easy
 
-   .. grid-item-card::
+   generated/AddBinary
+   generated/BestTimeToBuyAndSellStock
+   generated/BinaryTreeInorderTraversal
+   generated/ClimbingStairs
+   generated/ContainsDuplicateII
+   generated/ConvertSortedArrayToBST
+   generated/FindTheIndexOfTheFirstOccurrenceInAString
+   generated/FirstUniqueCharacterInAString
+   generated/FizzBuzz
+   generated/HappyNumber
+   generated/IntersectionOfTwoArraysII
+   generated/IntersectionOfTwoLinkedLists
+   generated/InvertBinaryTree
+   generated/IsSubsequence
+   generated/IsomorphicStrings
+   generated/LengthOfLastWord
+   generated/LinkedListCycle
+   generated/LongestCommonPrefix
+   generated/MajorityElement
+   generated/MaximumDepthOfBinaryTree
+   generated/MergeSortedArray
+   generated/MergeTwoSortedLists
+   generated/MissingNumber
+   generated/PalindromeLinkedList
+   generated/PalindromeNumber
+   generated/PascalsTriangle
+   generated/PlusOne
+   generated/PowerOfThree
+   generated/RansomNote
+   generated/RemoveElement
+   generated/ReverseLinkedList
+   generated/ReverseString
+   generated/RomanToInteger
+   generated/SameTree
+   generated/Sqrtx
+   generated/SummaryRanges
+   generated/SymmetricTree
+   generated/TwoSum
+   generated/ValidAnagram
+   generated/ValidPalindrome
+   generated/ValidParentheses
+   generated/WordPattern
 
-      Easy
-      ^^^^
+.. toctree::
+   :maxdepth: 1
+   :caption: Medium
 
-      .. autosummary::
-         :caption: Easy
-         :toctree: generated
+   generated/AddTwoNumbers
+   generated/BinaryTreeLevelOrderTraversal
+   generated/BinaryTreeZigzagLevelOrderTraversal
+   generated/BitwiseANDOfNumbersRange
+   generated/ConstructBinaryTreeFromPreorderAndInorderTraversal
+   generated/ContainerWithMostWater
+   generated/CountAndSay
+   generated/CountPrimes
+   generated/DeleteNodeInALinkedList
+   generated/DivideTwoIntegers
+   generated/FindFirstAndLastPositionOfElementInSortedArray
+   generated/GameOfLife
+   generated/GasStation
+   generated/GenerateParentheses
+   generated/GroupAnagrams
+   generated/HIndex
+   generated/InsertDeleteGetRandomO1
+   generated/IntegerToRoman
+   generated/JumpGame
+   generated/LRUCache
+   generated/LengthOfLongestSubstring
+   generated/LetterCombinationsOfAPhoneNumber
+   generated/LongestPalindromicSubstring
+   generated/MaximumSubarray
+   generated/MergeIntervals
+   generated/Permutations
+   generated/Pow
+   generated/ProductOfArrayExceptSelf
+   generated/RemoveDuplicatesFromSortedArrayII
+   generated/RemoveNthNodeFromEndOfList
+   generated/ReverseInteger
+   generated/ReverseWordsInAString
+   generated/RotateImage
+   generated/SearchInRotatedArray
+   generated/SetMatrixZeroes
+   generated/SingleNumberII
+   generated/SortList
+   generated/StringToInteger
+   generated/Subsets
+   generated/ThreeSum
+   generated/Tries
+   generated/TwoSumII
+   generated/ValidSudoku
+   generated/ZigZagConversion
 
-         AddBinary
-         BestTimeToBuyAndSellStock
-         BinaryTreeInorderTraversal
-         ClimbingStairs
-         ContainsDuplicateII
-         ConvertSortedArrayToBST
-         FindTheIndexOfTheFirstOccurrenceInAString
-         FirstUniqueCharacterInAString
-         FizzBuzz
-         HappyNumber
-         IntersectionOfTwoLinkedLists
-         InvertBinaryTree
-         IsomorphicStrings
-         IsSubsequence
-         LengthOfLastWord
-         LinkedListCycle
-         LongestCommonPrefix
-         MajorityElement
-         MaximumDepthOfBinaryTree
-         MergeSortedArray
-         MissingNumber
-         PalindromeLinkedList
-         PalindromeNumber
-         PascalsTriangle
-         PowerOfThree
-         RansomNote
-         RemoveElement
-         ReverseLinkedList
-         ReverseString
-         RomanToInteger
-         RotateImage
-         SameTree
-         SearchInRotatedArray
-         SetMatrixZeroes
-         SingleNumberII
-         Sqrtx
-         SummaryRanges
-         TwoSum
-         ValidAnagram
-         ValidPalindrome
-         ValidParentheses
-         WordPattern
+.. toctree::
+   :maxdepth: 1
+   :caption: Hard
 
-   .. grid-item-card::
-
-      Medium
-      ^^^^^^
-
-      .. autosummary::
-         :caption: Medium
-         :toctree: generated
-
-         AddTwoNumbers
-         BinaryTreeLevelOrderTraversal
-         BinaryTreeZigzagLevelOrderTraversal
-         BitwiseANDOfNumbersRange
-         ConstructBinaryTreeFromPreorderAndInorderTraversal
-         ContainerWithMostWater
-         CountAndSay
-         CountPrimes
-         DeleteNodeInALinkedList
-         DivideTwoIntegers
-         FindFirstAndLastPositionOfElementInSortedArray
-         GameOfLife
-         GasStation
-         GenerateParentheses
-         GroupAnagrams
-         HIndex
-         InsertDeleteGetRandomO1
-         IntegerToRoman
-         IntersectionOfTwoArraysII
-         JumpGame
-         LengthOfLongestSubstring
-         LetterCombinationsOfAPhoneNumber
-         LongestPalindromicSubstring
-         LRUCache
-         MaximumSubarray
-         MergeTwoSortedLists
-         MergeIntervals
-         Permutations
-         PlusOne
-         Pow
-         ProductOfArrayExceptSelf
-         RemoveDuplicatesFromSortedArrayII
-         RemoveNthNodeFromEndOfList
-         ReverseInteger
-         ReverseWordsInAString
-         SortList
-         StringToInteger
-         Subsets
-         SymmetricTree
-         ThreeSum
-         Tries
-         TwoSumII
-         ValidSudoku
-         ZigZagConversion
-
-   .. grid-item-card::
-
-      Hard
-      ^^^^
-
-      .. autosummary::
-         :caption: Hard
-         :toctree: generated
-
-         MergeKSortedLists
+   generated/MergeKSortedLists

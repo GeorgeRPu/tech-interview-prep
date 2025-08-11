@@ -15,11 +15,10 @@ the left subtree and the right half of ``inorder``.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/AddTwoNumbers.py
 
 .. literalinclude:: ../solutions/medium/AddTwoNumbers.py
     :language: python
-    :lines: 43-
+    :lines: 40-
 
 Test
 ----
@@ -40,7 +39,7 @@ Test
 [-1]
 """
 
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 
 
 class TreeNode:
@@ -69,13 +68,13 @@ class TreeNode:
         return inorder
 
 
-def buildTree(preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+def buildTree(preorder: List[int], inorder: List[int]) -> TreeNode | None:
     """Build a binary tree from its preorder and inorder traversals.
     """
     return build_tree(preorder, inorder)[0]
 
 
-def build_tree(preorder: List[int], inorder: List[int]) -> Tuple[Optional[TreeNode], List[int]]:
+def build_tree(preorder: List[int], inorder: List[int]) -> Tuple[TreeNode | None, List[int]]:
     """Recursively build a binary tree from part of its preorder and inorder
     traversals.
     """

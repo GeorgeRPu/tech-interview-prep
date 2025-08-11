@@ -10,11 +10,10 @@ spaces. The last element in the list is the last word in the string.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/LengthOfLastWord.py
 
 .. literalinclude:: ../solutions/easy/LengthOfLastWord.py
     :language: python
-    :lines: 31-
+    :lines: 28-
 
 Test
 ----

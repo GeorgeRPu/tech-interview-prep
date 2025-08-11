@@ -15,11 +15,10 @@ pattern holds, but with different symbols for ones, fives, and tens.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/IntegerToRoman.py
 
 .. literalinclude:: ../solutions/medium/IntegerToRoman.py
     :language: python
-    :lines: 36-
+    :lines: 33-
 
 Test
 ----

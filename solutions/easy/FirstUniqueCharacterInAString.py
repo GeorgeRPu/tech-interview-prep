@@ -11,11 +11,10 @@ the first unique character.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/FirstUniqueCharacterInAString.py
 
 .. literalinclude:: ../solutions/easy/FirstUniqueCharacterInAString.py
     :language: python
-    :lines: 32-
+    :lines: 29-
 
 Test
 ----

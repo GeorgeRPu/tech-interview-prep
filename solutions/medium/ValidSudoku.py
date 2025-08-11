@@ -10,11 +10,10 @@ the digits 1-9. Return ``False`` if these conditions don't hold.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ValidSudoku.py
 
 .. literalinclude:: ../solutions/medium/ValidSudoku.py
     :language: python
-    :lines: 50-
+    :lines: 47-
 
 Test
 ----

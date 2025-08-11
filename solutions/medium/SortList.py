@@ -11,11 +11,10 @@ Use merge sort.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SortList.py
 
 .. literalinclude:: ../solutions/medium/SortList.py
     :language: python
-    :lines: 33-
+    :lines: 30-
 
 Test
 ----
@@ -30,14 +29,14 @@ Test
 -1 -> 0 -> 3 -> 4 -> 5
 """
 
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 
 
 class ListNode:
     """Node in a linked list.
     """
 
-    def __init__(self, val: int, next: Optional[ListNode] = None):
+    def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
         self.next = next
 
@@ -45,7 +44,7 @@ class ListNode:
         return str(self.val) + (' -> ' + str(self.next) if self.next is not None else '')
 
     @classmethod
-    def from_list(cls, list: List[int]) -> Optional[ListNode]:
+    def from_list(cls, list: List[int]) -> ListNode | None:
         head = None
         for el in list:
             if head is None:
@@ -57,7 +56,7 @@ class ListNode:
         return head
 
 
-def sortList(head: Optional[ListNode]) -> Optional[ListNode]:
+def sortList(head: ListNode | None) -> ListNode | None:
     """Sort linked list.
     """
     node = head
@@ -69,7 +68,7 @@ def sortList(head: Optional[ListNode]) -> Optional[ListNode]:
     return sort_list(head, length)
 
 
-def sort_list(head: Optional[ListNode], length: int):
+def sort_list(head: ListNode | None, length: int):
     """Sort a linked list of length ``length`` with merge sort.
     """
     if length <= 1:
@@ -100,7 +99,7 @@ def sort_list(head: Optional[ListNode], length: int):
     return new_head
 
 
-def minimum(list1: Optional[ListNode], list2: Optional[ListNode]) -> Tuple[Optional[ListNode]]:
+def minimum(list1: ListNode | None, list2: ListNode | None) -> Tuple[ListNode | None]:
     """Return the minimum node of ``list1`` and ``list2`` and advances the that
     pointer.
     """

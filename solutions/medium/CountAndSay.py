@@ -13,11 +13,10 @@ to 1.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/CountAndSay.py
 
 .. literalinclude:: ../solutions/medium/CountAndSay.py
     :language: python
-    :lines: 32-
+    :lines: 29-
 
 Test
 ----

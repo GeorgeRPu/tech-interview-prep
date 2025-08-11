@@ -10,11 +10,10 @@ by appending each letter in the group to each combination.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/LetterCombinationsOfAPhoneNumber.py
 
 .. literalinclude:: ../solutions/medium/LetterCombinationsOfAPhoneNumber.py
     :language: python
-    :lines: 30-
+    :lines: 27-
 
 Test
 ----

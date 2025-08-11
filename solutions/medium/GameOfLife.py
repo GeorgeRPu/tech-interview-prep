@@ -13,11 +13,10 @@ each cell before updating the board.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/AddTwoNumbers.py
 
 .. literalinclude:: ../solutions/medium/AddTwoNumbers.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

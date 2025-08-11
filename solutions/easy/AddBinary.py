@@ -12,11 +12,10 @@ At the end, if the carry is not 0, add it to the front of the string.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/AddBinary.py
 
 .. literalinclude:: ../solutions/easy/AddBinary.py
     :language: python
-    :lines: 31-
+    :lines: 30-
 
 Test
 ----

@@ -12,11 +12,10 @@ can reverse the list by swapping the outermost elements, moving inwards. ::
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ReverseString.py
 
 .. literalinclude:: ../solutions/easy/ReverseString.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

@@ -24,11 +24,10 @@ character (EOS). ::
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/Tries.py
 
 .. literalinclude:: ../solutions/medium/Tries.py
     :language: python
-    :lines: 47-
+    :lines: 44-
 
 Test
 ----
@@ -44,7 +43,7 @@ Test
 ['bees']
 """
 
-from typing import List, Optional
+from typing import List
 
 SOS_char = '<'
 EOS_char = '>'
@@ -61,7 +60,7 @@ class TrieNode:
     def add_child(self, node: TrieNode):
         self.children.append(node)
 
-    def get_child(self, char) -> Optional[TrieNode]:
+    def get_child(self, char) -> TrieNode | None:
         for child in self.children:
             if char == child.char:
                 return child

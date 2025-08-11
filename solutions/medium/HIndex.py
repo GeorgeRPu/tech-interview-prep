@@ -12,11 +12,10 @@ breaking when the index becomes greater than the citation count.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/HIndex.py
 
 .. literalinclude:: ../solutions/medium/HIndex.py
     :language: python
-    :lines: 33-
+    :lines: 30-
 
 Test
 ----

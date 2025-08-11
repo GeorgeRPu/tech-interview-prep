@@ -13,11 +13,10 @@ in a temporary variable. Set ``node.next`` to ``prev`` and then advance
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ReverseLinkedList.py
 
 .. literalinclude:: ../solutions/easy/ReverseLinkedList.py
     :language: python
-    :lines: 36-
+    :lines: 33-
 
 Test
 ----
@@ -33,14 +32,14 @@ Test
 [1]
 """
 
-from typing import List, Optional
+from typing import List
 
 
 class ListNode:
     """Node in a linked list.
     """
 
-    def __init__(self, val: int, next: Optional[ListNode] = None):
+    def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
         self.next = next
 
@@ -52,8 +51,8 @@ class ListNode:
         return list
 
     @classmethod
-    def from_list(cls, list: List[int]) -> Optional[ListNode]:
-        head: Optional[ListNode] = None
+    def from_list(cls, list: List[int]) -> ListNode | None:
+        head: ListNode | None = None
         for el in list:
             if head is None:
                 head = ListNode(el)
@@ -64,7 +63,7 @@ class ListNode:
         return head
 
 
-def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
+def reverseList(head: ListNode | None) -> ListNode | None:
     prev = None
     node = head
     while node is not None:

@@ -15,11 +15,10 @@ values.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/LRUCache.py
 
 .. literalinclude:: ../solutions/medium/LRUCache.py
     :language: python
-    :lines: 42-
+    :lines: 39-
 
 Test
 ----
@@ -42,7 +41,7 @@ Test
 """
 
 from __future__ import annotations
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 
 class LRUCache:
@@ -97,8 +96,8 @@ class Node:
     def __init__(self, key: int, value: int):
         self.key: int = key
         self.value: int = value
-        self.next: Optional[Node] = None
-        self.prev: Optional[Node] = None
+        self.next: Node | None = None
+        self.prev: Node | None = None
 
     def __str__(self) -> str:
         return f'{self.key}: {self.value}'

@@ -16,11 +16,10 @@ Clamp the quotient to be in :math:`[-2^{31}, 2^{31} - 1]`.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/DivideTwoIntegers.py
 
 .. literalinclude:: ../solutions/medium/DivideTwoIntegers.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

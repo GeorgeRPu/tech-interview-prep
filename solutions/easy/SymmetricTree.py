@@ -25,11 +25,10 @@ mirror images.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SymmetricTree.py
 
 .. literalinclude:: ../solutions/easy/SymmetricTree.py
     :language: python
-    :lines: 46-
+    :lines: 43-
 
 Test
 ----
@@ -43,7 +42,6 @@ False
 """
 
 
-from typing import Optional
 
 
 class TreeNode:
@@ -56,7 +54,7 @@ class TreeNode:
         self.right = right
 
 
-def isSymmetric(root: Optional[TreeNode]) -> bool:
+def isSymmetric(root: TreeNode | None) -> bool:
     """Returns whether a binary tree is symmetric.
     """
     if root is None:
@@ -65,7 +63,7 @@ def isSymmetric(root: Optional[TreeNode]) -> bool:
         return check_subtrees(root.left, root.right)
 
 
-def check_subtrees(left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
+def check_subtrees(left: TreeNode | None, right: TreeNode | None) -> bool:
     """Returns whether the left and right subtrees are mirror images of each
     other.
     """

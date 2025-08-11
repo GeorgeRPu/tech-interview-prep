@@ -13,11 +13,10 @@ to zero twice.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SetMatrixZeroes.py
 
 .. literalinclude:: ../solutions/medium/SetMatrixZeroes.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

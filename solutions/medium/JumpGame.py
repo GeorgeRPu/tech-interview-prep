@@ -14,11 +14,10 @@ greater than the current furthest reachable index.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/JumpGame.py
 
 .. literalinclude:: ../solutions/medium/JumpGame.py
     :language: python
-    :lines: 32-
+    :lines: 29-
 
 Test
 ----

@@ -13,11 +13,10 @@ alphabet.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/RansomNote.py
 
 .. literalinclude:: ../solutions/easy/RansomNote.py
     :language: python
-    :lines: 34-
+    :lines: 31-
 
 Test
 ----

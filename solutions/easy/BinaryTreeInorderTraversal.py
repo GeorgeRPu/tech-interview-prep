@@ -14,11 +14,10 @@ subtree recursively. ::
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/BinaryTreeInorderTraversal.py
 
 .. literalinclude:: ../solutions/easy/BinaryTreeInorderTraversal.py
     :language: python
-    :lines: 37-
+    :lines: 34-
 
 Test
 ----
@@ -34,7 +33,7 @@ Test
 [1]
 """
 
-from typing import List, Optional
+from typing import List
 
 
 class TreeNode:
@@ -47,7 +46,7 @@ class TreeNode:
         self.right = right
 
 
-def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
+def inorderTraversal(root: TreeNode | None) -> List[int]:
     """Traverse a binary tree in order from left to right.
     """
     if root is None:

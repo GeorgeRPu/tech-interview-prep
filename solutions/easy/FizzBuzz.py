@@ -16,11 +16,10 @@ whether we need to print the index.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/FizzBuzz.py
 
 .. literalinclude:: ../solutions/easy/FizzBuzz.py
     :language: python
-    :lines: 32-
+    :lines: 29-
 
 Test
 ----

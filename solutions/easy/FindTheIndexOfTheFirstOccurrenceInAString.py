@@ -10,11 +10,10 @@ Iterate through each character in ``haystack`` and check if the substring
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/FindTheIndexOfTheFirstOccurrenceInAString.py
 
 .. literalinclude:: ../solutions/easy/FindTheIndexOfTheFirstOccurrenceInAString.py
     :language: python
-    :lines: 29-
+    :lines: 26-
 
 Test
 ----

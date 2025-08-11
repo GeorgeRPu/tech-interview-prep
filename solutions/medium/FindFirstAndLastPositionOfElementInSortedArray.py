@@ -17,11 +17,10 @@ half until we can no longer find target.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/FindFirstAndLastPositionOfElementInSortedArray.py
 
 .. literalinclude:: ../solutions/medium/FindFirstAndLastPositionOfElementInSortedArray.py
     :language: python
-    :lines: 37-
+    :lines: 34-
 
 Test
 ----

@@ -23,11 +23,10 @@ a rotation for :math:`j = i, 2, \dots, m - i`.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/RotateImage.py
 
 .. literalinclude:: ../solutions/medium/RotateImage.py
     :language: python
-    :lines: 45-
+    :lines: 42-
 
 Test
 ----

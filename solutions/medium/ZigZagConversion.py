@@ -14,11 +14,10 @@ through the string, setting a cell in rows to the current character. Join
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ZigZagConversion.py
 
 .. literalinclude:: ../solutions/medium/ZigZagConversion.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

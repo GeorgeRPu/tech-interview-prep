@@ -16,11 +16,10 @@ plaindrome.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/LongestPalindromicSubstring.py
 
 .. literalinclude:: ../solutions/medium/LongestPalindromicSubstring.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

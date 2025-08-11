@@ -16,11 +16,10 @@ vary in :math:`[left, right]`.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SetMatrixZeroes.py
 
 .. literalinclude:: ../solutions/medium/BitwiseANDOfNumbersRange.py
     :language: python
-    :lines: 37-
+    :lines: 34-
 
 Test
 ----

@@ -15,11 +15,10 @@ the number of ``True``.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/CountPrimes.py
 
 .. literalinclude:: ../solutions/medium/CountPrimes.py
     :language: python
-    :lines: 36-
+    :lines: 33-
 
 Test
 ----

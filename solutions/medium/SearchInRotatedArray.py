@@ -34,11 +34,10 @@ Initialize ``left`` and ``right`` to the start and end of the array.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SearchInRotatedArray.py
 
 .. literalinclude:: ../solutions/medium/SearchInRotatedArray.py
     :language: python
-    :lines: 54-
+    :lines: 51-
 
 Test
 ----

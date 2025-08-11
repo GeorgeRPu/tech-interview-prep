@@ -13,11 +13,10 @@ next iteration.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ThreeSum.py
 
 .. literalinclude:: ../solutions/medium/ThreeSum.py
     :language: python
-    :lines: 33-
+    :lines: 30-
 
 Test
 ----

@@ -13,11 +13,10 @@ the minimum node. Advance the ``list1``/``list2`` and previous node pointers.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/Merge2SortedLists.py
 
 .. literalinclude:: ../solutions/easy/MergeTwoSortedLists.py
     :language: python
-    :lines: 32-
+    :lines: 29-
 
 Test
 ----
@@ -29,14 +28,14 @@ Test
 1 -> 1 -> 2 -> 3 -> 4 -> 4
 """
 
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 
 
 class ListNode:
     """Node in a linked list.
     """
 
-    def __init__(self, val: int, next: Optional[ListNode] = None):
+    def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
         self.next = next
 
@@ -44,7 +43,7 @@ class ListNode:
         return str(self.val) + (' -> ' + str(self.next) if self.next is not None else '')
 
     @classmethod
-    def from_list(cls, list: List[int]) -> Optional[ListNode]:
+    def from_list(cls, list: List[int]) -> ListNode | None:
         head = None
         for el in list:
             if head is None:
@@ -56,7 +55,7 @@ class ListNode:
         return head
 
 
-def merge_2_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+def merge_2_lists(list1: ListNode | None, list2: ListNode | None) -> ListNode | None:
     """Merge two sorted linked lists.
     """
     new_head = None
@@ -74,7 +73,7 @@ def merge_2_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optio
     return new_head
 
 
-def minimum(list1: Optional[ListNode], list2: Optional[ListNode]) -> Tuple[Optional[ListNode]]:
+def minimum(list1: ListNode | None, list2: ListNode | None) -> Tuple[ListNode | None]:
     """Return the minimum node of ``list1`` and ``list2`` and advances the that
     pointer.
     """

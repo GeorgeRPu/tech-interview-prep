@@ -19,11 +19,10 @@ that this is equivalent to the middle case since ``Node = prev.next.next``.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/RemoveNthNodeFromEndOfList.py
 
 .. literalinclude:: ../solutions/medium/RemoveNthNodeFromEndOfList.py
     :language: python
-    :lines: 42-
+    :lines: 39-
 
 Test
 ----
@@ -39,14 +38,14 @@ None
 [1]
 """
 
-from typing import List, Optional
+from typing import List
 
 
 class ListNode:
     """Node in a linked list.
     """
 
-    def __init__(self, val: int, next: Optional[ListNode] = None):
+    def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
         self.next = next
 
@@ -58,9 +57,9 @@ class ListNode:
         return list
 
     @classmethod
-    def from_list(cls, list: List[int]) -> Optional[ListNode]:
-        head: Optional[ListNode] = None
-        prev_node: Optional[ListNode] = None
+    def from_list(cls, list: List[int]) -> ListNode | None:
+        head: ListNode | None = None
+        prev_node: ListNode | None = None
         for el in list:
             node = ListNode(el)
             if head is None:
@@ -72,7 +71,7 @@ class ListNode:
         return head
 
 
-def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
+def removeNthFromEnd(head: ListNode | None, n: int) -> ListNode | None:
     """Remove the nth node from the end of the linked list starting at ``head``.
     """
     node = head

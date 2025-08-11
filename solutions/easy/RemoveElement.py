@@ -13,11 +13,10 @@ the current element ``nums[i + offset]`` is unequal to ``val``, then copy
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/RemoveElement.py
 
 .. literalinclude:: ../solutions/easy/RemoveElement.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

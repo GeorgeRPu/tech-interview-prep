@@ -12,11 +12,10 @@ all the chilren are ``None``.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/BinaryTreeZigzagLevelOrderTraversal.py
 
 .. literalinclude:: ../solutions/medium/BinaryTreeLevelOrderTraversal.py
     :language: python
-    :lines: 36-
+    :lines: 33-
 
 Test
 ----
@@ -33,7 +32,7 @@ Test
 """
 
 
-from typing import Optional, List
+from typing import List
 
 
 class TreeNode:
@@ -46,7 +45,7 @@ class TreeNode:
         self.right = right
 
 
-def levelOrder(root: Optional[TreeNode]) -> List[List[int]]:
+def levelOrder(root: TreeNode | None) -> List[List[int]]:
     """Return the level order traversal of a binary tree.
     """
     traversal = []

@@ -24,7 +24,7 @@ TreeNode(2, TreeNode(3, None, None), TreeNode(1, None, None))
 True
 """
 
-from typing import List, Optional
+from typing import List
 
 
 class TreeNode:
@@ -37,7 +37,7 @@ class TreeNode:
         self.right = right
 
     @classmethod
-    def from_list(cls, list: List[int]) -> Optional[TreeNode]:
+    def from_list(cls, list: List[int]) -> TreeNode | None:
         """Creates a binary tree from a list of integers pre-order.
         """
         if len(list) == 0:
@@ -62,7 +62,7 @@ class TreeNode:
         return f'TreeNode({self.val}, {self.left}, {self.right})'
 
 
-def invertTree(root: Optional[TreeNode]) -> Optional[TreeNode]:
+def invertTree(root: TreeNode | None) -> TreeNode | None:
     """Inverts a binary tree by swapping the left and right nodes.
     """
     if root is None:

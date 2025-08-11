@@ -12,11 +12,10 @@ contanins 0's, then ``s`` and ``t`` are anagrams.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ValidAnagram.py
 
 .. literalinclude:: ../solutions/easy/ValidAnagram.py
     :language: python
-    :lines: 31-
+    :lines: 28-
 
 Test
 ----

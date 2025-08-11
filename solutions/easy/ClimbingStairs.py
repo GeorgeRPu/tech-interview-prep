@@ -12,11 +12,10 @@ must be either a 1 or a 2 step jump. Thus ::
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ClimbingStairs.py
 
 .. literalinclude:: ../solutions/easy/ClimbingStairs.py
     :language: python
-    :lines: 30-
+    :lines: 27-
 
 Test
 ----

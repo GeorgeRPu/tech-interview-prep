@@ -13,11 +13,10 @@ save time on dictionary creation, we store a dictionary for each group.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/GroupAnagrams.py
 
 .. literalinclude:: ../solutions/medium/GroupAnagrams.py
     :language: python
-    :lines: 33-
+    :lines: 30-
 
 Test
 ----

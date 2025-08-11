@@ -12,11 +12,10 @@ can use recursion. If both roots are ``None``, then they are equal. If one is
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SameTree.py
 
 .. literalinclude:: ../solutions/easy/SameTree.py
     :language: python
-    :lines: 38-
+    :lines: 35-
 
 Test
 ----
@@ -35,7 +34,6 @@ False
 False
 """
 
-from typing import Optional
 
 
 class TreeNode:
@@ -48,7 +46,7 @@ class TreeNode:
         self.right = right
 
 
-def isSameTree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+def isSameTree(p: TreeNode | None, q: TreeNode | None) -> bool:
     """Checks if two binary trees with roots ``p`` and ``q`` are equal.
     """
     if p is None and q is None:

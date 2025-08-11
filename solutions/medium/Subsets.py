@@ -19,11 +19,10 @@ vector :math:`b`. The power set of ``nums`` is equal to
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/Subsets.py
 
 .. literalinclude:: ../solutions/medium/Subsets.py
     :language: python
-    :lines: 41-
+    :lines: 38-
 
 Test
 ----

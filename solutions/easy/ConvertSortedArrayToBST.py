@@ -12,11 +12,10 @@ left half to form the left subtree and the right half to form the right subtree.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ConvertSortedArrayToBST.py
 
 .. literalinclude:: ../solutions/easy/ConvertSortedArrayToBST.py
     :language: python
-    :lines: 32-
+    :lines: 30-
 
 Test
 ----
@@ -29,7 +28,7 @@ Test
 [3, 1]
 """
 
-from typing import List, Optional
+from typing import List
 
 
 class TreeNode:
@@ -42,7 +41,7 @@ class TreeNode:
         self.right = right
 
 
-def sortedArrayToBST(nums: List[int]) -> Optional[TreeNode]:
+def sortedArrayToBST(nums: List[int]) -> TreeNode | None:
     """Convert the sorted array ``nums`` to a balanced binary search tree.
     """
     if len(nums) == 0:
@@ -54,7 +53,7 @@ def sortedArrayToBST(nums: List[int]) -> Optional[TreeNode]:
     return root
 
 
-def tree2list(root: Optional[TreeNode]) -> List[int]:
+def tree2list(root: TreeNode | None) -> List[int]:
     """Convert a binary tree preorder to a list.
     """
     if root is None:

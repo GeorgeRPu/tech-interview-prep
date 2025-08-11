@@ -13,11 +13,10 @@ inwards if ``list[i] == list[j]``.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/PalindromeLinkedList.py
 
 .. literalinclude:: ../solutions/easy/PalindromeLinkedList.py
     :language: python
-    :lines: 34-
+    :lines: 31-
 
 Test
 ----
@@ -31,20 +30,20 @@ False
 """
 
 
-from typing import List, Optional
+from typing import List
 
 
 class ListNode:
     """Node in a linked list.
     """
 
-    def __init__(self, val: int, next: Optional[ListNode] = None):
+    def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
         self.next = next
 
     @classmethod
-    def from_list(cls, list: List[int]) -> Optional[ListNode]:
-        head: Optional[ListNode] = None
+    def from_list(cls, list: List[int]) -> ListNode | None:
+        head: ListNode | None = None
         for el in list:
             if head is None:
                 head = ListNode(el)
@@ -55,7 +54,7 @@ class ListNode:
         return head
 
 
-def isPalindrome(head: Optional[ListNode]) -> bool:
+def isPalindrome(head: ListNode | None) -> bool:
     """Checks if the linked list is a palindrome.
     """
     list = []

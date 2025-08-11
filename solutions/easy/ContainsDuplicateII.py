@@ -17,11 +17,10 @@ index of the current number in ``d``. If we reach the end of ``nums``, return
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ContainsDuplicateII.py
 
 .. literalinclude:: ../solutions/easy/ContainsDuplicateII.py
     :language: python
-    :lines: 37-
+    :lines: 34-
 
 Test
 ----

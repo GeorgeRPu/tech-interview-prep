@@ -16,11 +16,10 @@ the expansion
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ReverseInteger.py
 
 .. literalinclude:: ../solutions/medium/ReverseInteger.py
     :language: python
-    :lines: 30-
+    :lines: 27-
 
 Test
 ----

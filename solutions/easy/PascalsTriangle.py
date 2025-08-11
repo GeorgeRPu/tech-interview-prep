@@ -18,11 +18,10 @@ north-west. The first/last entry is always 1.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/PascalsTriangle.py
 
 .. literalinclude:: ../solutions/easy/PascalsTriangle.py
     :language: python
-    :lines: 36-
+    :lines: 33-
 
 Test
 ----

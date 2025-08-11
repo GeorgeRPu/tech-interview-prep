@@ -17,11 +17,10 @@ of all elements except the element at index :math:`i`.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ProductOfArrayExceptSelf.py
 
 .. literalinclude:: ../solutions/medium/ProductOfArrayExceptSelf.py
     :language: python
-    :lines: 35-
+    :lines: 32-
 
 Test
 ----

@@ -21,11 +21,10 @@ Otherwise, set the next node ``node.next = ListNode(digit)`` and advance the
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/AddTwoNumbers.py
 
 .. literalinclude:: ../solutions/medium/AddTwoNumbers.py
     :language: python
-    :lines: 47-
+    :lines: 44-
 
 Test
 ----
@@ -44,14 +43,13 @@ Test
 [8, 9, 9, 9, 0, 0, 0, 1]
 """
 
-from typing import Optional
 
 
 class ListNode:
     """Node in a linked list.
     """
 
-    def __init__(self, val: int, next: Optional[ListNode] = None):
+    def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
         self.next = next
 
@@ -63,8 +61,8 @@ class ListNode:
         return list
 
     @classmethod
-    def from_list(cls, list: ListNode[int]) -> Optional[ListNode]:
-        head: Optional[ListNode] = None
+    def from_list(cls, list: ListNode[int]) -> ListNode | None:
+        head: ListNode | None = None
         for el in list:
             if head is None:
                 head = ListNode(el)
@@ -75,7 +73,7 @@ class ListNode:
         return head
 
 
-def addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]):
+def addTwoNumbers(l1: ListNode | None, l2: ListNode | None):
     """Add two numbers whose digits are stored in little endian linked lists.
     """
     head = None

@@ -12,11 +12,10 @@ check if any node in the second linked list with ``headB`` is in the set.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/IntersectionOfTwoLinkedLists.py
 
 .. literalinclude:: ../solutions/easy/IntersectionOfTwoLinkedLists.py
     :language: python
-    :lines: 38-
+    :lines: 36-
 
 Test
 ----
@@ -35,20 +34,20 @@ Test
 True
 """
 
-from typing import List, Optional
+from typing import List
 
 
 class ListNode:
     """Node in a linked list.
     """
 
-    def __init__(self, val: int, next: Optional[ListNode] = None) -> None:
+    def __init__(self, val: int, next: ListNode | None = None) -> None:
         self.val = val
         self.next = next
 
     @classmethod
-    def from_list(cls, list: List[int]) -> Optional[ListNode]:
-        head: Optional[ListNode] = None
+    def from_list(cls, list: List[int]) -> ListNode | None:
+        head: ListNode | None = None
         for el in list:
             if head is None:
                 head = ListNode(el)
@@ -59,7 +58,7 @@ class ListNode:
         return head
 
 
-def getIntersectionNode(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+def getIntersectionNode(headA: ListNode, headB: ListNode) -> ListNode | None:
     """Gets the first node where two linked lists intersect. Returns ``None``
     if there is no intersection.
     """

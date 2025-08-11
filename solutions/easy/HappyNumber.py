@@ -11,11 +11,10 @@ continue.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/HappyNumber.py
 
 .. literalinclude:: ../solutions/easy/HappyNumber.py
     :language: python
-    :lines: 31-
+    :lines: 28-
 
 
 Test

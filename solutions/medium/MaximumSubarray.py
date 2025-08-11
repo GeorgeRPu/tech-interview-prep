@@ -1,4 +1,4 @@
-__doc__ = r"""
+r"""
 Problem
 -------
 https://leetcode.com/problems/maximum-subarray/
@@ -18,11 +18,10 @@ sum dips below 0, reset it to 0.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MaximumSubarray.py
 
 .. literalinclude:: ../solutions/medium/MaximumSubarray.py
     :language: python
-    :lines: 32-
+    :lines: 29-
 
 Test
 ----

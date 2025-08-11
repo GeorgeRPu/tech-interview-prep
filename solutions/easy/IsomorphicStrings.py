@@ -17,11 +17,10 @@ the character in ``t``.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/IsomorphicStrings.py
 
 .. literalinclude:: ../solutions/easy/IsomorphicStrings.py
     :language: python
-    :lines: 38-
+    :lines: 35-
 
 Test
 ----

@@ -12,11 +12,10 @@ length.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/WordPattern.py
 
 .. literalinclude:: ../solutions/easy/WordPattern.py
     :language: python
-    :lines: 33-
+    :lines: 30-
 
 Test
 ----

@@ -12,11 +12,10 @@ range string based on whether the start equals the end.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/SummaryRanges.py
 
 .. literalinclude:: ../solutions/easy/SummaryRanges.py
     :language: python
-    :lines: 30-
+    :lines: 27-
 
 Test
 ----

@@ -12,11 +12,10 @@ heights are equal, move the pointer whose inward height is larger.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ContainerWithMostWater.py
 
 .. literalinclude:: ../solutions/medium/ContainerWithMostWater.py
     :language: python
-    :lines: 33-
+    :lines: 30-
 
 Test
 ----

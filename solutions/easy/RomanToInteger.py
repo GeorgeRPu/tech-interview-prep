@@ -13,11 +13,10 @@ numeral. Otherwise add up the numeral values.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/RomanToInteger.py
 
 .. literalinclude:: ../solutions/easy/RomanToInteger.py
     :language: python
-    :lines: 34-
+    :lines: 31-
 
 Test
 ----

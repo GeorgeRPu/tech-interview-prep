@@ -16,11 +16,10 @@ list.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/IntersectionOfTwoArrays.py
 
 .. literalinclude:: ../solutions/easy/IntersectionOfTwoArraysII.py
     :language: python
-    :lines: 34-
+    :lines: 31-
 
 Test
 ----

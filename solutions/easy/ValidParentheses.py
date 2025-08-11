@@ -12,11 +12,10 @@ False. At the end, the stack should be empty for the string to be valid.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ValidParentheses.py
 
 .. literalinclude:: ../solutions/easy/ValidParentheses.py
     :language: python
-    :lines: 33-
+    :lines: 30-
 
 Test
 ----

@@ -19,11 +19,10 @@ the limit of left and right parentheses.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/GenerateParentheses.py
 
 .. literalinclude:: ../solutions/medium/GenerateParentheses.py
     :language: python
-    :lines: 37-
+    :lines: 34-
 
 Test
 ----

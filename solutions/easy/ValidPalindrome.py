@@ -13,11 +13,10 @@ characters, move them inwards.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/ValidPalindrome.py
 
 .. literalinclude:: ../solutions/easy/ValidPalindrome.py
     :language: python
-    :lines: 36-
+    :lines: 33-
 
 Test
 ----

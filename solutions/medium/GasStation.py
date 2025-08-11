@@ -15,11 +15,10 @@ it must be in ``[i + 1, n]``.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/GasStation.py
 
 .. literalinclude:: ../solutions/medium/GasStation.py
     :language: python
-    :lines: 37-
+    :lines: 34-
 
 Test
 ----

@@ -13,11 +13,10 @@ range.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/Sqrtx.py
 
 .. literalinclude:: ../solutions/easy/Sqrtx.py
     :language: python
-    :lines: 30-
+    :lines: 27-
 
 Test
 ----

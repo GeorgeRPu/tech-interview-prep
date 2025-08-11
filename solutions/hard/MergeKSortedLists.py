@@ -14,11 +14,10 @@ end of the new list.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MergeKSortedLists.py
 
 .. literalinclude:: ../solutions/hard/MergeKSortedLists.py
     :language: python
-    :lines: 34-
+    :lines: 31-
 
 Test
 ----
@@ -32,14 +31,14 @@ Test
 """
 
 import heapq
-from typing import List, Optional
+from typing import List
 
 
 class ListNode:
     """Node in a linked list.
     """
 
-    def __init__(self, val: int, next: Optional[ListNode] = None):
+    def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
         self.next = next
 
@@ -53,9 +52,9 @@ class ListNode:
         return str(self.val) + (' -> ' + str(self.next) if self.next is not None else '')
 
     @classmethod
-    def from_list(cls, list: List[int]) -> Optional[ListNode]:
-        head: Optional[ListNode] = None
-        prev_node: Optional[ListNode] = None
+    def from_list(cls, list: List[int]) -> ListNode | None:
+        head: ListNode | None = None
+        prev_node: ListNode | None = None
         for el in list:
             node = ListNode(el)
             if head is None:
@@ -67,13 +66,13 @@ class ListNode:
         return head
 
 
-def merge_k_lists(heads: List[Optional[ListNode]]) -> Optional[ListNode]:
+def merge_k_lists(heads: List[ListNode | None]) -> ListNode | None:
     """Merge k sorted linked lists.
     """
     not_none_heads: List[ListNode] = [head for head in heads if head is not None]
     heapq.heapify(not_none_heads)
-    new_head: Optional[ListNode] = None
-    prev_node: Optional[ListNode] = None
+    new_head: ListNode | None = None
+    prev_node: ListNode | None = None
     while len(not_none_heads) > 0:
         node = heapq.heappop(not_none_heads)
         if new_head is None:

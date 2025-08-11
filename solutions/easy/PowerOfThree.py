@@ -11,11 +11,10 @@ Note that, if :math:`n = 3^x`, :math:`n` can never be negative. For positive
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/PowerOfThree.py
 
 .. literalinclude:: ../solutions/easy/PowerOfThree.py
     :language: python
-    :lines: 32-
+    :lines: 29-
 
 Test
 ----

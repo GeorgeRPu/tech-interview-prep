@@ -29,11 +29,10 @@ elements in ``nums``.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/MissingNumber.py
 
 .. literalinclude:: ../solutions/easy/MissingNumber.py
     :language: python
-    :lines: 51-
+    :lines: 48-
 
 Test
 ----

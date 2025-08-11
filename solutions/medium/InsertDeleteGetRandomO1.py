@@ -14,11 +14,10 @@ in the array.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/InsertDeleteGetRandomO1.py
 
 .. literalinclude:: ../solutions/medium/InsertDeleteGetRandomO1.py
     :language: python
-    :lines: 44-
+    :lines: 41-
 
 Test
 ----

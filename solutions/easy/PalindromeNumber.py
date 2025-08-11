@@ -11,11 +11,10 @@ palindrome.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/PalindromeNumber.py
 
 .. literalinclude:: ../solutions/easy/PalindromeNumber.py
     :language: python
-    :lines: 31-
+    :lines: 28-
 
 Test
 ----

@@ -12,11 +12,10 @@ next level will also be reversed.
 
 Code
 ----
-https://github.com/GeorgeRPu/tech-interview-prep/blob/main/solutions/BinaryTreeZigzagLevelOrderTraversal.py
 
 .. literalinclude:: ../solutions/medium/BinaryTreeZigzagLevelOrderTraversal.py
     :language: python
-    :lines: 33-
+    :lines: 30-
 
 Test
 ----
@@ -30,7 +29,7 @@ Test
 []
 """
 
-from typing import List, Optional
+from typing import List
 
 
 class TreeNode:
@@ -43,7 +42,7 @@ class TreeNode:
         self.right = right
 
 
-def zigzagLevelOrder(root: Optional[TreeNode]) -> List[List[int]]:
+def zigzagLevelOrder(root: TreeNode | None) -> List[List[int]]:
     """Traverse a binary tree in level order but zigzaging from left to right
     and right to left.
     """
