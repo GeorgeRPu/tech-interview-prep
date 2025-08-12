@@ -17,8 +17,13 @@ update-lines:
 	@echo "[update-lines] Adjusting :lines: options in solution docstrings"
 	@$(PYTHON) scripts/update_literalinclude_lines.py
 
+api-doc:
+	sphinx-apidoc -o generated solutions/easy
+	sphinx-apidoc -o generated solutions/medium
+	sphinx-apidoc -o generated solutions/hard
+
 # Override the html target so we can ensure literalinclude line ranges are up to date before building.
-html: update-lines
+html: update-lines api-doc
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 .PHONY: format fmt

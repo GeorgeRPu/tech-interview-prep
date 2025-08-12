@@ -17,7 +17,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/DeleteNodeInALinkedList.py
     :language: python
-    :lines: 33-
+    :lines: 35-
 
 Test
 ----
