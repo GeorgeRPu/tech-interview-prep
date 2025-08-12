@@ -21,10 +21,19 @@ api-doc:
 	sphinx-apidoc -o generated solutions/easy
 	sphinx-apidoc -o generated solutions/medium
 	sphinx-apidoc -o generated solutions/hard
+	@$(PYTHON) scripts/prune_module_suffix.py
 
 # Override the html target so we can ensure literalinclude line ranges are up to date before building.
 html: update-lines api-doc
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+# Custom clean: also wipe generated/ RST files
+.PHONY: clean
+clean:
+	@echo "[clean] Removing build/ and generated/*.rst"
+	@rm -rf "$(BUILDDIR)"
+	@find generated -type f -name '*.rst' -maxdepth 1 -delete 2>/dev/null || true
+	@echo "[clean] Done."
 
 .PHONY: format fmt
 format fmt:
