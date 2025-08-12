@@ -13,7 +13,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ValidSudoku.py
     :language: python
-    :lines: 47-
+    :lines: 49-
 
 Test
 ----

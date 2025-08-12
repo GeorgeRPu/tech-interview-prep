@@ -16,7 +16,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ThreeSum.py
     :language: python
-    :lines: 30-
+    :lines: 32-
 
 Test
 ----

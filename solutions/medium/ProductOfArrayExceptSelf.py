@@ -20,7 +20,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ProductOfArrayExceptSelf.py
     :language: python
-    :lines: 32-
+    :lines: 34-
 
 Test
 ----

@@ -16,7 +16,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ValidPalindrome.py
     :language: python
-    :lines: 33-
+    :lines: 35-
 
 Test
 ----

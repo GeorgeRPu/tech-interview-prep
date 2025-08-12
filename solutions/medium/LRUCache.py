@@ -18,7 +18,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/LRUCache.py
     :language: python
-    :lines: 39-
+    :lines: 43-
 
 Test
 ----

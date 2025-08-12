@@ -15,7 +15,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ValidAnagram.py
     :language: python
-    :lines: 28-
+    :lines: 30-
 
 Test
 ----

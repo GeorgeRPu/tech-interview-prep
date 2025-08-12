@@ -21,7 +21,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/PascalsTriangle.py
     :language: python
-    :lines: 33-
+    :lines: 35-
 
 Test
 ----

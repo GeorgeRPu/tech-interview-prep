@@ -1,0 +1,21 @@
+[tool.black]
+line-length = 88
+target-version = ["py311", "py312", "py313"]
+include = '\\.(py|pyi)$'
+exclude = '''
+/(\n  build\n  | \\.git\n  | \\.venv\n  | _static\n  | _templates\n  | generated\n  | build/html/.venv\n)/
+'''
+
+[project]
+name = "tech-interview-prep"
+version = "0.0.0"
+description = "Interview prep solutions and Sphinx docs"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "George Pu"}]
+
+[project.optional-dependencies]
+dev = [
+  "black>=24.0.0",
+]

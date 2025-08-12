@@ -16,7 +16,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MergeTwoSortedLists.py
     :language: python
-    :lines: 29-
+    :lines: 31-
 
 Test
 ----

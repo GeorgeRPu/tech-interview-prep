@@ -15,7 +15,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/SameTree.py
     :language: python
-    :lines: 35-
+    :lines: 39-
 
 Test
 ----

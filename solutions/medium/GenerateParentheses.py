@@ -22,7 +22,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/GenerateParentheses.py
     :language: python
-    :lines: 34-
+    :lines: 37-
 
 Test
 ----

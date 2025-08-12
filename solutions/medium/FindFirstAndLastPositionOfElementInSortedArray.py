@@ -20,7 +20,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/FindFirstAndLastPositionOfElementInSortedArray.py
     :language: python
-    :lines: 34-
+    :lines: 36-
 
 Test
 ----

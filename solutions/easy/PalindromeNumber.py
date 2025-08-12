@@ -14,7 +14,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/PalindromeNumber.py
     :language: python
-    :lines: 28-
+    :lines: 31-
 
 Test
 ----

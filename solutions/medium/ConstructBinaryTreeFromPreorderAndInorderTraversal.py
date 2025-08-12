@@ -18,7 +18,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/AddTwoNumbers.py
     :language: python
-    :lines: 40-
+    :lines: 42-
 
 Test
 ----

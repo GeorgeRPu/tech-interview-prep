@@ -16,7 +16,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/LinkedListCycle.py
     :language: python
-    :lines: 35-
+    :lines: 37-
 
 Test
 ----

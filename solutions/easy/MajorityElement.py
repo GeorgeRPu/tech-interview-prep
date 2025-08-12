@@ -13,7 +13,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MajorityElement.py
     :language: python
-    :lines: 27-
+    :lines: 29-
 
 Test
 ----

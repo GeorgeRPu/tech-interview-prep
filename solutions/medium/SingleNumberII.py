@@ -17,7 +17,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/SingleNumberII.py
     :language: python
-    :lines: 32-
+    :lines: 31-
 
 Test
 ----

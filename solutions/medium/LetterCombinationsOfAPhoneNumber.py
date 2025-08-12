@@ -13,7 +13,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/LetterCombinationsOfAPhoneNumber.py
     :language: python
-    :lines: 27-
+    :lines: 29-
 
 Test
 ----

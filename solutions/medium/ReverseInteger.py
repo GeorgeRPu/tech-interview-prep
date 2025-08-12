@@ -19,7 +19,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ReverseInteger.py
     :language: python
-    :lines: 27-
+    :lines: 36-
 
 Test
 ----

@@ -15,7 +15,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ContainerWithMostWater.py
     :language: python
-    :lines: 30-
+    :lines: 29-
 
 Test
 ----

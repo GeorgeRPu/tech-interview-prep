@@ -16,7 +16,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MergeSortedArray.py
     :language: python
-    :lines: 40-
+    :lines: 41-
 
 Test
 ----
@@ -37,7 +37,6 @@ Test
 >>> nums1
 [1]
 """
-
 
 from typing import List
 

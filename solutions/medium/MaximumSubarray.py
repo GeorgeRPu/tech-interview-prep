@@ -21,7 +21,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/MaximumSubarray.py
     :language: python
-    :lines: 29-
+    :lines: 35-
 
 Test
 ----

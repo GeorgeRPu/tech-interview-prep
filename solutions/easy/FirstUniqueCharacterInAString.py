@@ -14,7 +14,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/FirstUniqueCharacterInAString.py
     :language: python
-    :lines: 29-
+    :lines: 31-
 
 Test
 ----

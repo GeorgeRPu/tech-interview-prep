@@ -19,7 +19,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/IntersectionOfTwoArraysII.py
     :language: python
-    :lines: 31-
+    :lines: 33-
 
 Test
 ----

@@ -15,7 +15,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ClimbingStairs.py
     :language: python
-    :lines: 27-
+    :lines: 29-
 
 Test
 ----

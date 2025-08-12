@@ -13,7 +13,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/PlusOne.py
     :language: python
-    :lines: 25-
+    :lines: 27-
 
 Test
 ----

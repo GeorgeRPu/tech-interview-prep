@@ -17,7 +17,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/BinaryTreeInorderTraversal.py
     :language: python
-    :lines: 34-
+    :lines: 36-
 
 Test
 ----

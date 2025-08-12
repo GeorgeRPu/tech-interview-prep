@@ -15,7 +15,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/SummaryRanges.py
     :language: python
-    :lines: 27-
+    :lines: 29-
 
 Test
 ----

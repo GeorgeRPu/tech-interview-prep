@@ -25,7 +25,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/Pow.py
     :language: python
-    :lines: 40-
+    :lines: 42-
 
 Test
 ----

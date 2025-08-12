@@ -32,7 +32,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MissingNumber.py
     :language: python
-    :lines: 48-
+    :lines: 50-
 
 Test
 ----

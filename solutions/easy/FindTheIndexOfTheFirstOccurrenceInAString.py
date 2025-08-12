@@ -13,7 +13,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/FindTheIndexOfTheFirstOccurrenceInAString.py
     :language: python
-    :lines: 26-
+    :lines: 28-
 
 Test
 ----

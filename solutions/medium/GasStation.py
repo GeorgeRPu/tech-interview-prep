@@ -18,7 +18,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/GasStation.py
     :language: python
-    :lines: 34-
+    :lines: 36-
 
 Test
 ----

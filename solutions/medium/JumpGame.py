@@ -17,7 +17,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/JumpGame.py
     :language: python
-    :lines: 29-
+    :lines: 31-
 
 Test
 ----

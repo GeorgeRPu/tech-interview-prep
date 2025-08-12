@@ -22,7 +22,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/Subsets.py
     :language: python
-    :lines: 38-
+    :lines: 40-
 
 Test
 ----

@@ -15,7 +15,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/IntersectionOfTwoLinkedLists.py
     :language: python
-    :lines: 36-
+    :lines: 37-
 
 Test
 ----

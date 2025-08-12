@@ -13,7 +13,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/LengthOfLastWord.py
     :language: python
-    :lines: 28-
+    :lines: 30-
 
 Test
 ----

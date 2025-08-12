@@ -13,7 +13,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MaximumDepthOfBinaryTree.py
     :language: python
-    :lines: 27-
+    :lines: 30-
 
 Test
 ----
@@ -25,7 +25,6 @@ Test
 >>> maxDepth(root)
 2
 """
-
 
 
 class TreeNode:

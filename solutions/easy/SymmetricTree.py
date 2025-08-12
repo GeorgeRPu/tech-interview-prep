@@ -28,7 +28,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/SymmetricTree.py
     :language: python
-    :lines: 43-
+    :lines: 47-
 
 Test
 ----

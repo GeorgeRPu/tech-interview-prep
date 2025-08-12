@@ -13,7 +13,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/LongestCommonPrefix.py
     :language: python
-    :lines: 26-
+    :lines: 28-
 
 Test
 ----

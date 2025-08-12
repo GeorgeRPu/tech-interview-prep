@@ -15,7 +15,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/BinaryTreeLevelOrderTraversal.py
     :language: python
-    :lines: 33-
+    :lines: 35-
 
 Test
 ----

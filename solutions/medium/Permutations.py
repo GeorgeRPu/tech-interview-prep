@@ -15,7 +15,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/Permutations.py
     :language: python
-    :lines: 29-
+    :lines: 31-
 
 Test
 ----

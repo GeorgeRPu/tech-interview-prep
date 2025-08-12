@@ -13,4 +13,7 @@ pip install -r requirements.txt
 ## Building the Documentation
 
 ```bash
+make clean
+make format
 make html
+```

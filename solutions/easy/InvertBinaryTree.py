@@ -3,12 +3,21 @@ from __future__ import annotations
 __doc__ = """
 Problem
 -------
+https://leetcode.com/problems/invert-binary-tree/description/
 
 Solution
 --------
+Observe that when we invert the tree, we can do it in 2 steps:
+1. Swap the left and right children of the root.
+2. Invert the left and right subtrees.
+This gives a recursive algorithm to invert a binary tree.
 
 Code
 ----
+
+.. literalinclude:: ../solutions/easy/InvertBinaryTree.py
+    :language: python
+    :lines: 36-
 
 Test
 ----

@@ -16,7 +16,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/RemoveElement.py
     :language: python
-    :lines: 32-
+    :lines: 34-
 
 Test
 ----

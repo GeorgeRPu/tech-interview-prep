@@ -18,7 +18,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/IntegerToRoman.py
     :language: python
-    :lines: 33-
+    :lines: 35-
 
 Test
 ----

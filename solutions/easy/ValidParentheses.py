@@ -15,7 +15,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ValidParentheses.py
     :language: python
-    :lines: 30-
+    :lines: 32-
 
 Test
 ----

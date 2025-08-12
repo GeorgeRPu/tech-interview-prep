@@ -26,7 +26,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/RotateImage.py
     :language: python
-    :lines: 42-
+    :lines: 44-
 
 Test
 ----

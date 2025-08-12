@@ -17,7 +17,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/InsertDeleteGetRandomO1.py
     :language: python
-    :lines: 41-
+    :lines: 43-
 
 Test
 ----

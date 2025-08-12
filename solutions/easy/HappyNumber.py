@@ -14,7 +14,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/HappyNumber.py
     :language: python
-    :lines: 28-
+    :lines: 30-
 
 
 Test

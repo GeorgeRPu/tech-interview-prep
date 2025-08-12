@@ -15,7 +15,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/HIndex.py
     :language: python
-    :lines: 30-
+    :lines: 29-
 
 Test
 ----

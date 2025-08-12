@@ -16,7 +16,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/RansomNote.py
     :language: python
-    :lines: 31-
+    :lines: 33-
 
 Test
 ----

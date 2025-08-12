@@ -14,7 +14,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/IsSubsequence.py
     :language: python
-    :lines: 27-
+    :lines: 29-
 
 Test
 ----

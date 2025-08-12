@@ -19,7 +19,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/LengthOfLongestSubstring.py
     :language: python
-    :lines: 34-
+    :lines: 36-
 
 Test
 ----

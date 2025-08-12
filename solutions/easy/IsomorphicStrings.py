@@ -20,7 +20,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/IsomorphicStrings.py
     :language: python
-    :lines: 35-
+    :lines: 37-
 
 Test
 ----

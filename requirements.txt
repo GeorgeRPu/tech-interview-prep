@@ -3,3 +3,4 @@ sphinx-copybutton
 sphinx-design
 sphinx-prompt
 sphinx-rtd-theme
+black>=24.0.0

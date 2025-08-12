@@ -19,7 +19,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/LongestPalindromicSubstring.py
     :language: python
-    :lines: 32-
+    :lines: 34-
 
 Test
 ----

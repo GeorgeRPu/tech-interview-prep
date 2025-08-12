@@ -37,7 +37,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/SearchInRotatedArray.py
     :language: python
-    :lines: 51-
+    :lines: 53-
 
 Test
 ----

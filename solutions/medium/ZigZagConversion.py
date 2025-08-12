@@ -17,7 +17,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ZigZagConversion.py
     :language: python
-    :lines: 32-
+    :lines: 34-
 
 Test
 ----

@@ -18,7 +18,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/TwoSum.py
     :language: python
-    :lines: 32-
+    :lines: 34-
 
 Test
 ----
