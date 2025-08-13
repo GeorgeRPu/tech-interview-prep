@@ -1,6 +1,4 @@
-from __future__ import annotations
-
-__doc__ = """
+"""
 Problem
 -------
 https://leetcode.com/problems/remove-nth-node-from-end-of-list/

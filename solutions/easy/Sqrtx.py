@@ -1,4 +1,4 @@
-__doc__ = r"""
+r"""
 Problem
 -------
 https://leetcode.com/problems/sqrtx/
@@ -16,7 +16,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/Sqrtx.py
     :language: python
-    :lines: 27-
+    :lines: 31-
 
 Test
 ----
