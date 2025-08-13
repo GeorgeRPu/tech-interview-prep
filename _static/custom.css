@@ -1,0 +1,13 @@
+/* Sidebar text wrapping adjustments */
+
+nav .toctree-wrapper a, /* generic toctree links */
+nav .toctree-l1 > a,
+nav .toctree-l2 > a,
+nav .toctree-l3 > a {
+  white-space: normal !important;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Optional: if bullets get misaligned due to wrapping, ensure left padding accommodates multi-line */
+.wy-menu-vertical li a { display: block; }
