@@ -1,4 +1,6 @@
-"""
+from __future__ import annotations
+
+__doc__ = """
 Problem
 -------
 https://leetcode.com/problems/sort-list/
