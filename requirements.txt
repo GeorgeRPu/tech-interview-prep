@@ -1,7 +1,0 @@
-black>=24.0.0
-Sphinx==8.2.3
-sphinx-copybutton
-sphinx-design
-sphinx-prompt
-sphinx-rtd-theme
-sphinxcontrib-googleanalytics

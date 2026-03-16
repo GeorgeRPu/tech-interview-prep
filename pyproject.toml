@@ -14,6 +14,15 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [{name = "George Pu"}]
+dependencies = [
+    "black>=26.3.1",
+    "sphinx>=9.0.4",
+    "sphinx-copybutton>=0.5.2",
+    "sphinx-design>=0.7.0",
+    "sphinx-prompt>=1.10.2",
+    "sphinx-rtd-theme>=3.1.0",
+    "sphinxcontrib-googleanalytics>=0.5",
+]
 
 [project.optional-dependencies]
 dev = [

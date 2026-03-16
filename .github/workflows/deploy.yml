@@ -29,26 +29,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
         with:
           python-version: '3.13'
-          cache: 'pip'
       - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install --upgrade --requirement requirements.txt
+        run: uv sync
       - name: Make
         run: |
-          make clean && make doctest && make html
+          uv run make clean && uv run make doctest && uv run make html
       - name: Setup Pages
+        if: ${{ !env.ACT }}
         uses: actions/configure-pages@v5
       - name: Upload artifact
+        if: ${{ !env.ACT }}
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload only html
           path: 'build/html'
       - name: Deploy to GitHub Pages
+        if: ${{ !env.ACT }}
         id: deployment
         uses: actions/deploy-pages@v4
