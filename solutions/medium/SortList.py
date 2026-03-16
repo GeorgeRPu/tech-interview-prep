@@ -14,7 +14,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/SortList.py
     :language: python
-    :lines: 30-
+    :lines: 32-
 
 Test
 ----

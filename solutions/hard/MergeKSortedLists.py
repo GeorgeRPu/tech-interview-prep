@@ -17,7 +17,7 @@ Code
 
 .. literalinclude:: ../solutions/hard/MergeKSortedLists.py
     :language: python
-    :lines: 31-
+    :lines: 33-
 
 Test
 ----

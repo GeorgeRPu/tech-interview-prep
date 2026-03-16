@@ -22,7 +22,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/RemoveNthNodeFromEndOfList.py
     :language: python
-    :lines: 39-
+    :lines: 41-
 
 Test
 ----

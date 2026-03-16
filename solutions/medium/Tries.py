@@ -27,7 +27,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/Tries.py
     :language: python
-    :lines: 44-
+    :lines: 46-
 
 Test
 ----

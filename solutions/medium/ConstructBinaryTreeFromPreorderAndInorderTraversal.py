@@ -16,7 +16,7 @@ the left subtree and the right half of ``inorder``.
 Code
 ----
 
-.. literalinclude:: ../solutions/medium/AddTwoNumbers.py
+.. literalinclude:: ../solutions/medium/ConstructBinaryTreeFromPreorderAndInorderTraversal.py
     :language: python
     :lines: 42-
 

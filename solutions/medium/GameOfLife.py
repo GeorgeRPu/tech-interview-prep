@@ -14,9 +14,9 @@ each cell before updating the board.
 Code
 ----
 
-.. literalinclude:: ../solutions/medium/AddTwoNumbers.py
+.. literalinclude:: ../solutions/medium/GameOfLife.py
     :language: python
-    :lines: 32-
+    :lines: 34-
 
 Test
 ----
