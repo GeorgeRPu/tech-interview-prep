@@ -14,8 +14,8 @@ help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 .PHONY: help Makefile
 update-lines:
-	@echo "[update-lines] Adjusting :lines: options in solution docstrings"
-	@$(PYTHON) scripts/update_literalinclude_lines.py
+	@echo "[update-lines] Adjusting literalinclude directives in solution docstrings"
+	@$(PYTHON) scripts/update_literalinclude.py
 
 api-doc:
 	sphinx-apidoc -o generated solutions/easy

@@ -1,24 +1,14 @@
 #!/usr/bin/env python3
-"""Prune trailing " module" from top-level titles in generated RST files.
+"""Strip the trailing " module" suffix from titles in generated RST files.
 
-Usage:
-  python scripts/prune_module_suffix.py        # modifies files in-place
-
-Environment:
-  DRY_RUN=1  -> show planned changes without writing.
-
-Behavior:
-  * Scans the ``generated`` directory for ``*.rst`` files.
-  * For each file, looks at the first heading (a line followed by ===== / ---- etc.).
-  * If the heading text ends with " module" (case insensitive), the suffix is removed
-    and the underline length is adjusted to match the new title length.
-  * Idempotent: running again makes no further changes.
-  * Skips ``modules.rst`` (often a master toctree) by default, unless ``--all`` is passed.
+Sphinx autodoc appends " module" to the title of every generated RST file. This script
+scans the ``generated`` directory, detects that suffix in each file's first heading, removes
+it, and adjusts the RST underline to match the new title length. Running it more than once
+is safe — files that are already clean are left untouched.
 """
 from __future__ import annotations
 
 import argparse
-import os
 from pathlib import Path
 import sys
 
@@ -77,13 +67,14 @@ def process_file(path: Path, dry_run: bool) -> bool:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Prune trailing ' module' from RST titles")
     parser.add_argument("--all", action="store_true", help="Also process modules.rst")
+    parser.add_argument("--dry-run", action="store_true", help="Preview changes without writing")
     args = parser.parse_args(argv)
 
     if not GENERATED.is_dir():
         print(f"[prune-module] Directory not found: {GENERATED}", file=sys.stderr)
         return 2
 
-    dry_run = os.environ.get("DRY_RUN") == "1"
+    dry_run = args.dry_run
     changed = []
     skipped = 0
     for rst in sorted(GENERATED.glob("*.rst")):
