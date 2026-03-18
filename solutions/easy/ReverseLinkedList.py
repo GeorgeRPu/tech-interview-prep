@@ -1,9 +1,55 @@
-from __future__ import annotations
-
-__doc__ = """
+"""
 Problem
 -------
 https://leetcode.com/problems/reverse-linked-list/
+
+Given the ``head`` of a singly linked list, reverse the list, and return
+*the reversed list*.
+
+ 
+
+**Example 1:**
+
+|image1|
+
+::
+
+
+   Input: head = [1,2,3,4,5]
+   Output: [5,4,3,2,1]
+
+**Example 2:**
+
+|image2|
+
+::
+
+
+   Input: head = [1,2]
+   Output: [2,1]
+
+**Example 3:**
+
+::
+
+
+   Input: head = []
+   Output: []
+
+ 
+
+**Constraints:**
+
+- The number of nodes in the list is the range ``[0, 5000]``.
+- ``-5000 <= Node.val <= 5000``
+
+ 
+
+**Follow up:** A linked list can be reversed either iteratively or
+recursively. Could you implement both?
+
+.. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg
+.. |image2| image:: https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg
 
 Solution
 --------
@@ -16,7 +62,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ReverseLinkedList.py
     :language: python
-    :lines: 33-
+    :lines: 32-
 
 Test
 ----
@@ -31,6 +77,7 @@ Test
 >>> reverseList(head).to_list()
 [1]
 """
+from __future__ import annotations
 
 from typing import List
 

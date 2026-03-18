@@ -43,3 +43,10 @@ The workflow uses `if: ${{ !env.ACT }}` guards on the Pages-specific steps (conf
 ```bash
 act push -P ubuntu-latest=catthehacker/ubuntu:act-latest
 ```
+
+## Roadmap
+
+- [ ] **Common patterns index** — Group existing solutions by technique (two pointers, sliding window, BFS/DFS, backtracking, dynamic programming) so problems can be studied by concept rather than by name.
+- [ ] **Blind 75 / NeetCode 150 coverage tracker** — A page showing which problems from these canonical prep lists are covered and which are still missing, providing a clear study roadmap.
+- [ ] **Big O annotations** — Add time and space complexity to each solution's docstring and surface it in the documentation.
+- [ ] **CONTRIBUTING.md** — Document the expected file structure, doctest format, and solution explanation style to guide external contributors.

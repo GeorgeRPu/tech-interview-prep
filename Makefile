@@ -17,6 +17,12 @@ update-lines:
 	@echo "[update-lines] Adjusting literalinclude directives in solution docstrings"
 	@$(PYTHON) scripts/update_literalinclude.py
 
+fetch-descriptions:
+	@echo "[fetch-descriptions] Fetching LeetCode problem descriptions"
+	@$(PYTHON) scripts/fetch_leetcode_description.py $(FILES)
+
+.PHONY: fetch-descriptions
+
 api-doc:
 	sphinx-apidoc -o generated solutions/easy
 	sphinx-apidoc -o generated solutions/medium

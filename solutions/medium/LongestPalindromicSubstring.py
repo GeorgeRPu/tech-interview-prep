@@ -3,6 +3,35 @@ Problem
 -------
 https://leetcode.com/problems/longest-palindromic-substring/
 
+Given a string ``s``, return *the longest* palindromic substring in
+``s``.
+
+ 
+
+**Example 1:**
+
+::
+
+
+   Input: s = "babad"
+   Output: "bab"
+   Explanation: "aba" is also a valid answer.
+
+**Example 2:**
+
+::
+
+
+   Input: s = "cbbd"
+   Output: "bb"
+
+ 
+
+**Constraints:**
+
+- ``1 <= s.length <= 1000``
+- ``s`` consist of only digits and English letters.
+
 Solution
 --------
 Any palindromic substring can have odd or even length. If the substring has odd
@@ -19,7 +48,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/LongestPalindromicSubstring.py
     :language: python
-    :lines: 34-
+    :lines: 63-
 
 Test
 ----

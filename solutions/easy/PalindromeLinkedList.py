@@ -1,9 +1,47 @@
-from __future__ import annotations
-
-__doc__ = """
+"""
 Problem
 -------
 https://leetcode.com/problems/palindrome-linked-list/
+
+Given the ``head`` of a singly linked list, return ``true`` *if it is a*
+palindrome *or* ``false`` *otherwise*.
+
+ 
+
+**Example 1:**
+
+|image1|
+
+::
+
+
+   Input: head = [1,2,2,1]
+   Output: true
+
+**Example 2:**
+
+|image2|
+
+::
+
+
+   Input: head = [1,2]
+   Output: false
+
+ 
+
+**Constraints:**
+
+- The number of nodes in the list is in the range
+  ``[1, 10``\ :sup:```5```\ ``]``.
+- ``0 <= Node.val <= 9``
+
+ 
+
+**Follow up:** Could you do it in ``O(n)`` time and ``O(1)`` space?
+
+.. |image1| image:: https://assets.leetcode.com/uploads/2021/03/03/pal1linked-list.jpg
+.. |image2| image:: https://assets.leetcode.com/uploads/2021/03/03/pal2linked-list.jpg
 
 Solution
 --------
@@ -16,7 +54,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/PalindromeLinkedList.py
     :language: python
-    :lines: 31-
+    :lines: 29-
 
 Test
 ----
@@ -28,7 +66,7 @@ True
 >>> isPalindrome(head)
 False
 """
-
+from __future__ import annotations
 
 from typing import List
 

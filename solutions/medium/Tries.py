@@ -1,6 +1,4 @@
-from __future__ import annotations
-
-__doc__ = """
+"""
 Problem
 -------
 https://www.hackerrank.com/challenges/ctci-contacts/problem
@@ -27,7 +25,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/Tries.py
     :language: python
-    :lines: 46-
+    :lines: 43-
 
 Test
 ----
@@ -42,6 +40,7 @@ Test
 >>> trie.strings_starting_with('b')
 ['bees']
 """
+from __future__ import annotations
 
 from typing import List
 

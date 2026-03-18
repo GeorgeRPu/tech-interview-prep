@@ -3,6 +3,45 @@ Problem
 -------
 https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 
+Given an integer array ``nums`` where the elements are sorted in
+**ascending order**, convert *it to a* height-balanced *binary search
+tree*.
+
+ 
+
+**Example 1:**
+
+|image1|
+
+::
+
+
+   Input: nums = [-10,-3,0,5,9]
+   Output: [0,-3,9,-10,null,5]
+   Explanation: [0,-10,5,null,-3,null,9] is also accepted:
+
+**Example 2:**
+
+|image2|
+
+::
+
+
+   Input: nums = [1,3]
+   Output: [3,1]
+   Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
+
+ 
+
+**Constraints:**
+
+- ``1 <= nums.length <= 10``\ :sup:```4```
+- ``-10``\ :sup:```4```\ ``<= nums[i] <= 10``\ :sup:```4```
+- ``nums`` is sorted in a **strictly increasing** order.
+
+.. |image1| image:: https://assets.leetcode.com/uploads/2021/02/18/btree1.jpg
+.. |image2| image:: https://assets.leetcode.com/uploads/2021/02/18/btree.jpg
+
 Solution
 --------
 A balanced binary tree will have the middle element of ``nums`` as the root,
@@ -15,7 +54,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ConvertSortedArrayToBST.py
     :language: python
-    :lines: 31-
+    :lines: 70-
 
 Test
 ----

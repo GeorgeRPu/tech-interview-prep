@@ -3,6 +3,66 @@ Problem
 -------
 https://leetcode.com/problems/valid-parentheses/
 
+Given a string ``s`` containing just the characters ``'('``, ``')'``,
+``'{'``, ``'}'``, ``'['`` and ``']'``, determine if the input string is
+valid.
+
+An input string is valid if:
+
+#. Open brackets must be closed by the same type of brackets.
+#. Open brackets must be closed in the correct order.
+#. Every close bracket has a corresponding open bracket of the same
+   type.
+
+ 
+
+**Example 1:**
+
+.. container:: example-block
+
+   **Input:** s = "()"
+
+   **Output:** true
+
+**Example 2:**
+
+.. container:: example-block
+
+   **Input:** s = "()[]{}"
+
+   **Output:** true
+
+**Example 3:**
+
+.. container:: example-block
+
+   **Input:** s = "(]"
+
+   **Output:** false
+
+**Example 4:**
+
+.. container:: example-block
+
+   **Input:** s = "([])"
+
+   **Output:** true
+
+**Example 5:**
+
+.. container:: example-block
+
+   **Input:** s = "([)]"
+
+   **Output:** false
+
+ 
+
+**Constraints:**
+
+- ``1 <= s.length <= 10``\ :sup:```4```
+- ``s`` consists of parentheses only ``'()[]{}'``.
+
 Solution
 --------
 This is a classic use case for stacks. For each opening parenthesis, push it
@@ -15,7 +75,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ValidParentheses.py
     :language: python
-    :lines: 32-
+    :lines: 92-
 
 Test
 ----

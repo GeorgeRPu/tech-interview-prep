@@ -3,6 +3,55 @@ Problem
 -------
 https://leetcode.com/problems/same-tree/
 
+Given the roots of two binary trees ``p`` and ``q``, write a function to
+check if they are the same or not.
+
+Two binary trees are considered the same if they are structurally
+identical, and the nodes have the same value.
+
+ 
+
+**Example 1:**
+
+|image1|
+
+::
+
+
+   Input: p = [1,2,3], q = [1,2,3]
+   Output: true
+
+**Example 2:**
+
+|image2|
+
+::
+
+
+   Input: p = [1,2], q = [1,null,2]
+   Output: false
+
+**Example 3:**
+
+|image3|
+
+::
+
+
+   Input: p = [1,2,1], q = [1,1,2]
+   Output: false
+
+ 
+
+**Constraints:**
+
+- The number of nodes in both trees is in the range ``[0, 100]``.
+- ``-10``\ :sup:```4```\ ``<= Node.val <= 10``\ :sup:```4```
+
+.. |image1| image:: https://assets.leetcode.com/uploads/2020/12/20/ex1.jpg
+.. |image2| image:: https://assets.leetcode.com/uploads/2020/12/20/ex2.jpg
+.. |image3| image:: https://assets.leetcode.com/uploads/2020/12/20/ex3.jpg
+
 Solution
 --------
 Two tree are equal if and only if their roots are equal and their left and
@@ -15,7 +64,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/SameTree.py
     :language: python
-    :lines: 39-
+    :lines: 88-
 
 Test
 ----

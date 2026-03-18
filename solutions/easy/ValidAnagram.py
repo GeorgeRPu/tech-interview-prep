@@ -3,6 +3,39 @@ Problem
 -------
 https://leetcode.com/problems/valid-anagram/
 
+Given two strings ``s`` and ``t``, return ``true`` if ``t`` is an
+anagram of ``s``, and ``false`` otherwise.
+
+ 
+
+**Example 1:**
+
+.. container:: example-block
+
+   **Input:** s = "anagram", t = "nagaram"
+
+   **Output:** true
+
+**Example 2:**
+
+.. container:: example-block
+
+   **Input:** s = "rat", t = "car"
+
+   **Output:** false
+
+ 
+
+**Constraints:**
+
+- ``1 <= s.length, t.length <= 5 * 10``\ :sup:```4```
+- ``s`` and ``t`` consist of lowercase English letters.
+
+ 
+
+**Follow up:** What if the inputs contain Unicode characters? How would
+you adapt your solution to such a case?
+
 Solution
 --------
 For two strings to be anagrams, they must have the same number of each
@@ -15,7 +48,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ValidAnagram.py
     :language: python
-    :lines: 30-
+    :lines: 63-
 
 Test
 ----
