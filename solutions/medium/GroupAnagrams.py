@@ -57,12 +57,16 @@ will be equal. For each string, check whether it is an anagram of any of the
 existing groups. If so, add it to that group. Otherwise, create a new group. To
 save time on dictionary creation, we store a dictionary for each group.
 
+Pattern
+-------
+Array, Hash Table, String, Sorting
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/GroupAnagrams.py
     :language: python
-    :lines: 78-
+    :lines: 82-
 
 Test
 ----

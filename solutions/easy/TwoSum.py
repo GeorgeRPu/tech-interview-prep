@@ -62,12 +62,16 @@ smaller ``nums[j]`` by decrementing ``j``. Stop when ``twosum == target``. This
 algorithm can find the ``twosum`` in :math:`O(n \\log n)` time and no extra
 space.
 
+Pattern
+-------
+Array, Hash Table
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/TwoSum.py
     :language: python
-    :lines: 83-
+    :lines: 87-
 
 Test
 ----

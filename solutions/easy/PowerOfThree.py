@@ -54,12 +54,16 @@ Note that, if :math:`n = 3^x`, :math:`n` can never be negative. For positive
 :math:`n``, check if :math:`n` is divisble by 3. If it is, divide :math:`n` by
 3 and check again. If it is not, then :math:`n` is not a power of 3.
 
+Pattern
+-------
+Math, Recursion
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/PowerOfThree.py
     :language: python
-    :lines: 76-
+    :lines: 80-
 
 Test
 ----

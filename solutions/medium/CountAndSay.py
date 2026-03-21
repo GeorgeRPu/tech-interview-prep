@@ -73,12 +73,16 @@ is the same as the previous digit, increment ``count`` by 1. Otherwise, append
 ``f'{count}{previous_digit}'`` to the count-and-say string and reset ``count``
 to 1.
 
+Pattern
+-------
+String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/CountAndSay.py
     :language: python
-    :lines: 93-
+    :lines: 97-
 
 Test
 ----

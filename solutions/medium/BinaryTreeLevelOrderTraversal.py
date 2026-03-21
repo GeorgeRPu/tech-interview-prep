@@ -50,12 +50,16 @@ all the nodes in the current level and add their values to the traversal. At
 the same time, add their children to the next level. We finish traversing once
 all the chilren are ``None``.
 
+Pattern
+-------
+Tree, Breadth-First Search, Binary Tree
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/BinaryTreeLevelOrderTraversal.py
     :language: python
-    :lines: 75-
+    :lines: 79-
 
 Test
 ----

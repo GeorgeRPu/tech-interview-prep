@@ -52,12 +52,16 @@ for each index 1 to :math:`n`, appending 'Fizz', then appending 'Buzz'. This sav
 if statement. Finally we can check if the output string is empty to determine
 whether we need to print the index.
 
+Pattern
+-------
+Math, String, Simulation
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/FizzBuzz.py
     :language: python
-    :lines: 69-
+    :lines: 73-
 
 Test
 ----

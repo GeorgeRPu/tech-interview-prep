@@ -47,12 +47,16 @@ negative, then the ransom note cannot be constructed from the magazine. A small
 optimization is to initialize the counter dictionary with all letters in the
 alphabet.
 
+Pattern
+-------
+Hash Table, String, Counting
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/RansomNote.py
     :language: python
-    :lines: 69-
+    :lines: 73-
 
 Test
 ----

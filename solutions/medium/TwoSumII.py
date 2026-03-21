@@ -69,12 +69,16 @@ is greater than ``target``, we can decrease ``twosum`` by using a smaller
 algorithm can find the ``twosum`` in :math:`O(n \\log n)` time and no extra
 space.
 
+Pattern
+-------
+Array, Two Pointers, Binary Search
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/TwoSumII.py
     :language: python
-    :lines: 90-
+    :lines: 94-
 
 Test
 ----

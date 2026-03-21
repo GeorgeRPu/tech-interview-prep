@@ -43,12 +43,16 @@ character. We can track the occurrences of each character in a dictionary,
 incrementing for ``s`` and decrementing for ``t``. If the dictionary only
 contanins 0's, then ``s`` and ``t`` are anagrams.
 
+Pattern
+-------
+Hash Table, String, Sorting
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/ValidAnagram.py
     :language: python
-    :lines: 63-
+    :lines: 67-
 
 Test
 ----

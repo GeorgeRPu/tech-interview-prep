@@ -55,12 +55,16 @@ the expansion
 
     r = \\sum_{i=0}^{n-1} 10^i d_i.
 
+Pattern
+-------
+Math
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/ReverseInteger.py
     :language: python
-    :lines: 77-
+    :lines: 81-
 
 Test
 ----

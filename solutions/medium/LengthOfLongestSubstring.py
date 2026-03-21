@@ -51,12 +51,16 @@ right until we find a duplicate character. At each iteration, if the current
 substring is longer than the longest, we update the length of the longest
 substring. Once we find a duplicate character, reset the seen characters.
 
+Pattern
+-------
+Hash Table, String, Sliding Window
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/LengthOfLongestSubstring.py
     :language: python
-    :lines: 73-
+    :lines: 77-
 
 Test
 ----

@@ -48,12 +48,16 @@ of ``citations`` such that all the citation counts to the left are at least as
 large as h. We can find this index by iterating through ``citations`` and
 breaking when the index becomes greater than the citation count.
 
+Pattern
+-------
+Array, Sorting, Counting Sort
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/HIndex.py
     :language: python
-    :lines: 67-
+    :lines: 71-
 
 Test
 ----

@@ -82,12 +82,16 @@ ahead to the next element by incrementing an offset. If the current element
 ``nums[i + offset]`` to ``nums[i]`` and increment ``i``. Repeat until
 ``i + offset`` is out of bounds.
 
+Pattern
+-------
+Array, Two Pointers
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/RemoveDuplicatesFromSortedArrayII.py
     :language: python
-    :lines: 105-
+    :lines: 109-
 
 Test
 ----

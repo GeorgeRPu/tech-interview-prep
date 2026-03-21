@@ -59,12 +59,16 @@ Instead use  ``len(range(0, stop, step))`` to find the quotient. Since
 the sign of the quotient when :math:`(dividend < 0) \\oplus (divisor < 0)`.
 Clamp the quotient to be in :math:`[-2^{31}, 2^{31} - 1]`.
 
+Pattern
+-------
+Math, Bit Manipulation
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/DivideTwoIntegers.py
     :language: python
-    :lines: 79-
+    :lines: 83-
 
 Test
 ----

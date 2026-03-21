@@ -44,12 +44,16 @@ the integer :math:`x` that appears once by modding the sum by 3. If :math:`x`
 is negative, then the bit values will be in 2's complement form. We can convert
 unsigned integers to 2's complement by subtracting :math:`2^{32}`.
 
+Pattern
+-------
+Array, Bit Manipulation
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/SingleNumberII.py
     :language: python
-    :lines: 63-
+    :lines: 67-
 
 Test
 ----

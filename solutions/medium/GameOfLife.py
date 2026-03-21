@@ -87,12 +87,16 @@ get the neighbor indices, only taking those where :math:`0 \leq i' < m` and
 :math:`0 \leq j < n`. Make sure to calculate the number of live neighbors for
 each cell before updating the board.
 
+Pattern
+-------
+Array, Matrix, Simulation
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/GameOfLife.py
     :language: python
-    :lines: 34-
+    :lines: 114-
 
 Test
 ----

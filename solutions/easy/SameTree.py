@@ -59,12 +59,16 @@ right subtrees are equal. To check if the left and right subtrees are equal, we
 can use recursion. If both roots are ``None``, then they are equal. If one is
 ``None`` and the other is not, then they are not equal.
 
+Pattern
+-------
+Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/SameTree.py
     :language: python
-    :lines: 88-
+    :lines: 92-
 
 Test
 ----

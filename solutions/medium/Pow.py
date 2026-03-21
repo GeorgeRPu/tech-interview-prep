@@ -61,12 +61,16 @@ recursive formula for :math:`x^n`.::
 Adjust for the case where :math:`n` is odd and for the case where :math:`n` is
 negative.
 
+Pattern
+-------
+Math, Recursion
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/Pow.py
     :language: python
-    :lines: 83-
+    :lines: 87-
 
 Test
 ----

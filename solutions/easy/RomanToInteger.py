@@ -85,12 +85,16 @@ position. Since there are only 6 instances of subtractive notation, we can
 store these in a set. If these are present, we subtract the value of the
 numeral. Otherwise add up the numeral values.
 
+Pattern
+-------
+Hash Table, Math, String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/RomanToInteger.py
     :language: python
-    :lines: 107-
+    :lines: 111-
 
 Test
 ----

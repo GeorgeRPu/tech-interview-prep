@@ -105,12 +105,16 @@ Solution
 Use a set to store the nodes in the first linked list with ``headA``. Then,
 check if any node in the second linked list with ``headB`` is in the set.
 
+Pattern
+-------
+Hash Table, Linked List, Two Pointers
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/IntersectionOfTwoLinkedLists.py
     :language: python
-    :lines: 34-
+    :lines: 135-
 
 Test
 ----

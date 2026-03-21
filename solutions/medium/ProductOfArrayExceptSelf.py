@@ -56,12 +56,16 @@ reverse to compute the product of all elements ``nums[i + 1:]`` and multiply
 the result by the corresponding element in ``products`` to obtains the product
 of all elements except the element at index :math:`i`.
 
+Pattern
+-------
+Array, Prefix Sum
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/ProductOfArrayExceptSelf.py
     :language: python
-    :lines: 75-
+    :lines: 79-
 
 Test
 ----

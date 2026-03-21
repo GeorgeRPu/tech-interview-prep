@@ -72,12 +72,16 @@ Solution
 Check that each row, column, and 3x3 square contains no duplicates and contains
 the digits 1-9. Return ``False`` if these conditions don't hold.
 
+Pattern
+-------
+Array, Hash Table, Matrix
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/ValidSudoku.py
     :language: python
-    :lines: 113-
+    :lines: 117-
 
 Test
 ----

@@ -49,12 +49,16 @@ Save the contents of the linked list in a regular list ``list``. Then, use two
 pointers``i`` and ``j`` to check if ``list`` is a palindrome, moving them
 inwards if ``list[i] == list[j]``.
 
+Pattern
+-------
+Linked List, Two Pointers, Stack, Recursion
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/PalindromeLinkedList.py
     :language: python
-    :lines: 29-
+    :lines: 73-
 
 Test
 ----

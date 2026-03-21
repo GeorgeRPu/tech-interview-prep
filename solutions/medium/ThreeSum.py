@@ -58,12 +58,16 @@ Sort ``nums``. We can apply the 2Sum solution by iterating ``i`` from 0 to
 avoid duplicates. Moreover, if ``nums[i]`` is a repeat, we can continue to the
 next iteration.
 
+Pattern
+-------
+Array, Two Pointers, Sorting
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/ThreeSum.py
     :language: python
-    :lines: 79-
+    :lines: 83-
 
 Test
 ----

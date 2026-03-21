@@ -37,12 +37,16 @@ first order and pad the shorter bit string with 0s. Then, add the bits with the
 carry. The next bit is the sum modulo 2 and the carry is the sum divided by 2.
 At the end, if the carry is not 0, add it to the front of the string.
 
+Pattern
+-------
+Math, String, Bit Manipulation, Simulation
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/AddBinary.py
     :language: python
-    :lines: 57-
+    :lines: 61-
 
 Test
 ----

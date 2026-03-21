@@ -41,12 +41,16 @@ Solution
 Iterate through each character in the shortest string and check if it is in all
 other strings in ``strs``.
 
+Pattern
+-------
+Array, String, Trie
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/LongestCommonPrefix.py
     :language: python
-    :lines: 61-
+    :lines: 65-
 
 Test
 ----

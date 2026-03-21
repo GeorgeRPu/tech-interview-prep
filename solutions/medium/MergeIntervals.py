@@ -55,12 +55,16 @@ to merge the intervals to obtain :math:`[a, \\max(b, d)]`. Moreover, we only nee
 the next interval in ``intervals`` against the rightmost merged interval. This
 is because the merged intervals are all disjoint and sorted from left to right.
 
+Pattern
+-------
+Array, Sorting
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/MergeIntervals.py
     :language: python
-    :lines: 31-
+    :lines: 77-
 
 Test
 ----

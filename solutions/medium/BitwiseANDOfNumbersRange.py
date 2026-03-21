@@ -50,12 +50,16 @@ binary numbers in :math:`[left, right]` is the common prefix of :math:`left`
 and :math:`right` with all other bits set to 0, as the subsequent bits will
 vary in :math:`[left, right]`.
 
+Pattern
+-------
+Bit Manipulation
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/BitwiseANDOfNumbersRange.py
     :language: python
-    :lines: 72-
+    :lines: 76-
 
 Test
 ----

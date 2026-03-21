@@ -55,12 +55,16 @@ Create the new list by selecting the minimum node of ``list1`` and ``list2``,
 checking if either is ``None``. Set the ``next`` field of the previous node to
 the minimum node. Advance the ``list1``/``list2`` and previous node pointers.
 
+Pattern
+-------
+Linked List, Recursion
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/MergeTwoSortedLists.py
     :language: python
-    :lines: 28-
+    :lines: 78-
 
 Test
 ----

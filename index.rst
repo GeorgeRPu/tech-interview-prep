@@ -5,6 +5,12 @@ A collection of solutions to (software engineering) technical interview question
 
 .. toctree::
    :maxdepth: 1
+   :caption: Browse by Pattern
+
+   patterns
+
+.. toctree::
+   :maxdepth: 1
    :caption: Easy
 
    generated/AddBinary

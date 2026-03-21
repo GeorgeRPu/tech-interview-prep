@@ -53,12 +53,16 @@ Observe that when we invert the tree, we can do it in 2 steps:
 2. Invert the left and right subtrees.
 This gives a recursive algorithm to invert a binary tree.
 
+Pattern
+-------
+Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/InvertBinaryTree.py
     :language: python
-    :lines: 33-
+    :lines: 80-
 
 Test
 ----

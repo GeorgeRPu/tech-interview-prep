@@ -41,12 +41,16 @@ can reverse the list by swapping the outermost elements, moving inwards. ::
 
     s[i], s[end - i] = s[end - i], s[i]
 
+Pattern
+-------
+Two Pointers, String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/ReverseString.py
     :language: python
-    :lines: 65-
+    :lines: 69-
 
 Test
 ----

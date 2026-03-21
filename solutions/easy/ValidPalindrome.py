@@ -56,12 +56,16 @@ palindrome. We do this by using two pointers ``i`` and ``j`` at the beginning
 of ``s`` and at the end of ``s``. When both pointers are on non-alphanumeric
 characters, move them inwards.
 
+Pattern
+-------
+Two Pointers, String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/ValidPalindrome.py
     :language: python
-    :lines: 80-
+    :lines: 84-
 
 Test
 ----

@@ -56,12 +56,16 @@ day. ::
 
 We update ``buy_price`` only when we find a lower price.
 
+Pattern
+-------
+Array, Dynamic Programming
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/BestTimeToBuyAndSellStock.py
     :language: python
-    :lines: 76-
+    :lines: 80-
 
 Test
 ----

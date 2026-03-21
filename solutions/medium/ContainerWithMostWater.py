@@ -52,12 +52,16 @@ Since the area of a container is the product of its width and height, set the
 ``max_area``. Then, move the pointer with the smaller height inwards. If the
 heights are equal, move the pointer whose inward height is larger.
 
+Pattern
+-------
+Array, Two Pointers, Greedy
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/ContainerWithMostWater.py
     :language: python
-    :lines: 71-
+    :lines: 75-
 
 Test
 ----

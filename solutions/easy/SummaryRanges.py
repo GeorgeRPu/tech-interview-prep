@@ -61,12 +61,16 @@ and keep track of the start of the range. Keep iterating as long as the next
 element is consecutive. When the next element is not consecutive, create the
 range string based on whether the start equals the end.
 
+Pattern
+-------
+Array
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/SummaryRanges.py
     :language: python
-    :lines: 80-
+    :lines: 84-
 
 Test
 ----

@@ -53,12 +53,16 @@ dictionary ``d`` and the difference between the current index ``i`` and
 index of the current number in ``d``. If we reach the end of ``nums``, return
 ``False``.
 
+Pattern
+-------
+Array, Hash Table, Sliding Window
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/ContainsDuplicateII.py
     :language: python
-    :lines: 74-
+    :lines: 78-
 
 Test
 ----

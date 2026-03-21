@@ -45,12 +45,16 @@ Solution
 Use a dictionary to count the occurrences of each element in ``nums``. We can
 break early once the count of an element exceeds :math:`\\lfloor n/2 \\rfloor`.
 
+Pattern
+-------
+Array, Hash Table, Divide and Conquer, Sorting, Counting
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/MajorityElement.py
     :language: python
-    :lines: 66-
+    :lines: 70-
 
 Test
 ----

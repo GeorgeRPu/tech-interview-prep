@@ -61,12 +61,16 @@ zero all the rows and columns in the list of indices. We can make a small
 optimization to convert the indices to a seet to avoid setting a row or column
 to zero twice.
 
+Pattern
+-------
+Array, Hash Table, Matrix
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/SetMatrixZeroes.py
     :language: python
-    :lines: 84-
+    :lines: 88-
 
 Test
 ----

@@ -48,12 +48,16 @@ Right align the normal presentation of Pascal's Triangle. ::
 Observe that a middle entry is the sum of the entry directly above and to the
 north-west. The first/last entry is always 1.
 
+Pattern
+-------
+Array, Dynamic Programming
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/PascalsTriangle.py
     :language: python
-    :lines: 67-
+    :lines: 71-
 
 Test
 ----

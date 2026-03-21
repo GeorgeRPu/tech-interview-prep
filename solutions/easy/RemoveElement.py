@@ -79,12 +79,16 @@ the current element ``nums[i + offset]`` is unequal to ``val``, then copy
 ``nums[i + offset]`` to ``nums[i]`` and increment ``i``. Repeat until
 ``i + offset`` is out of bounds.
 
+Pattern
+-------
+Array, Two Pointers
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/RemoveElement.py
     :language: python
-    :lines: 102-
+    :lines: 106-
 
 Test
 ----

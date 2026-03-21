@@ -68,12 +68,16 @@ with characters in ``pattern`` and elements in ``s``. Since ``pattern`` and
 ``s`` can have different lenghts, we first check that they have the same
 length.
 
+Pattern
+-------
+Hash Table, String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/WordPattern.py
     :language: python
-    :lines: 90-
+    :lines: 94-
 
 Test
 ----

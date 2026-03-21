@@ -68,12 +68,16 @@ cannot complete the circuit starting at any station in ``[start, i]``. This is
 because the car had a non-empty tank until ``i``. Thus, if there is a solution,
 it must be in ``[i + 1, n]``.
 
+Pattern
+-------
+Array, Greedy
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/GasStation.py
     :language: python
-    :lines: 91-
+    :lines: 95-
 
 Test
 ----

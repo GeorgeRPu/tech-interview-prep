@@ -44,12 +44,16 @@ Solution
 First map each digit to a group of letters. We can generate letter combinations
 by appending each letter in the group to each combination.
 
+Pattern
+-------
+Hash Table, String, Backtracking
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/LetterCombinationsOfAPhoneNumber.py
     :language: python
-    :lines: 65-
+    :lines: 69-
 
 Test
 ----

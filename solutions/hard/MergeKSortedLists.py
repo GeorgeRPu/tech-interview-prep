@@ -58,12 +58,16 @@ Solution
 Same as merge 2 sorted linked lists: pick the smallest head and add it to the
 end of the new list.
 
+Pattern
+-------
+Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort
+
 Code
 ----
 
 .. literalinclude:: ../solutions/hard/MergeKSortedLists.py
     :language: python
-    :lines: 30-
+    :lines: 82-
 
 Test
 ----

@@ -70,12 +70,16 @@ the range set. Check injectivity, that the ``t`` character is not in the range
 set. If the character in ``s`` is in the dictionary, then check if it maps to
 the character in ``t``.
 
+Pattern
+-------
+Hash Table, String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/IsomorphicStrings.py
     :language: python
-    :lines: 92-
+    :lines: 96-
 
 Test
 ----

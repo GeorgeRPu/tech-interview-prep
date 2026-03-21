@@ -112,12 +112,16 @@ to calculate the the sum
 from 1 to :math:`n` quickly. Note that :math:`n` is one more than the number of
 elements in ``nums``.
 
+Pattern
+-------
+Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/MissingNumber.py
     :language: python
-    :lines: 135-
+    :lines: 139-
 
 Test
 ----

@@ -49,12 +49,16 @@ list of ``bool``s ``is_prime``. We mark the multiples of ``i`` as not prime by
 setting ``is_prime[c * i] = False`` for :math:`c > 2`. The number of primes is
 the number of ``True``.
 
+Pattern
+-------
+Array, Math, Enumeration, Number Theory
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/CountPrimes.py
     :language: python
-    :lines: 71-
+    :lines: 75-
 
 Test
 ----

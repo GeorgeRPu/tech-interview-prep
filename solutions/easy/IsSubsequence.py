@@ -51,12 +51,16 @@ If ``s`` is a subsequence of ``t``, then the characters in ``s`` should appear
 in ``t`` in order. Iterate through ``t`` and check if each character in ``s``
 appears in ``t`` in order.
 
+Pattern
+-------
+Two Pointers, String, Dynamic Programming
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/IsSubsequence.py
     :language: python
-    :lines: 71-
+    :lines: 75-
 
 Test
 ----

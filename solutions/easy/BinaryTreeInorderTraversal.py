@@ -72,12 +72,16 @@ subtree recursively. ::
         /        \\
     left (1)  right (3)
 
+Pattern
+-------
+Stack, Tree, Depth-First Search, Binary Tree
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/BinaryTreeInorderTraversal.py
     :language: python
-    :lines: 96-
+    :lines: 100-
 
 Test
 ----

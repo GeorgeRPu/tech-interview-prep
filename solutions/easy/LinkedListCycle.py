@@ -73,12 +73,16 @@ Set two pointers, ``a`` and ``b``, to ``head``. Move ``a`` 1 node at a time but
 move ``b`` 2 nodes at a time. If ``a`` and ``b`` ever point to the same node,
 then ``b`` must have wrapped around the linked list and caught up to ``a``.
 
+Pattern
+-------
+Hash Table, Linked List, Two Pointers
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/LinkedListCycle.py
     :language: python
-    :lines: 34-
+    :lines: 102-
 
 Test
 ----

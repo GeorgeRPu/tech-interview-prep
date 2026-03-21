@@ -57,12 +57,16 @@ Track the current ``node`` and ``prev`` node. At each step, store ``node.next``
 in a temporary variable. Set ``node.next`` to ``prev`` and then advance
 ``prev`` and ``node``.
 
+Pattern
+-------
+Linked List, Recursion
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/ReverseLinkedList.py
     :language: python
-    :lines: 32-
+    :lines: 84-
 
 Test
 ----

@@ -57,12 +57,16 @@ Count the number of times each number appears in each array in 2 dictionaries
 times to the intersection
 list.
 
+Pattern
+-------
+Array, Hash Table, Two Pointers, Binary Search, Sorting
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/IntersectionOfTwoArraysII.py
     :language: python
-    :lines: 76-
+    :lines: 80-
 
 Test
 ----

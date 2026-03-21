@@ -62,12 +62,16 @@ at the end of the array. We can move ``val`` to the end. To do this in
 :math:`O(1)` time. We can use a dictionary to store the indices of each element
 in the array.
 
+Pattern
+-------
+Array, Hash Table, Math, Design, Randomized
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/InsertDeleteGetRandomO1.py
     :language: python
-    :lines: 93-
+    :lines: 97-
 
 Test
 ----

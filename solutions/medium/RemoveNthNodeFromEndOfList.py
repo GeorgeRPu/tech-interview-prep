@@ -61,12 +61,16 @@ node.
 3. End: Set ``prev.next = None``` where ``prev`` is the penultimate node. Note
 that this is equivalent to the middle case since ``Node = prev.next.next``.
 
+Pattern
+-------
+Linked List, Two Pointers
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/RemoveNthNodeFromEndOfList.py
     :language: python
-    :lines: 38-
+    :lines: 88-
 
 Test
 ----

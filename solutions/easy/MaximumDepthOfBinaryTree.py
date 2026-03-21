@@ -43,12 +43,16 @@ Solution
 If ``root`` is ``None``, the height of a tree is 0. Otherwise, the height of a
 tree is the 1 plus the maximum of the heights of the left and right subtrees.
 
+Pattern
+-------
+Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/MaximumDepthOfBinaryTree.py
     :language: python
-    :lines: 65-
+    :lines: 69-
 
 Test
 ----

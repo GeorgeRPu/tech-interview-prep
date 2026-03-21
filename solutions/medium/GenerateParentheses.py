@@ -42,12 +42,16 @@ Observe that
 We can recursively add parenthesis according to these 2 rules until we exhaust
 the limit of left and right parentheses.
 
+Pattern
+-------
+String, Dynamic Programming, Backtracking
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/GenerateParentheses.py
     :language: python
-    :lines: 62-
+    :lines: 66-
 
 Test
 ----

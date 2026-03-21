@@ -50,12 +50,16 @@ Use a dictionary to count the number of times each character appears in ``s``.
 Iterate through the string again. The first character that has a count of 1 is
 the first unique character.
 
+Pattern
+-------
+Hash Table, String, Queue, Counting
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/FirstUniqueCharacterInAString.py
     :language: python
-    :lines: 72-
+    :lines: 76-
 
 Test
 ----

@@ -41,12 +41,16 @@ Solution
 Iterate through each character in ``haystack`` and check if the substring
 ``haystack[i:i + len(needle)]`` is equal to ``needle``.
 
+Pattern
+-------
+Two Pointers, String, String Matching
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/FindTheIndexOfTheFirstOccurrenceInAString.py
     :language: python
-    :lines: 61-
+    :lines: 65-
 
 Test
 ----

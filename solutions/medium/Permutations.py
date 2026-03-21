@@ -44,12 +44,16 @@ of ``nums[1:]``. If we prepend ``nums[1]`` to these permutations, we now have
 all permutations of ``nums`` that start with ``nums[1]``. Doing this for each
 :math:`n` in ``nums``, we can generate every permutation of ``nums``.
 
+Pattern
+-------
+Array, Backtracking
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/Permutations.py
     :language: python
-    :lines: 65-
+    :lines: 69-
 
 Test
 ----

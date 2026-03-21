@@ -62,12 +62,16 @@ iterate :math:`j = 0, 1, \dots, m - 1`. Afterwards the outermost shell of
 ``matrix`` is rotated. For each :math:`i = 0, 1, \dots, m - 1`, we only perform
 a rotation for :math:`j = i, 2, \dots, m - i`.
 
+Pattern
+-------
+Array, Math, Matrix
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/RotateImage.py
     :language: python
-    :lines: 85-
+    :lines: 89-
 
 Test
 ----

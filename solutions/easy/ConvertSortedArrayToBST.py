@@ -49,12 +49,16 @@ the 1/4 and 3/4 elements as the left and right children, and so on. Find the
 middle element of ``nums`` and divide ``nums`` into two halves. Repeat on the
 left half to form the left subtree and the right half to form the right subtree.
 
+Pattern
+-------
+Array, Divide and Conquer, Tree, Binary Search Tree, Binary Tree
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/ConvertSortedArrayToBST.py
     :language: python
-    :lines: 70-
+    :lines: 74-
 
 Test
 ----

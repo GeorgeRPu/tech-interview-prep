@@ -73,12 +73,16 @@ top or bottom of ``rows``, switch from zig to zag or zag to zig. Iterate
 through the string, setting a cell in rows to the current character. Join
 ``rows`` together row-wise to get the converted string.
 
+Pattern
+-------
+String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/ZigZagConversion.py
     :language: python
-    :lines: 95-
+    :lines: 99-
 
 Test
 ----

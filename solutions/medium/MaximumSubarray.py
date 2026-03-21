@@ -61,12 +61,16 @@ The only time we reset the sum is when :math:`s_{i-1} < 0`. Iterate through
 ``nums``, summing each element and updating the maximum sum as we go. If the
 sum dips below 0, reset it to 0.
 
+Pattern
+-------
+Array, Divide and Conquer, Dynamic Programming
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/MaximumSubarray.py
     :language: python
-    :lines: 80-
+    :lines: 84-
 
 Test
 ----

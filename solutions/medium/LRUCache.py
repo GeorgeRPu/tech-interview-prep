@@ -66,12 +66,16 @@ discard the items from the linked list and hashmap. To simplify the linked list
 implementation, we use a dummy head and tail node whose keys are negative
 values.
 
+Pattern
+-------
+Hash Table, Linked List, Design, Doubly-Linked List
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/LRUCache.py
     :language: python
-    :lines: 96-
+    :lines: 100-
 
 Test
 ----

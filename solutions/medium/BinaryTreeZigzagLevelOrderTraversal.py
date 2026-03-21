@@ -51,12 +51,16 @@ values if the depth is odd, starting at 0. The reason we reverse the order of
 the values instead of the order of the nodes is because then nodes added to the
 next level will also be reversed.
 
+Pattern
+-------
+Tree, Breadth-First Search, Binary Tree
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/BinaryTreeZigzagLevelOrderTraversal.py
     :language: python
-    :lines: 73-
+    :lines: 77-
 
 Test
 ----

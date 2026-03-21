@@ -51,12 +51,16 @@ Solution
 Strip all the whitespace from the end of the string, then split the string by
 spaces. The last element in the list is the last word in the string.
 
+Pattern
+-------
+String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/LengthOfLastWord.py
     :language: python
-    :lines: 73-
+    :lines: 77-
 
 Test
 ----

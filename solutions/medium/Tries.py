@@ -20,12 +20,16 @@ character (EOS). ::
            \\
             x - e - EOS
 
+Pattern
+-------
+Trie
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/Tries.py
     :language: python
-    :lines: 43-
+    :lines: 47-
 
 Test
 ----

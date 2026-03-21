@@ -110,12 +110,16 @@ followed by 'I' ``digit - 5`` times. Finally, if ``digit`` is 9, the Roman
 numeral is 'IX'. For digits in the tens, hundreds, and thousands places, the
 pattern holds, but with different symbols for ones, fives, and tens.
 
+Pattern
+-------
+Hash Table, Math, String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/IntegerToRoman.py
     :language: python
-    :lines: 132-
+    :lines: 136-
 
 Test
 ----

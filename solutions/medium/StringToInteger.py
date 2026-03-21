@@ -137,12 +137,16 @@ Track the value of the integer as in separate ``sign`` and ``value`` variables.
 4. Get all the numeric digits in the string.
 5. From the end, increase ``value`` by :math:`\\textrm{digit}_i * 10^i`. If ``value`` exceeds the int32 limits of :math:`[-2^{32}, 2^{32} - 1]`, clamp ``value``.
 
+Pattern
+-------
+String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/StringToInteger.py
     :language: python
-    :lines: 159-
+    :lines: 163-
 
 Test
 ----

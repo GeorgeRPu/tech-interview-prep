@@ -54,12 +54,16 @@ until we can no longer find ``target`` and use the previous ``left`` value as
 the lower bound. Similarly, we recursively perform binary search on the right
 half until we can no longer find target.
 
+Pattern
+-------
+Array, Binary Search
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/FindFirstAndLastPositionOfElementInSortedArray.py
     :language: python
-    :lines: 75-
+    :lines: 79-
 
 Test
 ----

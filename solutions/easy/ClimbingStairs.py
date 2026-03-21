@@ -46,12 +46,16 @@ must be either a 1 or a 2 step jump. Thus ::
 
     climbStairs(n) = climbStairs(n - 1) + climbStairs(n - 2)
 
+Pattern
+-------
+Math, Dynamic Programming, Memoization
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/ClimbingStairs.py
     :language: python
-    :lines: 65-
+    :lines: 69-
 
 Test
 ----

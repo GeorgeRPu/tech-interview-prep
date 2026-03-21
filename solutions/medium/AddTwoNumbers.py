@@ -65,12 +65,16 @@ If ``head`` is not set, set ``head = ListNode(digit)`` and ``node = head``.
 Otherwise, set the next node ``node.next = ListNode(digit)`` and advance the
 ``node`` pointer.
 
+Pattern
+-------
+Linked List, Math, Recursion
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/AddTwoNumbers.py
     :language: python
-    :lines: 43-
+    :lines: 95-
 
 Test
 ----

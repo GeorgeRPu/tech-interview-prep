@@ -46,12 +46,16 @@ that :math:`y^2 = x`. We can use binary search to find :math:`y` in the range
 of possible square roots to within 1, within 1, we return the beginning of the
 range.
 
+Pattern
+-------
+Math, Binary Search
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/Sqrtx.py
     :language: python
-    :lines: 66-
+    :lines: 70-
 
 Test
 ----

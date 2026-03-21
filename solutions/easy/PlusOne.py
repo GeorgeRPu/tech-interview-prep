@@ -60,12 +60,16 @@ Solution
 Add 1 to the end of the array. Start from the least signfinicant digit and
 carry any 1s to the next digit.
 
+Pattern
+-------
+Array, Math
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/PlusOne.py
     :language: python
-    :lines: 79-
+    :lines: 83-
 
 Test
 ----

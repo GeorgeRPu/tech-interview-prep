@@ -73,12 +73,16 @@ in the usual fashion by setting the previous node's ``next`` pointer to
 ``node.next``. Instead we can shift the values in the linked list to the left,
 dropping the tail node.
 
+Pattern
+-------
+Linked List
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/DeleteNodeInALinkedList.py
     :language: python
-    :lines: 32-
+    :lines: 99-
 
 Test
 ----

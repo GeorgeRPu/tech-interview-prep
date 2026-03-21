@@ -41,6 +41,8 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx_rtd_theme",
     "sphinxcontrib.googleanalytics",
+    "sphinxcontrib.jquery",
+    "sphinx_datatables",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -65,6 +67,9 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
 html_css_files = [
     "custom.css",
+]
+html_js_files = [
+    "js/patterns_filter.js",
 ]
 
 googleanalytics_id = "G-LE07FGQCP9"

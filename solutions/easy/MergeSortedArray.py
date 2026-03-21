@@ -72,12 +72,16 @@ the result list is ``nums1``. Naively merging the lists into ``nums1`` would
 overwrite entries in ``nums1`` that we still need to compare. To get around this,
 shift the entries in ``nums1`` to the end of the list, and then merge the lists.
 
+Pattern
+-------
+Array, Two Pointers, Sorting
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/MergeSortedArray.py
     :language: python
-    :lines: 102-
+    :lines: 106-
 
 Test
 ----

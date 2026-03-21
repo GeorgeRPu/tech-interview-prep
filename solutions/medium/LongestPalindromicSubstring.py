@@ -43,12 +43,16 @@ indices while checking that the substring is still a palindrome. When the
 palindrome exceeds the previous longest palindrome, replace the longest
 plaindrome.
 
+Pattern
+-------
+Two Pointers, String, Dynamic Programming
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/LongestPalindromicSubstring.py
     :language: python
-    :lines: 63-
+    :lines: 67-
 
 Test
 ----

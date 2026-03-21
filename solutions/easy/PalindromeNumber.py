@@ -52,12 +52,16 @@ Extract the digits from a number and store them in a list ``digits``. Then
 compare the list with its reverse ``digits[::-1]`` to check if the number is a
 palindrome.
 
+Pattern
+-------
+Math
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/PalindromeNumber.py
     :language: python
-    :lines: 74-
+    :lines: 78-
 
 Test
 ----

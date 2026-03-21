@@ -46,12 +46,16 @@ the last index, then we can reach the last index. At each step, update the
 furthest reachable index with the jump distance plus the current index if it is
 greater than the current furthest reachable index.
 
+Pattern
+-------
+Array, Dynamic Programming, Greedy
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/JumpGame.py
     :language: python
-    :lines: 65-
+    :lines: 69-
 
 Test
 ----

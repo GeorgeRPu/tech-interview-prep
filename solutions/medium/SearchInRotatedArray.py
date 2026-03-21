@@ -81,12 +81,16 @@ Initialize ``left`` and ``right`` to the start and end of the array.
   * If ``nums[mid] > target and nums[right] > target``, then ``target`` must be
     in :math:`R`.
 
+Pattern
+-------
+Array, Binary Search
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/SearchInRotatedArray.py
     :language: python
-    :lines: 102-
+    :lines: 106-
 
 Test
 ----

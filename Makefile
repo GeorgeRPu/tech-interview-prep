@@ -29,16 +29,23 @@ api-doc:
 	sphinx-apidoc -o generated solutions/hard
 	@$(PYTHON) scripts/prune_module_suffix.py
 
+generate-patterns:
+	@echo "[generate-patterns] Generating patterns.rst"
+	@$(PYTHON) scripts/generate_patterns_index.py
+
+.PHONY: generate-patterns
+
 # Override the html target so we can ensure literalinclude line ranges are up to date before building.
-html: update-lines api-doc
+html: update-lines api-doc generate-patterns
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 # Custom clean: also wipe generated/ RST files
 .PHONY: clean
 clean:
-	@echo "[clean] Removing build/ and generated/*.rst"
+	@echo "[clean] Removing build/, generated/*.rst, and patterns.rst"
 	@rm -rf "$(BUILDDIR)"
 	@find generated -type f -name '*.rst' -maxdepth 1 -delete 2>/dev/null || true
+	@rm -f patterns.rst
 	@echo "[clean] Done."
 
 .PHONY: format fmt

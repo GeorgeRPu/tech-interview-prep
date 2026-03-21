@@ -49,12 +49,16 @@ vector :math:`b`. The power set of ``nums`` is equal to
 
    \{ \{1\} \cup S : S \in P(\texttt{nums[1:]})\} \cup P(\texttt{nums[1:]})
 
+Pattern
+-------
+Array, Backtracking, Bit Manipulation
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/Subsets.py
     :language: python
-    :lines: 72-
+    :lines: 76-
 
 Test
 ----

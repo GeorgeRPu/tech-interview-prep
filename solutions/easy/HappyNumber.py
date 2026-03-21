@@ -50,12 +50,16 @@ For 1000 iterations, sum the squares of each digit. If the sum is 1, return
 ``True``. If the sum has been seen before, return ``False``. Otherwise,
 continue.
 
+Pattern
+-------
+Hash Table, Math, Two Pointers
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/HappyNumber.py
     :language: python
-    :lines: 71-
+    :lines: 75-
 
 
 Test

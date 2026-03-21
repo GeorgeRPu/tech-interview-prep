@@ -62,12 +62,16 @@ recursion, until both children are ``null``. ::
 The - nodes should be equal in value, while the + subtrees, and * subtrees should be
 mirror images.
 
+Pattern
+-------
+Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/SymmetricTree.py
     :language: python
-    :lines: 86-
+    :lines: 90-
 
 Test
 ----

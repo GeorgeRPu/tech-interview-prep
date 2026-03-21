@@ -70,12 +70,16 @@ onto the stack. For each closing parenthesis, pop the stack and check if the
 popped parenthesis belongs with the closing parenthesis. If it doesn't, return
 False. At the end, the stack should be empty for the string to be valid.
 
+Pattern
+-------
+String, Stack
+
 Code
 ----
 
 .. literalinclude:: ../solutions/easy/ValidParentheses.py
     :language: python
-    :lines: 92-
+    :lines: 96-
 
 Test
 ----

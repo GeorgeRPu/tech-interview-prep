@@ -56,12 +56,16 @@ Solution
 --------
 Use merge sort.
 
+Pattern
+-------
+Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/SortList.py
     :language: python
-    :lines: 29-
+    :lines: 82-
 
 Test
 ----

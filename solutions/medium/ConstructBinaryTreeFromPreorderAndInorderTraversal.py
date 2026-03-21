@@ -53,12 +53,16 @@ can then recursively build the left subtree by using the rest of the
 we build the right subtree by using the rest of the ``preorder`` from buliding
 the left subtree and the right half of ``inorder``.
 
+Pattern
+-------
+Array, Hash Table, Divide and Conquer, Tree, Binary Tree
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/ConstructBinaryTreeFromPreorderAndInorderTraversal.py
     :language: python
-    :lines: 82-
+    :lines: 86-
 
 Test
 ----

@@ -63,12 +63,16 @@ Use the built in Python functions for strings ``split`` to split the string,
 ``reversed`` to reverse the list, and ``join`` to join the list back into a
 string.
 
+Pattern
+-------
+Two Pointers, String
+
 Code
 ----
 
 .. literalinclude:: ../solutions/medium/ReverseWordsInAString.py
     :language: python
-    :lines: 85-
+    :lines: 89-
 
 Test
 ----
