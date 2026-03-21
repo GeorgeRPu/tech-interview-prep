@@ -46,6 +46,32 @@ The workflow uses `if: ${{ !env.ACT }}` guards on the Pages-specific steps (conf
 act push -P ubuntu-latest=catthehacker/ubuntu:act-latest
 ```
 
+## 🗂️ Package Structure
+
+```
+tech-interview-prep/
+├── solutions/              # Python solution files
+│   ├── easy/               # Easy difficulty solutions
+│   ├── medium/             # Medium difficulty solutions
+│   └── hard/               # Hard difficulty solutions
+├── generated/              # Auto-generated RST files (from sphinx-apidoc)
+├── scripts/                # Build-time utility scripts
+│   ├── fetch_leetcode_description.py
+│   ├── generate_patterns_index.py
+│   ├── update_literalinclude.py
+│   └── prune_module_suffix.py
+├── _static/                # Static assets (CSS, JS)
+├── _templates/             # Sphinx HTML templates
+├── build/                  # Build output (gitignored)
+├── conf.py                 # Sphinx configuration
+├── index.rst               # Documentation homepage
+├── patterns.rst            # Auto-generated technique index
+├── Makefile                # Build automation
+└── pyproject.toml          # Project metadata and dependencies
+```
+
+Each solution in `solutions/` is a standalone `.py` file containing the problem description, implementation, and embedded doctests in its docstring. The `generated/` directory is populated automatically during the build by `sphinx-apidoc` and should not be edited by hand.
+
 ## 🗺️ Roadmap
 
 - [x] **Solution pattern index** — Group existing solutions by technique (two pointers, sliding window, BFS/DFS, backtracking, dynamic programming) so problems can be studied by concept rather than by name.
