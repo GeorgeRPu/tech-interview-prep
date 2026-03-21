@@ -71,11 +71,3 @@ tech-interview-prep/
 ```
 
 Each solution in `solutions/` is a standalone `.py` file containing the problem description, implementation, and embedded doctests in its docstring. The `generated/` directory is populated automatically during the build by `sphinx-apidoc` and should not be edited by hand.
-
-## 🗺️ Roadmap
-
-- [x] **Solution pattern index** — Group existing solutions by technique (two pointers, sliding window, BFS/DFS, backtracking, dynamic programming) so problems can be studied by concept rather than by name.
-- [ ] **Blind 75 / NeetCode 150 coverage tracker** — A page showing which problems from these canonical prep lists are covered and which are still missing, providing a clear study roadmap.
-- [ ] **Big O annotations** — Add time and space complexity to each solution's docstring and surface it in the documentation.
-- [ ] **CONTRIBUTING.md** — Document the expected file structure, doctest format, and solution explanation style to guide external contributors.
-- [ ] **Generate solutions from JSON** — Rearchitect the build process to automatically generate solution files from a structured JSON file.
