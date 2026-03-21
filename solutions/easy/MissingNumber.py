@@ -51,31 +51,6 @@ the array.*
    ``[0,9]``. 8 is the missing number in the range since it does not
    appear in ``nums``.
 
-.. container:: simple-translate-system-theme
-   :name: simple-translate
-
-   .. container::
-
-      .. container:: simple-translate-button isShow
-
-          
-
-      .. container:: simple-translate-panel
-
-         .. container:: simple-translate-result-wrapper
-
-            .. container:: simple-translate-move
-
-                
-
-            .. container:: simple-translate-result-contents
-
-                
-
-                
-
- 
-
 **Constraints:**
 
 - ``n == nums.length``
@@ -121,7 +96,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MissingNumber.py
     :language: python
-    :lines: 139-
+    :lines: 114-
 
 Test
 ----

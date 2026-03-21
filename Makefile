@@ -24,9 +24,9 @@ fetch-descriptions:
 .PHONY: fetch-descriptions
 
 api-doc:
-	sphinx-apidoc -o generated solutions/easy
-	sphinx-apidoc -o generated solutions/medium
-	sphinx-apidoc -o generated solutions/hard
+	sphinx-apidoc -T -o generated solutions/easy
+	sphinx-apidoc -T -o generated solutions/medium
+	sphinx-apidoc -T -o generated solutions/hard
 	@$(PYTHON) scripts/prune_module_suffix.py
 
 generate-patterns:
