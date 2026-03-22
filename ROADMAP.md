@@ -3,11 +3,11 @@
 ## Features
 
 - [x] **Solution pattern index** — Group existing solutions by technique (two pointers, sliding window, BFS/DFS, backtracking, dynamic programming) so problems can be studied by concept rather than by name.
-- [ ] **Coverage tracker** — Pages showing which problems from these canonical prep lists are covered and which are still missing, providing a clear study roadmap.
-  - [ ] [Blind 75](https://leetcode.com/problem-list/oizxjoit/)
-  - [ ] [Grind 75](https://www.techinterviewhandbook.org/grind75/)
-  - [ ] [Grind 169](https://www.techinterviewhandbook.org/grind75/?weeks=28&hours=6)
-  - [ ] [NeetCode 150](https://neetcode.io/practice/practice/neetcode150)
+- [x] **Coverage tracker** — Pages showing which problems from these canonical prep lists are covered and which are still missing, providing a clear study roadmap.
+  - [x] [Blind 75](https://leetcode.com/problem-list/oizxjoit/)
+  - [x] [Grind 75](https://www.techinterviewhandbook.org/grind75/)
+  - [x] [Grind 169](https://www.techinterviewhandbook.org/grind75/?weeks=28&hours=6)
+  - [x] [NeetCode 150](https://neetcode.io/practice/practice/neetcode150)
   - [ ] [Amazon Top 50](https://leetcode.com/problem-list/7p5x763/)
   - [ ] [Google Top 50](https://leetcode.com/problem-list/7p55wqm/)
   - [ ] Meta Top 50

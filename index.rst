@@ -7,7 +7,14 @@ A collection of solutions to (software engineering) technical interview question
    :maxdepth: 1
    :caption: Browse by Pattern
 
-   patterns
+   pattern_index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Study Roadmap
+
+   coverage
+   problem_index
 
 .. toctree::
    :maxdepth: 1

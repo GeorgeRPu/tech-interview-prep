@@ -35,17 +35,23 @@ generate-patterns:
 
 .PHONY: generate-patterns
 
+generate-coverage:
+	@echo "[generate-coverage] Generating coverage.rst"
+	@$(PYTHON) scripts/generate_coverage.py
+
+.PHONY: generate-coverage
+
 # Override the html target so we can ensure literalinclude line ranges are up to date before building.
-html: update-lines api-doc generate-patterns
+html: update-lines api-doc generate-patterns generate-coverage
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 # Custom clean: also wipe generated/ RST files
 .PHONY: clean
 clean:
-	@echo "[clean] Removing build/, generated/*.rst, and patterns.rst"
+	@echo "[clean] Removing build/, generated/*.rst, patterns.rst, and coverage.rst"
 	@rm -rf "$(BUILDDIR)"
 	@find generated -type f -name '*.rst' -maxdepth 1 -delete 2>/dev/null || true
-	@rm -f patterns.rst
+	@rm -f patterns.rst coverage.rst
 	@echo "[clean] Done."
 
 .PHONY: format fmt

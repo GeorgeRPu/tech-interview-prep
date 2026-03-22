@@ -75,6 +75,7 @@ html_css_files = [
 ]
 html_js_files = [
     "js/patterns_filter.js",
+    "js/coverage_filter.js",
 ]
 
 googleanalytics_id = "G-LE07FGQCP9"
