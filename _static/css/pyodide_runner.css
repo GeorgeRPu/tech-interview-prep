@@ -1,0 +1,160 @@
+/* Interactive code runner widget */
+
+.pyodide-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.pyodide-run-btn,
+.pyodide-edit-btn,
+.pyodide-reset-btn {
+  padding: 0.3em 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-family: inherit;
+  line-height: 1.4;
+}
+
+.pyodide-run-btn {
+  background: #2ecc71;
+  color: #fff;
+  border-color: #27ae60;
+}
+
+.pyodide-run-btn:hover {
+  background: #27ae60;
+}
+
+.pyodide-run-btn:disabled {
+  background: #95a5a6;
+  border-color: #7f8c8d;
+  cursor: wait;
+}
+
+.pyodide-edit-btn,
+.pyodide-reset-btn {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.pyodide-edit-btn:hover,
+.pyodide-reset-btn:hover {
+  background: #dce1e3;
+}
+
+.pyodide-status {
+  font-size: 0.82em;
+  color: #7f8c8d;
+  margin-left: 0.5em;
+}
+
+.pyodide-editor-wrap {
+  border: 1px solid #e1e4e5;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.pyodide-editor-wrap .CodeMirror {
+  height: auto;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+.pyodide-editor-wrap .CodeMirror-focused {
+  outline: 2px solid #2ecc71;
+  outline-offset: -1px;
+}
+
+/*
+ * CodeMirror theme "pygments-match"
+ *
+ * Mirrors the default Pygments style used by sphinx_rtd_theme so that
+ * the editor looks identical to the static highlighted code block.
+ *
+ * Pygments class -> CodeMirror token mapping:
+ *   .k  (keyword)          -> cm-keyword          #008000 bold
+ *   .kn (keyword.namespace) -> cm-keyword          #008000 bold
+ *   .nb (name.builtin)     -> cm-builtin          #008000
+ *   .nf (name.function)    -> cm-def              #00f
+ *   .nc (name.class)       -> cm-def              #00f bold
+ *   .s  (string)           -> cm-string           #ba2121
+ *   .sd (string.doc)       -> cm-string           #ba2121 italic
+ *   .m  (number)           -> cm-number           #666
+ *   .c  (comment)          -> cm-comment          #3d7b7b italic
+ *   .o  (operator)         -> cm-operator         #666
+ *   .nd (decorator)        -> cm-meta             #a2f
+ *   .bp (builtin.pseudo)   -> cm-builtin          #008000
+ *   .nn (name.namespace)   -> cm-qualifier        #00f bold
+ *   .err                   -> cm-error            border red
+ */
+.cm-s-pygments-match.CodeMirror {
+  background: #f8f8f8;
+  color: #000;
+}
+.cm-s-pygments-match div.CodeMirror-selected    { background: #d7d4f0; }
+.cm-s-pygments-match .CodeMirror-gutters        { background: #f0f0f0; border-right: 1px solid #ddd; }
+.cm-s-pygments-match .CodeMirror-linenumber     { color: #999; }
+.cm-s-pygments-match .CodeMirror-cursor         { border-left: 1px solid #000; }
+.cm-s-pygments-match span.cm-keyword            { color: #008000; font-weight: bold; }
+.cm-s-pygments-match span.cm-builtin            { color: #008000; }
+.cm-s-pygments-match span.cm-def                { color: #00f; }
+.cm-s-pygments-match span.cm-variable           { color: #000; }
+.cm-s-pygments-match span.cm-variable-2         { color: #19177c; }
+.cm-s-pygments-match span.cm-variable-3,
+.cm-s-pygments-match span.cm-type               { color: #b00040; }
+.cm-s-pygments-match span.cm-string             { color: #ba2121; }
+.cm-s-pygments-match span.cm-string-2           { color: #ba2121; }
+.cm-s-pygments-match span.cm-number             { color: #666; }
+.cm-s-pygments-match span.cm-comment            { color: #3d7b7b; font-style: italic; }
+.cm-s-pygments-match span.cm-operator           { color: #666; }
+.cm-s-pygments-match span.cm-meta               { color: #a2f; }
+.cm-s-pygments-match span.cm-qualifier          { color: #00f; font-weight: bold; }
+.cm-s-pygments-match span.cm-property           { color: #000; }
+.cm-s-pygments-match span.cm-atom               { color: #008000; font-weight: bold; }
+.cm-s-pygments-match span.cm-error              { color: #f00; }
+.cm-s-pygments-match .CodeMirror-activeline-background { background: #ffffcc; }
+
+.pyodide-output {
+  margin-top: 0.5em;
+  padding: 10px 12px;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 0.85em;
+  line-height: 1.5;
+  color: #2c3e50;
+  background: #f7f9fa;
+  border: 1px solid #dce1e3;
+  border-radius: 3px;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.pyodide-output:empty {
+  display: none;
+}
+
+.pyodide-output-error {
+  color: #e74c3c;
+}
+
+/* Spinner animation for loading state */
+@keyframes pyodide-spin {
+  to { transform: rotate(360deg); }
+}
+
+.pyodide-status-loading::before {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 0.4em;
+  border: 2px solid #7f8c8d;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: pyodide-spin 0.7s linear infinite;
+  vertical-align: middle;
+}

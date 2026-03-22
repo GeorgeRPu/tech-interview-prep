@@ -72,10 +72,12 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
 html_css_files = [
     "custom.css",
+    "css/pyodide_runner.css",
 ]
 html_js_files = [
     "js/patterns_filter.js",
     "js/coverage_filter.js",
+    "js/pyodide_runner.js",
 ]
 
 googleanalytics_id = "G-LE07FGQCP9"
