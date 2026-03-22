@@ -15,7 +15,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Lists
      - Status
    * - :doc:`Two Sum <generated/TwoSum>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
    * - `Contains Duplicate <https://leetcode.com/problems/contains-duplicate/>`__
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -36,10 +36,10 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 169, NeetCode 150, Amazon Top 50
      - ⬜ Missing
    * - `Top K Frequent Elements <https://leetcode.com/problems/top-k-frequent-elements/>`__
-     - Blind 75, NeetCode 150, Amazon Top 50, Google Top 50
+     - Blind 75, NeetCode 150, Google Top 50
      - ⬜ Missing
    * - :doc:`Product of Array Except Self <generated/ProductOfArrayExceptSelf>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Encode and Decode Strings <https://leetcode.com/problems/encode-and-decode-strings/>`__
      - Blind 75, Grind 169, NeetCode 150
@@ -54,25 +54,25 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - :doc:`3Sum <generated/ThreeSum>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
    * - :doc:`Container With Most Water <generated/ContainerWithMostWater>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Sort Colors <https://leetcode.com/problems/sort-colors/>`__
      - Grind 75, Grind 169
      - ⬜ Missing
    * - :doc:`Two Sum II <generated/TwoSumII>`
-     - NeetCode 150, Amazon Top 50
+     - NeetCode 150
      - ✅ Covered
    * - `Trapping Rain Water <https://leetcode.com/problems/trapping-rain-water/>`__
      - Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
      - ⬜ Missing
    * - :doc:`Best Time to Buy and Sell Stock <generated/BestTimeToBuyAndSellStock>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
    * - :doc:`Longest Substring Without Repeating Characters <generated/LengthOfLongestSubstring>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
    * - `Find All Anagrams in a String <https://leetcode.com/problems/find-all-anagrams-in-a-string/>`__
      - Grind 75, Grind 169
@@ -81,22 +81,22 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Minimum Window Substring <https://leetcode.com/problems/minimum-window-substring/>`__
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Permutation in String <https://leetcode.com/problems/permutation-in-string/>`__
      - NeetCode 150
      - ⬜ Missing
    * - `Sliding Window Maximum <https://leetcode.com/problems/sliding-window-maximum/>`__
-     - Grind 169, NeetCode 150
+     - Grind 169, NeetCode 150, Amazon Top 50
      - ⬜ Missing
    * - :doc:`Valid Parentheses <generated/ValidParentheses>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Implement Queue using Stacks <https://leetcode.com/problems/implement-queue-using-stacks/>`__
      - Grind 75, Grind 169
      - ⬜ Missing
    * - `Min Stack <https://leetcode.com/problems/min-stack/>`__
-     - Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Evaluate Reverse Polish Notation <https://leetcode.com/problems/evaluate-reverse-polish-notation/>`__
      - Grind 75, Grind 169, NeetCode 150, Google Top 50
@@ -105,7 +105,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 75, Grind 169, Google Top 50
      - ⬜ Missing
    * - :doc:`Generate Parentheses <generated/GenerateParentheses>`
-     - Grind 169, NeetCode 150, Amazon Top 50
+     - Grind 169, NeetCode 150
      - ✅ Covered
    * - `Daily Temperatures <https://leetcode.com/problems/daily-temperatures/>`__
      - Grind 169, NeetCode 150
@@ -126,7 +126,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - :doc:`Search in Rotated Sorted Array <generated/SearchInRotatedArray>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Search a 2D Matrix <https://leetcode.com/problems/search-a-2d-matrix/>`__
      - Grind 169, NeetCode 150
@@ -138,13 +138,13 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Median of Two Sorted Arrays <https://leetcode.com/problems/median-of-two-sorted-arrays/>`__
-     - Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
+     - Grind 169, NeetCode 150, Google Top 50
      - ⬜ Missing
    * - :doc:`Reverse Linked List <generated/ReverseLinkedList>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - :doc:`Merge Two Sorted Lists <generated/MergeTwoSortedLists>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Middle of the Linked List <https://leetcode.com/problems/middle-of-the-linked-list/>`__
      - Grind 75, Grind 169
@@ -156,13 +156,13 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - :doc:`Merge K Sorted Lists <generated/MergeKSortedLists>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
    * - :doc:`Linked List Cycle <generated/LinkedListCycle>`
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - :doc:`Add Two Numbers <generated/AddTwoNumbers>`
-     - Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
+     - Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
    * - `Copy List With Random Pointer <https://leetcode.com/problems/copy-list-with-random-pointer/>`__
      - NeetCode 150, Amazon Top 50
@@ -174,7 +174,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
      - ✅ Covered
    * - `Reverse Nodes in K Group <https://leetcode.com/problems/reverse-nodes-in-k-group/>`__
-     - Grind 169, NeetCode 150, Amazon Top 50
+     - Grind 169, NeetCode 150
      - ⬜ Missing
    * - :doc:`Invert Binary Tree <generated/InvertBinaryTree>`
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -183,7 +183,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Diameter of Binary Tree <https://leetcode.com/problems/diameter-of-binary-tree/>`__
-     - Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Balanced Binary Tree <https://leetcode.com/problems/balanced-binary-tree/>`__
      - Grind 75, Grind 169, NeetCode 150
@@ -198,16 +198,16 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Lowest Common Ancestor of Binary Tree <https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/>`__
-     - Grind 75, Grind 169, Amazon Top 50
+     - Grind 75, Grind 169
      - ⬜ Missing
    * - :doc:`Binary Tree Level Order Traversal <generated/BinaryTreeLevelOrderTraversal>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Binary Tree Right Side View <https://leetcode.com/problems/binary-tree-right-side-view/>`__
      - Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Validate Binary Search Tree <https://leetcode.com/problems/validate-binary-search-tree/>`__
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Kth Smallest Element in a BST <https://leetcode.com/problems/kth-smallest-element-in-a-bst/>`__
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -216,10 +216,10 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Binary Tree Maximum Path Sum <https://leetcode.com/problems/binary-tree-maximum-path-sum/>`__
-     - Blind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Serialize and Deserialize Binary Tree <https://leetcode.com/problems/serialize-and-deserialize-binary-tree/>`__
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Count Good Nodes in Binary Tree <https://leetcode.com/problems/count-good-nodes-in-binary-tree/>`__
      - NeetCode 150
@@ -231,7 +231,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Word Search II <https://leetcode.com/problems/word-search-ii/>`__
-     - Blind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Find Median from Data Stream <https://leetcode.com/problems/find-median-from-data-stream/>`__
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
@@ -249,7 +249,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - NeetCode 150
      - ⬜ Missing
    * - `Kth Largest Element in an Array <https://leetcode.com/problems/kth-largest-element-in-an-array/>`__
-     - Grind 169, NeetCode 150, Amazon Top 50
+     - Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Design Twitter <https://leetcode.com/problems/design-twitter/>`__
      - NeetCode 150
@@ -258,7 +258,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Word Search <https://leetcode.com/problems/word-search/>`__
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - :doc:`Subsets <generated/Subsets>`
      - Grind 75, Grind 169, NeetCode 150
@@ -267,7 +267,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - :doc:`Letter Combinations of a Phone Number <generated/LetterCombinationsOfAPhoneNumber>`
-     - Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Subsets II <https://leetcode.com/problems/subsets-ii/>`__
      - NeetCode 150
@@ -285,7 +285,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
      - ⬜ Missing
    * - `Flood Fill <https://leetcode.com/problems/flood-fill/>`__
-     - Grind 75, Grind 169, Amazon Top 50
+     - Grind 75, Grind 169
      - ⬜ Missing
    * - `01 Matrix <https://leetcode.com/problems/01-matrix/>`__
      - Grind 75, Grind 169
@@ -294,7 +294,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Rotting Oranges <https://leetcode.com/problems/rotting-oranges/>`__
-     - Grind 75, Grind 169, NeetCode 150
+     - Grind 75, Grind 169, NeetCode 150, Amazon Top 50
      - ⬜ Missing
    * - `Accounts Merge <https://leetcode.com/problems/accounts-merge/>`__
      - Grind 75, Grind 169
@@ -360,19 +360,19 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, NeetCode 150, Google Top 50
      - ⬜ Missing
    * - :doc:`Longest Palindromic Substring <generated/LongestPalindromicSubstring>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
    * - `Decode Ways <https://leetcode.com/problems/decode-ways/>`__
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Coin Change <https://leetcode.com/problems/coin-change/>`__
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Maximum Product Subarray <https://leetcode.com/problems/maximum-product-subarray/>`__
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Word Break <https://leetcode.com/problems/word-break/>`__
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - `Longest Increasing Subsequence <https://leetcode.com/problems/longest-increasing-subsequence/>`__
      - Blind 75, Grind 169, NeetCode 150
@@ -423,7 +423,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - NeetCode 150
      - ⬜ Missing
    * - :doc:`Maximum Subarray <generated/MaximumSubarray>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
    * - :doc:`Jump Game <generated/JumpGame>`
      - Blind 75, Grind 169, NeetCode 150
@@ -441,7 +441,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - NeetCode 150
      - ⬜ Missing
    * - `Partition Labels <https://leetcode.com/problems/partition-labels/>`__
-     - NeetCode 150, Amazon Top 50
+     - NeetCode 150
      - ⬜ Missing
    * - `Valid Parenthesis String <https://leetcode.com/problems/valid-parenthesis-string/>`__
      - NeetCode 150
@@ -450,7 +450,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ⬜ Missing
    * - :doc:`Merge Intervals <generated/MergeIntervals>`
-     - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
+     - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
    * - `Non-overlapping Intervals <https://leetcode.com/problems/non-overlapping-intervals/>`__
      - Blind 75, Grind 169, NeetCode 150
@@ -465,7 +465,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - NeetCode 150
      - ⬜ Missing
    * - :doc:`Rotate Image <generated/RotateImage>`
-     - Blind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Spiral Matrix <https://leetcode.com/problems/spiral-matrix/>`__
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -477,7 +477,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 75, Grind 169
      - ✅ Covered
    * - :doc:`String to Integer (atoi) <generated/StringToInteger>`
-     - Grind 75, Grind 169, Amazon Top 50
+     - Grind 75, Grind 169
      - ✅ Covered
    * - :doc:`Happy Number <generated/HappyNumber>`
      - NeetCode 150, Google Top 50
@@ -507,13 +507,13 @@ Use the dropdowns to filter by pattern, list, or status.
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
    * - :doc:`Missing Number <generated/MissingNumber>`
-     - Blind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Blind 75, Grind 169, NeetCode 150
      - ✅ Covered
    * - `Single Number <https://leetcode.com/problems/single-number/>`__
      - Grind 169, NeetCode 150
      - ⬜ Missing
    * - :doc:`Reverse Integer <generated/ReverseInteger>`
-     - Grind 169, NeetCode 150, Amazon Top 50
+     - Grind 169, NeetCode 150
      - ✅ Covered
    * - `Move Zeroes <https://leetcode.com/problems/move-zeroes/>`__
      - Grind 169
@@ -531,7 +531,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 169, Google Top 50
      - ⬜ Missing
    * - `3Sum Closest <https://leetcode.com/problems/3sum-closest/>`__
-     - Grind 169, Amazon Top 50
+     - Grind 169
      - ⬜ Missing
    * - `Maximal Square <https://leetcode.com/problems/maximal-square/>`__
      - Grind 169
@@ -582,7 +582,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 169
      - ⬜ Missing
    * - `Maximum Frequency Stack <https://leetcode.com/problems/maximum-frequency-stack/>`__
-     - Grind 169, Amazon Top 50
+     - Grind 169
      - ⬜ Missing
    * - `Longest Valid Parentheses <https://leetcode.com/problems/longest-valid-parentheses/>`__
      - Grind 169
@@ -600,7 +600,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 169
      - ✅ Covered
    * - :doc:`Symmetric Tree <generated/SymmetricTree>`
-     - Grind 169, Amazon Top 50
+     - Grind 169
      - ✅ Covered
    * - `Path Sum II <https://leetcode.com/problems/path-sum-ii/>`__
      - Grind 169
@@ -609,13 +609,13 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 169
      - ⬜ Missing
    * - :doc:`Binary Tree Zigzag Level Order Traversal <generated/BinaryTreeZigzagLevelOrderTraversal>`
-     - Grind 169, Amazon Top 50
+     - Grind 169
      - ✅ Covered
    * - `Path Sum III <https://leetcode.com/problems/path-sum-iii/>`__
      - Grind 169
      - ⬜ Missing
    * - `All Nodes Distance K in Binary Tree <https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/>`__
-     - Grind 169
+     - Grind 169, Amazon Top 50
      - ⬜ Missing
    * - `Inorder Successor in BST <https://leetcode.com/problems/inorder-successor-in-bst/>`__
      - Grind 169
@@ -624,7 +624,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 169
      - 🔒 Premium
    * - `Design In-Memory File System <https://leetcode.com/problems/design-in-memory-file-system/>`__
-     - Grind 169
+     - Grind 169, Amazon Top 50
      - 🔒 Premium
    * - :doc:`Insert Delete GetRandom O(1) <generated/InsertDeleteGetRandomO1>`
      - Grind 169
@@ -645,7 +645,7 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 169
      - ⬜ Missing
    * - :doc:`Roman to Integer <generated/RomanToInteger>`
-     - Grind 169, Amazon Top 50, Google Top 50
+     - Grind 169, Google Top 50
      - ✅ Covered
    * - :doc:`Palindrome Number <generated/PalindromeNumber>`
      - Grind 169, Google Top 50
@@ -654,40 +654,40 @@ Use the dropdowns to filter by pattern, list, or status.
      - Grind 169, Google Top 50
      - ⬜ Missing
    * - :doc:`Integer to Roman <generated/IntegerToRoman>`
-     - Amazon Top 50
+     - 
      - ✅ Covered
    * - :doc:`Find the Index of the First Occurrence in a String <generated/FindTheIndexOfTheFirstOccurrenceInAString>`
-     - Amazon Top 50
+     - 
      - ✅ Covered
    * - `Compare Version Numbers <https://leetcode.com/problems/compare-version-numbers/>`__
-     - Amazon Top 50
+     - 
      - ⬜ Missing
    * - `Integer to English Words <https://leetcode.com/problems/integer-to-english-words/>`__
      - Amazon Top 50
      - ⬜ Missing
    * - :doc:`First Unique Character in a String <generated/FirstUniqueCharacterInAString>`
-     - Amazon Top 50
+     - 
      - ✅ Covered
    * - `Most Common Word <https://leetcode.com/problems/most-common-word/>`__
-     - Amazon Top 50
+     - 
      - ⬜ Missing
    * - `Reorder Data in Log Files <https://leetcode.com/problems/reorder-data-in-log-files/>`__
      - Amazon Top 50
      - ⬜ Missing
    * - `Word Ladder II <https://leetcode.com/problems/word-ladder-ii/>`__
-     - Amazon Top 50
+     - 
      - ⬜ Missing
    * - `Cut Off Trees for Golf Event <https://leetcode.com/problems/cut-off-trees-for-golf-event/>`__
-     - Amazon Top 50
+     - 
      - ⬜ Missing
    * - `Design Tic-Tac-Toe <https://leetcode.com/problems/design-tic-tac-toe/>`__
      - Amazon Top 50
      - 🔒 Premium
    * - `Design Search Autocomplete System <https://leetcode.com/problems/design-search-autocomplete-system/>`__
-     - Amazon Top 50, Google Top 50
+     - Google Top 50
      - 🔒 Premium
    * - `Prison Cells After N Days <https://leetcode.com/problems/prison-cells-after-n-days/>`__
-     - Amazon Top 50
+     - 
      - ⬜ Missing
    * - `Battleships in a Board <https://leetcode.com/problems/battleships-in-a-board/>`__
      - Google Top 50
@@ -736,5 +736,104 @@ Use the dropdowns to filter by pattern, list, or status.
      - ⬜ Missing
    * - `Time Needed to Inform All Employees <https://leetcode.com/problems/time-needed-to-inform-all-employees/>`__
      - Google Top 50
+     - ⬜ Missing
+   * - `Analyze User Website Visit Pattern <https://leetcode.com/problems/analyze-user-website-visit-pattern/>`__
+     - Amazon Top 50
+     - 🔒 Premium
+   * - `Boundary of Binary Tree <https://leetcode.com/problems/boundary-of-binary-tree/>`__
+     - Amazon Top 50
+     - 🔒 Premium
+   * - `Build Binary Expression Tree From Infix Expression <https://leetcode.com/problems/build-binary-expression-tree-from-infix-expression/>`__
+     - Amazon Top 50
+     - 🔒 Premium
+   * - `Concatenated Words <https://leetcode.com/problems/concatenated-words/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Count Unique Characters of All Substrings of a Given String <https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Design an Expression Tree With Evaluate Function <https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function/>`__
+     - Amazon Top 50
+     - 🔒 Premium
+   * - `Design Parking System <https://leetcode.com/problems/design-parking-system/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Find Good Days to Rob the Bank <https://leetcode.com/problems/find-good-days-to-rob-the-bank/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Find K-th Smallest Pair Distance <https://leetcode.com/problems/find-k-th-smallest-pair-distance/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Find the K-Sum of an Array <https://leetcode.com/problems/find-the-k-sum-of-an-array/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Find Triangular Sum of an Array <https://leetcode.com/problems/find-triangular-sum-of-an-array/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Make Array Zero by Subtracting Equal Amounts <https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Maximum Length of Subarray With Positive Product <https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Maximum Number of Books You Can Take <https://leetcode.com/problems/maximum-number-of-books-you-can-take/>`__
+     - Amazon Top 50
+     - 🔒 Premium
+   * - `Maximum Number of Robots Within Budget <https://leetcode.com/problems/maximum-number-of-robots-within-budget/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Maximum Units on a Truck <https://leetcode.com/problems/maximum-units-on-a-truck/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Minimum Adjacent Swaps to Make a Valid Array <https://leetcode.com/problems/minimum-adjacent-swaps-to-make-a-valid-array/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Minimum Health to Beat Game <https://leetcode.com/problems/minimum-health-to-beat-game/>`__
+     - Amazon Top 50
+     - 🔒 Premium
+   * - `Minimum Number of Keypresses <https://leetcode.com/problems/minimum-number-of-keypresses/>`__
+     - Amazon Top 50
+     - 🔒 Premium
+   * - `Minimum Number of Moves to Make Palindrome <https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Minimum Number of Swaps to Make the Binary String Alternating <https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Number of Ways to Select Buildings <https://leetcode.com/problems/number-of-ways-to-select-buildings/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Plates Between Candles <https://leetcode.com/problems/plates-between-candles/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Race Car <https://leetcode.com/problems/race-car/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Reorganize String <https://leetcode.com/problems/reorganize-string/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Search Suggestions System <https://leetcode.com/problems/search-suggestions-system/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Sequential Digits <https://leetcode.com/problems/sequential-digits/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Sequentially Ordinal Rank Tracker <https://leetcode.com/problems/sequentially-ordinal-rank-tracker/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Substring With Largest Variance <https://leetcode.com/problems/substring-with-largest-variance/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Sum of Subarray Ranges <https://leetcode.com/problems/sum-of-subarray-ranges/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Sum of Total Strength of Wizards <https://leetcode.com/problems/sum-of-total-strength-of-wizards/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Total Appeal of A String <https://leetcode.com/problems/total-appeal-of-a-string/>`__
+     - Amazon Top 50
+     - ⬜ Missing
+   * - `Word Break II <https://leetcode.com/problems/word-break-ii/>`__
+     - Amazon Top 50
      - ⬜ Missing
 

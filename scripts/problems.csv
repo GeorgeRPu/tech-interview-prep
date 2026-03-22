@@ -1,98 +1,98 @@
 name,slug,blind75,nc150,grind75,grind169,amazon50,google50,premium
-Two Sum,two-sum,true,true,true,true,true,true,false
+Two Sum,two-sum,true,true,true,true,false,true,false
 Contains Duplicate,contains-duplicate,true,true,true,true,false,false,false
 Valid Anagram,valid-anagram,true,true,true,true,false,false,false
 Ransom Note,ransom-note,false,false,true,true,false,false,false
 Majority Element,majority-element,false,false,true,true,false,false,false
 Longest Palindrome,longest-palindrome,false,false,true,true,false,false,false
 Group Anagrams,group-anagrams,true,true,false,true,true,false,false
-Top K Frequent Elements,top-k-frequent-elements,true,true,false,false,true,true,false
-Product of Array Except Self,product-of-array-except-self,true,true,true,true,true,false,false
+Top K Frequent Elements,top-k-frequent-elements,true,true,false,false,false,true,false
+Product of Array Except Self,product-of-array-except-self,true,true,true,true,false,false,false
 Encode and Decode Strings,encode-and-decode-strings,true,true,false,true,false,false,true
 Longest Consecutive Sequence,longest-consecutive-sequence,true,true,false,true,false,false,false
 Valid Sudoku,valid-sudoku,false,true,false,true,false,false,false
 Valid Palindrome,valid-palindrome,true,true,true,true,false,false,false
-3Sum,3sum,true,true,true,true,true,true,false
-Container With Most Water,container-with-most-water,true,true,true,true,true,false,false
+3Sum,3sum,true,true,true,true,false,true,false
+Container With Most Water,container-with-most-water,true,true,true,true,false,false,false
 Sort Colors,sort-colors,false,false,true,true,false,false,false
-Two Sum II,two-sum-ii-input-array-is-sorted,false,true,false,false,true,false,false
+Two Sum II,two-sum-ii-input-array-is-sorted,false,true,false,false,false,false,false
 Trapping Rain Water,trapping-rain-water,false,true,true,true,true,true,false
-Best Time to Buy and Sell Stock,best-time-to-buy-and-sell-stock,true,true,true,true,true,true,false
-Longest Substring Without Repeating Characters,longest-substring-without-repeating-characters,true,true,true,true,true,true,false
+Best Time to Buy and Sell Stock,best-time-to-buy-and-sell-stock,true,true,true,true,false,true,false
+Longest Substring Without Repeating Characters,longest-substring-without-repeating-characters,true,true,true,true,false,true,false
 Find All Anagrams in a String,find-all-anagrams-in-a-string,false,false,true,true,false,false,false
 Longest Repeating Character Replacement,longest-repeating-character-replacement,true,true,false,true,false,false,false
-Minimum Window Substring,minimum-window-substring,true,true,true,true,true,false,false
+Minimum Window Substring,minimum-window-substring,true,true,true,true,false,false,false
 Permutation in String,permutation-in-string,false,true,false,false,false,false,false
-Sliding Window Maximum,sliding-window-maximum,false,true,false,true,false,false,false
-Valid Parentheses,valid-parentheses,true,true,true,true,true,false,false
+Sliding Window Maximum,sliding-window-maximum,false,true,false,true,true,false,false
+Valid Parentheses,valid-parentheses,true,true,true,true,false,false,false
 Implement Queue using Stacks,implement-queue-using-stacks,false,false,true,true,false,false,false
-Min Stack,min-stack,false,true,true,true,true,false,false
+Min Stack,min-stack,false,true,true,true,false,false,false
 Evaluate Reverse Polish Notation,evaluate-reverse-polish-notation,false,true,true,true,false,true,false
 Basic Calculator,basic-calculator,false,false,true,true,false,true,false
-Generate Parentheses,generate-parentheses,false,true,false,true,true,false,false
+Generate Parentheses,generate-parentheses,false,true,false,true,false,false,false
 Daily Temperatures,daily-temperatures,false,true,false,true,false,false,false
 Car Fleet,car-fleet,false,true,false,false,false,false,false
 Largest Rectangle in Histogram,largest-rectangle-in-histogram,false,true,true,true,false,false,false
 Binary Search,binary-search,false,true,true,true,false,false,false
 First Bad Version,first-bad-version,false,false,true,true,false,true,false
 Find Minimum in Rotated Sorted Array,find-minimum-in-rotated-sorted-array,true,true,false,true,false,false,false
-Search in Rotated Sorted Array,search-in-rotated-sorted-array,true,true,true,true,true,false,false
+Search in Rotated Sorted Array,search-in-rotated-sorted-array,true,true,true,true,false,false,false
 Search a 2D Matrix,search-a-2d-matrix,false,true,false,true,false,false,false
 Koko Eating Bananas,koko-eating-bananas,false,true,false,false,false,false,false
 Time Based Key-Value Store,time-based-key-value-store,false,true,true,true,false,false,false
-Median of Two Sorted Arrays,median-of-two-sorted-arrays,false,true,false,true,true,true,false
-Reverse Linked List,reverse-linked-list,true,true,true,true,true,false,false
-Merge Two Sorted Lists,merge-two-sorted-lists,true,true,true,true,true,false,false
+Median of Two Sorted Arrays,median-of-two-sorted-arrays,false,true,false,true,false,true,false
+Reverse Linked List,reverse-linked-list,true,true,true,true,false,false,false
+Merge Two Sorted Lists,merge-two-sorted-lists,true,true,true,true,false,false,false
 Middle of the Linked List,middle-of-the-linked-list,false,false,true,true,false,false,false
 Reorder List,reorder-list,true,true,false,true,false,false,false
 Remove Nth Node From End of List,remove-nth-node-from-end-of-list,true,true,false,true,false,false,false
-Merge K Sorted Lists,merge-k-sorted-lists,true,true,true,true,true,true,false
+Merge K Sorted Lists,merge-k-sorted-lists,true,true,true,true,false,true,false
 Linked List Cycle,linked-list-cycle,true,true,true,true,false,false,false
-Add Two Numbers,add-two-numbers,false,true,false,true,true,true,false
+Add Two Numbers,add-two-numbers,false,true,false,true,false,true,false
 Copy List With Random Pointer,copy-list-with-random-pointer,false,true,false,false,true,false,false
 Find the Duplicate Number,find-the-duplicate-number,false,true,false,true,false,false,false
 LRU Cache,lru-cache,false,true,true,true,true,true,false
-Reverse Nodes in K Group,reverse-nodes-in-k-group,false,true,false,true,true,false,false
+Reverse Nodes in K Group,reverse-nodes-in-k-group,false,true,false,true,false,false,false
 Invert Binary Tree,invert-binary-tree,true,true,true,true,false,false,false
 Maximum Depth of Binary Tree,maximum-depth-of-binary-tree,true,true,true,true,false,false,false
-Diameter of Binary Tree,diameter-of-binary-tree,false,true,true,true,true,false,false
+Diameter of Binary Tree,diameter-of-binary-tree,false,true,true,true,false,false,false
 Balanced Binary Tree,balanced-binary-tree,false,true,true,true,false,false,false
 Same Tree,same-tree,true,true,false,true,false,false,false
 Subtree of Another Tree,subtree-of-another-tree,true,true,false,true,false,false,false
 Lowest Common Ancestor of a BST,lowest-common-ancestor-of-a-binary-search-tree,true,true,true,true,false,false,false
-Lowest Common Ancestor of Binary Tree,lowest-common-ancestor-of-a-binary-tree,false,false,true,true,true,false,false
-Binary Tree Level Order Traversal,binary-tree-level-order-traversal,true,true,true,true,true,false,false
+Lowest Common Ancestor of Binary Tree,lowest-common-ancestor-of-a-binary-tree,false,false,true,true,false,false,false
+Binary Tree Level Order Traversal,binary-tree-level-order-traversal,true,true,true,true,false,false,false
 Binary Tree Right Side View,binary-tree-right-side-view,false,true,true,true,false,false,false
-Validate Binary Search Tree,validate-binary-search-tree,true,true,true,true,true,false,false
+Validate Binary Search Tree,validate-binary-search-tree,true,true,true,true,false,false,false
 Kth Smallest Element in a BST,kth-smallest-element-in-a-bst,true,true,true,true,false,false,false
 Construct Binary Tree from Preorder and Inorder Traversal,construct-binary-tree-from-preorder-and-inorder-traversal,true,true,true,true,false,false,false
-Binary Tree Maximum Path Sum,binary-tree-maximum-path-sum,true,true,false,true,true,false,false
-Serialize and Deserialize Binary Tree,serialize-and-deserialize-binary-tree,true,true,true,true,true,false,false
+Binary Tree Maximum Path Sum,binary-tree-maximum-path-sum,true,true,false,true,false,false,false
+Serialize and Deserialize Binary Tree,serialize-and-deserialize-binary-tree,true,true,true,true,false,false,false
 Count Good Nodes in Binary Tree,count-good-nodes-in-binary-tree,false,true,false,false,false,false,false
 Implement Trie (Prefix Tree),implement-trie-prefix-tree,true,true,true,true,false,true,false
 Design Add and Search Words,design-add-and-search-words-data-structure,true,true,false,true,false,false,false
-Word Search II,word-search-ii,true,true,false,true,true,false,false
+Word Search II,word-search-ii,true,true,false,true,false,false,false
 Find Median from Data Stream,find-median-from-data-stream,true,true,true,true,true,false,false
 K Closest Points to Origin,k-closest-points-to-origin,false,true,true,true,true,false,false
 Task Scheduler,task-scheduler,false,true,true,true,false,false,false
 Kth Largest Element in a Stream,kth-largest-element-in-a-stream,false,true,false,false,false,false,false
 Last Stone Weight,last-stone-weight,false,true,false,false,false,false,false
-Kth Largest Element in an Array,kth-largest-element-in-an-array,false,true,false,true,true,false,false
+Kth Largest Element in an Array,kth-largest-element-in-an-array,false,true,false,true,false,false,false
 Design Twitter,design-twitter,false,true,false,false,false,false,false
 Combination Sum,combination-sum,true,true,true,true,false,false,false
-Word Search,word-search,true,true,true,true,true,false,false
+Word Search,word-search,true,true,true,true,false,false,false
 Subsets,subsets,false,true,true,true,false,false,false
 Permutations,permutations,false,true,true,true,false,false,false
-Letter Combinations of a Phone Number,letter-combinations-of-a-phone-number,false,true,true,true,true,false,false
+Letter Combinations of a Phone Number,letter-combinations-of-a-phone-number,false,true,true,true,false,false,false
 Subsets II,subsets-ii,false,true,false,false,false,false,false
 Combination Sum II,combination-sum-ii,false,true,false,false,false,false,false
 Palindrome Partitioning,palindrome-partitioning,false,true,false,false,false,false,false
 N-Queens,n-queens,false,true,false,true,false,false,false
 Number of Islands,number-of-islands,true,true,true,true,true,true,false
-Flood Fill,flood-fill,false,false,true,true,true,false,false
+Flood Fill,flood-fill,false,false,true,true,false,false,false
 01 Matrix,01-matrix,false,false,true,true,false,false,false
 Clone Graph,clone-graph,true,true,true,true,false,false,false
-Rotting Oranges,rotting-oranges,false,true,true,true,false,false,false
+Rotting Oranges,rotting-oranges,false,true,true,true,true,false,false
 Accounts Merge,accounts-merge,false,false,true,true,false,false,false
 Minimum Height Trees,minimum-height-trees,false,false,true,true,false,false,false
 Pacific Atlantic Water Flow,pacific-atlantic-water-flow,true,true,false,true,false,true,false
@@ -114,11 +114,11 @@ Cheapest Flights Within K Stops,cheapest-flights-within-k-stops,false,true,false
 Climbing Stairs,climbing-stairs,true,true,true,true,false,false,false
 House Robber,house-robber,true,true,false,true,false,false,false
 House Robber II,house-robber-ii,true,true,false,false,false,true,false
-Longest Palindromic Substring,longest-palindromic-substring,true,true,true,true,true,true,false
+Longest Palindromic Substring,longest-palindromic-substring,true,true,true,true,false,true,false
 Decode Ways,decode-ways,true,true,false,true,false,false,false
-Coin Change,coin-change,true,true,true,true,true,false,false
+Coin Change,coin-change,true,true,true,true,false,false,false
 Maximum Product Subarray,maximum-product-subarray,true,true,false,true,false,false,false
-Word Break,word-break,true,true,true,true,true,false,false
+Word Break,word-break,true,true,true,true,false,false,false
 Longest Increasing Subsequence,longest-increasing-subsequence,true,true,false,true,false,false,false
 Palindromic Substrings,palindromic-substrings,true,true,false,false,false,false,false
 Min Cost Climbing Stairs,min-cost-climbing-stairs,false,true,false,false,false,false,false
@@ -135,25 +135,25 @@ Longest Increasing Path in a Matrix,longest-increasing-path-in-a-matrix,false,tr
 Distinct Subsequences,distinct-subsequences,false,true,false,false,false,false,false
 Edit Distance,edit-distance,false,true,false,false,false,false,false
 Burst Balloons,burst-balloons,false,true,false,false,false,false,false
-Maximum Subarray,maximum-subarray,true,true,true,true,true,true,false
+Maximum Subarray,maximum-subarray,true,true,true,true,false,true,false
 Jump Game,jump-game,true,true,false,true,false,false,false
 Gas Station,gas-station,false,true,false,true,false,false,false
 Jump Game II,jump-game-ii,false,true,false,false,false,false,false
 Hand of Straights,hand-of-straights,false,true,false,false,false,false,false
 Merge Triplets to Form Target Triplet,merge-triplets-to-form-target-triplet,false,true,false,false,false,false,false
-Partition Labels,partition-labels,false,true,false,false,true,false,false
+Partition Labels,partition-labels,false,true,false,false,false,false,false
 Valid Parenthesis String,valid-parenthesis-string,false,true,false,false,false,false,false
 Insert Interval,insert-interval,true,true,true,true,false,true,false
-Merge Intervals,merge-intervals,true,true,true,true,true,true,false
+Merge Intervals,merge-intervals,true,true,true,true,false,true,false
 Non-overlapping Intervals,non-overlapping-intervals,true,true,false,true,false,false,false
 Meeting Rooms,meeting-rooms,true,true,false,true,false,false,true
 Meeting Rooms II,meeting-rooms-ii,true,true,false,true,true,true,true
 Minimum Interval to Include Each Query,minimum-interval-to-include-each-query,false,true,false,false,false,false,false
-Rotate Image,rotate-image,true,true,false,true,true,false,false
+Rotate Image,rotate-image,true,true,false,true,false,false,false
 Spiral Matrix,spiral-matrix,true,true,true,true,false,false,false
 Set Matrix Zeroes,set-matrix-zeroes,true,true,false,true,false,false,false
 Add Binary,add-binary,false,false,true,true,false,false,false
-String to Integer (atoi),string-to-integer-atoi,false,false,true,true,true,false,false
+String to Integer (atoi),string-to-integer-atoi,false,false,true,true,false,false,false
 Happy Number,happy-number,false,true,false,false,false,true,false
 Plus One,plus-one,false,true,false,false,false,false,false
 "Pow(x, n)",powx-n,false,true,false,true,false,false,false
@@ -163,15 +163,15 @@ Sum of Two Integers,sum-of-two-integers,true,true,false,false,false,false,false
 Number of 1 Bits,number-of-1-bits,true,true,false,true,false,false,false
 Counting Bits,counting-bits,true,true,false,true,false,false,false
 Reverse Bits,reverse-bits,true,true,false,true,false,false,false
-Missing Number,missing-number,true,true,false,true,true,false,false
+Missing Number,missing-number,true,true,false,true,false,false,false
 Single Number,single-number,false,true,false,true,false,false,false
-Reverse Integer,reverse-integer,false,true,false,true,true,false,false
+Reverse Integer,reverse-integer,false,true,false,true,false,false,false
 Move Zeroes,move-zeroes,false,false,false,true,false,false,false
 Squares of a Sorted Array,squares-of-a-sorted-array,false,false,false,true,false,false,false
 Rotate Array,rotate-array,false,false,false,true,false,false,false
 Contiguous Array,contiguous-array,false,false,false,true,false,false,false
 Subarray Sum Equals K,subarray-sum-equals-k,false,false,false,true,false,true,false
-3Sum Closest,3sum-closest,false,false,false,true,true,false,false
+3Sum Closest,3sum-closest,false,false,false,true,false,false,false
 Maximal Square,maximal-square,false,false,false,true,false,false,false
 Combination Sum IV,combination-sum-iv,false,false,false,true,false,false,false
 Shortest Path to Get Food,shortest-path-to-get-food,false,false,false,true,false,false,true
@@ -188,42 +188,42 @@ Backspace String Compare,backspace-string-compare,false,false,false,true,false,f
 Decode String,decode-string,false,false,false,true,false,true,false
 Asteroid Collision,asteroid-collision,false,false,false,true,false,false,false
 Basic Calculator II,basic-calculator-ii,false,false,false,true,false,false,false
-Maximum Frequency Stack,maximum-frequency-stack,false,false,false,true,true,false,false
+Maximum Frequency Stack,maximum-frequency-stack,false,false,false,true,false,false,false
 Longest Valid Parentheses,longest-valid-parentheses,false,false,false,true,false,false,false
 Longest Common Prefix,longest-common-prefix,false,false,false,true,false,true,false
 Largest Number,largest-number,false,false,false,true,false,false,false
 Palindrome Pairs,palindrome-pairs,false,false,false,true,false,false,false
 Convert Sorted Array to Binary Search Tree,convert-sorted-array-to-binary-search-tree,false,false,false,true,false,false,false
-Symmetric Tree,symmetric-tree,false,false,false,true,true,false,false
+Symmetric Tree,symmetric-tree,false,false,false,true,false,false,false
 Path Sum II,path-sum-ii,false,false,false,true,false,false,false
 Maximum Width of Binary Tree,maximum-width-of-binary-tree,false,false,false,true,false,false,false
-Binary Tree Zigzag Level Order Traversal,binary-tree-zigzag-level-order-traversal,false,false,false,true,true,false,false
+Binary Tree Zigzag Level Order Traversal,binary-tree-zigzag-level-order-traversal,false,false,false,true,false,false,false
 Path Sum III,path-sum-iii,false,false,false,true,false,false,false
-All Nodes Distance K in Binary Tree,all-nodes-distance-k-in-binary-tree,false,false,false,true,false,false,false
+All Nodes Distance K in Binary Tree,all-nodes-distance-k-in-binary-tree,false,false,false,true,true,false,false
 Inorder Successor in BST,inorder-successor-in-bst,false,false,false,true,false,false,true
 Design Hit Counter,design-hit-counter,false,false,false,true,false,false,true
-Design In-Memory File System,design-in-memory-file-system,false,false,false,true,false,false,true
+Design In-Memory File System,design-in-memory-file-system,false,false,false,true,true,false,true
 Insert Delete GetRandom O(1),insert-delete-getrandom-o1,false,false,false,true,false,false,false
 First Missing Positive,first-missing-positive,false,false,false,true,false,false,false
 Top K Frequent Words,top-k-frequent-words,false,false,false,true,false,false,false
 Find K Closest Elements,find-k-closest-elements,false,false,false,true,false,false,false
 Smallest Range Covering Elements from K Lists,smallest-range-covering-elements-from-k-lists,false,false,false,true,false,false,false
 Next Permutation,next-permutation,false,false,false,true,false,false,false
-Roman to Integer,roman-to-integer,false,false,false,true,true,true,false
+Roman to Integer,roman-to-integer,false,false,false,true,false,true,false
 Palindrome Number,palindrome-number,false,false,false,true,false,true,false
 Random Pick with Weight,random-pick-with-weight,false,false,false,true,false,true,false
-Integer to Roman,integer-to-roman,false,false,false,false,true,false,false
-Find the Index of the First Occurrence in a String,find-the-index-of-the-first-occurrence-in-a-string,false,false,false,false,true,false,false
-Compare Version Numbers,compare-version-numbers,false,false,false,false,true,false,false
+Integer to Roman,integer-to-roman,false,false,false,false,false,false,false
+Find the Index of the First Occurrence in a String,find-the-index-of-the-first-occurrence-in-a-string,false,false,false,false,false,false,false
+Compare Version Numbers,compare-version-numbers,false,false,false,false,false,false,false
 Integer to English Words,integer-to-english-words,false,false,false,false,true,false,false
-First Unique Character in a String,first-unique-character-in-a-string,false,false,false,false,true,false,false
-Most Common Word,most-common-word,false,false,false,false,true,false,false
+First Unique Character in a String,first-unique-character-in-a-string,false,false,false,false,false,false,false
+Most Common Word,most-common-word,false,false,false,false,false,false,false
 Reorder Data in Log Files,reorder-data-in-log-files,false,false,false,false,true,false,false
-Word Ladder II,word-ladder-ii,false,false,false,false,true,false,false
-Cut Off Trees for Golf Event,cut-off-trees-for-golf-event,false,false,false,false,true,false,false
+Word Ladder II,word-ladder-ii,false,false,false,false,false,false,false
+Cut Off Trees for Golf Event,cut-off-trees-for-golf-event,false,false,false,false,false,false,false
 Design Tic-Tac-Toe,design-tic-tac-toe,false,false,false,false,true,false,true
-Design Search Autocomplete System,design-search-autocomplete-system,false,false,false,false,true,true,true
-Prison Cells After N Days,prison-cells-after-n-days,false,false,false,false,true,false,false
+Design Search Autocomplete System,design-search-autocomplete-system,false,false,false,false,false,true,true
+Prison Cells After N Days,prison-cells-after-n-days,false,false,false,false,false,false,false
 Battleships in a Board,battleships-in-a-board,false,false,false,false,false,true,false
 Bulls and Cows,bulls-and-cows,false,false,false,false,false,true,false
 Find Duplicate Subtrees,find-duplicate-subtrees,false,false,false,false,false,true,false
@@ -240,3 +240,36 @@ Stock Price Fluctuation,stock-price-fluctuation,false,false,false,false,false,tr
 Student Attendance Record II,student-attendance-record-ii,false,false,false,false,false,true,false
 Text Justification,text-justification,false,false,false,false,false,true,false
 Time Needed to Inform All Employees,time-needed-to-inform-all-employees,false,false,false,false,false,true,false
+Analyze User Website Visit Pattern,analyze-user-website-visit-pattern,false,false,false,false,true,false,true
+Boundary of Binary Tree,boundary-of-binary-tree,false,false,false,false,true,false,true
+Build Binary Expression Tree From Infix Expression,build-binary-expression-tree-from-infix-expression,false,false,false,false,true,false,true
+Concatenated Words,concatenated-words,false,false,false,false,true,false,false
+Count Unique Characters of All Substrings of a Given String,count-unique-characters-of-all-substrings-of-a-given-string,false,false,false,false,true,false,false
+Design an Expression Tree With Evaluate Function,design-an-expression-tree-with-evaluate-function,false,false,false,false,true,false,true
+Design Parking System,design-parking-system,false,false,false,false,true,false,false
+Find Good Days to Rob the Bank,find-good-days-to-rob-the-bank,false,false,false,false,true,false,false
+Find K-th Smallest Pair Distance,find-k-th-smallest-pair-distance,false,false,false,false,true,false,false
+Find the K-Sum of an Array,find-the-k-sum-of-an-array,false,false,false,false,true,false,false
+Find Triangular Sum of an Array,find-triangular-sum-of-an-array,false,false,false,false,true,false,false
+Make Array Zero by Subtracting Equal Amounts,make-array-zero-by-subtracting-equal-amounts,false,false,false,false,true,false,false
+Maximum Length of Subarray With Positive Product,maximum-length-of-subarray-with-positive-product,false,false,false,false,true,false,false
+Maximum Number of Books You Can Take,maximum-number-of-books-you-can-take,false,false,false,false,true,false,true
+Maximum Number of Robots Within Budget,maximum-number-of-robots-within-budget,false,false,false,false,true,false,false
+Maximum Units on a Truck,maximum-units-on-a-truck,false,false,false,false,true,false,false
+Minimum Adjacent Swaps to Make a Valid Array,minimum-adjacent-swaps-to-make-a-valid-array,false,false,false,false,true,false,false
+Minimum Health to Beat Game,minimum-health-to-beat-game,false,false,false,false,true,false,true
+Minimum Number of Keypresses,minimum-number-of-keypresses,false,false,false,false,true,false,true
+Minimum Number of Moves to Make Palindrome,minimum-number-of-moves-to-make-palindrome,false,false,false,false,true,false,false
+Minimum Number of Swaps to Make the Binary String Alternating,minimum-number-of-swaps-to-make-the-binary-string-alternating,false,false,false,false,true,false,false
+Number of Ways to Select Buildings,number-of-ways-to-select-buildings,false,false,false,false,true,false,false
+Plates Between Candles,plates-between-candles,false,false,false,false,true,false,false
+Race Car,race-car,false,false,false,false,true,false,false
+Reorganize String,reorganize-string,false,false,false,false,true,false,false
+Search Suggestions System,search-suggestions-system,false,false,false,false,true,false,false
+Sequential Digits,sequential-digits,false,false,false,false,true,false,false
+Sequentially Ordinal Rank Tracker,sequentially-ordinal-rank-tracker,false,false,false,false,true,false,false
+Substring With Largest Variance,substring-with-largest-variance,false,false,false,false,true,false,false
+Sum of Subarray Ranges,sum-of-subarray-ranges,false,false,false,false,true,false,false
+Sum of Total Strength of Wizards,sum-of-total-strength-of-wizards,false,false,false,false,true,false,false
+Total Appeal of A String,total-appeal-of-a-string,false,false,false,false,true,false,false
+Word Break II,word-break-ii,false,false,false,false,true,false,false
