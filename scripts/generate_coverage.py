@@ -35,7 +35,7 @@ DIFFICULTY_DIRS = [("Easy", "easy"), ("Medium", "medium"), ("Hard", "hard")]
 _PROBLEMS_CSV = Path(__file__).parent / "problems.csv"
 
 
-def _load_problems() -> list[tuple[str, str, bool, bool, bool, bool, bool, bool]]:
+def _load_problems() -> list[tuple[str, str, bool, bool, bool, bool, bool, bool, bool]]:
     def _bool(v: str) -> bool:
         return v.strip().lower() == "true"
 
@@ -50,6 +50,7 @@ def _load_problems() -> list[tuple[str, str, bool, bool, bool, bool, bool, bool]
                 _bool(row["grind75"]),
                 _bool(row["grind169"]),
                 _bool(row["amazon50"]),
+                _bool(row["google50"]),
                 _bool(row["premium"]),
             )
             for row in reader
@@ -99,7 +100,7 @@ def collect_covered_slugs() -> dict[str, tuple[str, str]]:
 LEETCODE_BASE = "https://leetcode.com/problems"
 
 
-def _lists_label(blind75: bool, nc150: bool, grind75: bool, grind169: bool, amazon50: bool) -> str:
+def _lists_label(blind75: bool, nc150: bool, grind75: bool, grind169: bool, amazon50: bool, google50: bool) -> str:
     parts = []
     if blind75:
         parts.append("Blind 75")
@@ -110,7 +111,9 @@ def _lists_label(blind75: bool, nc150: bool, grind75: bool, grind169: bool, amaz
     if nc150:
         parts.append("NeetCode 150")
     if amazon50:
-        parts.append("Amazon 50")
+        parts.append("Amazon Top 50")
+    if google50:
+        parts.append("Google Top 50")
     return ", ".join(parts)
 
 
@@ -137,17 +140,19 @@ def _count_covered(
 # ---------------------------------------------------------------------------
 
 def build_coverage_rst(slug_map: dict[str, tuple[str, str]]) -> str:
-    b75  = [(n, s, b, nc, g, g169, a, p) for n, s, b, nc, g, g169, a, p in PROBLEMS if b]
-    nc   = [(n, s, b, nc, g, g169, a, p) for n, s, b, nc, g, g169, a, p in PROBLEMS if nc]
-    g75  = [(n, s, b, nc, g, g169, a, p) for n, s, b, nc, g, g169, a, p in PROBLEMS if g]
-    g169 = [(n, s, b, nc, g, g169, a, p) for n, s, b, nc, g, g169, a, p in PROBLEMS if g169]
-    a50  = [(n, s, b, nc, g, g169, a, p) for n, s, b, nc, g, g169, a, p in PROBLEMS if a]
+    b75  = [(n, s, b, nc, g, g169, a, go, p) for n, s, b, nc, g, g169, a, go, p in PROBLEMS if b]
+    nc   = [(n, s, b, nc, g, g169, a, go, p) for n, s, b, nc, g, g169, a, go, p in PROBLEMS if nc]
+    g75  = [(n, s, b, nc, g, g169, a, go, p) for n, s, b, nc, g, g169, a, go, p in PROBLEMS if g]
+    g169 = [(n, s, b, nc, g, g169, a, go, p) for n, s, b, nc, g, g169, a, go, p in PROBLEMS if g169]
+    a50  = [(n, s, b, nc, g, g169, a, go, p) for n, s, b, nc, g, g169, a, go, p in PROBLEMS if a]
+    go50 = [(n, s, b, nc, g, g169, a, go, p) for n, s, b, nc, g, g169, a, go, p in PROBLEMS if go]
 
     b75_cov,  b75_tot  = _count_covered(b75,  slug_map)
     g75_cov,  g75_tot  = _count_covered(g75,  slug_map)
     g169_cov, g169_tot = _count_covered(g169, slug_map)
     nc_cov,   nc_tot   = _count_covered(nc,   slug_map)
     a50_cov,  a50_tot  = _count_covered(a50,  slug_map)
+    go50_cov, go50_tot = _count_covered(go50, slug_map)
 
     title = "Problem Coverage"
     lines: list[str] = [
@@ -180,10 +185,14 @@ def build_coverage_rst(slug_map: dict[str, tuple[str, str]]) -> str:
         f"     - {nc_cov}",
         f"     - {nc_tot}",
         f"     - {_bar(nc_cov, nc_tot)}",
-        f"   * - Amazon 50",
+        f"   * - Amazon Top 50",
         f"     - {a50_cov}",
         f"     - {a50_tot}",
         f"     - {_bar(a50_cov, a50_tot)}",
+        f"   * - Google Top 50",
+        f"     - {go50_cov}",
+        f"     - {go50_tot}",
+        f"     - {_bar(go50_cov, go50_tot)}",
         "",
         "See :doc:`problem_index` for the full problem list.",
         "",
@@ -201,7 +210,7 @@ def build_problem_index_rst(slug_map: dict[str, tuple[str, str]]) -> str:
         title,
         "=" * len(title),
         "",
-        "All problems from the Blind 75, Grind 75, Grind 169, NeetCode 150, and Amazon 50 lists.",
+        "All problems from the Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, and Google Top 50 lists.",
         "Problems marked 🔒 require a LeetCode Premium subscription.",
         "",
         "Use the dropdowns to filter by pattern, list, or status.",
@@ -216,8 +225,8 @@ def build_problem_index_rst(slug_map: dict[str, tuple[str, str]]) -> str:
         "     - Status",
     ]
 
-    for name, slug, blind75, nc150, grind75, grind169, amazon50, premium in PROBLEMS:
-        lists_label = _lists_label(blind75, nc150, grind75, grind169, amazon50)
+    for name, slug, blind75, nc150, grind75, grind169, amazon50, google50, premium in PROBLEMS:
+        lists_label = _lists_label(blind75, nc150, grind75, grind169, amazon50, google50)
         lc_url = f"{LEETCODE_BASE}/{slug}/"
 
         if slug in slug_map:

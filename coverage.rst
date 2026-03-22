@@ -27,10 +27,14 @@ Coverage of canonical interview prep problem lists.
      - 40
      - 150
      - ■■■■■□□□□□□□□□□□□□□□ 26%
-   * - Amazon 50
+   * - Amazon Top 50
      - 30
      - 67
      - ■■■■■■■■■□□□□□□□□□□□ 44%
+   * - Google Top 50
+     - 15
+     - 50
+     - ■■■■■■□□□□□□□□□□□□□□ 30%
 
 See :doc:`problem_index` for the full problem list.
 

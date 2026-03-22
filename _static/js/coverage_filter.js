@@ -22,9 +22,19 @@ $(document).on('init.dt', 'table.sphinx-datatable', function (_e, settings) {
   });
   filtersDiv.append($('<label style="font-weight:bold;">Pattern:\u00a0</label>').append(patSel));
 
-  // Lists dropdown — column 2 may contain "Blind 75", "NeetCode 150", or both
+  // Lists dropdown — discover unique list names from column 2
+  var lists = [];
+  api.column(2).data().each(function (d) {
+    var text = $('<div>').html(d).text().trim();
+    if (!text) return;
+    text.split(', ').forEach(function (l) {
+      l = l.trim();
+      if (l && lists.indexOf(l) === -1) lists.push(l);
+    });
+  });
+  lists.sort();
   var listSel = $('<select><option value="">All Lists</option></select>');
-  ['Blind 75', 'Grind 75', 'Grind 169', 'NeetCode 150', 'Amazon 50'].forEach(function (l) {
+  lists.forEach(function (l) {
     listSel.append($('<option>').val(l).text(l));
   });
   listSel.on('change', function () {
