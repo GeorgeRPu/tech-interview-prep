@@ -24,7 +24,7 @@ $(document).on('init.dt', 'table.sphinx-datatable', function (_e, settings) {
 
   // Lists dropdown — column 2 may contain "Blind 75", "NeetCode 150", or both
   var listSel = $('<select><option value="">All Lists</option></select>');
-  ['Blind 75', 'Grind 75', 'Grind 169', 'NeetCode 150'].forEach(function (l) {
+  ['Blind 75', 'Grind 75', 'Grind 169', 'NeetCode 150', 'Amazon 50'].forEach(function (l) {
     listSel.append($('<option>').val(l).text(l));
   });
   listSel.on('change', function () {

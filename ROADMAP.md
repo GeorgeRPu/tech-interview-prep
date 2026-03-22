@@ -8,9 +8,8 @@
   - [x] [Grind 75](https://www.techinterviewhandbook.org/grind75/)
   - [x] [Grind 169](https://www.techinterviewhandbook.org/grind75/?weeks=28&hours=6)
   - [x] [NeetCode 150](https://neetcode.io/practice/practice/neetcode150)
-  - [ ] [Amazon Top 50](https://leetcode.com/problem-list/7p5x763/)
+  - [x] [Amazon Top 50](https://leetcode.com/problem-list/7p5x763/)
   - [ ] [Google Top 50](https://leetcode.com/problem-list/7p55wqm/)
-  - [ ] Meta Top 50
 - [ ] **Big O annotations** — Add time and space complexity to each solution's docstring and surface it in the documentation.
 - [ ] **CONTRIBUTING.md** — Document the expected file structure, doctest format, and solution explanation style to guide external contributors.
 - [ ] **Interactive code snippets** — Embed runnable code snippets in the documentation allowing users to experiment with solutions directly on the site.
