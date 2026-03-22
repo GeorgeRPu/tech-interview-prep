@@ -15,9 +15,9 @@
 - [ ] **Interactive code snippets** — Embed runnable code snippets in the documentation allowing users to experiment with solutions directly on the site.
 - [ ] **Pattern overview pages** — Create dedicated pages for each solution pattern that explain the concept, common pitfalls, and link to all relevant problems in the repo that use that pattern.
 
-## Fixes/Architectural Improvments
+## Fixes/Architectural Improvements
 
 - [ ] **Generate solutions from JSON** — Rearchitect the build process to automatically generate solution files from a structured JSON file.
 - [ ] **Stop showing all solutions in the sidebar** — Restructure the Sphinx sidebar to only show problem categories or patterns, not every individual solution, to reduce clutter.
 - [ ] **Refine patterns list** — Refine patterns instead of just using the Topics tags from LeetCode.
-- [ ] **Put entries per page on same line as dropdown for Patterns Index page** — The current layout has "entries per page" on a separate line from the dropdown.
+- [x] **Put entries per page on same line as dropdown for Patterns Index page** — The current layout has "entries per page" on a separate line from the dropdown.

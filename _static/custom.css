@@ -11,3 +11,17 @@ nav .toctree-l3 > a {
 
 /* Optional: if bullets get misaligned due to wrapping, ensure left padding accommodates multi-line */
 .wy-menu-vertical li a { display: block; }
+
+/* Keep "entries per page" on same line as its dropdown */
+div.dt-length {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+/* Keep "Search:" label on same line as its input */
+div.dt-search {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
