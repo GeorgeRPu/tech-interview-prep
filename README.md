@@ -24,9 +24,19 @@ uv run make html
 
 Open `build/html/index.html` in your browser to preview locally.
 
-The build also runs doctests (`make doctest`) so every solution is verified against its embedded examples. ✅
+## Testing
 
-## 🧪 Testing GitHub Actions with `act`
+### ✅ Running Doctests
+
+Every solution file includes embedded doctests in its docstring. Run them with:
+
+```bash
+uv run make doctest
+```
+
+The CI pipeline also runs doctests before building the site, so every solution is verified against its embedded examples.
+
+### 🧪 Testing GitHub Actions with `act`
 
 [`act`](https://github.com/nektos/act) lets you run the deploy workflow locally without pushing to GitHub.
 
