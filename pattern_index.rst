@@ -1,5 +1,5 @@
-Patterns Index
-==============
+Pattern Index
+=============
 
 Browse all solutions. Use the dropdowns to filter by difficulty or pattern.
 

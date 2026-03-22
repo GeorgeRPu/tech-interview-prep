@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOLUTIONS = ROOT / "solutions"
-OUT_FILE = ROOT / "patterns.rst"
+OUT_FILE = ROOT / "pattern_index.rst"
 
 DIFFICULTY_DIRS = [("Easy", "easy"), ("Medium", "medium"), ("Hard", "hard")]
 
@@ -139,7 +139,7 @@ DIFFICULTY_EMOJI: dict[str, str] = {
 
 def build_rst(rows: list[Row]) -> str:
     """Render the full RST content for patterns.rst as a single DataTables-powered table."""
-    title = "Patterns Index"
+    title = "Pattern Index"
     lines: list[str] = [
         title,
         "=" * len(title),

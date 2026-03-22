@@ -1,4 +1,6 @@
 $(document).on('init.dt', 'table.sphinx-datatable', function (_e, settings) {
+  if ($(this).hasClass('coverage-datatable')) return;
+
   var api = new $.fn.dataTable.Api(settings);
   var wrapper = api.table().container();
 
