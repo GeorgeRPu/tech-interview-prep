@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Strip the trailing " module" suffix from titles in generated RST files.
+"""Post-process generated RST files.
 
-Sphinx autodoc appends " module" to the title of every generated RST file. This script
-scans the ``generated`` directory, detects that suffix in each file's first heading, removes
-it, and adjusts the RST underline to match the new title length. Running it more than once
-is safe — files that are already clean are left untouched.
+1. Strip the trailing " module" suffix from titles (Sphinx autodoc adds it).
+2. Add ``:orphan:`` metadata so the files don't need to appear in any toctree
+   (they are linked from difficulty index pages and the pattern index instead).
+
+Running it more than once is safe — files that are already clean are left untouched.
 """
 from __future__ import annotations
 
@@ -45,23 +46,40 @@ def prune_title(title: str) -> str | None:
     return None
 
 
+def ensure_orphan(lines: list[str]) -> bool:
+    """Prepend ``:orphan:`` metadata if not already present. Returns True if changed."""
+    for line in lines:
+        stripped = line.strip()
+        if stripped == ":orphan:":
+            return False
+        if stripped:
+            break  # first non-blank line is not :orphan:
+    lines.insert(0, ":orphan:\n")
+    lines.insert(1, "\n")
+    return True
+
+
 def process_file(path: Path, dry_run: bool) -> bool:
     text = path.read_text(encoding="utf-8")
     lines = text.splitlines(keepends=True)
+    changed = False
+
+    # Add :orphan: metadata
+    changed |= ensure_orphan(lines)
+
+    # Prune " module" suffix from title
     heading = find_heading(lines)
-    if not heading:
-        return False
-    ti, ui, title = heading
-    new_title = prune_title(title)
-    if not new_title:
-        return False
-    # Preserve trailing newline on title line if present
-    lines[ti] = f"{new_title}\n"
-    lines[ui] = lines[ui][0] * len(new_title) + "\n"
-    new_text = "".join(lines)
-    if not dry_run:
-        path.write_text(new_text, encoding="utf-8")
-    return True
+    if heading:
+        ti, ui, title = heading
+        new_title = prune_title(title)
+        if new_title:
+            lines[ti] = f"{new_title}\n"
+            lines[ui] = lines[ui][0] * len(new_title) + "\n"
+            changed = True
+
+    if changed and not dry_run:
+        path.write_text("".join(lines), encoding="utf-8")
+    return changed
 
 
 def main(argv: list[str] | None = None) -> int:

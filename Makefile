@@ -41,8 +41,14 @@ generate-coverage:
 
 .PHONY: generate-coverage
 
+generate-difficulty:
+	@echo "[generate-difficulty] Generating difficulty index pages"
+	@$(PYTHON) scripts/generate_difficulty_index.py
+
+.PHONY: generate-difficulty
+
 # Override the html target so we can ensure literalinclude line ranges are up to date before building.
-html: update-lines api-doc generate-patterns generate-coverage
+html: update-lines api-doc generate-patterns generate-coverage generate-difficulty
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 # Custom clean: also wipe generated/ RST files
@@ -51,7 +57,7 @@ clean:
 	@echo "[clean] Removing build/, generated/*.rst, patterns.rst, and coverage.rst"
 	@rm -rf "$(BUILDDIR)"
 	@find generated -type f -name '*.rst' -maxdepth 1 -delete 2>/dev/null || true
-	@rm -f patterns.rst coverage.rst
+	@rm -f patterns.rst coverage.rst easy_index.rst medium_index.rst hard_index.rst
 	@echo "[clean] Done."
 
 .PHONY: format fmt
