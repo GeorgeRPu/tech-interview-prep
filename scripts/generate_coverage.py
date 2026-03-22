@@ -99,6 +99,24 @@ def collect_covered_slugs() -> dict[str, tuple[str, str]]:
 
 LEETCODE_BASE = "https://leetcode.com/problems"
 
+# Canonical URLs for each problem list.
+LIST_URLS: dict[str, str] = {
+    "Blind 75": "https://neetcode.io/practice?tab=blind75",
+    "Grind 75": "https://www.techinterviewhandbook.org/grind75",
+    "Grind 169": "https://www.techinterviewhandbook.org/grind75?hours=40&grouping=topics",
+    "NeetCode 150": "https://neetcode.io/practice?tab=neetcode150",
+    "Amazon Top 50": "https://leetcode.com/problem-list/top-amazon-questions/",
+    "Google Top 50": "https://leetcode.com/problem-list/top-google-questions/",
+}
+
+
+def _list_link(name: str) -> str:
+    """Return an RST external link for a problem list name."""
+    url = LIST_URLS.get(name)
+    if url:
+        return f"`{name} <{url}>`__"
+    return name
+
 
 def _lists_label(blind75: bool, nc150: bool, grind75: bool, grind169: bool, amazon50: bool, google50: bool) -> str:
     parts = []
@@ -169,27 +187,27 @@ def build_coverage_rst(slug_map: dict[str, tuple[str, str]]) -> str:
         "     - Covered",
         "     - Total",
         "     - Progress",
-        f"   * - Blind 75",
+        f"   * - {_list_link('Blind 75')}",
         f"     - {b75_cov}",
         f"     - {b75_tot}",
         f"     - {_bar(b75_cov, b75_tot)}",
-        f"   * - Grind 75",
+        f"   * - {_list_link('Grind 75')}",
         f"     - {g75_cov}",
         f"     - {g75_tot}",
         f"     - {_bar(g75_cov, g75_tot)}",
-        f"   * - Grind 169",
+        f"   * - {_list_link('Grind 169')}",
         f"     - {g169_cov}",
         f"     - {g169_tot}",
         f"     - {_bar(g169_cov, g169_tot)}",
-        f"   * - NeetCode 150",
+        f"   * - {_list_link('NeetCode 150')}",
         f"     - {nc_cov}",
         f"     - {nc_tot}",
         f"     - {_bar(nc_cov, nc_tot)}",
-        f"   * - Amazon Top 50",
+        f"   * - {_list_link('Amazon Top 50')}",
         f"     - {a50_cov}",
         f"     - {a50_tot}",
         f"     - {_bar(a50_cov, a50_tot)}",
-        f"   * - Google Top 50",
+        f"   * - {_list_link('Google Top 50')}",
         f"     - {go50_cov}",
         f"     - {go50_tot}",
         f"     - {_bar(go50_cov, go50_tot)}",

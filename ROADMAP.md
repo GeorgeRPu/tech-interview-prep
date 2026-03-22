@@ -10,10 +10,11 @@
   - [x] [NeetCode 150](https://neetcode.io/practice/practice/neetcode150)
   - [x] [Amazon Top 50](https://leetcode.com/problem-list/7p5x763/)
   - [x] [Google Top 50](https://leetcode.com/problem-list/7p55wqm/)
-- [ ] **Big O annotations** — Add time and space complexity to each solution's docstring and surface it in the documentation.
+- [x] **Big O annotations** — Add time and space complexity to each solution's docstring and surface it in the documentation.
 - [ ] **CONTRIBUTING.md** — Document the expected file structure, doctest format, and solution explanation style to guide external contributors.
 - [x] **Interactive code snippets** — Embed runnable code snippets in the documentation allowing users to experiment with solutions directly on the site.
 - [ ] **Pattern overview pages** — Create dedicated pages for each solution pattern that explain the concept, common pitfalls, and link to all relevant problems in the repo that use that pattern.
+- [x] **Problem list links** — Add links to each canonical problem list from the coverage tracker.
 
 ## Architectural Improvements
 
