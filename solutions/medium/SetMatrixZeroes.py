@@ -70,7 +70,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/SetMatrixZeroes.py
     :language: python
-    :lines: 88-
+    :lines: 93-
 
 Test
 ----
@@ -83,6 +83,12 @@ Test
 >>> setZeroes(matrix)
 >>> matrix
 [[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]
+
+Complexity
+----------
+| :math:`m` is the number of rows and :math:`n` is the number of columns in the input matrix
+| Time: :math:`O(m n)` — pass through matrix twice
+| Auxiliary Space: :math:`O(m n)` — indices of zeros which is :math:`m n` in the worst case when all elements are zero
 """
 
 from typing import List

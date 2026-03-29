@@ -77,7 +77,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/WordPattern.py
     :language: python
-    :lines: 94-
+    :lines: 99-
 
 Test
 ----
@@ -88,11 +88,17 @@ True
 False
 >>> wordPattern('aaaa', 'dog cat cat dog')
 False
+
+Complexity
+----------
+| :math:`n` is the length of ``pattern`` and the number of words in ``s``
+| Time: :math:`O(n)` — single pass over ``pattern`` and words in ``s``
+| Auxiliary Space: :math:`O(n)` — dictionary for mapping characters to words and set for tracking mapped words
 """
 
 
 def wordPattern(pattern: str, s: str) -> bool:
-    """Given a pattern and a string s, finds if ``s`` follows the same pattern.
+    """Given a pattern and a string ``s``, finds if ``s`` follows the same pattern.
     """
     words = s.split()
 

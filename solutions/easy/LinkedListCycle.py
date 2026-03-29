@@ -82,7 +82,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/LinkedListCycle.py
     :language: python
-    :lines: 102-
+    :lines: 107-
 
 Test
 ----
@@ -98,6 +98,12 @@ True
 >>> head = ListNode.from_list([1])
 >>> hasCycle(head)
 False
+
+Complexity
+----------
+| :math:`n` is the number of nodes in the linked list
+| Time: :math:`O(n)` — pointers will reach end or meet after at most :math:`n` steps
+| Auxiliary Space: :math:`O(1)` — 2 pointers only
 """
 from __future__ import annotations
 

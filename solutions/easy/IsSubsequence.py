@@ -60,7 +60,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/IsSubsequence.py
     :language: python
-    :lines: 75-
+    :lines: 80-
 
 Test
 ----
@@ -69,6 +69,12 @@ Test
 True
 >>> isSubsequence("axc", "ahbgdc")
 False
+
+Complexity
+----------
+| :math:`n` is the length of ``t``
+| Time: :math:`O(n)` — single pass through ``t`` to check for characters in ``s``
+| Auxiliary Space: :math:`O(1)`
 """
 
 

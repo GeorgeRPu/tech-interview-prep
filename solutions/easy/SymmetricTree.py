@@ -71,7 +71,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/SymmetricTree.py
     :language: python
-    :lines: 90-
+    :lines: 95-
 
 Test
 ----
@@ -82,6 +82,12 @@ True
 >>> root = TreeNode(1, TreeNode(2, None, TreeNode(2)), TreeNode(2, None, TreeNode(2)))
 >>> isSymmetric(root)
 False
+
+Complexity
+----------
+| :math:`n` is the number of nodes in the tree
+| Time: :math:`O(n)` — visit each node once
+| Auxiliary Space: :math:`O(1)`
 """
 
 

@@ -50,7 +50,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/LongestCommonPrefix.py
     :language: python
-    :lines: 65-
+    :lines: 70-
 
 Test
 ----
@@ -59,6 +59,12 @@ Test
 'fl'
 >>> longestCommonPrefix(['dog', 'racecar', 'car'])
 ''
+
+Complexity
+----------
+| :math:`n` is the number of strings in the input list and :math:`m` is the length of the shortest string
+| Time: :math:`O(n m)` — :math:`n` strings, :math:`m` prefix length
+| Auxiliary Space: :math:`O(1)`
 """
 
 

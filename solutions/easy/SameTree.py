@@ -68,7 +68,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/SameTree.py
     :language: python
-    :lines: 92-
+    :lines: 97-
 
 Test
 ----
@@ -85,6 +85,12 @@ False
 >>> root2 = TreeNode(1, TreeNode(1), TreeNode(2))
 >>> isSameTree(root1, root2)
 False
+
+Complexity
+----------
+| :math:`n` is the number of nodes in tree 1
+| Time: :math:`O(n)` — visit each node once
+| Auxiliary Space: :math:`O(1)`
 """
 
 

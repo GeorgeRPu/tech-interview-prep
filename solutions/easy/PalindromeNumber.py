@@ -61,7 +61,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/PalindromeNumber.py
     :language: python
-    :lines: 78-
+    :lines: 83-
 
 Test
 ----
@@ -72,6 +72,11 @@ True
 False
 >>> isPalindrome(10)
 False
+
+Complexity
+----------
+| Time: :math:`O(\log_{10} x)` — extract each digit and then compare the list with its reverse
+| Auxiliary Space: :math:`O(\log_{10} x)` — store digits list
 """
 
 

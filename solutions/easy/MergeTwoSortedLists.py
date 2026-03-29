@@ -64,7 +64,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MergeTwoSortedLists.py
     :language: python
-    :lines: 78-
+    :lines: 83-
 
 Test
 ----
@@ -74,6 +74,12 @@ Test
 >>> head = merge_2_lists(head1, head2)
 >>> print(head)
 1 -> 1 -> 2 -> 3 -> 4 -> 4
+
+Complexity
+----------
+| :math:`m` is the length of the first input list and :math:`n` is the length of the second input list
+| Time: :math:`O(m + n)` — go through both lists
+| Auxiliary Space: :math:`O(1)`
 """
 from __future__ import annotations
 

@@ -50,7 +50,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/FindTheIndexOfTheFirstOccurrenceInAString.py
     :language: python
-    :lines: 65-
+    :lines: 70-
 
 Test
 ----
@@ -59,6 +59,12 @@ Test
 2
 >>> strStr('aaaaa', 'bba')
 -1
+
+Complexity
+----------
+| :math:`m` is the length of the needle and :math:`n` is the length of the haystack.
+| Time: :math:`O(n - m)` — single pass through the haystack
+| Auxiliary Space: :math:`O(1)`
 """
 
 

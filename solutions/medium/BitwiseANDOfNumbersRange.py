@@ -59,7 +59,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/BitwiseANDOfNumbersRange.py
     :language: python
-    :lines: 76-
+    :lines: 81-
 
 Test
 ----
@@ -70,6 +70,11 @@ Test
 0
 >>> rangeBitwiseAnd(1, 2)
 0
+
+Complexity
+----------
+| Time: :math:`O(1)` — at most 32 bit comparisons
+| Auxiliary Space: :math:`O(1)`
 """
 
 

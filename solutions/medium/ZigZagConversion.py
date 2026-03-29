@@ -82,7 +82,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ZigZagConversion.py
     :language: python
-    :lines: 99-
+    :lines: 104-
 
 Test
 ----
@@ -93,6 +93,12 @@ Test
 'PINALSIGYAHRPI'
 >>> convert('A', 1)
 'A'
+
+Complexity
+----------
+| :math:`n` is the length of the input string and :math:`m` is the number of rows.
+| Time: :math:`O(n + m)` — pass through the string to build each row and then join them together
+| Auxiliary Space: :math:`O(1)`
 """
 
 

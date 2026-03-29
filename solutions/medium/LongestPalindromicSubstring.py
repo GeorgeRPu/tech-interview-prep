@@ -52,7 +52,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/LongestPalindromicSubstring.py
     :language: python
-    :lines: 67-
+    :lines: 72-
 
 Test
 ----
@@ -61,6 +61,12 @@ Test
 'bab'
 >>> longestPalindrome('cbbd')
 'bb'
+
+Complexity
+----------
+| :math:`n` is the length of the input string
+| Time: :math:`O(n^2)` — expand around each character
+| Auxiliary Space: :math:`O(1)`
 """
 
 

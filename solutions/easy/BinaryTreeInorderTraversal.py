@@ -81,7 +81,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/BinaryTreeInorderTraversal.py
     :language: python
-    :lines: 100-
+    :lines: 105-
 
 Test
 ----
@@ -95,6 +95,12 @@ Test
 >>> root = TreeNode(1)
 >>> inorderTraversal(root)
 [1]
+
+Complexity
+----------
+| :math:`n` is the number of nodes in the binary tree.
+| Time: :math:`O(n)` — visit every node
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

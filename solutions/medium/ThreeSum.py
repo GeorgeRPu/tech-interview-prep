@@ -18,7 +18,7 @@ Notice that the solution set must not contain duplicate triplets.
 
    Input: nums = [-1,0,1,2,-1,-4]
    Output: [[-1,-1,2],[-1,0,1]]
-   Explanation: 
+   Explanation:
    nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
    nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
    nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
@@ -67,7 +67,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ThreeSum.py
     :language: python
-    :lines: 83-
+    :lines: 88-
 
 Test
 ----
@@ -78,6 +78,11 @@ Test
 []
 >>> threeSum([0, 0, 0])
 [[0, 0, 0]]
+
+Complexity
+----------
+| Time: :math:`O(n^2)` — sort then, for each element, perform a two-pointer scan through the array
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

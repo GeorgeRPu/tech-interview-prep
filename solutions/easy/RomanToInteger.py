@@ -94,7 +94,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/RomanToInteger.py
     :language: python
-    :lines: 111-
+    :lines: 116-
 
 Test
 ----
@@ -105,6 +105,12 @@ Test
 58
 >>> roman_to_int('MCMXCIV')
 1994
+
+Complexity
+----------
+| :math:`n` is the length of the string
+| Time: :math:`O(n)` — single pass through the string
+| Auxiliary Space: :math:`O(1)` — fixed-size maps for roman numeral symbols
 """
 
 

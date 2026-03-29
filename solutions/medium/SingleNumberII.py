@@ -53,7 +53,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/SingleNumberII.py
     :language: python
-    :lines: 67-
+    :lines: 72-
 
 Test
 ----
@@ -62,6 +62,12 @@ Test
 3
 >>> singleNumber([0, 1, 0, 1, 0, 1, 99])
 99
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n)` — single pass through the array
+| Auxiliary Space: :math:`O(1)` — fixed 32-bit array to store sum
 """
 
 from typing import List

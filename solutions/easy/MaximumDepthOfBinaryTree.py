@@ -52,7 +52,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MaximumDepthOfBinaryTree.py
     :language: python
-    :lines: 69-
+    :lines: 74-
 
 Test
 ----
@@ -63,6 +63,12 @@ Test
 >>> root = TreeNode(1, None, TreeNode(2))
 >>> maxDepth(root)
 2
+
+Complexity
+----------
+| :math:`d` is the maximum depth of the tree
+| Time: :math:`O(d)` — visit every node along the longest path from the root to a leaf
+| Auxiliary Space: :math:`O(1)`
 """
 
 

@@ -71,7 +71,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/InsertDeleteGetRandomO1.py
     :language: python
-    :lines: 97-
+    :lines: 102-
 
 Test
 ----
@@ -91,6 +91,13 @@ True
 False
 >>> random_set.getRandom()
 2
+
+Complexity
+----------
+| Insert Time: :math:`O(1)` — list expansion is amortized
+| Remove Time: :math:`O(1)` — constant time to find index and move element to end
+| Get Random Time: :math:`O(1)` — constant time to choose random element
+| Auxiliary Space: :math:`O(n)` — array and hash map storage
 """
 
 

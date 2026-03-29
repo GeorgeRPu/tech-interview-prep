@@ -78,7 +78,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/TwoSumII.py
     :language: python
-    :lines: 94-
+    :lines: 99-
 
 Test
 ----
@@ -89,6 +89,12 @@ Test
 [1, 3]
 >>> twoSum([-1, 0], -1)
 [1, 2]
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n)` — two-pointer go through the array at most once
+| Auxiliary Space: :math:`O(1)` — only 2 pointers
 """
 
 from typing import List

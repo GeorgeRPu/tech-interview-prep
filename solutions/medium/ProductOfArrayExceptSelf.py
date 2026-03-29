@@ -65,7 +65,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ProductOfArrayExceptSelf.py
     :language: python
-    :lines: 79-
+    :lines: 84-
 
 Test
 ----
@@ -74,6 +74,12 @@ Test
 [24, 12, 8, 6]
 >>> productExceptSelf([-1, 1, 0, -3, 3])
 [0, 0, 9, 0, 0]
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n)` — pass through array twice
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

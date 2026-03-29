@@ -79,7 +79,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ValidParentheses.py
     :language: python
-    :lines: 96-
+    :lines: 101-
 
 Test
 ----
@@ -90,6 +90,12 @@ True
 True
 >>> isValid('(]')
 False
+
+Complexity
+----------
+| :math:`n` is the length of ``s``.
+| Time: :math:`O(n)` — single pass through ``s``.
+| Auxiliary Space: :math:`O(n)` — stack
 """
 
 

@@ -61,13 +61,18 @@ Code
 
 .. literalinclude:: ../solutions/easy/FizzBuzz.py
     :language: python
-    :lines: 73-
+    :lines: 78-
 
 Test
 ----
 >>> from FizzBuzz import fizzBuzz
 >>> fizzBuzz(15)
 ['1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz', 'Buzz', '11', 'Fizz', '13', '14', 'FizzBuzz']
+
+Complexity
+----------
+| Time: :math:`O(n)` — single pass through the numbers from 1 to n
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

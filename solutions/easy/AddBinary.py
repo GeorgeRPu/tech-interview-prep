@@ -46,7 +46,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/AddBinary.py
     :language: python
-    :lines: 61-
+    :lines: 66-
 
 Test
 ----
@@ -55,6 +55,12 @@ Test
 '100'
 >>> addBinary('1010', '1011')
 '10101'
+
+Complexity
+----------
+| :math:`m` and :math:`n` are the lengths of the two bit strings.
+| Time: :math:`O(\max(m, n))` — single pass through the bits
+| Auxiliary Space: :math:`O(1)` — only the carry bit
 """
 
 

@@ -56,7 +56,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/RansomNote.py
     :language: python
-    :lines: 73-
+    :lines: 78-
 
 Test
 ----
@@ -67,6 +67,12 @@ False
 False
 >>> canConstruct("aa", "aab")
 True
+
+Complexity
+----------
+| :math:`m` is the length of ``ransomNote`` and :math:`n` is the length of ``magazine``
+| Time: :math:`O(m + n)` — pass through both strings to build the counter and then check it
+| Auxiliary Space: :math:`O(1)` — fixed-size counter
 """
 
 

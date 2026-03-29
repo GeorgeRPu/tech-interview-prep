@@ -53,7 +53,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/Permutations.py
     :language: python
-    :lines: 69-
+    :lines: 74-
 
 Test
 ----
@@ -64,6 +64,12 @@ Test
 [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
 >>> len(permutations([1, 2, 3, 4]))
 24
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n!)` — generate all permutations
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

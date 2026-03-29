@@ -82,7 +82,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/DeleteNodeInALinkedList.py
     :language: python
-    :lines: 99-
+    :lines: 104-
 
 Test
 ----
@@ -95,6 +95,12 @@ Test
 >>> deleteNode(head.next.next)
 >>> print(head)
 4 -> 5 -> 9
+
+Complexity
+----------
+| :math:`n` is the number of nodes in the linked list
+| Time: :math:`O(n)` — shift values of all nodes after ``node``
+| Auxiliary Space: :math:`O(1)` — in-place modification
 """
 from __future__ import annotations
 

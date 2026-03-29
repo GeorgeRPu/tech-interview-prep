@@ -65,7 +65,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/BestTimeToBuyAndSellStock.py
     :language: python
-    :lines: 80-
+    :lines: 85-
 
 Test
 ----
@@ -74,6 +74,12 @@ Test
 5
 >>> maxProfit([7, 6, 4, 3, 1])
 0
+
+Complexity
+----------
+| :math:`n` is the length of the input array.
+| Time: :math:`O(n)` — single pass through the array
+| Auxiliary Space: :math:`O(1)` — only 2 variables to store the buy price and max profit
 """
 
 

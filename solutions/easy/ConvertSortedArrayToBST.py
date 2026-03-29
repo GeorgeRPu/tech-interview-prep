@@ -58,7 +58,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ConvertSortedArrayToBST.py
     :language: python
-    :lines: 74-
+    :lines: 79-
 
 Test
 ----
@@ -69,6 +69,12 @@ Test
 >>> root = sortedArrayToBST([1, 3])
 >>> tree2list(root)
 [3, 1]
+
+Complexity
+----------
+| :math:`n` is the length of the input array.
+| Time: :math:`O(n)` — visit every element
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

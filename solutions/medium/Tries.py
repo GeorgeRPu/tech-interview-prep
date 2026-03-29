@@ -29,7 +29,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/Tries.py
     :language: python
-    :lines: 47-
+    :lines: 52-
 
 Test
 ----
@@ -43,6 +43,13 @@ Test
 ['apple', 'axiom', 'animal']
 >>> trie.strings_starting_with('b')
 ['bees']
+
+Complexity
+----------
+| :math:`n` is the length of the string to insert
+| Insertion Time: :math:`O(n)` — to insert a string of length :math:`n` into the trie, we need to create at most :math:`n` nodes
+| Search Time: :math:`O(n)` — to find the node corresponding to the last character of the input string, we need to traverse :math:`n` nodes
+| Space: :math:`O(n)` — trie node storage
 """
 from __future__ import annotations
 

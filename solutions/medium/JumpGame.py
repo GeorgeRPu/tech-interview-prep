@@ -55,7 +55,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/JumpGame.py
     :language: python
-    :lines: 69-
+    :lines: 75-
 
 Test
 ----
@@ -64,6 +64,12 @@ Test
 True
 >>> canJump([3, 2, 1, 0, 4])
 False
+
+Complexity
+----------
+| :math:`n` is the length of ``nums``
+| Time: :math:`O(n)` — single pass through ``nums``
+| Auxiliary Space: :math:`O(1)` — single variable for tracking reachability
 """
 
 from typing import List

@@ -81,7 +81,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MergeSortedArray.py
     :language: python
-    :lines: 106-
+    :lines: 111-
 
 Test
 ----
@@ -101,6 +101,12 @@ Test
 >>> merge(nums1, 0, nums2, 1)
 >>> nums1
 [1]
+
+Complexity
+----------
+| :math:`m` is the length of the first input list and :math:`n` is the length of the second input
+| Time: :math:`O(m + n)` — shift the first list and then merge the two lists
+| Auxiliary Space: :math:`O(1)` — in-place merge
 """
 
 from typing import List

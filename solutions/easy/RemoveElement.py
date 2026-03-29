@@ -88,7 +88,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/RemoveElement.py
     :language: python
-    :lines: 106-
+    :lines: 111-
 
 Test
 ----
@@ -101,6 +101,12 @@ Test
 >>> k = removeElement(nums, 2)
 >>> nums[:k]
 [0, 1, 3, 0, 4]
+
+Complexity
+----------
+| :math:`n` is the length of the input list
+| Time: :math:`O(n)` — single pass
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

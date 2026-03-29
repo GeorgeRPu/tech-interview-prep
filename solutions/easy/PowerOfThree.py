@@ -63,7 +63,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/PowerOfThree.py
     :language: python
-    :lines: 80-
+    :lines: 85-
 
 Test
 ----
@@ -74,6 +74,11 @@ True
 False
 >>> isPowerOfThree(-1)
 False
+
+Complexity
+----------
+| Time: :math:`O(\log_3 n)` — divide by 3 at each step
+| Auxiliary Space: :math:`O(1)`
 """
 
 

@@ -65,7 +65,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ValidPalindrome.py
     :language: python
-    :lines: 84-
+    :lines: 89-
 
 Test
 ----
@@ -78,6 +78,12 @@ False
 True
 >>> isPalindrome('0P')
 False
+
+Complexity
+----------
+| :math:`n` is the length of ``s``.
+| Time: :math:`O(n)` — single pass through ``s``.
+| Auxiliary Space: :math:`O(n)` — lowercase copy
 """
 
 

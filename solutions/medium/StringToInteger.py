@@ -146,7 +146,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/StringToInteger.py
     :language: python
-    :lines: 163-
+    :lines: 168-
 
 Test
 ----
@@ -157,6 +157,12 @@ Test
 -42
 >>> myAtoi('4193 with words')
 4193
+
+Complexity
+----------
+| :math:`n` is the length of the input string
+| Time: :math:`O(n)` — single pass through the string
+| Auxiliary Space: :math:`O(1)`
 """
 
 

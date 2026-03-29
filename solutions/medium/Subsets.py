@@ -37,17 +37,17 @@ solution in **any order**.
 
 Solution
 --------
-Suppose ``nums = [1, 2, ..., n]``. We can imagine each subset :math:`S` of
-``nums`` as a bit vector of length ``n``, where the value at position ``i`` is
-1 if :math:`i \in S` and 0 if :math:`i \notin S`. Then the power set of ``nums``
-is the set of all possible bit vectors of length ``n``. Given the bit vectors
-:math:`b` for the power set of ``nums[1:]``, we can generate the bit vectors
-for the power set of ``nums`` by adding a 0 or 1 to the front of each bit
-vector :math:`b`. The power set of ``nums`` is equal to
+We can generate the power set recursively. Every subset of ``nums`` either
+includes ``nums[0]`` or it doesn't. If we already have the power set of
+``nums[1:]``, we can extend the power set of ``nums`` by taking every subset
+:math:`S` of ``nums[1:]`` both as-is and with ``nums[0]`` prepended (including
+it):
 
 .. math ::
 
-   \{ \{1\} \cup S : S \in P(\texttt{nums[1:]})\} \cup P(\texttt{nums[1:]})
+   P(\texttt{nums}) = P(\texttt{nums[1:]}) \;\cup\; \{ \{\texttt{nums[0]}\} \cup S : S \in P(\texttt{nums[1:]})\}
+
+The base case is the empty array, whose only subset is the empty set.
 
 Pattern
 -------
@@ -58,7 +58,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/Subsets.py
     :language: python
-    :lines: 76-
+    :lines: 81-
 
 Test
 ----
@@ -71,8 +71,13 @@ True
 >>> expected_s = [[], [0]]
 >>> compare_collections(s, expected_s)
 True
-"""
 
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(2^n)` — there are :math:`2^n` subsets of an :math:`n`-element set, and we need to generate each one
+| Auxiliary Space: :math:`O(1)`
+"""
 from typing import List
 
 

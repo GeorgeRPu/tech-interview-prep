@@ -58,7 +58,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/PalindromeLinkedList.py
     :language: python
-    :lines: 73-
+    :lines: 78-
 
 Test
 ----
@@ -69,6 +69,12 @@ True
 >>> head = ListNode.from_list([1, 2])
 >>> isPalindrome(head)
 False
+
+Complexity
+----------
+| :math:`n` is the number of nodes in the linked list
+| Time: :math:`O(n)` — traverse list twice
+| Auxiliary Space: :math:`O(n)` — store linked list values in list
 """
 from __future__ import annotations
 

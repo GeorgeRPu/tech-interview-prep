@@ -53,7 +53,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/LetterCombinationsOfAPhoneNumber.py
     :language: python
-    :lines: 69-
+    :lines: 75-
 
 Test
 ----
@@ -64,6 +64,12 @@ Test
 []
 >>> letterCombinations('2')
 ['a', 'b', 'c']
+
+Complexity
+----------
+| :math:`n` is the length of ``digits``.
+| Time: :math:`O(4^n)` — at each step, we append 4 letters to each combination
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

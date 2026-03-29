@@ -64,7 +64,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ReverseInteger.py
     :language: python
-    :lines: 81-
+    :lines: 86-
 
 Test
 ----
@@ -75,6 +75,11 @@ Test
 -321
 >>> reverse(120)
 21
+
+Complexity
+----------
+| Time: :math:`O(\log_{10} x)` — extract each digit, reverse list of digits, and calculate reversed integer
+| Auxiliary Space: :math:`O(\log_{10} x)` — digits list
 """
 
 

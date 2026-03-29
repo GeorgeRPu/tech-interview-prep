@@ -55,7 +55,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ClimbingStairs.py
     :language: python
-    :lines: 69-
+    :lines: 74-
 
 Test
 ----
@@ -64,6 +64,11 @@ Test
 2
 >>> climbStairs(3)
 3
+
+Complexity
+----------
+| Time: :math:`O(n)` — each value from 1 to n is calculated once
+| Auxiliary Space: :math:`O(n)` — dictionary stores each value from 1 to n
 """
 
 climb_stairs = {}

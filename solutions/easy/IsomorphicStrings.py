@@ -79,7 +79,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/IsomorphicStrings.py
     :language: python
-    :lines: 96-
+    :lines: 101-
 
 Test
 ----
@@ -90,6 +90,12 @@ True
 False
 >>> isIsomorphic('paper', 'title')
 True
+
+Complexity
+----------
+| :math:`n` is the length of the shortest string
+| Time: :math:`O(n)` — single pass through the strings
+| Auxiliary Space: :math:`O(n)` — dictionary and range set store at most :math:`n` key-value pairs
 """
 
 

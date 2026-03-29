@@ -72,7 +72,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ReverseWordsInAString.py
     :language: python
-    :lines: 89-
+    :lines: 94-
 
 Test
 ----
@@ -83,6 +83,12 @@ Test
 'world hello'
 >>> reverseWords('a good   example')
 'example good a'
+
+Complexity
+----------
+| :math:`n` is the length of the input string
+| Time: :math:`O(n)` — split the string and reverse
+| Auxiliary Space: :math:`O(`1`)`
 """
 
 

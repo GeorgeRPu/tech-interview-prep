@@ -59,7 +59,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/HappyNumber.py
     :language: python
-    :lines: 75-
+    :lines: 80-
 
 
 Test
@@ -69,6 +69,12 @@ Test
 True
 >>> isHappy(2)
 False
+
+Complexity
+----------
+| :math:`k` is the number of iterations
+| Time: :math:`O(k)` — each iteration requires summing the squares of the digits
+| Auxiliary Space: :math:`O(k)` — set stores at most :math:`k` key-value pairs
 """
 
 

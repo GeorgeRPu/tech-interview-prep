@@ -50,7 +50,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ReverseString.py
     :language: python
-    :lines: 69-
+    :lines: 74-
 
 Test
 ----
@@ -63,6 +63,12 @@ Test
 >>> reverseString(s)
 >>> s
 ['h', 'a', 'n', 'n', 'a', 'H']
+
+Complexity
+----------
+| :math:`n` is the length of the input string
+| Time: :math:`O(n)` — swap half the elements
+| Space: :math:`O(1)`
 """
 
 

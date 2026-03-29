@@ -70,7 +70,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/Pow.py
     :language: python
-    :lines: 87-
+    :lines: 92-
 
 Test
 ----
@@ -81,6 +81,11 @@ Test
 9.261000000000001
 >>> myPow(2.0, -2)
 0.25
+
+Complexity
+----------
+| Time: :math:`O(\log_2 n)` — exponentiation by squaring
+| Auxiliary Space: :math:`O(1)`
 """
 
 

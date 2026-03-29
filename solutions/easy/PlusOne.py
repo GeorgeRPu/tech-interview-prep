@@ -69,7 +69,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/PlusOne.py
     :language: python
-    :lines: 83-
+    :lines: 88-
 
 Test
 ----
@@ -78,6 +78,12 @@ Test
 [4, 3, 2, 2]
 >>> plusOne([9])
 [1, 0]
+
+Complexity
+----------
+| :math:`n` is the length of the input list
+| Time: :math:`O(n)` — single reverse pass
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

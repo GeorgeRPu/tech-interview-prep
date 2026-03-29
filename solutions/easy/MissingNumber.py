@@ -96,7 +96,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MissingNumber.py
     :language: python
-    :lines: 114-
+    :lines: 119-
 
 Test
 ----
@@ -109,6 +109,12 @@ Test
 >>> list2.remove(47)
 >>> missingNumber(list2)
 47
+
+Complexity
+----------
+| :math:`n` is the length of the input list
+| Time: :math:`O(n)` — sum the array
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

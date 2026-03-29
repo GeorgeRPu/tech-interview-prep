@@ -119,7 +119,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/IntegerToRoman.py
     :language: python
-    :lines: 136-
+    :lines: 141-
 
 Test
 ----
@@ -130,6 +130,12 @@ Test
 'LVIII'
 >>> intToRoman(1994)
 'MCMXCIV'
+
+Complexity
+----------
+| :math:`n` is the number of digits in ``num``
+| Time: :math:`O(\log_{10} n)` — extract each digit and convert to Roman numeral
+| Auxiliary Space: :math:`O(1)`
 """
 
 

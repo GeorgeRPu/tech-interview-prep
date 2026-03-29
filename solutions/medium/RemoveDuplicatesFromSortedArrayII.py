@@ -91,7 +91,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/RemoveDuplicatesFromSortedArrayII.py
     :language: python
-    :lines: 109-
+    :lines: 114-
 
 Test
 ----
@@ -104,6 +104,12 @@ Test
 >>> k = removeDuplicates(nums)
 >>> nums[:k]
 [0, 0, 1, 1, 2, 3, 3]
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n)` — single pass through array
+| Space: :math:`O(1)` — in-place modification
 """
 
 from typing import List

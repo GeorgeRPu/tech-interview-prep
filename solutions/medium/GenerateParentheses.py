@@ -51,7 +51,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/GenerateParentheses.py
     :language: python
-    :lines: 66-
+    :lines: 71-
 
 Test
 ----
@@ -61,6 +61,11 @@ Test
 True
 >>> generateParenthesis(1)
 ['()']
+
+Complexity
+----------
+| Time: :math:`O(4^n / \sqrt{n})` — Catalan number of combinations
+| Auxiliary Space: :math:`O(n)` — recursive call stack and string storage
 """
 
 from typing import List

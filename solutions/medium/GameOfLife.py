@@ -96,7 +96,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/GameOfLife.py
     :language: python
-    :lines: 114-
+    :lines: 119-
 
 Test
 ----
@@ -109,6 +109,12 @@ Test
 >>> gameOfLife(board)
 >>> board
 [[1, 1], [1, 1]]
+
+Complexity
+----------
+| :math:`m` is the number of rows and :math:`n` is the number of columns in the input board
+| Time: :math:`O(m \cdot n)` — pass through board twice
+| Auxiliary Space: :math:`O(m \cdot n)` — neighbor count matrix
 """
 
 from typing import List

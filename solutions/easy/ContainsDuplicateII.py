@@ -62,7 +62,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ContainsDuplicateII.py
     :language: python
-    :lines: 78-
+    :lines: 83-
 
 Test
 ----
@@ -73,6 +73,12 @@ True
 True
 >>> containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2)
 False
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n)` — single pass through the array
+| Auxiliary Space: :math:`O(n)` — dictionary stores at most n key-value pairs
 """
 
 from typing import List

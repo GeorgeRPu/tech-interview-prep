@@ -63,7 +63,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/FindFirstAndLastPositionOfElementInSortedArray.py
     :language: python
-    :lines: 79-
+    :lines: 84-
 
 Test
 ----
@@ -74,6 +74,12 @@ Test
 [-1, -1]
 >>> searchRange([], 0)
 [-1, -1]
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(\log n)` — repeated binary search
+| Auxiliary Space: :math:`O(1)` — constant extra space
 """
 
 from typing import List

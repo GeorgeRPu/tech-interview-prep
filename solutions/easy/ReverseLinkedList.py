@@ -66,7 +66,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ReverseLinkedList.py
     :language: python
-    :lines: 84-
+    :lines: 89-
 
 Test
 ----
@@ -80,6 +80,12 @@ Test
 >>> head = ListNode.from_list([1])
 >>> reverseList(head).to_list()
 [1]
+
+Complexity
+----------
+| :math:`n` is the number of nodes in the linked list
+| Time: :math:`O(n)` — single pass through the list
+| Auxiliary Space: :math:`O(1)`
 """
 from __future__ import annotations
 

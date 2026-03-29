@@ -66,7 +66,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/GroupAnagrams.py
     :language: python
-    :lines: 82-
+    :lines: 87-
 
 Test
 ----
@@ -77,8 +77,18 @@ Test
 [['']]
 >>> groupAnagrams(["a"])
 [['a']]
+
+Complexity
+----------
+| :math:`n` is the number of strings in the input array, :math:`k` is the
+maximum length of a string in the input array, and :math:`g` is the number of
+groups
+| Time: :math:`O(nkg)` — compare each string to groups
+| Auxiliary Space: :math:`O(kg)` — store frequency dictionary for each
+group
 """
 
+from collections import Counter
 from typing import List
 
 
@@ -88,12 +98,7 @@ def groupAnagrams(strs: List[str]) -> List[List[str]]:
     dicts = []
     groups = []
     for s in strs:
-        d = {}
-        for char in s:
-            if char in d:
-                d[char] += 1
-            else:
-                d[char] = 0
+        d = Counter(s)
 
         for i, group in enumerate(groups):
             if d == dicts[i]:

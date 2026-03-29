@@ -70,7 +70,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/SummaryRanges.py
     :language: python
-    :lines: 84-
+    :lines: 89-
 
 Test
 ----
@@ -79,6 +79,12 @@ Test
 ['0->2', '4->5', '7']
 >>> summaryRanges([0, 2, 3, 4, 6, 8, 9])
 ['0', '2->4', '6', '8->9']
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n)` — single pass through the array
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

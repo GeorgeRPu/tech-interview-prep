@@ -90,7 +90,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/SearchInRotatedArray.py
     :language: python
-    :lines: 106-
+    :lines: 111-
 
 Test
 ----
@@ -101,6 +101,12 @@ Test
 -1
 >>> search([1], 0)
 -1
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(\log n)` — modified binary search
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

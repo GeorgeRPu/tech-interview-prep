@@ -71,7 +71,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/RotateImage.py
     :language: python
-    :lines: 89-
+    :lines: 94-
 
 Test
 ----
@@ -84,6 +84,12 @@ Test
 >>> rotate(matrix)
 >>> matrix
 [[15, 13, 2, 5], [14, 3, 4, 1], [12, 6, 8, 9], [16, 7, 10, 11]]
+
+Complexity
+----------
+| :math:`n` is the length of the input matrix
+| Time: :math:`O(n^2)` — visit each element
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

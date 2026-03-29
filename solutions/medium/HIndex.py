@@ -57,7 +57,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/HIndex.py
     :language: python
-    :lines: 71-
+    :lines: 76-
 
 Test
 ----
@@ -66,6 +66,12 @@ Test
 3
 >>> hIndex([1, 3, 1])
 1
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n \log n)` — sort the array, then single pass through the array
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

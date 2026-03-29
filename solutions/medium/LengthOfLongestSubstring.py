@@ -60,7 +60,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/LengthOfLongestSubstring.py
     :language: python
-    :lines: 77-
+    :lines: 82-
 
 Test
 ----
@@ -71,6 +71,12 @@ Test
 1
 >>> lengthOfLongestSubstring('pwwkew')
 3
+
+Complexity
+----------
+| :math:`n` is the length of the input string
+| Time: :math:`O(n^2)` — attempt to build substring starting at each character
+| Auxiliary Space: :math:`O(n)` — substring storage
 """
 
 

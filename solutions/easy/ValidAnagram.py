@@ -52,7 +52,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/ValidAnagram.py
     :language: python
-    :lines: 67-
+    :lines: 72-
 
 Test
 ----
@@ -61,6 +61,12 @@ Test
 True
 >>> isAnagram('rat', 'car')
 False
+
+Complexity
+----------
+| :math:`n` is the length of ``s`` and ``t``.
+| Time: :math:`O(n)` — count characters in ``s`` and ``t``
+| Auxiliary Space: :math:`O(1)` — dictionary size bounded by character set (26 lowercase letters)
 """
 
 

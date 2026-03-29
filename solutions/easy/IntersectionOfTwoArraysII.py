@@ -66,7 +66,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/IntersectionOfTwoArraysII.py
     :language: python
-    :lines: 80-
+    :lines: 85-
 
 Test
 ----
@@ -75,6 +75,12 @@ Test
 [2, 2]
 >>> intersect([4,9,5], [9,4,9,8,4])
 [4, 9]
+
+Complexity
+----------
+| :math:`m` is the length of ``nums1`` and :math:`n` is the length of ``nums2``
+| Time: :math:`O(m + n)` — count each array and then iterate through the keys of the smaller dictionary
+| Auxiliary Space: :math:`O(m + n)` — 2 dictionaries store at most :math:`m` and :math:`n` key-value pairs respectively
 """
 
 from typing import List

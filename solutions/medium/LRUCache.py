@@ -75,7 +75,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/LRUCache.py
     :language: python
-    :lines: 100-
+    :lines: 105-
 
 Test
 ----
@@ -95,6 +95,13 @@ Test
 3
 >>> cache.get(4)
 4
+
+Complexity
+----------
+| :math:`n` is the number of entries in the cache
+| Get Time: :math:`O(1)`
+| Put Time: :math:`O(1)`
+| Auxiliary Space: :math:`O(n)` — hash map and linked list
 """
 
 from __future__ import annotations

@@ -82,7 +82,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/CountAndSay.py
     :language: python
-    :lines: 97-
+    :lines: 102-
 
 Test
 ----
@@ -91,6 +91,11 @@ Test
 '1'
 >>> countAndSay(4)
 '1211'
+
+Complexity
+----------
+| Time: :math:`O(n \cdot m)` — n iterations, m is sequence length
+| Space: :math:`O(m)` — stores previous sequence
 """
 
 

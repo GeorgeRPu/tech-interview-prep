@@ -58,7 +58,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/CountPrimes.py
     :language: python
-    :lines: 75-
+    :lines: 80-
 
 Test
 ----
@@ -69,6 +69,11 @@ Test
 0
 >>> countPrimes(1)
 0
+
+Complexity
+----------
+| Time: :math:`O(n \log \log n)` — Sieve of Eratosthenes
+| Space: :math:`O(n)` — boolean sieve array
 """
 
 

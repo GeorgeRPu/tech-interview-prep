@@ -77,7 +77,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/GasStation.py
     :language: python
-    :lines: 95-
+    :lines: 100-
 
 Test
 ----
@@ -90,6 +90,11 @@ Test
 >>> cost = [3, 4, 3]
 >>> canCompleteCircuit(gas, cost)
 -1
+
+Complexity
+----------
+| Time: :math:`O(n)` — single pass through stations
+| Auxiliary Space: :math:`O(n)` — surplus array
 """
 
 from typing import List

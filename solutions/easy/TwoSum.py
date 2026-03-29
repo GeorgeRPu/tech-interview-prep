@@ -71,7 +71,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/TwoSum.py
     :language: python
-    :lines: 87-
+    :lines: 92-
 
 Test
 ----
@@ -82,6 +82,12 @@ Test
 [1, 2]
 >>> twoSum([3, 3], 6)
 [0, 1]
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n \log n)` — sort then go though the array once
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

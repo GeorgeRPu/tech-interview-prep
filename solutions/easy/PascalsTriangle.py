@@ -57,7 +57,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/PascalsTriangle.py
     :language: python
-    :lines: 71-
+    :lines: 76-
 
 Test
 ----
@@ -66,6 +66,12 @@ Test
 [[1], [1, 1], [1, 2, 1]]
 >>> generate(6)
 [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1], [1, 5, 10, 10, 5, 1]]
+
+Complexity
+----------
+| :math:`n` is the number of rows in the triangle
+| Time: :math:`O(n^2)` — triangle is half of a square of side :math:`n`
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

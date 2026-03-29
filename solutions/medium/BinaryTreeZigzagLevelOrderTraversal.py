@@ -60,7 +60,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/BinaryTreeZigzagLevelOrderTraversal.py
     :language: python
-    :lines: 77-
+    :lines: 82-
 
 Test
 ----
@@ -72,6 +72,13 @@ Test
 [[1]]
 >>> zigzagLevelOrder(None)
 []
+
+Complexity
+----------
+| :math:`n` is the number of nodes in the binary tree
+| Time: :math:`O(n)` — visit each node once
+| Auxiliary Space: :math:`O(n)` — `next_level` holds one level of nodes, up to
+:math:`O(n / 2)` for a full binary tree
 """
 
 from typing import List

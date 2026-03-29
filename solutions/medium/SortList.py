@@ -65,7 +65,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/SortList.py
     :language: python
-    :lines: 82-
+    :lines: 87-
 
 Test
 ----
@@ -78,6 +78,11 @@ Test
 >>> head = sortList(head)
 >>> print(head)
 -1 -> 0 -> 3 -> 4 -> 5
+
+Complexity
+----------
+| Time: :math:`O(n \log n)` — merge sort
+| Auxiliary Space: :math:`O(\log n)`
 """
 from __future__ import annotations
 

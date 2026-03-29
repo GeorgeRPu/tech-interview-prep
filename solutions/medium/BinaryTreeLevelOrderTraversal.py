@@ -59,7 +59,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/BinaryTreeLevelOrderTraversal.py
     :language: python
-    :lines: 79-
+    :lines: 84-
 
 Test
 ----
@@ -73,6 +73,13 @@ Test
 >>> root = None
 >>> levelOrder(root)
 []
+
+Complexity
+----------
+| :math:`n` is the number of nodes in the binary tree
+| Time: :math:`O(n)` — visit each node once
+| Auxiliary Space: :math:`O(n)` — `next_level` holds one level of nodes, up to
+:math:`O(n / 2)` for a full binary tree
 """
 
 

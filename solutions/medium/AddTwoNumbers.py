@@ -74,7 +74,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/AddTwoNumbers.py
     :language: python
-    :lines: 95-
+    :lines: 100-
 
 Test
 ----
@@ -91,6 +91,12 @@ Test
 >>> l2 = ListNode.from_list([9, 9, 9, 9])
 >>> addTwoNumbers(l1, l2).to_list()
 [8, 9, 9, 9, 0, 0, 0, 1]
+
+Complexity
+----------
+| :math:`n` is the total number of nodes in both lists
+| Time: :math:`O(n)` — single pass through both lists
+| Auxiliary Space: :math:`O(1)`
 """
 from __future__ import annotations
 

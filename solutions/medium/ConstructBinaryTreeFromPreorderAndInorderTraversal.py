@@ -62,7 +62,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ConstructBinaryTreeFromPreorderAndInorderTraversal.py
     :language: python
-    :lines: 86-
+    :lines: 91-
 
 Test
 ----
@@ -81,6 +81,12 @@ Test
 [-1]
 >>> root.inorder()
 [-1]
+
+Complexity
+----------
+| :math:`n` is the number of nodes in the binary tree
+| Time: :math:`O(n^2)` — finding index of element in array per recursive call
+| Auxiliary Space: :math:`O(1)` — we only slice and pass references to the input arrays
 """
 
 from typing import List, Tuple

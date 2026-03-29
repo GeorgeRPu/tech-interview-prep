@@ -114,7 +114,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/IntersectionOfTwoLinkedLists.py
     :language: python
-    :lines: 135-
+    :lines: 140-
 
 Test
 ----
@@ -131,6 +131,12 @@ Test
 >>> b = ListNode.from_list([1, 5])
 >>> getIntersectionNode(a, b) is None
 True
+
+Complexity
+----------
+| :math:`m` is the length of the first linked list and :math:`n` is the length of the second linked list
+| Time: :math:`O(m + n)` — single pass through both lists
+| Space: :math:`O(m)` — set for first list
 """
 from __future__ import annotations
 

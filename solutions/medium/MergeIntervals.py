@@ -64,7 +64,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/MergeIntervals.py
     :language: python
-    :lines: 77-
+    :lines: 82-
 
 Test
 ----
@@ -73,6 +73,12 @@ Test
 [[1, 6], [8, 10], [15, 18]]
 >>> merge([[1, 4], [4, 5]])
 [[1, 5]]
+
+Complexity
+----------
+| :math:`n` is the number of intervals
+| Time: :math:`O(n \log n)` — sort then merge intervals
+| Auxiliary Space: :math:`O(1)`
 """
 from __future__ import annotations
 

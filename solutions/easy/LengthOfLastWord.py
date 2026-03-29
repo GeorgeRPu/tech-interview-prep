@@ -60,7 +60,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/LengthOfLastWord.py
     :language: python
-    :lines: 77-
+    :lines: 82-
 
 Test
 ----
@@ -71,6 +71,12 @@ Test
 4
 >>> lengthOfLastWord('luffy is still joyboy')
 6
+
+Complexity
+----------
+| :math:`n` is the length of the input string.
+| Time: :math:`O(n)` — strip and split
+| Auxiliary Space: :math:`O(1)`
 """
 
 

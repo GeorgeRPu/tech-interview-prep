@@ -68,7 +68,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/DivideTwoIntegers.py
     :language: python
-    :lines: 83-
+    :lines: 88-
 
 Test
 ----
@@ -77,6 +77,13 @@ Test
 3
 >>> divide(7, -3)
 -2
+
+Complexity
+----------
+| :math:`q` is the quotient
+| Time: :math:`O(|q|)` — calculating the quotient by counting the number of
+steps in the range
+| Auxiliary Space: :math:`O(1)` — constant extra space
 """
 
 

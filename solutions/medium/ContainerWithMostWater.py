@@ -61,7 +61,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ContainerWithMostWater.py
     :language: python
-    :lines: 75-
+    :lines: 80-
 
 Test
 ----
@@ -70,6 +70,12 @@ Test
 49
 >>> maxArea([1, 1])
 1
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n)` — single pass with two pointers
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

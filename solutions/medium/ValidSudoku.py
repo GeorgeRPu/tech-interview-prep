@@ -27,7 +27,7 @@ need to be validated **according to the following rules**:
 ::
 
 
-   Input: board = 
+   Input: board =
    [["5","3",".",".","7",".",".",".","."]
    ,["6",".",".","1","9","5",".",".","."]
    ,[".","9","8",".",".",".",".","6","."]
@@ -44,7 +44,7 @@ need to be validated **according to the following rules**:
 ::
 
 
-   Input: board = 
+   Input: board =
    [["8","3",".",".","7",".",".",".","."]
    ,["6",".",".","1","9","5",".",".","."]
    ,[".","9","8",".",".",".",".","6","."]
@@ -81,7 +81,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/ValidSudoku.py
     :language: python
-    :lines: 117-
+    :lines: 122-
 
 Test
 ----
@@ -112,6 +112,12 @@ True
 ... ]
 >>> isValidSudoku(board)
 False
+
+Complexity
+----------
+| :math:`n` is the size of a block (3 for a 9x9 board)
+| Time: :math:`O(n^4)` — number of rows, columns, and squares to check is :math:`3n^2` and there are :math:`n^2` cells in each row, column, and square
+| Auxiliary Space: :math:`O(n^2)` — numbers in each row, column, and square are stored in a set for checking duplicates and valid digits
 """
 
 from typing import List
@@ -139,13 +145,11 @@ def isValidSudoku(board: List[List[str]]) -> bool:
     return True
 
 
-one_through_nine = [str(i) for i in range(1, 10)]
-
-
 def is_valid(cells: List[str]) -> bool:
     """Check that ``cells`` has no duplicates and contains the digits 1-9.
     """
     nums = [cell for cell in cells if cell != '.']
+    one_through_nine = {str(i) for i in range(1, 10)}
 
     if len(set(nums)) < len(nums):
         return False
@@ -153,5 +157,7 @@ def is_valid(cells: List[str]) -> bool:
     for num in nums:
         if num not in one_through_nine:
             return False
+        else:
+            one_through_nine.remove(num)
 
     return True

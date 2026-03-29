@@ -59,7 +59,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/FirstUniqueCharacterInAString.py
     :language: python
-    :lines: 76-
+    :lines: 81-
 
 Test
 ----
@@ -70,6 +70,12 @@ Test
 2
 >>> firstUniqChar('aabb')
 -1
+
+Complexity
+----------
+| :math:`n` is the length of the input string.
+| Time: :math:`O(n)` — 2 passes through the string
+| Auxiliary Space: :math:`O(n)` — dictionary stores at most :math:`n` key-value pairs
 """
 
 

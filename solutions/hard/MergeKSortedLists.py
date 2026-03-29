@@ -67,7 +67,7 @@ Code
 
 .. literalinclude:: ../solutions/hard/MergeKSortedLists.py
     :language: python
-    :lines: 82-
+    :lines: 87-
 
 Test
 ----
@@ -78,6 +78,12 @@ Test
 >>> head = merge_k_lists([head1, head2, head3])
 >>> print(head)
 1 -> 2 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
+
+Complexity
+----------
+| :math:`n` is the total number of nodes across all lists, and :math:`k` is the number of lists
+| Time: :math:`O(n \log k)` — :math:`O(\log k)` to pop from the heap of size :math:`k` for each of the :math:`n` nodes
+| Auxiliary Space: :math:`O(k)` — heap size
 """
 from __future__ import annotations
 

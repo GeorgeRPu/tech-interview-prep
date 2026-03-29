@@ -70,7 +70,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/MaximumSubarray.py
     :language: python
-    :lines: 84-
+    :lines: 89-
 
 Test
 ----
@@ -79,6 +79,12 @@ Test
 6
 >>> maxSubArray([1])
 1
+
+Complexity
+----------
+| :math:`n` is the length of the input array
+| Time: :math:`O(n)` — single pass through array
+| Auxiliary Space: :math:`O(1)`
 """
 
 from typing import List

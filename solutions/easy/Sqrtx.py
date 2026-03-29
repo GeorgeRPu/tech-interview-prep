@@ -55,7 +55,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/Sqrtx.py
     :language: python
-    :lines: 70-
+    :lines: 75-
 
 Test
 ----
@@ -64,6 +64,11 @@ Test
 2
 >>> mySqrt(8)
 2
+
+Complexity
+----------
+| Time: :math:`O(\log n)` — binary search
+| Auxiliary Space: :math:`O(1)`
 """
 
 

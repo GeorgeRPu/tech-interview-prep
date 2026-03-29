@@ -70,7 +70,7 @@ Code
 
 .. literalinclude:: ../solutions/medium/RemoveNthNodeFromEndOfList.py
     :language: python
-    :lines: 88-
+    :lines: 93-
 
 Test
 ----
@@ -84,6 +84,12 @@ None
 >>> head = ListNode.from_list([1, 2])
 >>> removeNthFromEnd(head, 1).to_list()
 [1]
+
+Complexity
+----------
+| :math:`n` is the length of the linked list
+| Time: :math:`O(n)` — two passes
+| Auxiliary Space: :math:`O(1)`
 """
 from __future__ import annotations
 

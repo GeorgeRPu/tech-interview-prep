@@ -62,7 +62,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/InvertBinaryTree.py
     :language: python
-    :lines: 80-
+    :lines: 85-
 
 Test
 ----
@@ -76,6 +76,12 @@ TreeNode(2, TreeNode(3, None, None), TreeNode(1, None, None))
 >>> root = TreeNode.from_list([])
 >>> invertTree(root) is None
 True
+
+Complexity
+----------
+| :math:`n` is the number of nodes in the tree
+| Time: :math:`O(n)` — visit every node
+| Auxiliary Space: :math:`O(1)`
 """
 from __future__ import annotations
 

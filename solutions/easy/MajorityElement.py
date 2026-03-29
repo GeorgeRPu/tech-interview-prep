@@ -54,7 +54,7 @@ Code
 
 .. literalinclude:: ../solutions/easy/MajorityElement.py
     :language: python
-    :lines: 70-
+    :lines: 75-
 
 Test
 ----
@@ -65,6 +65,12 @@ Test
 2
 >>> majorityElement([1])
 1
+
+Complexity
+----------
+| :math:`n` is the length of the input array.
+| Time: :math:`O(n)` — single pass with early exit
+| Auxiliary Space: :math:`O(n)` — dictionary stores at most :math:`n` key-value pairs
 """
 
 from typing import List
