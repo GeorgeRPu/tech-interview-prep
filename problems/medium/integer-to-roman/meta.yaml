@@ -100,15 +100,17 @@ description_rst: |
   **Constraints:**
 
   - ``1 <= num <= 3999``
-explanation: |
-  Observe that the Roman numeral for a number is composed of the Roman numerals
-  for each digit. Suppose our digit is in the ones place. Then, the Roman
-  numberal is 'I' repeated ``digit`` times if ``digit`` is less than 4 and 'IV'
-  if ``digit`` is 4. For ``digit`` between 5 and 8, the Roman numeral is 'V'
-  followed by 'I' ``digit - 5`` times. Finally, if ``digit`` is 9, the Roman
-  numeral is 'IX'. For digits in the tens, hundreds, and thousands places, the
-  pattern holds, but with different symbols for ones, fives, and tens.
-complexity: |
-  | :math:`n` is the number of digits in ``num``
-  | Time: :math:`O(\log_{10} n)` — extract each digit and convert to Roman numeral
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Observe that the Roman numeral for a number is composed of the Roman numerals
+    for each digit. Suppose our digit is in the ones place. Then, the Roman
+    numberal is 'I' repeated ``digit`` times if ``digit`` is less than 4 and 'IV'
+    if ``digit`` is 4. For ``digit`` between 5 and 8, the Roman numeral is 'V'
+    followed by 'I' ``digit - 5`` times. Finally, if ``digit`` is 9, the Roman
+    numeral is 'IX'. For digits in the tens, hundreds, and thousands places, the
+    pattern holds, but with different symbols for ones, fives, and tens.
+  complexity: |
+    | :math:`n` is the number of digits in ``num``
+    | Time: :math:`O(\log_{10} n)` — extract each digit and convert to Roman numeral
+    | Auxiliary Space: :math:`O(1)`

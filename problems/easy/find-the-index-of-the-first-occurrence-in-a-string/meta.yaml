@@ -36,10 +36,12 @@ description_rst: |
   - ``1 <= haystack.length, needle.length <= 10``\ :sup:```4```
   - ``haystack`` and ``needle`` consist of only lowercase English
     characters.
-explanation: |
-  Iterate through each character in ``haystack`` and check if the substring
-  ``haystack[i:i + len(needle)]`` is equal to ``needle``.
-complexity: |
-  | :math:`m` is the length of the needle and :math:`n` is the length of the haystack.
-  | Time: :math:`O(n - m)` — single pass through the haystack
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Iterate through each character in ``haystack`` and check if the substring
+    ``haystack[i:i + len(needle)]`` is equal to ``needle``.
+  complexity: |
+    | :math:`m` is the length of the needle and :math:`n` is the length of the haystack.
+    | Time: :math:`O(n - m)` — single pass through the haystack
+    | Auxiliary Space: :math:`O(1)`

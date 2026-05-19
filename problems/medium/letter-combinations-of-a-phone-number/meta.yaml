@@ -39,10 +39,12 @@ description_rst: |
   - ``digits[i]`` is a digit in the range ``['2', '9']``.
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png
-explanation: |
-  First map each digit to a group of letters. We can generate letter combinations
-  by appending each letter in the group to each combination.
-complexity: |
-  | :math:`n` is the length of ``digits``.
-  | Time: :math:`O(4^n)` — at each step, we append 4 letters to each combination
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    First map each digit to a group of letters. We can generate letter combinations
+    by appending each letter in the group to each combination.
+  complexity: |
+    | :math:`n` is the length of ``digits``.
+    | Time: :math:`O(4^n)` — at each step, we append 4 letters to each combination
+    | Auxiliary Space: :math:`O(1)`

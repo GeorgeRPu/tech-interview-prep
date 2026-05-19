@@ -43,21 +43,23 @@ description_rst: |
   - ``n`` is an integer.
   - Either ``x`` is not zero or ``n > 0``.
   - ``-10``\ :sup:```4```\ ``<= x``\ :sup:```n```\ ``<= 10``\ :sup:```4```
-explanation: |
-  We assume that using Python's built in exponentiation operator is not allowed.
+solutions:
+- name: Approach 1
+  explanation: |
+    We assume that using Python's built in exponentiation operator is not allowed.
 
-  .. math::
+    .. math::
 
-      x^n = (x^{n/2})^2 = (x^2)^{n/2}
+        x^n = (x^{n/2})^2 = (x^2)^{n/2}
 
-  From the first equality, we see that we can compute :math:`x^n` from
-  :math:`x^{n/2}` in only 1 multiplication. From the second equality, we have a
-  recursive formula for :math:`x^n`.::
+    From the first equality, we see that we can compute :math:`x^n` from
+    :math:`x^{n/2}` in only 1 multiplication. From the second equality, we have a
+    recursive formula for :math:`x^n`.::
 
-      pow(x, n) = pow(x * x, n/2)
+        pow(x, n) = pow(x * x, n/2)
 
-  Adjust for the case where :math:`n` is odd and for the case where :math:`n` is
-  negative.
-complexity: |
-  | Time: :math:`O(\log_2 n)` — exponentiation by squaring
-  | Auxiliary Space: :math:`O(1)`
+    Adjust for the case where :math:`n` is odd and for the case where :math:`n` is
+    negative.
+  complexity: |
+    | Time: :math:`O(\log_2 n)` — exponentiation by squaring
+    | Auxiliary Space: :math:`O(1)`

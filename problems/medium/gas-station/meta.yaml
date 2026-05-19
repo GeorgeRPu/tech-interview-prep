@@ -57,14 +57,16 @@ description_rst: |
   - ``1 <= n <= 10``\ :sup:```5```
   - ``0 <= gas[i], cost[i] <= 10``\ :sup:```4```
   - The input is generated such that the answer is unique.
-explanation: |
-  Create a ``surplus`` array, which stores the difference between gas and cost.
-  If the sum of ``surplus`` is negative, then there is not enough gas to complete
-  the circuit no matter the starting point. Otherwise, we can complete the
-  circuit. Observe that if we cannot complete the circuit by ``i``, then we
-  cannot complete the circuit starting at any station in ``[start, i]``. This is
-  because the car had a non-empty tank until ``i``. Thus, if there is a solution,
-  it must be in ``[i + 1, n]``.
-complexity: |
-  | Time: :math:`O(n)` — single pass through stations
-  | Auxiliary Space: :math:`O(n)` — surplus array
+solutions:
+- name: Approach 1
+  explanation: |
+    Create a ``surplus`` array, which stores the difference between gas and cost.
+    If the sum of ``surplus`` is negative, then there is not enough gas to complete
+    the circuit no matter the starting point. Otherwise, we can complete the
+    circuit. Observe that if we cannot complete the circuit by ``i``, then we
+    cannot complete the circuit starting at any station in ``[start, i]``. This is
+    because the car had a non-empty tank until ``i``. Thus, if there is a solution,
+    it must be in ``[i + 1, n]``.
+  complexity: |
+    | Time: :math:`O(n)` — single pass through stations
+    | Auxiliary Space: :math:`O(n)` — surplus array

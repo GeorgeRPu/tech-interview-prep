@@ -51,34 +51,36 @@ description_rst: |
   - All values of ``nums`` are **unique**.
   - ``nums`` is an ascending array that is possibly rotated.
   - ``-10``\ :sup:```4```\ ``<= target <= 10``\ :sup:```4```
-explanation: |
-  https://www.youtube.com/watch?v=U8XENwh8Oy8
+solutions:
+- name: Approach 1
+  explanation: |
+    https://www.youtube.com/watch?v=U8XENwh8Oy8
 
-  The array is divided into 2 parts: left of the pivot :math:`L` and right of
-  the pivot :math:`R`. Every element in :math:`L` is greater than every element
-  in :math:`R`. We can determine which part a midpoint ``mid`` is in by comparing
-  ``nums[mid] >= nums[0]``.
+    The array is divided into 2 parts: left of the pivot :math:`L` and right of
+    the pivot :math:`R`. Every element in :math:`L` is greater than every element
+    in :math:`R`. We can determine which part a midpoint ``mid`` is in by comparing
+    ``nums[mid] >= nums[0]``.
 
-  Initialize ``left`` and ``right`` to the start and end of the array.
+    Initialize ``left`` and ``right`` to the start and end of the array.
 
-  * If ``mid`` is in the left part...
+    * If ``mid`` is in the left part...
 
-    * If ``nums[mid] > target``, then ``target`` must be right of ``mid``.
+      * If ``nums[mid] > target``, then ``target`` must be right of ``mid``.
 
-    * If ``nums[mid] < target``, then ``target`` could be left of ``mid`` or
-      in :math:`R` if ``target`` is small enough. We can determine which by
-      comparing ``nums[left] > target``.
+      * If ``nums[mid] < target``, then ``target`` could be left of ``mid`` or
+        in :math:`R` if ``target`` is small enough. We can determine which by
+        comparing ``nums[left] > target``.
 
-  * If ``mid`` is in the right part...
+    * If ``mid`` is in the right part...
 
-    * If ``nums[mid] < target``, then ``target`` must be left of ``mid``.
+      * If ``nums[mid] < target``, then ``target`` must be left of ``mid``.
 
-    * If ``nums[mid] > target and nums[right] < target``, then ``target`` must be
-      left of ``mid`` in :math:`L`.
+      * If ``nums[mid] > target and nums[right] < target``, then ``target`` must be
+        left of ``mid`` in :math:`L`.
 
-    * If ``nums[mid] > target and nums[right] > target``, then ``target`` must be
-      in :math:`R`.
-complexity: |
-  | :math:`n` is the length of the input array
-  | Time: :math:`O(\log n)` — modified binary search
-  | Auxiliary Space: :math:`O(1)`
+      * If ``nums[mid] > target and nums[right] > target``, then ``target`` must be
+        in :math:`R`.
+  complexity: |
+    | :math:`n` is the length of the input array
+    | Time: :math:`O(\log n)` — modified binary search
+    | Auxiliary Space: :math:`O(1)`

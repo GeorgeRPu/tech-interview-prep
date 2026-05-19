@@ -60,12 +60,14 @@ description_rst: |
   - ``s`` contains only lowercase English letters and spaces ``' '``.
   - ``s`` **does not contain** any leading or trailing spaces.
   - All the words in ``s`` are separated by a **single space**.
-explanation: |
-  Split ``s`` into a list of words. The problem reduces to IsomorphicStrings but
-  with characters in ``pattern`` and elements in ``s``. Since ``pattern`` and
-  ``s`` can have different lenghts, we first check that they have the same
-  length.
-complexity: |
-  | :math:`n` is the length of ``pattern`` and the number of words in ``s``
-  | Time: :math:`O(n)` — single pass over ``pattern`` and words in ``s``
-  | Auxiliary Space: :math:`O(n)` — dictionary for mapping characters to words and set for tracking mapped words
+solutions:
+- name: Approach 1
+  explanation: |
+    Split ``s`` into a list of words. The problem reduces to IsomorphicStrings but
+    with characters in ``pattern`` and elements in ``s``. Since ``pattern`` and
+    ``s`` can have different lenghts, we first check that they have the same
+    length.
+  complexity: |
+    | :math:`n` is the length of ``pattern`` and the number of words in ``s``
+    | Time: :math:`O(n)` — single pass over ``pattern`` and words in ``s``
+    | Auxiliary Space: :math:`O(n)` — dictionary for mapping characters to words and set for tracking mapped words

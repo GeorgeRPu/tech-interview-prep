@@ -77,13 +77,15 @@ description_rst: |
     ``('I', 'V', 'X', 'L', 'C', 'D', 'M')``.
   - It is **guaranteed** that ``s`` is a valid roman numeral in the range
     ``[1, 3999]``.
-explanation: |
-  Observe that the value of a Roman numeral is the sum of the value of the
-  letters, but the letters may be negative or positive depending on their
-  position. Since there are only 6 instances of subtractive notation, we can
-  store these in a set. If these are present, we subtract the value of the
-  numeral. Otherwise add up the numeral values.
-complexity: |
-  | :math:`n` is the length of the string
-  | Time: :math:`O(n)` — single pass through the string
-  | Auxiliary Space: :math:`O(1)` — fixed-size maps for roman numeral symbols
+solutions:
+- name: Approach 1
+  explanation: |
+    Observe that the value of a Roman numeral is the sum of the value of the
+    letters, but the letters may be negative or positive depending on their
+    position. Since there are only 6 instances of subtractive notation, we can
+    store these in a set. If these are present, we subtract the value of the
+    numeral. Otherwise add up the numeral values.
+  complexity: |
+    | :math:`n` is the length of the string
+    | Time: :math:`O(n)` — single pass through the string
+    | Auxiliary Space: :math:`O(1)` — fixed-size maps for roman numeral symbols

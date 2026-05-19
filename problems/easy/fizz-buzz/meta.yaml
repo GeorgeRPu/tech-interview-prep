@@ -41,15 +41,17 @@ description_rst: |
   **Constraints:**
 
   - ``1 <= n <= 10``\ :sup:```4```
-explanation: |
-  https://www.youtube.com/watch?v=QPZ0pIK_wsc
+solutions:
+- name: Approach 1
+  explanation: |
+    https://www.youtube.com/watch?v=QPZ0pIK_wsc
 
-  There are 4 cases to consider: divisible by 3, divisible by 5, divisible by 3
-  and 5, and not divisible by 3 or 5. However, observe that the third case is a
-  combination of the first two cases. We can use a string to build up the output
-  for each index 1 to :math:`n`, appending 'Fizz', then appending 'Buzz'. This saves us on an
-  if statement. Finally we can check if the output string is empty to determine
-  whether we need to print the index.
-complexity: |
-  | Time: :math:`O(n)` — single pass through the numbers from 1 to n
-  | Auxiliary Space: :math:`O(1)`
+    There are 4 cases to consider: divisible by 3, divisible by 5, divisible by 3
+    and 5, and not divisible by 3 or 5. However, observe that the third case is a
+    combination of the first two cases. We can use a string to build up the output
+    for each index 1 to :math:`n`, appending 'Fizz', then appending 'Buzz'. This saves us on an
+    if statement. Finally we can check if the output string is empty to determine
+    whether we need to print the index.
+  complexity: |
+    | Time: :math:`O(n)` — single pass through the numbers from 1 to n
+    | Auxiliary Space: :math:`O(1)`

@@ -32,16 +32,18 @@ description_rst: |
 
   - ``1 <= s.length <= 1000``
   - ``s`` consist of only digits and English letters.
-explanation: |
-  Any palindromic substring can have odd or even length. If the substring has odd
-  length, then the center of the palindrome is a single character. If the
-  substring has even length, then the center of the palindrome are 2 equal
-  characters. We iterate through ``s`` and find all odd and even centers. Given a
-  palindromic center, we can expand the substring by moving the start and end
-  indices while checking that the substring is still a palindrome. When the
-  palindrome exceeds the previous longest palindrome, replace the longest
-  plaindrome.
-complexity: |
-  | :math:`n` is the length of the input string
-  | Time: :math:`O(n^2)` — expand around each character
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Any palindromic substring can have odd or even length. If the substring has odd
+    length, then the center of the palindrome is a single character. If the
+    substring has even length, then the center of the palindrome are 2 equal
+    characters. We iterate through ``s`` and find all odd and even centers. Given a
+    palindromic center, we can expand the substring by moving the start and end
+    indices while checking that the substring is still a palindrome. When the
+    palindrome exceeds the previous longest palindrome, replace the longest
+    plaindrome.
+  complexity: |
+    | :math:`n` is the length of the input string
+    | Time: :math:`O(n^2)` — expand around each character
+    | Auxiliary Space: :math:`O(1)`

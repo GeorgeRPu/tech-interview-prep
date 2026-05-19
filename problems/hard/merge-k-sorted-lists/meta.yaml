@@ -54,10 +54,12 @@ description_rst: |
   - ``-10``\ :sup:```4```\ ``<= lists[i][j] <= 10``\ :sup:```4```
   - ``lists[i]`` is sorted in **ascending order**.
   - The sum of ``lists[i].length`` will not exceed ``10``\ :sup:```4```.
-explanation: |
-  Same as merge 2 sorted linked lists: pick the smallest head and add it to the
-  end of the new list.
-complexity: |
-  | :math:`n` is the total number of nodes across all lists, and :math:`k` is the number of lists
-  | Time: :math:`O(n \log k)` — :math:`O(\log k)` to pop from the heap of size :math:`k` for each of the :math:`n` nodes
-  | Auxiliary Space: :math:`O(k)` — heap size
+solutions:
+- name: Approach 1
+  explanation: |
+    Same as merge 2 sorted linked lists: pick the smallest head and add it to the
+    end of the new list.
+  complexity: |
+    | :math:`n` is the total number of nodes across all lists, and :math:`k` is the number of lists
+    | Time: :math:`O(n \log k)` — :math:`O(\log k)` to pop from the heap of size :math:`k` for each of the :math:`n` nodes
+    | Auxiliary Space: :math:`O(k)` — heap size

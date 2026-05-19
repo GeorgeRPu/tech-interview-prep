@@ -50,12 +50,14 @@ description_rst: |
 
   - ``3 <= nums.length <= 3000``
   - ``-10``\ :sup:```5```\ ``<= nums[i] <= 10``\ :sup:```5```
-explanation: |
-  Sort ``nums``. We can apply the 2Sum solution by iterating ``i`` from 0 to
-  ``len(nums) - 1`` through ``nums`` and finding any remaining 2 numbers
-  ``nums[j], nums[k]`` such that all 3 sum to 0. Track the solutions in a set to
-  avoid duplicates. Moreover, if ``nums[i]`` is a repeat, we can continue to the
-  next iteration.
-complexity: |
-  | Time: :math:`O(n^2)` — sort then, for each element, perform a two-pointer scan through the array
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Sort ``nums``. We can apply the 2Sum solution by iterating ``i`` from 0 to
+    ``len(nums) - 1`` through ``nums`` and finding any remaining 2 numbers
+    ``nums[j], nums[k]`` such that all 3 sum to 0. Track the solutions in a set to
+    avoid duplicates. Moreover, if ``nums[i]`` is a repeat, we can continue to the
+    next iteration.
+  complexity: |
+    | Time: :math:`O(n^2)` — sort then, for each element, perform a two-pointer scan through the array
+    | Auxiliary Space: :math:`O(1)`

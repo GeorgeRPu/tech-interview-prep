@@ -62,14 +62,16 @@ description_rst: |
   - ``s`` consists of English letters (lower-case and upper-case), ``','``
     and ``'.'``.
   - ``1 <= numRows <= 1000``
-explanation: |
-  Create a 2d array ``rows`` that is ``numRows`` rows by ``len(s)`` columns. The
-  zigzag pattern has 2 parts. The zig is a vertical line and the zag is diagonal.
-  Track whether we should be zigging or zagging with a boolean. When we reach the
-  top or bottom of ``rows``, switch from zig to zag or zag to zig. Iterate
-  through the string, setting a cell in rows to the current character. Join
-  ``rows`` together row-wise to get the converted string.
-complexity: |
-  | :math:`n` is the length of the input string and :math:`m` is the number of rows.
-  | Time: :math:`O(n + m)` — pass through the string to build each row and then join them together
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Create a 2d array ``rows`` that is ``numRows`` rows by ``len(s)`` columns. The
+    zigzag pattern has 2 parts. The zig is a vertical line and the zag is diagonal.
+    Track whether we should be zigging or zagging with a boolean. When we reach the
+    top or bottom of ``rows``, switch from zig to zag or zag to zig. Iterate
+    through the string, setting a cell in rows to the current character. Join
+    ``rows`` together row-wise to get the converted string.
+  complexity: |
+    | :math:`n` is the length of the input string and :math:`m` is the number of rows.
+    | Time: :math:`O(n + m)` — pass through the string to build each row and then join them together
+    | Auxiliary Space: :math:`O(1)`

@@ -3,7 +3,7 @@
 every Sphinx page that the old per-script pipeline produced.
 
 Outputs:
-* ``generated/<Pascal>.rst`` per problem
+* ``generated/<slug>.rst`` per problem
 * ``coverage.rst``, ``problem_index.rst``
 * ``easy_index.rst``, ``medium_index.rst``, ``hard_index.rst``
 
@@ -36,6 +36,7 @@ from _solutions import (
     progress_bar,
     public_top_level_symbols,
     read_module_docstring,
+    solution_module_name,
     truncate_description,
 )
 
@@ -45,24 +46,32 @@ PROBLEM_INDEX_FILE = ROOT / "problem_index.rst"
 
 
 @dataclass
+class Variant:
+    """One approach to a problem (one tab on the rendered page)."""
+
+    name: str  # display label, e.g. "Brute Force"
+    module: str  # python module name on sys.path, e.g. "two_sum__brute_force"
+    source_path: Path  # absolute path to the variant's .py file
+    explanation: str
+    complexity: str
+    test_block: str  # raw docstring text containing the doctests
+    first_code_line: int  # 1-based; first executable line after the docstring
+    public_symbols: list[tuple[str, str]]  # (kind, name) for autodoc directives
+
+
+@dataclass
 class Problem:
     """In-memory model used by every page renderer."""
 
-    slug: str
-    name: str
-    pascal: str
+    slug: str  # canonical identifier ("two-sum"); used as page filename
+    name: str  # display title from catalog.yaml ("Two Sum")
     difficulty: str  # "Easy" | "Medium" | "Hard"
     patterns: list[str]
     description_rst: str  # raw RST block, no surrounding blank lines
     short_description: str  # for difficulty index bullet
-    source_path: Path  # absolute path to the source .py
-    explanation: str
-    complexity: str
-    test_block: str
-    first_code_line: int
-    public_symbols: list[tuple[str, str]]
     problem_url: str  # full URL to the problem (LeetCode or other)
     in_catalog: bool  # True iff this slug appears in catalog.yaml
+    variants: list[Variant] = field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------
@@ -76,6 +85,48 @@ def load_catalog() -> list[dict]:
         return []
     with CATALOG_PATH.open(encoding="utf-8") as f:
         return yaml.safe_load(f) or []
+
+
+def _build_variant(slug: str, slug_dir: Path, entry: dict) -> Variant | None:
+    """Parse one ``solutions:`` entry into a Variant, or return None on error."""
+    name = (entry.get("name") or "").strip()
+    if not name:
+        print(
+            f"[generate-docs] WARNING: {slug_dir}/meta.yaml: solution entry "
+            f"missing required 'name'",
+            file=sys.stderr,
+        )
+        return None
+    module = solution_module_name(slug, name)
+    py_path = slug_dir / f"{module}.py"
+    if not py_path.exists():
+        print(
+            f"[generate-docs] WARNING: {slug_dir}/meta.yaml: solution '{name}' "
+            f"expects file {py_path.name} which does not exist",
+            file=sys.stderr,
+        )
+        return None
+    source = py_path.read_text(encoding="utf-8")
+    bounds = find_module_docstring_bounds(source)
+    if bounds is None:
+        print(
+            f"[generate-docs] WARNING: no docstring in {py_path}",
+            file=sys.stderr,
+        )
+        return None
+    _start, end = bounds
+    first_code_line = first_nonblank_noncomment_after(source.splitlines(), end) or 1
+    test_block = (read_module_docstring(py_path) or "").strip("\n")
+    return Variant(
+        name=name,
+        module=module,
+        source_path=py_path,
+        explanation=(entry.get("explanation") or "").rstrip("\n"),
+        complexity=(entry.get("complexity") or "").rstrip("\n"),
+        test_block=test_block,
+        first_code_line=first_code_line,
+        public_symbols=public_top_level_symbols(py_path),
+    )
 
 
 def _new_source_problems(catalog_by_slug: dict[str, dict]) -> dict[str, Problem]:
@@ -92,53 +143,44 @@ def _new_source_problems(catalog_by_slug: dict[str, dict]) -> dict[str, Problem]
             meta_path = slug_dir / "meta.yaml"
             if not meta_path.exists():
                 continue
-            py_files = [p for p in slug_dir.glob("*.py") if not p.name.startswith("_")]
-            if len(py_files) != 1:
-                print(
-                    f"[generate-docs] WARNING: {slug_dir} must contain exactly one .py "
-                    f"(found {len(py_files)})",
-                    file=sys.stderr,
-                )
-                continue
-            py_path = py_files[0]
-            pascal = py_path.stem
             with meta_path.open(encoding="utf-8") as f:
                 meta = yaml.safe_load(f) or {}
 
-            source = py_path.read_text(encoding="utf-8")
-            bounds = find_module_docstring_bounds(source)
-            if bounds is None:
+            solutions_meta = meta.get("solutions")
+            if not solutions_meta:
                 print(
-                    f"[generate-docs] WARNING: no docstring in {py_path}",
+                    f"[generate-docs] WARNING: {meta_path} must define a non-empty "
+                    f"'solutions:' list",
                     file=sys.stderr,
                 )
                 continue
-            _start, end = bounds
-            first_code_line = first_nonblank_noncomment_after(source.splitlines(), end) or 1
-            test_block = (read_module_docstring(py_path) or "").strip("\n")
+
+            variants: list[Variant] = []
+            for entry in solutions_meta:
+                variant = _build_variant(slug, slug_dir, entry or {})
+                if variant is not None:
+                    variants.append(variant)
+            if not variants:
+                continue
 
             description_rst = (meta.get("description_rst") or "").rstrip("\n")
             short = truncate_description(description_rst)
             catalog_entry = catalog_by_slug.get(slug, {})
-            name = catalog_entry.get("name", pascal_to_words(pascal))
+            name = catalog_entry.get("name") or pascal_to_words(
+                "".join(part.capitalize() for part in slug.split("-"))
+            )
             problem_url = meta.get("problem_url") or f"{LEETCODE_BASE}/{slug}/"
 
             out[slug] = Problem(
                 slug=slug,
                 name=name,
-                pascal=pascal,
                 difficulty=difficulty_label,
                 patterns=list(meta.get("patterns") or []),
                 description_rst=description_rst,
                 short_description=short,
-                source_path=py_path,
-                explanation=(meta.get("explanation") or "").rstrip("\n"),
-                complexity=(meta.get("complexity") or "").rstrip("\n"),
-                test_block=test_block,
-                first_code_line=first_code_line,
-                public_symbols=public_top_level_symbols(py_path),
                 problem_url=problem_url,
                 in_catalog=slug in catalog_by_slug,
+                variants=variants,
             )
     return out
 
@@ -157,16 +199,98 @@ def _section(header: str, body: str) -> list[str]:
     return [header, "-" * len(header), body]
 
 
+def _indent(text: str, prefix: str) -> str:
+    """Indent every non-empty line of ``text`` by ``prefix``."""
+    return "\n".join(prefix + line if line else line for line in text.splitlines())
+
+
+def _autodoc_lines(v: Variant) -> list[str]:
+    """Module-qualified autodoc directives for a variant's public symbols."""
+    lines: list[str] = []
+    for kind, name in v.public_symbols:
+        qualified = f"{v.module}.{name}"
+        if kind == "function":
+            lines.append(f".. autofunction:: {qualified}")
+        else:
+            lines.append(f".. autoclass:: {qualified}")
+            lines.append("   :members:")
+            lines.append("   :show-inheritance:")
+            lines.append("   :undoc-members:")
+        lines.append("")
+    return lines
+
+
+def _literalinclude_lines(v: Variant) -> list[str]:
+    rel_source = v.source_path.relative_to(ROOT).as_posix()
+    return [
+        "",
+        f".. literalinclude:: ../{rel_source}",
+        "    :language: python",
+        f"    :lines: {v.first_code_line}-",
+    ]
+
+
+def _render_single_variant_body(v: Variant) -> list[str]:
+    """Flat layout (no tabs): same shape the site has always used."""
+    chunks: list[str] = []
+    chunks += _section("Solution", v.explanation)
+    chunks.append("")
+    chunks += _section("Code", "\n".join(_literalinclude_lines(v)))
+    chunks.append("")
+    chunks += _section("Test", v.test_block)
+    chunks.append("")
+    chunks += _section("Complexity", v.complexity)
+    chunks.append("")
+    chunks += _autodoc_lines(v)
+    return chunks
+
+
+def _render_variant_tab_body(v: Variant) -> str:
+    """Inner content of a single ``.. tab-item::`` block (before indentation)."""
+    lines: list[str] = []
+    if v.explanation:
+        lines.append("**Explanation**")
+        lines.append("")
+        lines.append(v.explanation)
+        lines.append("")
+    lines.append("**Code**")
+    lines.extend(_literalinclude_lines(v))
+    lines.append("")
+    if v.test_block:
+        lines.append("**Test**")
+        lines.append("")
+        lines.append(v.test_block)
+        lines.append("")
+    if v.complexity:
+        lines.append("**Complexity**")
+        lines.append("")
+        lines.append(v.complexity)
+        lines.append("")
+    lines.extend(_autodoc_lines(v))
+    return "\n".join(lines).rstrip()
+
+
+def _render_multi_variant_body(variants: list[Variant]) -> list[str]:
+    chunks: list[str] = []
+    chunks += _section("Approaches", "")
+    chunks.append(".. tab-set::")
+    chunks.append("")
+    for v in variants:
+        chunks.append(f"    .. tab-item:: {v.name}")
+        chunks.append("")
+        body = _render_variant_tab_body(v)
+        chunks.append(_indent(body, "        "))
+        chunks.append("")
+    return chunks
+
+
 def render_problem_rst(p: Problem) -> str:
-    rel_source = p.source_path.relative_to(ROOT).as_posix()
-    literalinclude_path = f"../{rel_source}"
+    title = p.name
     chunks: list[str] = [
         ":orphan:",
         "",
-        p.pascal,
-        "=" * len(p.pascal),
-        "",
-        f".. currentmodule:: {p.pascal}",
+        title,
+        "=" * len(title),
         "",
         # Disable syntax highlighting for the Problem section: the ``::``
         # literal blocks there hold sample Input/Output data, not code.
@@ -179,30 +303,12 @@ def render_problem_rst(p: Problem) -> str:
     chunks.append("")
     chunks.append(".. highlight:: python")
     chunks.append("")
-    chunks += _section("Solution", p.explanation)
-    chunks.append("")
     chunks += _section("Pattern", ", ".join(p.patterns))
     chunks.append("")
-    code_block = (
-        f"\n.. literalinclude:: {literalinclude_path}\n"
-        f"    :language: python\n"
-        f"    :lines: {p.first_code_line}-"
-    )
-    chunks += _section("Code", code_block)
-    chunks.append("")
-    chunks += _section("Test", p.test_block)
-    chunks.append("")
-    chunks += _section("Complexity", p.complexity)
-    chunks.append("")
-    for kind, name in p.public_symbols:
-        if kind == "function":
-            chunks.append(f".. autofunction:: {name}")
-        else:
-            chunks.append(f".. autoclass:: {name}")
-            chunks.append("   :members:")
-            chunks.append("   :show-inheritance:")
-            chunks.append("   :undoc-members:")
-        chunks.append("")
+    if len(p.variants) == 1:
+        chunks += _render_single_variant_body(p.variants[0])
+    else:
+        chunks += _render_multi_variant_body(p.variants)
     return "\n".join(chunks).rstrip() + "\n"
 
 
@@ -283,7 +389,7 @@ def render_problem_index_rst(catalog: list[dict], problems: dict[str, Problem]) 
         lists_cell = lists_label(lists)
         if slug in problems:
             p = problems[slug]
-            problem_cell = f":doc:`{name} <generated/{p.pascal}>`"
+            problem_cell = f":doc:`{name} <generated/{p.slug}>`"
             emoji = DIFFICULTY_EMOJI.get(p.difficulty, "")
             difficulty_cell = f"{emoji} {p.difficulty}"
             pattern_cell = ", ".join(p.patterns)
@@ -319,16 +425,15 @@ def render_difficulty_rst(difficulty_label: str, problems: dict[str, Problem]) -
     lines = [title, "=" * len(title), ""]
     matches = sorted(
         (p for p in problems.values() if p.difficulty == difficulty_label),
-        key=lambda p: p.pascal,
+        key=lambda p: p.name,
     )
     for p in matches:
-        display = pascal_to_words(p.pascal)
         if p.short_description:
             lines.append(
-                f"- :doc:`{display} <generated/{p.pascal}>` -- {p.short_description}"
+                f"- :doc:`{p.name} <generated/{p.slug}>` -- {p.short_description}"
             )
         else:
-            lines.append(f"- :doc:`{display} <generated/{p.pascal}>`")
+            lines.append(f"- :doc:`{p.name} <generated/{p.slug}>`")
     lines.append("")
     return "\n".join(lines) + "\n"
 
@@ -353,7 +458,7 @@ def main() -> int:
     GENERATED_DIR.mkdir(exist_ok=True)
     rst_written = 0
     for p in problems.values():
-        out = GENERATED_DIR / f"{p.pascal}.rst"
+        out = GENERATED_DIR / f"{p.slug}.rst"
         if _write_if_changed(out, render_problem_rst(p)):
             rst_written += 1
 

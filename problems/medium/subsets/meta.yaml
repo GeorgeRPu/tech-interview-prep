@@ -35,19 +35,21 @@ description_rst: |
   - ``1 <= nums.length <= 10``
   - ``-10 <= nums[i] <= 10``
   - All the numbers of ``nums`` are **unique**.
-explanation: |
-  We can generate the power set recursively. Every subset of ``nums`` either
-  includes ``nums[0]`` or it doesn't. If we already have the power set of
-  ``nums[1:]``, we can extend the power set of ``nums`` by taking every subset
-  :math:`S` of ``nums[1:]`` both as-is and with ``nums[0]`` prepended (including
-  it):
+solutions:
+- name: Approach 1
+  explanation: |
+    We can generate the power set recursively. Every subset of ``nums`` either
+    includes ``nums[0]`` or it doesn't. If we already have the power set of
+    ``nums[1:]``, we can extend the power set of ``nums`` by taking every subset
+    :math:`S` of ``nums[1:]`` both as-is and with ``nums[0]`` prepended (including
+    it):
 
-  .. math ::
+    .. math ::
 
-     P(\texttt{nums}) = P(\texttt{nums[1:]}) \;\cup\; \{ \{\texttt{nums[0]}\} \cup S : S \in P(\texttt{nums[1:]})\}
+       P(\texttt{nums}) = P(\texttt{nums[1:]}) \;\cup\; \{ \{\texttt{nums[0]}\} \cup S : S \in P(\texttt{nums[1:]})\}
 
-  The base case is the empty array, whose only subset is the empty set.
-complexity: |
-  | :math:`n` is the length of the input array
-  | Time: :math:`O(2^n)` — there are :math:`2^n` subsets of an :math:`n`-element set, and we need to generate each one
-  | Auxiliary Space: :math:`O(1)`
+    The base case is the empty array, whose only subset is the empty set.
+  complexity: |
+    | :math:`n` is the length of the input array
+    | Time: :math:`O(2^n)` — there are :math:`2^n` subsets of an :math:`n`-element set, and we need to generate each one
+    | Auxiliary Space: :math:`O(1)`

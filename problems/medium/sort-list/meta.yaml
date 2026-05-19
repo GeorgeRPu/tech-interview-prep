@@ -54,8 +54,10 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/09/14/sort_list_1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2020/09/14/sort_list_2.jpg
-explanation: |
-  Use merge sort.
-complexity: |
-  | Time: :math:`O(n \log n)` — merge sort
-  | Auxiliary Space: :math:`O(\log n)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Use merge sort.
+  complexity: |
+    | Time: :math:`O(n \log n)` — merge sort
+    | Auxiliary Space: :math:`O(\log n)`

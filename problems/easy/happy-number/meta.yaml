@@ -44,11 +44,13 @@ description_rst: |
   **Constraints:**
 
   - ``1 <= n <= 2``\ :sup:```31```\ ``- 1``
-explanation: |
-  For 1000 iterations, sum the squares of each digit. If the sum is 1, return
-  ``True``. If the sum has been seen before, return ``False``. Otherwise,
-  continue.
-complexity: |
-  | :math:`k` is the number of iterations
-  | Time: :math:`O(k)` — each iteration requires summing the squares of the digits
-  | Auxiliary Space: :math:`O(k)` — set stores at most :math:`k` key-value pairs
+solutions:
+- name: Approach 1
+  explanation: |
+    For 1000 iterations, sum the squares of each digit. If the sum is 1, return
+    ``True``. If the sum has been seen before, return ``False``. Otherwise,
+    continue.
+  complexity: |
+    | :math:`k` is the number of iterations
+    | Time: :math:`O(k)` — each iteration requires summing the squares of the digits
+    | Auxiliary Space: :math:`O(k)` — set stores at most :math:`k` key-value pairs

@@ -51,19 +51,21 @@ description_rst: |
     leading zeros.
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg
-explanation: |
-  When adding 2 numbers ``l1`` and ``l2``, the addition stops only when we run
-  out of nodes in ``l1`` and ``l2`` and the carry is empty. We get the next digit
-  using modulus and the carry using division. ::
+solutions:
+- name: Approach 1
+  explanation: |
+    When adding 2 numbers ``l1`` and ``l2``, the addition stops only when we run
+    out of nodes in ``l1`` and ``l2`` and the carry is empty. We get the next digit
+    using modulus and the carry using division. ::
 
-      s = l1.val + l2.val + carry
-      digit = s % 10
-      carry = s // 10
+        s = l1.val + l2.val + carry
+        digit = s % 10
+        carry = s // 10
 
-  If ``head`` is not set, set ``head = ListNode(digit)`` and ``node = head``.
-  Otherwise, set the next node ``node.next = ListNode(digit)`` and advance the
-  ``node`` pointer.
-complexity: |
-  | :math:`n` is the total number of nodes in both lists
-  | Time: :math:`O(n)` — single pass through both lists
-  | Auxiliary Space: :math:`O(1)`
+    If ``head`` is not set, set ``head = ListNode(digit)`` and ``node = head``.
+    Otherwise, set the next node ``node.next = ListNode(digit)`` and advance the
+    ``node`` pointer.
+  complexity: |
+    | :math:`n` is the total number of nodes in both lists
+    | Time: :math:`O(n)` — single pass through both lists
+    | Auxiliary Space: :math:`O(1)`

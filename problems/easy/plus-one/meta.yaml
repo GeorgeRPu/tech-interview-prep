@@ -54,10 +54,12 @@ description_rst: |
   - ``1 <= digits.length <= 100``
   - ``0 <= digits[i] <= 9``
   - ``digits`` does not contain any leading ``0``'s.
-explanation: |
-  Add 1 to the end of the array. Start from the least signfinicant digit and
-  carry any 1s to the next digit.
-complexity: |
-  | :math:`n` is the length of the input list
-  | Time: :math:`O(n)` — single reverse pass
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Add 1 to the end of the array. Start from the least signfinicant digit and
+    carry any 1s to the next digit.
+  complexity: |
+    | :math:`n` is the length of the input list
+    | Time: :math:`O(n)` — single reverse pass
+    | Auxiliary Space: :math:`O(1)`

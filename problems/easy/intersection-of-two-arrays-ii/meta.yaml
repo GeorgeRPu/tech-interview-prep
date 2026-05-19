@@ -48,16 +48,18 @@ description_rst: |
   - What if elements of ``nums2`` are stored on disk, and the memory is
     limited such that you cannot load all elements into the memory at
     once?
-explanation: |
-  Count the number of times each number appears in each array in 2 dictionaries
-  ``dict1`` and ``dict2``. For each ``key`` in ``dict1`` and ``dict2``, add
-  ``key`` repeated ::
+solutions:
+- name: Approach 1
+  explanation: |
+    Count the number of times each number appears in each array in 2 dictionaries
+    ``dict1`` and ``dict2``. For each ``key`` in ``dict1`` and ``dict2``, add
+    ``key`` repeated ::
 
-      min(dict1[key], dict2[key])
+        min(dict1[key], dict2[key])
 
-  times to the intersection
-  list.
-complexity: |
-  | :math:`m` is the length of ``nums1`` and :math:`n` is the length of ``nums2``
-  | Time: :math:`O(m + n)` — count each array and then iterate through the keys of the smaller dictionary
-  | Auxiliary Space: :math:`O(m + n)` — 2 dictionaries store at most :math:`m` and :math:`n` key-value pairs respectively
+    times to the intersection
+    list.
+  complexity: |
+    | :math:`m` is the length of ``nums1`` and :math:`n` is the length of ``nums2``
+    | Time: :math:`O(m + n)` — count each array and then iterate through the keys of the smaller dictionary
+    | Auxiliary Space: :math:`O(m + n)` — 2 dictionaries store at most :math:`m` and :math:`n` key-value pairs respectively

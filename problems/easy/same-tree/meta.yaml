@@ -53,12 +53,14 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/12/20/ex1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2020/12/20/ex2.jpg
   .. |image3| image:: https://assets.leetcode.com/uploads/2020/12/20/ex3.jpg
-explanation: |
-  Two tree are equal if and only if their roots are equal and their left and
-  right subtrees are equal. To check if the left and right subtrees are equal, we
-  can use recursion. If both roots are ``None``, then they are equal. If one is
-  ``None`` and the other is not, then they are not equal.
-complexity: |
-  | :math:`n` is the number of nodes in tree 1
-  | Time: :math:`O(n)` — visit each node once
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Two tree are equal if and only if their roots are equal and their left and
+    right subtrees are equal. To check if the left and right subtrees are equal, we
+    can use recursion. If both roots are ``None``, then they are equal. If one is
+    ``None`` and the other is not, then they are not equal.
+  complexity: |
+    | :math:`n` is the number of nodes in tree 1
+    | Time: :math:`O(n)` — visit each node once
+    | Auxiliary Space: :math:`O(1)`

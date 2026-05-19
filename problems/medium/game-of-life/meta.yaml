@@ -79,13 +79,15 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/12/26/grid1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2020/12/26/grid2.jpg
-explanation: |
-  Observe that we can calulate the number of live neighbors by summing the
-  surrounding :math:`\mathtt{board[i'][j']}` values. Use a list comprehension to
-  get the neighbor indices, only taking those where :math:`0 \leq i' < m` and
-  :math:`0 \leq j < n`. Make sure to calculate the number of live neighbors for
-  each cell before updating the board.
-complexity: |
-  | :math:`m` is the number of rows and :math:`n` is the number of columns in the input board
-  | Time: :math:`O(m \cdot n)` — pass through board twice
-  | Auxiliary Space: :math:`O(m \cdot n)` — neighbor count matrix
+solutions:
+- name: Approach 1
+  explanation: |
+    Observe that we can calulate the number of live neighbors by summing the
+    surrounding :math:`\mathtt{board[i'][j']}` values. Use a list comprehension to
+    get the neighbor indices, only taking those where :math:`0 \leq i' < m` and
+    :math:`0 \leq j < n`. Make sure to calculate the number of live neighbors for
+    each cell before updating the board.
+  complexity: |
+    | :math:`m` is the number of rows and :math:`n` is the number of columns in the input board
+    | Time: :math:`O(m \cdot n)` — pass through board twice
+    | Auxiliary Space: :math:`O(m \cdot n)` — neighbor count matrix

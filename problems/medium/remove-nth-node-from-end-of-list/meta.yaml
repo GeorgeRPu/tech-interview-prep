@@ -48,17 +48,19 @@ description_rst: |
   **Follow up:** Could you do this in one pass?
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg
-explanation: |
-  First, iterate through the linked list and get its length :math:`l`. The
-  problem reduces to remove the :math:`i = l - n` th node.
+solutions:
+- name: Approach 1
+  explanation: |
+    First, iterate through the linked list and get its length :math:`l`. The
+    problem reduces to remove the :math:`i = l - n` th node.
 
-  There are 3 cases for deleting a node in a linked list:
-  1. Beginnning: Set ``head`` to ``head.next``.
-  2. Middle: Set ``prev.next = prev.next.next`` where ``prev`` is :math:`i - 1`th
-  node.
-  3. End: Set ``prev.next = None``` where ``prev`` is the penultimate node. Note
-  that this is equivalent to the middle case since ``Node = prev.next.next``.
-complexity: |
-  | :math:`n` is the length of the linked list
-  | Time: :math:`O(n)` — two passes
-  | Auxiliary Space: :math:`O(1)`
+    There are 3 cases for deleting a node in a linked list:
+    1. Beginnning: Set ``head`` to ``head.next``.
+    2. Middle: Set ``prev.next = prev.next.next`` where ``prev`` is :math:`i - 1`th
+    node.
+    3. End: Set ``prev.next = None``` where ``prev`` is the penultimate node. Note
+    that this is equivalent to the middle case since ``Node = prev.next.next``.
+  complexity: |
+    | :math:`n` is the length of the linked list
+    | Time: :math:`O(n)` — two passes
+    | Auxiliary Space: :math:`O(1)`

@@ -41,17 +41,19 @@ description_rst: |
   - ``1 <= nums.length <= 10``\ :sup:```5```
   - ``-10``\ :sup:```9```\ ``<= nums[i] <= 10``\ :sup:```9```
   - ``0 <= k <= 10``\ :sup:```5```
-explanation: |
-  Track the indices of each number in a dictionary. We only need to track the
-  most recent index for each number as, if there is a preceding index ``i1`` for
-  the current index ``j`` such that ``nums[i1] == nums[j]`` and
-  ``abs(i - j) <= k``, then the most recent index ``i2`` will also satisfy the
-  above conditions. Iterate through ``nums``. If the current number is in the
-  dictionary ``d`` and the difference between the current index ``i`` and
-  ``d[i]`` is :math:`\leq k`, return ``True``. Otherwise, update the most recent
-  index of the current number in ``d``. If we reach the end of ``nums``, return
-  ``False``.
-complexity: |
-  | :math:`n` is the length of the input array
-  | Time: :math:`O(n)` — single pass through the array
-  | Auxiliary Space: :math:`O(n)` — dictionary stores at most n key-value pairs
+solutions:
+- name: Approach 1
+  explanation: |
+    Track the indices of each number in a dictionary. We only need to track the
+    most recent index for each number as, if there is a preceding index ``i1`` for
+    the current index ``j`` such that ``nums[i1] == nums[j]`` and
+    ``abs(i - j) <= k``, then the most recent index ``i2`` will also satisfy the
+    above conditions. Iterate through ``nums``. If the current number is in the
+    dictionary ``d`` and the difference between the current index ``i`` and
+    ``d[i]`` is :math:`\leq k`, return ``True``. Otherwise, update the most recent
+    index of the current number in ``d``. If we reach the end of ``nums``, return
+    ``False``.
+  complexity: |
+    | :math:`n` is the length of the input array
+    | Time: :math:`O(n)` — single pass through the array
+    | Auxiliary Space: :math:`O(n)` — dictionary stores at most n key-value pairs

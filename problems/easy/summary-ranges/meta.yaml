@@ -52,12 +52,14 @@ description_rst: |
   - ``-2``\ :sup:```31```\ ``<= nums[i] <= 2``\ :sup:```31```\ ``- 1``
   - All the values of ``nums`` are **unique**.
   - ``nums`` is sorted in ascending order.
-explanation: |
-  Note that subarray of consecutive numbers is a range. Iterate through the array
-  and keep track of the start of the range. Keep iterating as long as the next
-  element is consecutive. When the next element is not consecutive, create the
-  range string based on whether the start equals the end.
-complexity: |
-  | :math:`n` is the length of the input array
-  | Time: :math:`O(n)` — single pass through the array
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Note that subarray of consecutive numbers is a range. Iterate through the array
+    and keep track of the start of the range. Keep iterating as long as the next
+    element is consecutive. When the next element is not consecutive, create the
+    range string based on whether the start equals the end.
+  complexity: |
+    | :math:`n` is the length of the input array
+    | Time: :math:`O(n)` — single pass through the array
+    | Auxiliary Space: :math:`O(1)`

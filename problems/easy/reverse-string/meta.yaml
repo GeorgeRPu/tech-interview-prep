@@ -33,12 +33,14 @@ description_rst: |
   - ``1 <= s.length <= 10``\ :sup:```5```
   - ``s[i]`` is a `printable ascii
     character <https://en.wikipedia.org/wiki/ASCII#Printable_characters>`__.
-explanation: |
-  Let :math:`n` be the length of the input list ``s``. Let ``end = n - 1``. We
-  can reverse the list by swapping the outermost elements, moving inwards. ::
+solutions:
+- name: Approach 1
+  explanation: |
+    Let :math:`n` be the length of the input list ``s``. Let ``end = n - 1``. We
+    can reverse the list by swapping the outermost elements, moving inwards. ::
 
-      s[i], s[end - i] = s[end - i], s[i]
-complexity: |
-  | :math:`n` is the length of the input string
-  | Time: :math:`O(n)` — swap half the elements
-  | Space: :math:`O(1)`
+        s[i], s[end - i] = s[end - i], s[i]
+  complexity: |
+    | :math:`n` is the length of the input string
+    | Time: :math:`O(n)` — swap half the elements
+    | Space: :math:`O(1)`

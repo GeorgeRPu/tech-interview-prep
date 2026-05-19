@@ -16,6 +16,7 @@ with ``problem_url`` in ``meta.yaml`` and a slug derived from the filename.
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -30,8 +31,11 @@ from _solutions import (
     extract_patterns_from_section,
     extract_slug,
     find_module_docstring_bounds,
+    solution_module_name,
     split_rst_sections,
 )
+
+DEFAULT_SOLUTION_NAME = "Approach 1"
 
 _LEETCODE_URL_TOKEN = "leetcode.com/problems/"
 
@@ -118,7 +122,6 @@ def migrate_path(py_path: Path) -> int:
         return 1
 
     slug, problem_url_override = _slug_for(py_path, url)
-    pascal = py_path.stem
     out_dir = PROBLEMS_DIR / difficulty.lower() / slug
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -127,6 +130,23 @@ def migrate_path(py_path: Path) -> int:
     complexity = sections.get("Complexity", "")
     test_block = sections.get("Test", "")
 
+    solution_name = DEFAULT_SOLUTION_NAME
+    module = solution_module_name(slug, solution_name)
+    # Rewrite legacy ``from <Pascal> import`` lines in the doctest block to
+    # target the new module name, so the migrated doctests still pass.
+    test_block = re.sub(
+        rf"\bfrom {re.escape(py_path.stem)} import\b",
+        f"from {module} import",
+        test_block,
+    )
+    solution_entry: dict = {"name": solution_name}
+    solution_entry["explanation"] = (
+        _LiteralStr(explanation + "\n") if explanation else ""
+    )
+    solution_entry["complexity"] = (
+        _LiteralStr(complexity + "\n") if complexity else ""
+    )
+
     meta: dict = {"slug": slug}
     if problem_url_override:
         meta["problem_url"] = problem_url_override
@@ -134,8 +154,7 @@ def migrate_path(py_path: Path) -> int:
     meta["description_rst"] = (
         _LiteralStr(description_rst + "\n") if description_rst else ""
     )
-    meta["explanation"] = _LiteralStr(explanation + "\n") if explanation else ""
-    meta["complexity"] = _LiteralStr(complexity + "\n") if complexity else ""
+    meta["solutions"] = [solution_entry]
     (out_dir / "meta.yaml").write_text(
         yaml.dump(meta, sort_keys=False, allow_unicode=True, width=1000),
         encoding="utf-8",
@@ -144,12 +163,12 @@ def migrate_path(py_path: Path) -> int:
     new_py = f'r"""\n{test_block}\n"""\n\n{code_body}\n'
     if not new_py.endswith("\n"):
         new_py += "\n"
-    (out_dir / f"{pascal}.py").write_text(new_py, encoding="utf-8")
+    (out_dir / f"{module}.py").write_text(new_py, encoding="utf-8")
 
     py_path.unlink()
     print(
         f"[migrate] {slug}: {py_path.relative_to(ROOT)} -> "
-        f"{out_dir.relative_to(ROOT)}/{{{pascal}.py, meta.yaml}}"
+        f"{out_dir.relative_to(ROOT)}/{{{module}.py, meta.yaml}}"
     )
     return 0
 

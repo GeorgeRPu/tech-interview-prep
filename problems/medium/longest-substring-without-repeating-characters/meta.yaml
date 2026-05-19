@@ -43,13 +43,15 @@ description_rst: |
 
   - ``0 <= s.length <= 5 * 10``\ :sup:```4```
   - ``s`` consists of English letters, digits, symbols and spaces.
-explanation: |
-  The longest substring can start from any position in the string. So, we must
-  iterate through each position in the entire string. For each position, we look
-  right until we find a duplicate character. At each iteration, if the current
-  substring is longer than the longest, we update the length of the longest
-  substring. Once we find a duplicate character, reset the seen characters.
-complexity: |
-  | :math:`n` is the length of the input string
-  | Time: :math:`O(n^2)` — attempt to build substring starting at each character
-  | Auxiliary Space: :math:`O(n)` — substring storage
+solutions:
+- name: Approach 1
+  explanation: |
+    The longest substring can start from any position in the string. So, we must
+    iterate through each position in the entire string. For each position, we look
+    right until we find a duplicate character. At each iteration, if the current
+    substring is longer than the longest, we update the length of the longest
+    substring. Once we find a duplicate character, reset the seen characters.
+  complexity: |
+    | :math:`n` is the length of the input string
+    | Time: :math:`O(n^2)` — attempt to build substring starting at each character
+    | Auxiliary Space: :math:`O(n)` — substring storage

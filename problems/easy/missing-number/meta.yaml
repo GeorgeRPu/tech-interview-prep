@@ -66,28 +66,30 @@ description_rst: |
 
   **Follow up:** Could you implement a solution using only ``O(1)`` extra
   space complexity and ``O(n)`` runtime complexity?
-explanation: |
-  Let :math:`m \in \{1, ..., n\}` be the missing number. Since ``nums``
-  :math:`= \{1, ..., n\} - \{m\}`,
+solutions:
+- name: Approach 1
+  explanation: |
+    Let :math:`m \in \{1, ..., n\}` be the missing number. Since ``nums``
+    :math:`= \{1, ..., n\} - \{m\}`,
 
-  .. math::
+    .. math::
 
-      \begin{align}
-      \DeclareMathOperator{\sumof}{sumof}
-      \sumof(nums) &= \left( \sum_{i=1}^{n} i \right) - m \\
-      m &= \sum_{i=1}^{n} i - \sumof(nums)
-      \end{align}
+        \begin{align}
+        \DeclareMathOperator{\sumof}{sumof}
+        \sumof(nums) &= \left( \sum_{i=1}^{n} i \right) - m \\
+        m &= \sum_{i=1}^{n} i - \sumof(nums)
+        \end{align}
 
-  Use the formula
+    Use the formula
 
-  .. math::
+    .. math::
 
-      \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+        \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 
-  to calculate the the sum
-  from 1 to :math:`n` quickly. Note that :math:`n` is one more than the number of
-  elements in ``nums``.
-complexity: |
-  | :math:`n` is the length of the input list
-  | Time: :math:`O(n)` — sum the array
-  | Auxiliary Space: :math:`O(1)`
+    to calculate the the sum
+    from 1 to :math:`n` quickly. Note that :math:`n` is one more than the number of
+    elements in ``nums``.
+  complexity: |
+    | :math:`n` is the length of the input list
+    | Time: :math:`O(n)` — sum the array
+    | Auxiliary Space: :math:`O(1)`

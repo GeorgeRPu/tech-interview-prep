@@ -16,7 +16,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Pattern
      - Lists
      - Status
-   * - :doc:`Two Sum <generated/TwoSum>`
+   * - :doc:`Two Sum <generated/two-sum>`
      - 🟢 Easy
      - Array, Hash Table
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
@@ -26,17 +26,17 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Valid Anagram <generated/ValidAnagram>`
+   * - :doc:`Valid Anagram <generated/valid-anagram>`
      - 🟢 Easy
      - Hash Table, String, Sorting
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`Ransom Note <generated/RansomNote>`
+   * - :doc:`Ransom Note <generated/ransom-note>`
      - 🟢 Easy
      - Hash Table, String, Counting
      - Grind 75, Grind 169
      - ✅ Covered
-   * - :doc:`Majority Element <generated/MajorityElement>`
+   * - :doc:`Majority Element <generated/majority-element>`
      - 🟢 Easy
      - Array, Hash Table, Divide and Conquer, Sorting, Counting
      - Grind 75, Grind 169
@@ -46,7 +46,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169
      - ⬜ Missing
-   * - :doc:`Group Anagrams <generated/GroupAnagrams>`
+   * - :doc:`Group Anagrams <generated/group-anagrams>`
      - 🟡 Medium
      - Array, Hash Table, String, Sorting
      - Blind 75, Grind 169, NeetCode 150, Amazon Top 50
@@ -56,7 +56,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, NeetCode 150, Google Top 50
      - ⬜ Missing
-   * - :doc:`Product of Array Except Self <generated/ProductOfArrayExceptSelf>`
+   * - :doc:`Product of Array Except Self <generated/product-of-array-except-self>`
      - 🟡 Medium
      - Array, Prefix Sum
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -71,22 +71,22 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Valid Sudoku <generated/ValidSudoku>`
+   * - :doc:`Valid Sudoku <generated/valid-sudoku>`
      - 🟡 Medium
      - Array, Hash Table, Matrix
      - Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`Valid Palindrome <generated/ValidPalindrome>`
+   * - :doc:`Valid Palindrome <generated/valid-palindrome>`
      - 🟢 Easy
      - Two Pointers, String
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`3Sum <generated/ThreeSum>`
+   * - :doc:`3Sum <generated/3sum>`
      - 🟡 Medium
      - Array, Two Pointers, Sorting
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
-   * - :doc:`Container With Most Water <generated/ContainerWithMostWater>`
+   * - :doc:`Container With Most Water <generated/container-with-most-water>`
      - 🟡 Medium
      - Array, Two Pointers, Greedy
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -96,7 +96,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169
      - ⬜ Missing
-   * - :doc:`Two Sum II <generated/TwoSumII>`
+   * - :doc:`Two Sum II <generated/two-sum-ii-input-array-is-sorted>`
      - 🟡 Medium
      - Array, Two Pointers, Binary Search
      - NeetCode 150
@@ -106,12 +106,12 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
      - ⬜ Missing
-   * - :doc:`Best Time to Buy and Sell Stock <generated/BestTimeToBuyAndSellStock>`
+   * - :doc:`Best Time to Buy and Sell Stock <generated/best-time-to-buy-and-sell-stock>`
      - 🟢 Easy
      - Array, Dynamic Programming
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
-   * - :doc:`Longest Substring Without Repeating Characters <generated/LengthOfLongestSubstring>`
+   * - :doc:`Longest Substring Without Repeating Characters <generated/longest-substring-without-repeating-characters>`
      - 🟡 Medium
      - Hash Table, String, Sliding Window
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
@@ -141,7 +141,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169, NeetCode 150, Amazon Top 50
      - ⬜ Missing
-   * - :doc:`Valid Parentheses <generated/ValidParentheses>`
+   * - :doc:`Valid Parentheses <generated/valid-parentheses>`
      - 🟢 Easy
      - String, Stack
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -166,7 +166,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169, Google Top 50
      - ⬜ Missing
-   * - :doc:`Generate Parentheses <generated/GenerateParentheses>`
+   * - :doc:`Generate Parentheses <generated/generate-parentheses>`
      - 🟡 Medium
      - String, Dynamic Programming, Backtracking
      - Grind 169, NeetCode 150
@@ -201,7 +201,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Search in Rotated Sorted Array <generated/SearchInRotatedArray>`
+   * - :doc:`Search in Rotated Sorted Array <generated/search-in-rotated-sorted-array>`
      - 🟡 Medium
      - Array, Binary Search
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -226,12 +226,12 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169, NeetCode 150, Google Top 50
      - ⬜ Missing
-   * - :doc:`Reverse Linked List <generated/ReverseLinkedList>`
+   * - :doc:`Reverse Linked List <generated/reverse-linked-list>`
      - 🟢 Easy
      - Linked List, Recursion
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`Merge Two Sorted Lists <generated/MergeTwoSortedLists>`
+   * - :doc:`Merge Two Sorted Lists <generated/merge-two-sorted-lists>`
      - 🟢 Easy
      - Linked List, Recursion
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -246,22 +246,22 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Remove Nth Node From End of List <generated/RemoveNthNodeFromEndOfList>`
+   * - :doc:`Remove Nth Node From End of List <generated/remove-nth-node-from-end-of-list>`
      - 🟡 Medium
      - Linked List, Two Pointers
      - Blind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`Merge K Sorted Lists <generated/MergeKSortedLists>`
+   * - :doc:`Merge K Sorted Lists <generated/merge-k-sorted-lists>`
      - 🔴 Hard
      - Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
-   * - :doc:`Linked List Cycle <generated/LinkedListCycle>`
+   * - :doc:`Linked List Cycle <generated/linked-list-cycle>`
      - 🟢 Easy
      - Hash Table, Linked List, Two Pointers
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`Add Two Numbers <generated/AddTwoNumbers>`
+   * - :doc:`Add Two Numbers <generated/add-two-numbers>`
      - 🟡 Medium
      - Linked List, Math, Recursion
      - Grind 169, NeetCode 150, Google Top 50
@@ -276,7 +276,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`LRU Cache <generated/LRUCache>`
+   * - :doc:`LRU Cache <generated/lru-cache>`
      - 🟡 Medium
      - Hash Table, Linked List, Design, Doubly-Linked List
      - Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
@@ -286,12 +286,12 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Invert Binary Tree <generated/InvertBinaryTree>`
+   * - :doc:`Invert Binary Tree <generated/invert-binary-tree>`
      - 🟢 Easy
      - Tree, Depth-First Search, Breadth-First Search, Binary Tree
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`Maximum Depth of Binary Tree <generated/MaximumDepthOfBinaryTree>`
+   * - :doc:`Maximum Depth of Binary Tree <generated/maximum-depth-of-binary-tree>`
      - 🟢 Easy
      - Tree, Depth-First Search, Breadth-First Search, Binary Tree
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -306,7 +306,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Same Tree <generated/SameTree>`
+   * - :doc:`Same Tree <generated/same-tree>`
      - 🟢 Easy
      - Tree, Depth-First Search, Breadth-First Search, Binary Tree
      - Blind 75, Grind 169, NeetCode 150
@@ -326,7 +326,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169
      - ⬜ Missing
-   * - :doc:`Binary Tree Level Order Traversal <generated/BinaryTreeLevelOrderTraversal>`
+   * - :doc:`Binary Tree Level Order Traversal <generated/binary-tree-level-order-traversal>`
      - 🟡 Medium
      - Tree, Breadth-First Search, Binary Tree
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -346,7 +346,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Construct Binary Tree from Preorder and Inorder Traversal <generated/ConstructBinaryTreeFromPreorderAndInorderTraversal>`
+   * - :doc:`Construct Binary Tree from Preorder and Inorder Traversal <generated/construct-binary-tree-from-preorder-and-inorder-traversal>`
      - 🟡 Medium
      - Array, Hash Table, Divide and Conquer, Tree, Binary Tree
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -426,17 +426,17 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Subsets <generated/Subsets>`
+   * - :doc:`Subsets <generated/subsets>`
      - 🟡 Medium
      - Array, Backtracking, Bit Manipulation
      - Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`Permutations <generated/Permutations>`
+   * - :doc:`Permutations <generated/permutations>`
      - 🟡 Medium
      - Array, Backtracking
      - Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`Letter Combinations of a Phone Number <generated/LetterCombinationsOfAPhoneNumber>`
+   * - :doc:`Letter Combinations of a Phone Number <generated/letter-combinations-of-a-phone-number>`
      - 🟡 Medium
      - Hash Table, String, Backtracking
      - Grind 75, Grind 169, NeetCode 150
@@ -576,7 +576,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Climbing Stairs <generated/ClimbingStairs>`
+   * - :doc:`Climbing Stairs <generated/climbing-stairs>`
      - 🟢 Easy
      - Math, Dynamic Programming, Memoization
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -591,7 +591,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, NeetCode 150, Google Top 50
      - ⬜ Missing
-   * - :doc:`Longest Palindromic Substring <generated/LongestPalindromicSubstring>`
+   * - :doc:`Longest Palindromic Substring <generated/longest-palindromic-substring>`
      - 🟡 Medium
      - Two Pointers, String, Dynamic Programming
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
@@ -696,17 +696,17 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - NeetCode 150
      - ⬜ Missing
-   * - :doc:`Maximum Subarray <generated/MaximumSubarray>`
+   * - :doc:`Maximum Subarray <generated/maximum-subarray>`
      - 🟡 Medium
      - Array, Divide and Conquer, Dynamic Programming
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
-   * - :doc:`Jump Game <generated/JumpGame>`
+   * - :doc:`Jump Game <generated/jump-game>`
      - 🟡 Medium
      - Array, Dynamic Programming, Greedy
      - Blind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`Gas Station <generated/GasStation>`
+   * - :doc:`Gas Station <generated/gas-station>`
      - 🟡 Medium
      - Array, Greedy
      - Grind 169, NeetCode 150
@@ -741,7 +741,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ⬜ Missing
-   * - :doc:`Merge Intervals <generated/MergeIntervals>`
+   * - :doc:`Merge Intervals <generated/merge-intervals>`
      - 🟡 Medium
      - Array, Sorting
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
@@ -766,7 +766,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - NeetCode 150
      - ⬜ Missing
-   * - :doc:`Rotate Image <generated/RotateImage>`
+   * - :doc:`Rotate Image <generated/rotate-image>`
      - 🟡 Medium
      - Array, Math, Matrix
      - Blind 75, Grind 169, NeetCode 150
@@ -776,32 +776,32 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Set Matrix Zeroes <generated/SetMatrixZeroes>`
+   * - :doc:`Set Matrix Zeroes <generated/set-matrix-zeroes>`
      - 🟡 Medium
      - Array, Hash Table, Matrix
      - Blind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - :doc:`Add Binary <generated/AddBinary>`
+   * - :doc:`Add Binary <generated/add-binary>`
      - 🟢 Easy
      - Math, String, Bit Manipulation, Simulation
      - Grind 75, Grind 169
      - ✅ Covered
-   * - :doc:`String to Integer (atoi) <generated/StringToInteger>`
+   * - :doc:`String to Integer (atoi) <generated/string-to-integer-atoi>`
      - 🟡 Medium
      - String
      - Grind 75, Grind 169
      - ✅ Covered
-   * - :doc:`Happy Number <generated/HappyNumber>`
+   * - :doc:`Happy Number <generated/happy-number>`
      - 🟢 Easy
      - Hash Table, Math, Two Pointers
      - NeetCode 150, Google Top 50
      - ✅ Covered
-   * - :doc:`Plus One <generated/PlusOne>`
+   * - :doc:`Plus One <generated/plus-one>`
      - 🟢 Easy
      - Array, Math
      - NeetCode 150
      - ✅ Covered
-   * - :doc:`Pow(x, n) <generated/Pow>`
+   * - :doc:`Pow(x, n) <generated/powx-n>`
      - 🟡 Medium
      - Math, Recursion
      - Grind 169, NeetCode 150
@@ -836,7 +836,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Missing Number <generated/MissingNumber>`
+   * - :doc:`Missing Number <generated/missing-number>`
      - 🟢 Easy
      - Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting
      - Blind 75, Grind 169, NeetCode 150
@@ -846,7 +846,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169, NeetCode 150
      - ⬜ Missing
-   * - :doc:`Reverse Integer <generated/ReverseInteger>`
+   * - :doc:`Reverse Integer <generated/reverse-integer>`
      - 🟡 Medium
      - Math
      - Grind 169, NeetCode 150
@@ -911,7 +911,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169
      - 🔒 Premium
-   * - :doc:`Palindrome Linked List <generated/PalindromeLinkedList>`
+   * - :doc:`Palindrome Linked List <generated/palindrome-linked-list>`
      - 🟢 Easy
      - Linked List, Two Pointers, Stack, Recursion
      - Grind 169
@@ -926,7 +926,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169
      - ⬜ Missing
-   * - :doc:`Sort List <generated/SortList>`
+   * - :doc:`Sort List <generated/sort-list>`
      - 🟡 Medium
      - Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort
      - Grind 169
@@ -971,7 +971,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169
      - ⬜ Missing
-   * - :doc:`Longest Common Prefix <generated/LongestCommonPrefix>`
+   * - :doc:`Longest Common Prefix <generated/longest-common-prefix>`
      - 🟢 Easy
      - Array, String, Trie
      - Grind 169, Google Top 50
@@ -986,12 +986,12 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169
      - ⬜ Missing
-   * - :doc:`Convert Sorted Array to Binary Search Tree <generated/ConvertSortedArrayToBST>`
+   * - :doc:`Convert Sorted Array to Binary Search Tree <generated/convert-sorted-array-to-binary-search-tree>`
      - 🟢 Easy
      - Array, Divide and Conquer, Tree, Binary Search Tree, Binary Tree
      - Grind 169
      - ✅ Covered
-   * - :doc:`Symmetric Tree <generated/SymmetricTree>`
+   * - :doc:`Symmetric Tree <generated/symmetric-tree>`
      - 🟢 Easy
      - Tree, Depth-First Search, Breadth-First Search, Binary Tree
      - Grind 169
@@ -1006,7 +1006,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169
      - ⬜ Missing
-   * - :doc:`Binary Tree Zigzag Level Order Traversal <generated/BinaryTreeZigzagLevelOrderTraversal>`
+   * - :doc:`Binary Tree Zigzag Level Order Traversal <generated/binary-tree-zigzag-level-order-traversal>`
      - 🟡 Medium
      - Tree, Breadth-First Search, Binary Tree
      - Grind 169
@@ -1036,7 +1036,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169, Amazon Top 50
      - 🔒 Premium
-   * - :doc:`Insert Delete GetRandom O(1) <generated/InsertDeleteGetRandomO1>`
+   * - :doc:`Insert Delete GetRandom O(1) <generated/insert-delete-getrandom-o1>`
      - 🟡 Medium
      - Array, Hash Table, Math, Design, Randomized
      - Grind 169
@@ -1066,12 +1066,12 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169
      - ⬜ Missing
-   * - :doc:`Roman to Integer <generated/RomanToInteger>`
+   * - :doc:`Roman to Integer <generated/roman-to-integer>`
      - 🟢 Easy
      - Hash Table, Math, String
      - Grind 169, Google Top 50
      - ✅ Covered
-   * - :doc:`Palindrome Number <generated/PalindromeNumber>`
+   * - :doc:`Palindrome Number <generated/palindrome-number>`
      - 🟢 Easy
      - Math
      - Grind 169, Google Top 50
@@ -1081,12 +1081,12 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 169, Google Top 50
      - ⬜ Missing
-   * - :doc:`Integer to Roman <generated/IntegerToRoman>`
+   * - :doc:`Integer to Roman <generated/integer-to-roman>`
      - 🟡 Medium
      - Hash Table, Math, String
      - 
      - ✅ Covered
-   * - :doc:`Find the Index of the First Occurrence in a String <generated/FindTheIndexOfTheFirstOccurrenceInAString>`
+   * - :doc:`Find the Index of the First Occurrence in a String <generated/find-the-index-of-the-first-occurrence-in-a-string>`
      - 🟢 Easy
      - Two Pointers, String, String Matching
      - 
@@ -1101,7 +1101,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Amazon Top 50
      - ⬜ Missing
-   * - :doc:`First Unique Character in a String <generated/FirstUniqueCharacterInAString>`
+   * - :doc:`First Unique Character in a String <generated/first-unique-character-in-a-string>`
      - 🟢 Easy
      - Hash Table, String, Queue, Counting
      - 
@@ -1171,7 +1171,7 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Google Top 50
      - ⬜ Missing
-   * - :doc:`H-Index <generated/HIndex>`
+   * - :doc:`H-Index <generated/h-index>`
      - 🟡 Medium
      - Array, Sorting, Counting Sort
      - Google Top 50

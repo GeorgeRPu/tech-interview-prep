@@ -63,12 +63,14 @@ description_rst: |
    
 
   **Follow up:** Could you solve it iteratively?
-explanation: |
-  If ``n == 1``, return ``'1'``. Otherwise, get the previous count-and-say
-  string. Iterate through the digits of the previous string. If the current digit
-  is the same as the previous digit, increment ``count`` by 1. Otherwise, append
-  ``f'{count}{previous_digit}'`` to the count-and-say string and reset ``count``
-  to 1.
-complexity: |
-  | Time: :math:`O(n \cdot m)` — n iterations, m is sequence length
-  | Space: :math:`O(m)` — stores previous sequence
+solutions:
+- name: Approach 1
+  explanation: |
+    If ``n == 1``, return ``'1'``. Otherwise, get the previous count-and-say
+    string. Iterate through the digits of the previous string. If the current digit
+    is the same as the previous digit, increment ``count`` by 1. Otherwise, append
+    ``f'{count}{previous_digit}'`` to the count-and-say string and reset ``count``
+    to 1.
+  complexity: |
+    | Time: :math:`O(n \cdot m)` — n iterations, m is sequence length
+    | Space: :math:`O(m)` — stores previous sequence

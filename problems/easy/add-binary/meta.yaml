@@ -31,12 +31,14 @@ description_rst: |
   - ``1 <= a.length, b.length <= 10``\ :sup:```4```
   - ``a`` and ``b`` consist only of ``'0'`` or ``'1'`` characters.
   - Each string does not contain leading zeros except for the zero itself.
-explanation: |
-  To make the problem easier, reverse the bit strings into least significant bit
-  first order and pad the shorter bit string with 0s. Then, add the bits with the
-  carry. The next bit is the sum modulo 2 and the carry is the sum divided by 2.
-  At the end, if the carry is not 0, add it to the front of the string.
-complexity: |
-  | :math:`m` and :math:`n` are the lengths of the two bit strings.
-  | Time: :math:`O(\max(m, n))` — single pass through the bits
-  | Auxiliary Space: :math:`O(1)` — only the carry bit
+solutions:
+- name: Approach 1
+  explanation: |
+    To make the problem easier, reverse the bit strings into least significant bit
+    first order and pad the shorter bit string with 0s. Then, add the bits with the
+    carry. The next bit is the sum modulo 2 and the carry is the sum divided by 2.
+    At the end, if the carry is not 0, add it to the front of the string.
+  complexity: |
+    | :math:`m` and :math:`n` are the lengths of the two bit strings.
+    | Time: :math:`O(\max(m, n))` — single pass through the bits
+    | Auxiliary Space: :math:`O(1)` — only the carry bit

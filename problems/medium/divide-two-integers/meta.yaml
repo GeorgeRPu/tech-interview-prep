@@ -47,17 +47,19 @@ description_rst: |
 
   - ``-2``\ :sup:```31```\ ``<= dividend, divisor <= 2``\ :sup:```31```\ ``- 1``
   - ``divisor != 0``
-explanation: |
-  We can use repeated subtraction of the dividend by the divisor to find the
-  quotient without using multiplication, division, or modulus. However, loops in
-  Python are slow so we will time out for large dividends and small divisors.
-  Instead use  ``len(range(0, stop, step))`` to find the quotient. Since
-  ``range(0, stop, step)`` yields 1 element even if ``stop < step``, put
-  ``stop = abs(dividend) - abs(divisor) + 1`` and ``stop = abs(divisor)``. Adjust
-  the sign of the quotient when :math:`(dividend < 0) \\oplus (divisor < 0)`.
-  Clamp the quotient to be in :math:`[-2^{31}, 2^{31} - 1]`.
-complexity: |
-  | :math:`q` is the quotient
-  | Time: :math:`O(|q|)` — calculating the quotient by counting the number of
-  steps in the range
-  | Auxiliary Space: :math:`O(1)` — constant extra space
+solutions:
+- name: Approach 1
+  explanation: |
+    We can use repeated subtraction of the dividend by the divisor to find the
+    quotient without using multiplication, division, or modulus. However, loops in
+    Python are slow so we will time out for large dividends and small divisors.
+    Instead use  ``len(range(0, stop, step))`` to find the quotient. Since
+    ``range(0, stop, step)`` yields 1 element even if ``stop < step``, put
+    ``stop = abs(dividend) - abs(divisor) + 1`` and ``stop = abs(divisor)``. Adjust
+    the sign of the quotient when :math:`(dividend < 0) \\oplus (divisor < 0)`.
+    Clamp the quotient to be in :math:`[-2^{31}, 2^{31} - 1]`.
+  complexity: |
+    | :math:`q` is the quotient
+    | Time: :math:`O(|q|)` — calculating the quotient by counting the number of
+    steps in the range
+    | Auxiliary Space: :math:`O(1)` — constant extra space

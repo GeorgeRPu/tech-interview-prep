@@ -44,15 +44,17 @@ description_rst: |
   - ``1 <= intervals.length <= 10``\ :sup:```4```
   - ``intervals[i].length == 2``
   - ``0 <= start``\ :sub:```i```\ ``<= end``\ :sub:```i```\ ``<= 10``\ :sup:```4```
-explanation: |
-  The key step is to sort ``intervals`` by their start point. We start merging
-  intervals from left to right. Add the first interval to ``merged_intervals``.
-  Suppose we have 2 sorted intervals :math:`[a, b]` in ``merged_intervals`` and
-  and :math:`[c, d]` in ``intervals``. We only need to check that :math:`c > b`
-  to merge the intervals to obtain :math:`[a, \\max(b, d)]`. Moreover, we only need to check
-  the next interval in ``intervals`` against the rightmost merged interval. This
-  is because the merged intervals are all disjoint and sorted from left to right.
-complexity: |
-  | :math:`n` is the number of intervals
-  | Time: :math:`O(n \log n)` — sort then merge intervals
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    The key step is to sort ``intervals`` by their start point. We start merging
+    intervals from left to right. Add the first interval to ``merged_intervals``.
+    Suppose we have 2 sorted intervals :math:`[a, b]` in ``merged_intervals`` and
+    and :math:`[c, d]` in ``intervals``. We only need to check that :math:`c > b`
+    to merge the intervals to obtain :math:`[a, \\max(b, d)]`. Moreover, we only need to check
+    the next interval in ``intervals`` against the rightmost merged interval. This
+    is because the merged intervals are all disjoint and sorted from left to right.
+  complexity: |
+    | :math:`n` is the number of intervals
+    | Time: :math:`O(n \log n)` — sort then merge intervals
+    | Auxiliary Space: :math:`O(1)`

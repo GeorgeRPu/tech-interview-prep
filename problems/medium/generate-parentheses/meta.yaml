@@ -28,18 +28,20 @@ description_rst: |
   **Constraints:**
 
   - ``1 <= n <= 8``
-explanation: |
-  Let's construct a well-formed parentheses string of size 3 from left to right. ::
+solutions:
+- name: Approach 1
+  explanation: |
+    Let's construct a well-formed parentheses string of size 3 from left to right. ::
 
-      (, (), ()(, ()((, ()((), ()(())
+        (, (), ()(, ()((, ()((), ()(())
 
-  Observe that
+    Observe that
 
-  1. we can only add ')' when the number of '(' is :math:`>` to the number of ')'
-  2. we can keep adding '(' until we run out.
+    1. we can only add ')' when the number of '(' is :math:`>` to the number of ')'
+    2. we can keep adding '(' until we run out.
 
-  We can recursively add parenthesis according to these 2 rules until we exhaust
-  the limit of left and right parentheses.
-complexity: |
-  | Time: :math:`O(4^n / \sqrt{n})` — Catalan number of combinations
-  | Auxiliary Space: :math:`O(n)` — recursive call stack and string storage
+    We can recursively add parenthesis according to these 2 rules until we exhaust
+    the limit of left and right parentheses.
+  complexity: |
+    | Time: :math:`O(4^n / \sqrt{n})` — Catalan number of combinations
+    | Auxiliary Space: :math:`O(n)` — recursive call stack and string storage

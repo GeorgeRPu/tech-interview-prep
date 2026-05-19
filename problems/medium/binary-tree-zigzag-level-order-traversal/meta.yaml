@@ -44,13 +44,15 @@ description_rst: |
   - ``-100 <= Node.val <= 100``
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg
-explanation: |
-  The solution is the same as level order traversal, but reverse the order of the
-  values if the depth is odd, starting at 0. The reason we reverse the order of
-  the values instead of the order of the nodes is because then nodes added to the
-  next level will also be reversed.
-complexity: |
-  | :math:`n` is the number of nodes in the binary tree
-  | Time: :math:`O(n)` — visit each node once
-  | Auxiliary Space: :math:`O(n)` — `next_level` holds one level of nodes, up to
-  :math:`O(n / 2)` for a full binary tree
+solutions:
+- name: Approach 1
+  explanation: |
+    The solution is the same as level order traversal, but reverse the order of the
+    values if the depth is odd, starting at 0. The reason we reverse the order of
+    the values instead of the order of the nodes is because then nodes added to the
+    next level will also be reversed.
+  complexity: |
+    | :math:`n` is the number of nodes in the binary tree
+    | Time: :math:`O(n)` — visit each node once
+    | Auxiliary Space: :math:`O(n)` — `next_level` holds one level of nodes, up to
+    :math:`O(n / 2)` for a full binary tree

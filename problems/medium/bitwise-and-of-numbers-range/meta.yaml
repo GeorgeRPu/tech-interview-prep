@@ -37,15 +37,17 @@ description_rst: |
   **Constraints:**
 
   - ``0 <= left <= right <= 2``\ :sup:```31```\ ``- 1``
-explanation: |
-  Consider 2 binary numbers :math:`left < right`. Observe that :math:`left` and
-  :math:`left + 1` differ only in the 1's bit. Then :math:`left \land (left + 1)`
-  is :math:`left` with the last bit set to 0. Similarly, :math:`left + 1` differ
-  in the 2's bit, so :math:`left \land (left + 1) \land (left + 2)` is
-  :math:`left` with the last 2 bits set to 0. The bitwise :math:`\land` of all
-  binary numbers in :math:`[left, right]` is the common prefix of :math:`left`
-  and :math:`right` with all other bits set to 0, as the subsequent bits will
-  vary in :math:`[left, right]`.
-complexity: |
-  | Time: :math:`O(1)` — at most 32 bit comparisons
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Consider 2 binary numbers :math:`left < right`. Observe that :math:`left` and
+    :math:`left + 1` differ only in the 1's bit. Then :math:`left \land (left + 1)`
+    is :math:`left` with the last bit set to 0. Similarly, :math:`left + 1` differ
+    in the 2's bit, so :math:`left \land (left + 1) \land (left + 2)` is
+    :math:`left` with the last 2 bits set to 0. The bitwise :math:`\land` of all
+    binary numbers in :math:`[left, right]` is the common prefix of :math:`left`
+    and :math:`right` with all other bits set to 0, as the subsequent bits will
+    vary in :math:`[left, right]`.
+  complexity: |
+    | Time: :math:`O(1)` — at most 32 bit comparisons
+    | Auxiliary Space: :math:`O(1)`

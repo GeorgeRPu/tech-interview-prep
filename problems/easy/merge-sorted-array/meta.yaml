@@ -64,13 +64,15 @@ description_rst: |
 
   **Follow up:** Can you come up with an algorithm that runs in
   ``O(m + n)`` time?
-explanation: |
-  To merge 2 sorted lists, pick the least element from the 2 lists and add
-  it to the result. Repeat until both of the input lists are empty. However, here
-  the result list is ``nums1``. Naively merging the lists into ``nums1`` would
-  overwrite entries in ``nums1`` that we still need to compare. To get around this,
-  shift the entries in ``nums1`` to the end of the list, and then merge the lists.
-complexity: |
-  | :math:`m` is the length of the first input list and :math:`n` is the length of the second input
-  | Time: :math:`O(m + n)` — shift the first list and then merge the two lists
-  | Auxiliary Space: :math:`O(1)` — in-place merge
+solutions:
+- name: Approach 1
+  explanation: |
+    To merge 2 sorted lists, pick the least element from the 2 lists and add
+    it to the result. Repeat until both of the input lists are empty. However, here
+    the result list is ``nums1``. Naively merging the lists into ``nums1`` would
+    overwrite entries in ``nums1`` that we still need to compare. To get around this,
+    shift the entries in ``nums1`` to the end of the list, and then merge the lists.
+  complexity: |
+    | :math:`m` is the length of the first input list and :math:`n` is the length of the second input
+    | Time: :math:`O(m + n)` — shift the first list and then merge the two lists
+    | Auxiliary Space: :math:`O(1)` — in-place merge

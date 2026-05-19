@@ -45,15 +45,17 @@ description_rst: |
   - ``inorder`` is **guaranteed** to be the inorder traversal of the tree.
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/tree.jpg
-explanation: |
-  Since preorder traversal prints the root node first, we extract the value
-  ``val`` of the root node from the tip of ``preorder``. The same value ``val``
-  divides ``inorder`` into two parts: the left subtree and the right subtree. We
-  can then recursively build the left subtree by using the rest of the
-  ``preorder`` and the left half of ``inorder``. Once the left subtree is built,
-  we build the right subtree by using the rest of the ``preorder`` from buliding
-  the left subtree and the right half of ``inorder``.
-complexity: |
-  | :math:`n` is the number of nodes in the binary tree
-  | Time: :math:`O(n^2)` — finding index of element in array per recursive call
-  | Auxiliary Space: :math:`O(1)` — we only slice and pass references to the input arrays
+solutions:
+- name: Approach 1
+  explanation: |
+    Since preorder traversal prints the root node first, we extract the value
+    ``val`` of the root node from the tip of ``preorder``. The same value ``val``
+    divides ``inorder`` into two parts: the left subtree and the right subtree. We
+    can then recursively build the left subtree by using the rest of the
+    ``preorder`` and the left half of ``inorder``. Once the left subtree is built,
+    we build the right subtree by using the rest of the ``preorder`` from buliding
+    the left subtree and the right half of ``inorder``.
+  complexity: |
+    | :math:`n` is the number of nodes in the binary tree
+    | Time: :math:`O(n^2)` — finding index of element in array per recursive call
+    | Auxiliary Space: :math:`O(1)` — we only slice and pass references to the input arrays

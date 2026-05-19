@@ -48,11 +48,13 @@ description_rst: |
   - Both ``list1`` and ``list2`` are sorted in **non-decreasing** order.
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg
-explanation: |
-  Create the new list by selecting the minimum node of ``list1`` and ``list2``,
-  checking if either is ``None``. Set the ``next`` field of the previous node to
-  the minimum node. Advance the ``list1``/``list2`` and previous node pointers.
-complexity: |
-  | :math:`m` is the length of the first input list and :math:`n` is the length of the second input list
-  | Time: :math:`O(m + n)` — go through both lists
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Create the new list by selecting the minimum node of ``list1`` and ``list2``,
+    checking if either is ``None``. Set the ``next`` field of the previous node to
+    the minimum node. Advance the ``list1``/``list2`` and previous node pointers.
+  complexity: |
+    | :math:`m` is the length of the first input list and :math:`n` is the length of the second input list
+    | Time: :math:`O(m + n)` — go through both lists
+    | Auxiliary Space: :math:`O(1)`

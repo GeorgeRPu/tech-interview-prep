@@ -3,7 +3,7 @@ patterns:
 - Array
 - Hash Table
 description_rst: |
-  Given an array of integers ``nums`` and an integer ``target``, return
+  Given an array of integers ``nums`` and an integer ``target``, return
   *indices of the two numbers such that they add up to ``target``*.
 
   You may assume that each input would have **exactly one solution**, and
@@ -11,7 +11,7 @@ description_rst: |
 
   You can return the answer in any order.
 
-   
+
 
   **Example 1:**
 
@@ -38,7 +38,7 @@ description_rst: |
      Input: nums = [3,3], target = 6
      Output: [0,1]
 
-   
+
 
   **Constraints:**
 
@@ -47,19 +47,29 @@ description_rst: |
   - ``-10``\ :sup:```9```\ ``<= target <= 10``\ :sup:```9```
   - **Only one valid answer exists.**
 
-   
+
 
   **Follow-up:**\ Can you come up with an algorithm that is less than
-  ``O(n``\ :sup:```2```\ ``)`` time complexity?
-explanation: |
-  Suppose ``nums`` is sorted. Set two pointers ``i`` and ``j`` to the beginning
-  and end of ``nums``. If ``twosum = nums[i] + nums[j]`` is less than ``target``,
-  we can increase ``twosum`` by using a larger ``nums[i]`` by incrementing ``i``.
-  If ``twosum`` is greater than ``target``, we can decrease ``twosum`` by using a
-  smaller ``nums[j]`` by decrementing ``j``. Stop when ``twosum == target``. This
-  algorithm can find the ``twosum`` in :math:`O(n \\log n)` time and no extra
-  space.
-complexity: |
-  | :math:`n` is the length of the input array
-  | Time: :math:`O(n \log n)` — sort then go though the array once
-  | Auxiliary Space: :math:`O(1)`
+  ``O(n``\ :sup:```2```\ ``)`` time complexity?
+solutions:
+- name: Two Pointer
+  explanation: |
+    Pair each value with its original index, then sort by value. Set two
+    pointers ``i`` and ``j`` to the beginning and end of the sorted list. If
+    ``nums[i] + nums[j]`` is less than ``target``, increase the sum by moving
+    ``i`` right; if greater, decrease the sum by moving ``j`` left. Stop when
+    the sum equals ``target`` and return the two original indices.
+  complexity: |
+    | :math:`n` is the length of the input array.
+    | Time: :math:`O(n \log n)` — dominated by the sort.
+    | Auxiliary Space: :math:`O(n)` — the enumerated-and-sorted copy.
+- name: Hash Map
+  explanation: |
+    Single pass: for each ``nums[i]``, check whether ``target - nums[i]`` is
+    already present in a dict mapping previously-seen values to their indices.
+    If so, the two indices form the answer; otherwise record ``nums[i]`` for
+    later lookups.
+  complexity: |
+    | :math:`n` is the length of the input array.
+    | Time: :math:`O(n)` — one pass with :math:`O(1)` average-case dict lookups.
+    | Auxiliary Space: :math:`O(n)` — the dict stores at most :math:`n` entries.

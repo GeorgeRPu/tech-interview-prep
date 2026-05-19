@@ -45,12 +45,14 @@ description_rst: |
   - ``0 <= height[i] <= 10``\ :sup:```4```
 
   .. |image1| image:: https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg
-explanation: |
-  Since the area of a container is the product of its width and height, set the
-  ``left`` and ``right`` pointer to ends. Compute the area and store it as the
-  ``max_area``. Then, move the pointer with the smaller height inwards. If the
-  heights are equal, move the pointer whose inward height is larger.
-complexity: |
-  | :math:`n` is the length of the input array
-  | Time: :math:`O(n)` — single pass with two pointers
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Since the area of a container is the product of its width and height, set the
+    ``left`` and ``right`` pointer to ends. Compute the area and store it as the
+    ``max_area``. Then, move the pointer with the smaller height inwards. If the
+    heights are equal, move the pointer whose inward height is larger.
+  complexity: |
+    | :math:`n` is the length of the input array
+    | Time: :math:`O(n)` — single pass with two pointers
+    | Auxiliary Space: :math:`O(1)`

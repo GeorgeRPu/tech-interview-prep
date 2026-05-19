@@ -19,7 +19,7 @@
 ## Architectural Improvements
 
 - [x] **Generate solutions from structured source** — Rearchitect the build to read a structured source (clean `.py` + `meta.yaml` per problem under `problems/`, plus `problems/catalog.yaml` replacing `problems.csv`) and produce every Sphinx page from it without mutating the source. `scripts/generate_docs.py` emits `generated/*.rst`, `coverage.rst`, `problem_index.rst`, and the per-difficulty indexes; `scripts/migrate_solution.py` converts legacy-format files (still used for finishing existing `solutions/<diff>/_*.py` drafts).
-- [ ] **Multiple solutions per problem** — Support more than one solution for a given problem so alternative approaches (e.g., brute-force vs. optimal, iterative vs. recursive) can be compared side by side in the documentation.
+- [x] **Multiple solutions per problem** — Support more than one solution for a given problem so alternative approaches (e.g., brute-force vs. optimal, iterative vs. recursive) can be compared side by side in the documentation.
 
 ## Fixes
 

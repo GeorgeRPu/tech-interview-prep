@@ -67,11 +67,13 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png
   .. |image2| image:: https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png
   .. |image3| image:: https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png
-explanation: |
-  Set two pointers, ``a`` and ``b``, to ``head``. Move ``a`` 1 node at a time but
-  move ``b`` 2 nodes at a time. If ``a`` and ``b`` ever point to the same node,
-  then ``b`` must have wrapped around the linked list and caught up to ``a``.
-complexity: |
-  | :math:`n` is the number of nodes in the linked list
-  | Time: :math:`O(n)` — pointers will reach end or meet after at most :math:`n` steps
-  | Auxiliary Space: :math:`O(1)` — 2 pointers only
+solutions:
+- name: Approach 1
+  explanation: |
+    Set two pointers, ``a`` and ``b``, to ``head``. Move ``a`` 1 node at a time but
+    move ``b`` 2 nodes at a time. If ``a`` and ``b`` ever point to the same node,
+    then ``b`` must have wrapped around the linked list and caught up to ``a``.
+  complexity: |
+    | :math:`n` is the number of nodes in the linked list
+    | Time: :math:`O(n)` — pointers will reach end or meet after at most :math:`n` steps
+    | Auxiliary Space: :math:`O(1)` — 2 pointers only

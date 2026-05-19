@@ -43,13 +43,15 @@ description_rst: |
   - ``-1000 <= Node.val <= 1000``
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg
-explanation: |
-  A level order traversal is a breadth-first traversal of a binary tree. Track
-  all the nodes in the current level and add their values to the traversal. At
-  the same time, add their children to the next level. We finish traversing once
-  all the chilren are ``None``.
-complexity: |
-  | :math:`n` is the number of nodes in the binary tree
-  | Time: :math:`O(n)` — visit each node once
-  | Auxiliary Space: :math:`O(n)` — `next_level` holds one level of nodes, up to
-  :math:`O(n / 2)` for a full binary tree
+solutions:
+- name: Approach 1
+  explanation: |
+    A level order traversal is a breadth-first traversal of a binary tree. Track
+    all the nodes in the current level and add their values to the traversal. At
+    the same time, add their children to the next level. We finish traversing once
+    all the chilren are ``None``.
+  complexity: |
+    | :math:`n` is the number of nodes in the binary tree
+    | Time: :math:`O(n)` — visit each node once
+    | Auxiliary Space: :math:`O(n)` — `next_level` holds one level of nodes, up to
+    :math:`O(n / 2)` for a full binary tree

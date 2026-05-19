@@ -70,13 +70,15 @@ description_rst: |
   - ``0 <= nums.length <= 100``
   - ``0 <= nums[i] <= 50``
   - ``0 <= val <= 100``
-explanation: |
-  Start from the first element of ``nums``. If the current element ``nums[i]``
-  equals ``val``, look ahead to the next element by incrementing an offset. If
-  the current element ``nums[i + offset]`` is unequal to ``val``, then copy
-  ``nums[i + offset]`` to ``nums[i]`` and increment ``i``. Repeat until
-  ``i + offset`` is out of bounds.
-complexity: |
-  | :math:`n` is the length of the input list
-  | Time: :math:`O(n)` — single pass
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Start from the first element of ``nums``. If the current element ``nums[i]``
+    equals ``val``, look ahead to the next element by incrementing an offset. If
+    the current element ``nums[i + offset]`` is unequal to ``val``, then copy
+    ``nums[i + offset]`` to ``nums[i]`` and increment ``i``. Repeat until
+    ``i + offset`` is out of bounds.
+  complexity: |
+    | :math:`n` is the length of the input list
+    | Time: :math:`O(n)` — single pass
+    | Auxiliary Space: :math:`O(1)`

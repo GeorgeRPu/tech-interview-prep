@@ -44,23 +44,25 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg
-explanation: |
-  Because we need to rotate the square ``matrix`` in-place, we must rotate
-  related entries in a spiral. Let :math:`m` be the length of ``matrix`` minus 1.
-  Starting from any position :math:`(i, j)`, we need to rotate ::
+solutions:
+- name: Approach 1
+  explanation: |
+    Because we need to rotate the square ``matrix`` in-place, we must rotate
+    related entries in a spiral. Let :math:`m` be the length of ``matrix`` minus 1.
+    Starting from any position :math:`(i, j)`, we need to rotate ::
 
-      matrix[i][j] <- matrix[m - j][i] <- matrix[m - i][m - j] <- matrix[j][m - i] <- matrix[i][j]
+        matrix[i][j] <- matrix[m - j][i] <- matrix[m - i][m - j] <- matrix[j][m - i] <- matrix[i][j]
 
-  where ``matrix[i][j]`` is saved in a temporary variable for ``matrix[j][m - i]``
-  to use later.
+    where ``matrix[i][j]`` is saved in a temporary variable for ``matrix[j][m - i]``
+    to use later.
 
-  Since we are rotating 4 elements at a time, we cannot perform the
-  rotation for each entry in the matrix. Note that, except for the first entry in
-  the first row, no entry in the first row is rotated more than once. So we
-  iterate :math:`j = 0, 1, \dots, m - 1`. Afterwards the outermost shell of
-  ``matrix`` is rotated. For each :math:`i = 0, 1, \dots, m - 1`, we only perform
-  a rotation for :math:`j = i, 2, \dots, m - i`.
-complexity: |
-  | :math:`n` is the length of the input matrix
-  | Time: :math:`O(n^2)` — visit each element
-  | Auxiliary Space: :math:`O(1)`
+    Since we are rotating 4 elements at a time, we cannot perform the
+    rotation for each entry in the matrix. Note that, except for the first entry in
+    the first row, no entry in the first row is rotated more than once. So we
+    iterate :math:`j = 0, 1, \dots, m - 1`. Afterwards the outermost shell of
+    ``matrix`` is rotated. For each :math:`i = 0, 1, \dots, m - 1`, we only perform
+    a rotation for :math:`j = i, 2, \dots, m - i`.
+  complexity: |
+    | :math:`n` is the length of the input matrix
+    | Time: :math:`O(n^2)` — visit each element
+    | Auxiliary Space: :math:`O(1)`

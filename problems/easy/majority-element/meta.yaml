@@ -12,7 +12,7 @@ description_rst: |
   times. You may assume that the majority element always exists in the
   array.
 
-   
+
 
   **Example 1:**
 
@@ -28,7 +28,7 @@ description_rst: |
      Input: nums = [2,2,1,1,1,2,2]
      Output: 2
 
-   
+
 
   **Constraints:**
 
@@ -38,14 +38,16 @@ description_rst: |
   - The input is generated such that a majority element will exist in the
     array.
 
-   
+
 
   **Follow-up:** Could you solve the problem in linear time and in
   ``O(1)`` space?
-explanation: |
-  Use a dictionary to count the occurrences of each element in ``nums``. We can
-  break early once the count of an element exceeds :math:`\\lfloor n/2 \\rfloor`.
-complexity: |
-  | :math:`n` is the length of the input array.
-  | Time: :math:`O(n)` — single pass with early exit
-  | Auxiliary Space: :math:`O(n)` — dictionary stores at most :math:`n` key-value pairs
+solutions:
+- name: Hash Map
+  explanation: |
+    Use a dictionary to count the occurrences of each element in ``nums``. We can
+    break early once the count of an element exceeds :math:`\\lfloor n/2 \\rfloor`.
+  complexity: |
+    | :math:`n` is the length of the input array.
+    | Time: :math:`O(n)` — single pass with early exit
+    | Auxiliary Space: :math:`O(n)` — dictionary stores at most :math:`n` key-value pairs

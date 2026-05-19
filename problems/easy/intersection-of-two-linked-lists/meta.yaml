@@ -100,10 +100,12 @@ description_rst: |
   .. |image2| image:: https://assets.leetcode.com/uploads/2021/03/05/160_example_1_1.png
   .. |image3| image:: https://assets.leetcode.com/uploads/2021/03/05/160_example_2.png
   .. |image4| image:: https://assets.leetcode.com/uploads/2021/03/05/160_example_3.png
-explanation: |
-  Use a set to store the nodes in the first linked list with ``headA``. Then,
-  check if any node in the second linked list with ``headB`` is in the set.
-complexity: |
-  | :math:`m` is the length of the first linked list and :math:`n` is the length of the second linked list
-  | Time: :math:`O(m + n)` — single pass through both lists
-  | Space: :math:`O(m)` — set for first list
+solutions:
+- name: Approach 1
+  explanation: |
+    Use a set to store the nodes in the first linked list with ``headA``. Then,
+    check if any node in the second linked list with ``headB`` is in the set.
+  complexity: |
+    | :math:`m` is the length of the first linked list and :math:`n` is the length of the second linked list
+    | Time: :math:`O(m + n)` — single pass through both lists
+    | Space: :math:`O(m)` — set for first list

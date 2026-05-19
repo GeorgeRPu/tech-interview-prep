@@ -55,15 +55,17 @@ description_rst: |
     ``insert``, ``remove``, and ``getRandom``.
   - There will be **at least one** element in the data structure when
     ``getRandom`` is called.
-explanation: |
-  By default, we can insert and getRandom elements from an array in :math:`O(1)`
-  time. To remove an element from an array in :math:`O(1)` time, it needs to be
-  at the end of the array. We can move ``val`` to the end. To do this in
-  :math:`O(1)` time, we need to find the index of ``val`` in the array in
-  :math:`O(1)` time. We can use a dictionary to store the indices of each element
-  in the array.
-complexity: |
-  | Insert Time: :math:`O(1)` — list expansion is amortized
-  | Remove Time: :math:`O(1)` — constant time to find index and move element to end
-  | Get Random Time: :math:`O(1)` — constant time to choose random element
-  | Auxiliary Space: :math:`O(n)` — array and hash map storage
+solutions:
+- name: Approach 1
+  explanation: |
+    By default, we can insert and getRandom elements from an array in :math:`O(1)`
+    time. To remove an element from an array in :math:`O(1)` time, it needs to be
+    at the end of the array. We can move ``val`` to the end. To do this in
+    :math:`O(1)` time, we need to find the index of ``val`` in the array in
+    :math:`O(1)` time. We can use a dictionary to store the indices of each element
+    in the array.
+  complexity: |
+    | Insert Time: :math:`O(1)` — list expansion is amortized
+    | Remove Time: :math:`O(1)` — constant time to find index and move element to end
+    | Get Random Time: :math:`O(1)` — constant time to choose random element
+    | Auxiliary Space: :math:`O(n)` — array and hash map storage

@@ -41,17 +41,19 @@ description_rst: |
   - ``-10``\ :sup:```9```\ `` <= nums[i] <= 10``\ :sup:```9```
   - ``nums`` is a non-decreasing array.
   - ``-10``\ :sup:```9```\ `` <= target <= 10``\ :sup:```9```
-explanation: |
-  First perform binary search to find the ``index`` of any ``target`` in the
-  array. Divide ``nums`` into 2 halves: left of ``index`` and right of ``index``.
-  If we perform binary search again on the left half, we get a new index
-  ``right`` for a ``target`` element in ``nums`` left of ``index``. If we cannot
-  find ``target``, then ``index`` must be the left-most position of any ``target``
-  value in ``nums``. Thus we recursively perform binary search using ``left``
-  until we can no longer find ``target`` and use the previous ``left`` value as
-  the lower bound. Similarly, we recursively perform binary search on the right
-  half until we can no longer find target.
-complexity: |
-  | :math:`n` is the length of the input array
-  | Time: :math:`O(\log n)` — repeated binary search
-  | Auxiliary Space: :math:`O(1)` — constant extra space
+solutions:
+- name: Approach 1
+  explanation: |
+    First perform binary search to find the ``index`` of any ``target`` in the
+    array. Divide ``nums`` into 2 halves: left of ``index`` and right of ``index``.
+    If we perform binary search again on the left half, we get a new index
+    ``right`` for a ``target`` element in ``nums`` left of ``index``. If we cannot
+    find ``target``, then ``index`` must be the left-most position of any ``target``
+    value in ``nums``. Thus we recursively perform binary search using ``left``
+    until we can no longer find ``target`` and use the previous ``left`` value as
+    the lower bound. Similarly, we recursively perform binary search on the right
+    half until we can no longer find target.
+  complexity: |
+    | :math:`n` is the length of the input array
+    | Time: :math:`O(\log n)` — repeated binary search
+    | Auxiliary Space: :math:`O(1)` — constant extra space

@@ -81,3 +81,38 @@ tech-interview-prep/
 ```
 
 Each solution in `solutions/` is a standalone `.py` file containing the problem description, implementation, and embedded doctests in its docstring. The `generated/` directory is populated automatically during the build by `sphinx-apidoc` and should not be edited by hand.
+
+## 🧩 Multiple solutions per problem
+
+Problems migrated to the new structured source under `problems/<difficulty>/<slug>/` can document several approaches side by side, rendered as tabs on the problem page.
+
+The shape of a multi-solution problem on disk:
+
+```
+problems/easy/two-sum/
+├── meta.yaml
+├── two_sum__two_pointer.py
+└── two_sum__hash_map.py
+```
+
+`meta.yaml` lists the approaches in display order:
+
+```yaml
+slug: two-sum
+patterns: [Array, Hash Table]
+description_rst: |
+  ...
+solutions:
+  - name: Two Pointer
+    explanation: |
+      ...
+    complexity: |
+      ...
+  - name: Hash Map
+    explanation: |
+      ...
+    complexity: |
+      ...
+```
+
+Each approach's `.py` filename is derived from `<slug-snake>__<name-snake>.py`, so `Two Pointer` under slug `two-sum` lives at `two_sum__two_pointer.py`. Each file owns its own doctests and imports itself by its module name (`>>> from two_sum__two_pointer import twoSum`). Single-approach problems use the same `solutions:` list with one entry — there is no separate single-solution schema.

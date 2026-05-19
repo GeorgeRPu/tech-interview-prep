@@ -41,12 +41,14 @@ description_rst: |
   - ``n == citations.length``
   - ``1 <= n <= 5000``
   - ``0 <= citations[i] <= 1000``
-explanation: |
-  Sort the citations in descending order. Then the h-index is the largest index
-  of ``citations`` such that all the citation counts to the left are at least as
-  large as h. We can find this index by iterating through ``citations`` and
-  breaking when the index becomes greater than the citation count.
-complexity: |
-  | :math:`n` is the length of the input array
-  | Time: :math:`O(n \log n)` — sort the array, then single pass through the array
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Sort the citations in descending order. Then the h-index is the largest index
+    of ``citations`` such that all the citation counts to the left are at least as
+    large as h. We can find this index by iterating through ``citations`` and
+    breaking when the index becomes greater than the citation count.
+  complexity: |
+    | :math:`n` is the length of the input array
+    | Time: :math:`O(n \log n)` — sort the array, then single pass through the array
+    | Auxiliary Space: :math:`O(1)`

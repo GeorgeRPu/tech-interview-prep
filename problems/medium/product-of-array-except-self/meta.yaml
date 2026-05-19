@@ -43,17 +43,19 @@ description_rst: |
   **Follow up:** Can you solve the problem in ``O(1)`` extra space
   complexity? (The output array **does not** count as extra space for
   space complexity analysis.)
-explanation: |
-  Observe that the product of all elements except the element at index i is the
-  product of all elements ``nums[:i - 1]`` multiplied by the product of all
-  elements ``nums[i + 1:]``. Iterate through ``nums`` once to compute the product
-  of all elements ``nums[:i - 1]`` and store the result in a list ``products``.
-  Start with ``left_product = 1`` and append it to ``products`` before
-  multiplying with the next element in ``nums``. Iterate through ``nums`` in
-  reverse to compute the product of all elements ``nums[i + 1:]`` and multiply
-  the result by the corresponding element in ``products`` to obtains the product
-  of all elements except the element at index :math:`i`.
-complexity: |
-  | :math:`n` is the length of the input array
-  | Time: :math:`O(n)` — pass through array twice
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Observe that the product of all elements except the element at index i is the
+    product of all elements ``nums[:i - 1]`` multiplied by the product of all
+    elements ``nums[i + 1:]``. Iterate through ``nums`` once to compute the product
+    of all elements ``nums[:i - 1]`` and store the result in a list ``products``.
+    Start with ``left_product = 1`` and append it to ``products`` before
+    multiplying with the next element in ``nums``. Iterate through ``nums`` in
+    reverse to compute the product of all elements ``nums[i + 1:]`` and multiply
+    the result by the corresponding element in ``products`` to obtains the product
+    of all elements except the element at index :math:`i`.
+  complexity: |
+    | :math:`n` is the length of the input array
+    | Time: :math:`O(n)` — pass through array twice
+    | Auxiliary Space: :math:`O(1)`

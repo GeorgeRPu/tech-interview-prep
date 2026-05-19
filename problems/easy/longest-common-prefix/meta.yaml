@@ -36,10 +36,12 @@ description_rst: |
   - ``0 <= strs[i].length <= 200``
   - ``strs[i]`` consists of only lowercase English letters if it is
     non-empty.
-explanation: |
-  Iterate through each character in the shortest string and check if it is in all
-  other strings in ``strs``.
-complexity: |
-  | :math:`n` is the number of strings in the input list and :math:`m` is the length of the shortest string
-  | Time: :math:`O(n m)` — :math:`n` strings, :math:`m` prefix length
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Iterate through each character in the shortest string and check if it is in all
+    other strings in ``strs``.
+  complexity: |
+    | :math:`n` is the number of strings in the input list and :math:`m` is the length of the shortest string
+    | Time: :math:`O(n m)` — :math:`n` strings, :math:`m` prefix length
+    | Auxiliary Space: :math:`O(1)`

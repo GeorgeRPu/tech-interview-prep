@@ -50,11 +50,13 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg
-explanation: |
-  Track the current ``node`` and ``prev`` node. At each step, store ``node.next``
-  in a temporary variable. Set ``node.next`` to ``prev`` and then advance
-  ``prev`` and ``node``.
-complexity: |
-  | :math:`n` is the number of nodes in the linked list
-  | Time: :math:`O(n)` — single pass through the list
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Track the current ``node`` and ``prev`` node. At each step, store ``node.next``
+    in a temporary variable. Set ``node.next`` to ``prev`` and then advance
+    ``prev`` and ``node``.
+  complexity: |
+    | :math:`n` is the number of nodes in the linked list
+    | Time: :math:`O(n)` — single pass through the list
+    | Auxiliary Space: :math:`O(1)`

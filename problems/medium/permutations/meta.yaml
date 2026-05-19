@@ -36,12 +36,14 @@ description_rst: |
   - ``1 <= nums.length <= 6``
   - ``-10 <= nums[i] <= 10``
   - All the integers of ``nums`` are **unique**.
-explanation: |
-  We can generate permutations inductively. Suppose we have all the permutations
-  of ``nums[1:]``. If we prepend ``nums[1]`` to these permutations, we now have
-  all permutations of ``nums`` that start with ``nums[1]``. Doing this for each
-  :math:`n` in ``nums``, we can generate every permutation of ``nums``.
-complexity: |
-  | :math:`n` is the length of the input array
-  | Time: :math:`O(n!)` — generate all permutations
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    We can generate permutations inductively. Suppose we have all the permutations
+    of ``nums[1:]``. If we prepend ``nums[1]`` to these permutations, we now have
+    all permutations of ``nums`` that start with ``nums[1]``. Doing this for each
+    :math:`n` in ``nums``, we can generate every permutation of ``nums``.
+  complexity: |
+    | :math:`n` is the length of the input array
+    | Time: :math:`O(n!)` — generate all permutations
+    | Auxiliary Space: :math:`O(1)`

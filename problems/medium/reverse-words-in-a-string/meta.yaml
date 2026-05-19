@@ -56,11 +56,13 @@ description_rst: |
 
   **Follow-up: **\ If the string data type is mutable in your language,
   can you solve it **in-place** with ``O(1)`` extra space?
-explanation: |
-  Use the built in Python functions for strings ``split`` to split the string,
-  ``reversed`` to reverse the list, and ``join`` to join the list back into a
-  string.
-complexity: |
-  | :math:`n` is the length of the input string
-  | Time: :math:`O(n)` — split the string and reverse
-  | Auxiliary Space: :math:`O(`1`)`
+solutions:
+- name: Approach 1
+  explanation: |
+    Use the built in Python functions for strings ``split`` to split the string,
+    ``reversed`` to reverse the list, and ``join`` to join the list back into a
+    string.
+  complexity: |
+    | :math:`n` is the length of the input string
+    | Time: :math:`O(n)` — split the string and reverse
+    | Auxiliary Space: :math:`O(`1`)`

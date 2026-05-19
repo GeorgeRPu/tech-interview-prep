@@ -39,13 +39,15 @@ description_rst: |
 
   - ``1 <= ransomNote.length, magazine.length <= 10``\ :sup:```5```
   - ``ransomNote`` and ``magazine`` consist of lowercase English letters.
-explanation: |
-  Track the number of times each letter appears in the magazine. Then, when the
-  letter appears in the ransom note, decrement the count. If the count is ever
-  negative, then the ransom note cannot be constructed from the magazine. A small
-  optimization is to initialize the counter dictionary with all letters in the
-  alphabet.
-complexity: |
-  | :math:`m` is the length of ``ransomNote`` and :math:`n` is the length of ``magazine``
-  | Time: :math:`O(m + n)` — pass through both strings to build the counter and then check it
-  | Auxiliary Space: :math:`O(1)` — fixed-size counter
+solutions:
+- name: Approach 1
+  explanation: |
+    Track the number of times each letter appears in the magazine. Then, when the
+    letter appears in the ransom note, decrement the count. If the count is ever
+    negative, then the ransom note cannot be constructed from the magazine. A small
+    optimization is to initialize the counter dictionary with all letters in the
+    alphabet.
+  complexity: |
+    | :math:`m` is the length of ``ransomNote`` and :math:`n` is the length of ``magazine``
+    | Time: :math:`O(m + n)` — pass through both strings to build the counter and then check it
+    | Auxiliary Space: :math:`O(1)` — fixed-size counter

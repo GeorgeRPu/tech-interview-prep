@@ -44,11 +44,13 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/03/03/pal1linked-list.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2021/03/03/pal2linked-list.jpg
-explanation: |
-  Save the contents of the linked list in a regular list ``list``. Then, use two
-  pointers``i`` and ``j`` to check if ``list`` is a palindrome, moving them
-  inwards if ``list[i] == list[j]``.
-complexity: |
-  | :math:`n` is the number of nodes in the linked list
-  | Time: :math:`O(n)` — traverse list twice
-  | Auxiliary Space: :math:`O(n)` — store linked list values in list
+solutions:
+- name: Approach 1
+  explanation: |
+    Save the contents of the linked list in a regular list ``list``. Then, use two
+    pointers``i`` and ``j`` to check if ``list`` is a palindrome, moving them
+    inwards if ``list[i] == list[j]``.
+  complexity: |
+    | :math:`n` is the number of nodes in the linked list
+    | Time: :math:`O(n)` — traverse list twice
+    | Auxiliary Space: :math:`O(n)` — store linked list values in list

@@ -45,11 +45,13 @@ description_rst: |
   where ``k >= 10``\ :sup:```9```, and you want to check one by one to see
   if ``t`` has its subsequence. In this scenario, how would you change
   your code?
-explanation: |
-  If ``s`` is a subsequence of ``t``, then the characters in ``s`` should appear
-  in ``t`` in order. Iterate through ``t`` and check if each character in ``s``
-  appears in ``t`` in order.
-complexity: |
-  | :math:`n` is the length of ``t``
-  | Time: :math:`O(n)` — single pass through ``t`` to check for characters in ``s``
-  | Auxiliary Space: :math:`O(1)`
+solutions:
+- name: Approach 1
+  explanation: |
+    If ``s`` is a subsequence of ``t``, then the characters in ``s`` should appear
+    in ``t`` in order. Iterate through ``t`` and check if each character in ``s``
+    appears in ``t`` in order.
+  complexity: |
+    | :math:`n` is the length of ``t``
+    | Time: :math:`O(n)` — single pass through ``t`` to check for characters in ``s``
+    | Auxiliary Space: :math:`O(1)`

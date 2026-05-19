@@ -44,10 +44,12 @@ description_rst: |
 
   **Follow up:** Could you solve it without converting the integer to a
   string?
-explanation: |
-  Extract the digits from a number and store them in a list ``digits``. Then
-  compare the list with its reverse ``digits[::-1]`` to check if the number is a
-  palindrome.
-complexity: |
-  | Time: :math:`O(\log_{10} x)` — extract each digit and then compare the list with its reverse
-  | Auxiliary Space: :math:`O(\log_{10} x)` — store digits list
+solutions:
+- name: Approach 1
+  explanation: |
+    Extract the digits from a number and store them in a list ``digits``. Then
+    compare the list with its reverse ``digits[::-1]`` to check if the number is a
+    palindrome.
+  complexity: |
+    | Time: :math:`O(\log_{10} x)` — extract each digit and then compare the list with its reverse
+    | Auxiliary Space: :math:`O(\log_{10} x)` — store digits list
