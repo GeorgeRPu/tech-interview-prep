@@ -26,6 +26,7 @@ dependencies = [
     "sphinxcontrib-googleanalytics>=0.5",
     "sphinxcontrib-jquery>=4.1",
     "sphinx-datatables>=1.0.0",
+    "pyyaml>=6.0",
 ]
 
 [project.optional-dependencies]

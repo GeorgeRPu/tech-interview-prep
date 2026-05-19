@@ -1,0 +1,67 @@
+slug: symmetric-tree
+patterns:
+- Tree
+- Depth-First Search
+- Breadth-First Search
+- Binary Tree
+description_rst: |
+  Given the ``root`` of a binary tree, *check whether it is a mirror of
+  itself* (i.e., symmetric around its center).
+
+   
+
+  **Example 1:**
+
+  |image1|
+
+  ::
+
+
+     Input: root = [1,2,2,3,4,4,3]
+     Output: true
+
+  **Example 2:**
+
+  |image2|
+
+  ::
+
+
+     Input: root = [1,2,2,null,3,null,3]
+     Output: false
+
+   
+
+  **Constraints:**
+
+  - The number of nodes in the tree is in the range ``[1, 1000]``.
+  - ``-100 <= Node.val <= 100``
+
+   
+
+  **Follow up:** Could you solve it both recursively and iteratively?
+
+  .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg
+  .. |image2| image:: https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg
+explanation: |
+  Starting at the root, observe that it does not affect the symmetry of the tree.
+  Only the left and right subtrees with roots ``left = root.left`` and
+  ``right = root.right`` do. We need to check if the left subtree is a mirror
+  image of the right. This is true if and only if ``left.val == right.val`` and
+  the subtree of``left.left`` is a mirror image of ``right.right`` and the
+  subtree of ``left.right`` is a mirror image of ``right.left``. Checking whether
+  the further subtrees are mirror images of each other can be solved using
+  recursion, until both children are ``null``. ::
+
+                           root
+                 /                    \\
+              left-                   right-
+          /         \\             /          \\
+      left.left+ left.right* right.left+ right.right*
+
+  The - nodes should be equal in value, while the + subtrees, and * subtrees should be
+  mirror images.
+complexity: |
+  | :math:`n` is the number of nodes in the tree
+  | Time: :math:`O(n)` — visit each node once
+  | Auxiliary Space: :math:`O(1)`

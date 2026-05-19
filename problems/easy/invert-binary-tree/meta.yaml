@@ -1,0 +1,58 @@
+slug: invert-binary-tree
+patterns:
+- Tree
+- Depth-First Search
+- Breadth-First Search
+- Binary Tree
+description_rst: |
+  Given the ``root`` of a binary tree, invert the tree, and return *its
+  root*.
+
+   
+
+  **Example 1:**
+
+  |image1|
+
+  ::
+
+
+     Input: root = [4,2,7,1,3,6,9]
+     Output: [4,7,2,9,6,3,1]
+
+  **Example 2:**
+
+  |image2|
+
+  ::
+
+
+     Input: root = [2,1,3]
+     Output: [2,3,1]
+
+  **Example 3:**
+
+  ::
+
+
+     Input: root = []
+     Output: []
+
+   
+
+  **Constraints:**
+
+  - The number of nodes in the tree is in the range ``[0, 100]``.
+  - ``-100 <= Node.val <= 100``
+
+  .. |image1| image:: https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg
+  .. |image2| image:: https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg
+explanation: |
+  Observe that when we invert the tree, we can do it in 2 steps:
+  1. Swap the left and right children of the root.
+  2. Invert the left and right subtrees.
+  This gives a recursive algorithm to invert a binary tree.
+complexity: |
+  | :math:`n` is the number of nodes in the tree
+  | Time: :math:`O(n)` — visit every node
+  | Auxiliary Space: :math:`O(1)`

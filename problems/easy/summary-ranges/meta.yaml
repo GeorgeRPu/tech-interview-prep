@@ -1,0 +1,63 @@
+slug: summary-ranges
+patterns:
+- Array
+description_rst: |
+  You are given a **sorted unique** integer array ``nums``.
+
+  A **range** ``[a,b]`` is the set of all integers from ``a`` to ``b``
+  (inclusive).
+
+  Return *the* **smallest sorted** *list of ranges that* **cover all the
+  numbers in the array exactly**. That is, each element of ``nums`` is
+  covered by exactly one of the ranges, and there is no integer ``x`` such
+  that ``x`` is in one of the ranges but not in ``nums``.
+
+  Each range ``[a,b]`` in the list should be output as:
+
+  - ``"a->b"`` if ``a != b``
+  - ``"a"`` if ``a == b``
+
+   
+
+  **Example 1:**
+
+  ::
+
+
+     Input: nums = [0,1,2,4,5,7]
+     Output: ["0->2","4->5","7"]
+     Explanation: The ranges are:
+     [0,2] --> "0->2"
+     [4,5] --> "4->5"
+     [7,7] --> "7"
+
+  **Example 2:**
+
+  ::
+
+
+     Input: nums = [0,2,3,4,6,8,9]
+     Output: ["0","2->4","6","8->9"]
+     Explanation: The ranges are:
+     [0,0] --> "0"
+     [2,4] --> "2->4"
+     [6,6] --> "6"
+     [8,9] --> "8->9"
+
+   
+
+  **Constraints:**
+
+  - ``0 <= nums.length <= 20``
+  - ``-2``\ :sup:```31```\ ``<= nums[i] <= 2``\ :sup:```31```\ ``- 1``
+  - All the values of ``nums`` are **unique**.
+  - ``nums`` is sorted in ascending order.
+explanation: |
+  Note that subarray of consecutive numbers is a range. Iterate through the array
+  and keep track of the start of the range. Keep iterating as long as the next
+  element is consecutive. When the next element is not consecutive, create the
+  range string based on whether the start equals the end.
+complexity: |
+  | :math:`n` is the length of the input array
+  | Time: :math:`O(n)` — single pass through the array
+  | Auxiliary Space: :math:`O(1)`

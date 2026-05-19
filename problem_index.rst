@@ -46,11 +46,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169
      - ⬜ Missing
-   * - `Group Anagrams <https://leetcode.com/problems/group-anagrams/>`__
-     - 
-     - 
+   * - :doc:`Group Anagrams <generated/GroupAnagrams>`
+     - 🟡 Medium
+     - Array, Hash Table, String, Sorting
      - Blind 75, Grind 169, NeetCode 150, Amazon Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - `Top K Frequent Elements <https://leetcode.com/problems/top-k-frequent-elements/>`__
      - 
      - 
@@ -796,11 +796,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Hash Table, Math, Two Pointers
      - NeetCode 150, Google Top 50
      - ✅ Covered
-   * - `Plus One <https://leetcode.com/problems/plus-one/>`__
-     - 
-     - 
+   * - :doc:`Plus One <generated/PlusOne>`
+     - 🟢 Easy
+     - Array, Math
      - NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Pow(x, n) <generated/Pow>`
      - 🟡 Medium
      - Math, Recursion

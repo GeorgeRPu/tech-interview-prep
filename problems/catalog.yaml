@@ -1,0 +1,1722 @@
+- name: Two Sum
+  slug: two-sum
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+  difficulty: Easy
+- name: Contains Duplicate
+  slug: contains-duplicate
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Valid Anagram
+  slug: valid-anagram
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: Ransom Note
+  slug: ransom-note
+  premium: false
+  lists:
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: Majority Element
+  slug: majority-element
+  premium: false
+  lists:
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: Longest Palindrome
+  slug: longest-palindrome
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: Group Anagrams
+  slug: group-anagrams
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+  - amazon50
+- name: Top K Frequent Elements
+  slug: top-k-frequent-elements
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - google50
+- name: Product of Array Except Self
+  slug: product-of-array-except-self
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Medium
+- name: Encode and Decode Strings
+  slug: encode-and-decode-strings
+  premium: true
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Longest Consecutive Sequence
+  slug: longest-consecutive-sequence
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Valid Sudoku
+  slug: valid-sudoku
+  premium: false
+  lists:
+  - nc150
+  - grind169
+  difficulty: Medium
+- name: Valid Palindrome
+  slug: valid-palindrome
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: 3Sum
+  slug: 3sum
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+  difficulty: Medium
+- name: Container With Most Water
+  slug: container-with-most-water
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Medium
+- name: Sort Colors
+  slug: sort-colors
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: Two Sum II
+  slug: two-sum-ii-input-array-is-sorted
+  premium: false
+  lists:
+  - nc150
+  difficulty: Medium
+- name: Trapping Rain Water
+  slug: trapping-rain-water
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+  - amazon50
+  - google50
+- name: Best Time to Buy and Sell Stock
+  slug: best-time-to-buy-and-sell-stock
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+  difficulty: Easy
+- name: Longest Substring Without Repeating Characters
+  slug: longest-substring-without-repeating-characters
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+  difficulty: Medium
+- name: Find All Anagrams in a String
+  slug: find-all-anagrams-in-a-string
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: Longest Repeating Character Replacement
+  slug: longest-repeating-character-replacement
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Minimum Window Substring
+  slug: minimum-window-substring
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Permutation in String
+  slug: permutation-in-string
+  premium: false
+  lists:
+  - nc150
+- name: Sliding Window Maximum
+  slug: sliding-window-maximum
+  premium: false
+  lists:
+  - nc150
+  - grind169
+  - amazon50
+- name: Valid Parentheses
+  slug: valid-parentheses
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: Implement Queue using Stacks
+  slug: implement-queue-using-stacks
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: Min Stack
+  slug: min-stack
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+- name: Evaluate Reverse Polish Notation
+  slug: evaluate-reverse-polish-notation
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+  - google50
+- name: Basic Calculator
+  slug: basic-calculator
+  premium: false
+  lists:
+  - grind75
+  - grind169
+  - google50
+- name: Generate Parentheses
+  slug: generate-parentheses
+  premium: false
+  lists:
+  - nc150
+  - grind169
+  difficulty: Medium
+- name: Daily Temperatures
+  slug: daily-temperatures
+  premium: false
+  lists:
+  - nc150
+  - grind169
+- name: Car Fleet
+  slug: car-fleet
+  premium: false
+  lists:
+  - nc150
+- name: Largest Rectangle in Histogram
+  slug: largest-rectangle-in-histogram
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+- name: Binary Search
+  slug: binary-search
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+- name: First Bad Version
+  slug: first-bad-version
+  premium: false
+  lists:
+  - grind75
+  - grind169
+  - google50
+- name: Find Minimum in Rotated Sorted Array
+  slug: find-minimum-in-rotated-sorted-array
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Search in Rotated Sorted Array
+  slug: search-in-rotated-sorted-array
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Medium
+- name: Search a 2D Matrix
+  slug: search-a-2d-matrix
+  premium: false
+  lists:
+  - nc150
+  - grind169
+- name: Koko Eating Bananas
+  slug: koko-eating-bananas
+  premium: false
+  lists:
+  - nc150
+- name: Time Based Key-Value Store
+  slug: time-based-key-value-store
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+- name: Median of Two Sorted Arrays
+  slug: median-of-two-sorted-arrays
+  premium: false
+  lists:
+  - nc150
+  - grind169
+  - google50
+- name: Reverse Linked List
+  slug: reverse-linked-list
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: Merge Two Sorted Lists
+  slug: merge-two-sorted-lists
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: Middle of the Linked List
+  slug: middle-of-the-linked-list
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: Reorder List
+  slug: reorder-list
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Remove Nth Node From End of List
+  slug: remove-nth-node-from-end-of-list
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+  difficulty: Medium
+- name: Merge K Sorted Lists
+  slug: merge-k-sorted-lists
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+  difficulty: Hard
+- name: Linked List Cycle
+  slug: linked-list-cycle
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: Add Two Numbers
+  slug: add-two-numbers
+  premium: false
+  lists:
+  - nc150
+  - grind169
+  - google50
+  difficulty: Medium
+- name: Copy List With Random Pointer
+  slug: copy-list-with-random-pointer
+  premium: false
+  lists:
+  - nc150
+  - amazon50
+- name: Find the Duplicate Number
+  slug: find-the-duplicate-number
+  premium: false
+  lists:
+  - nc150
+  - grind169
+- name: LRU Cache
+  slug: lru-cache
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+  - amazon50
+  - google50
+  difficulty: Medium
+- name: Reverse Nodes in K Group
+  slug: reverse-nodes-in-k-group
+  premium: false
+  lists:
+  - nc150
+  - grind169
+- name: Invert Binary Tree
+  slug: invert-binary-tree
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: Maximum Depth of Binary Tree
+  slug: maximum-depth-of-binary-tree
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: Diameter of Binary Tree
+  slug: diameter-of-binary-tree
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+- name: Balanced Binary Tree
+  slug: balanced-binary-tree
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+- name: Same Tree
+  slug: same-tree
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+  difficulty: Easy
+- name: Subtree of Another Tree
+  slug: subtree-of-another-tree
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Lowest Common Ancestor of a BST
+  slug: lowest-common-ancestor-of-a-binary-search-tree
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Lowest Common Ancestor of Binary Tree
+  slug: lowest-common-ancestor-of-a-binary-tree
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: Binary Tree Level Order Traversal
+  slug: binary-tree-level-order-traversal
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Medium
+- name: Binary Tree Right Side View
+  slug: binary-tree-right-side-view
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+- name: Validate Binary Search Tree
+  slug: validate-binary-search-tree
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Kth Smallest Element in a BST
+  slug: kth-smallest-element-in-a-bst
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Construct Binary Tree from Preorder and Inorder Traversal
+  slug: construct-binary-tree-from-preorder-and-inorder-traversal
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Medium
+- name: Binary Tree Maximum Path Sum
+  slug: binary-tree-maximum-path-sum
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Serialize and Deserialize Binary Tree
+  slug: serialize-and-deserialize-binary-tree
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Count Good Nodes in Binary Tree
+  slug: count-good-nodes-in-binary-tree
+  premium: false
+  lists:
+  - nc150
+- name: Implement Trie (Prefix Tree)
+  slug: implement-trie-prefix-tree
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+- name: Design Add and Search Words
+  slug: design-add-and-search-words-data-structure
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Word Search II
+  slug: word-search-ii
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Find Median from Data Stream
+  slug: find-median-from-data-stream
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - amazon50
+- name: K Closest Points to Origin
+  slug: k-closest-points-to-origin
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+  - amazon50
+- name: Task Scheduler
+  slug: task-scheduler
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+- name: Kth Largest Element in a Stream
+  slug: kth-largest-element-in-a-stream
+  premium: false
+  lists:
+  - nc150
+- name: Last Stone Weight
+  slug: last-stone-weight
+  premium: false
+  lists:
+  - nc150
+- name: Kth Largest Element in an Array
+  slug: kth-largest-element-in-an-array
+  premium: false
+  lists:
+  - nc150
+  - grind169
+- name: Design Twitter
+  slug: design-twitter
+  premium: false
+  lists:
+  - nc150
+- name: Combination Sum
+  slug: combination-sum
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Word Search
+  slug: word-search
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Subsets
+  slug: subsets
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Medium
+- name: Permutations
+  slug: permutations
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Medium
+- name: Letter Combinations of a Phone Number
+  slug: letter-combinations-of-a-phone-number
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Medium
+- name: Subsets II
+  slug: subsets-ii
+  premium: false
+  lists:
+  - nc150
+- name: Combination Sum II
+  slug: combination-sum-ii
+  premium: false
+  lists:
+  - nc150
+- name: Palindrome Partitioning
+  slug: palindrome-partitioning
+  premium: false
+  lists:
+  - nc150
+- name: N-Queens
+  slug: n-queens
+  premium: false
+  lists:
+  - nc150
+  - grind169
+- name: Number of Islands
+  slug: number-of-islands
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - amazon50
+  - google50
+- name: Flood Fill
+  slug: flood-fill
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: 01 Matrix
+  slug: 01-matrix
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: Clone Graph
+  slug: clone-graph
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Rotting Oranges
+  slug: rotting-oranges
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+  - amazon50
+- name: Accounts Merge
+  slug: accounts-merge
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: Minimum Height Trees
+  slug: minimum-height-trees
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: Pacific Atlantic Water Flow
+  slug: pacific-atlantic-water-flow
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+  - google50
+- name: Course Schedule
+  slug: course-schedule
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - amazon50
+- name: Graph Valid Tree
+  slug: graph-valid-tree
+  premium: true
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Number of Connected Components
+  slug: number-of-connected-components-in-an-undirected-graph
+  premium: true
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Max Area of Island
+  slug: max-area-of-island
+  premium: false
+  lists:
+  - nc150
+  - google50
+- name: Surrounded Regions
+  slug: surrounded-regions
+  premium: false
+  lists:
+  - nc150
+- name: Walls and Gates
+  slug: walls-and-gates
+  premium: true
+  lists:
+  - nc150
+- name: Course Schedule II
+  slug: course-schedule-ii
+  premium: false
+  lists:
+  - nc150
+  - grind169
+  - google50
+- name: Redundant Connection
+  slug: redundant-connection
+  premium: false
+  lists:
+  - nc150
+- name: Word Ladder
+  slug: word-ladder
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+  - amazon50
+- name: Alien Dictionary
+  slug: alien-dictionary
+  premium: true
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Reconstruct Itinerary
+  slug: reconstruct-itinerary
+  premium: false
+  lists:
+  - nc150
+- name: Min Cost to Connect All Points
+  slug: min-cost-to-connect-all-points
+  premium: false
+  lists:
+  - nc150
+- name: Network Delay Time
+  slug: network-delay-time
+  premium: false
+  lists:
+  - nc150
+- name: Swim in Rising Water
+  slug: swim-in-rising-water
+  premium: false
+  lists:
+  - nc150
+- name: Cheapest Flights Within K Stops
+  slug: cheapest-flights-within-k-stops
+  premium: false
+  lists:
+  - nc150
+  - grind169
+- name: Climbing Stairs
+  slug: climbing-stairs
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: House Robber
+  slug: house-robber
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: House Robber II
+  slug: house-robber-ii
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - google50
+- name: Longest Palindromic Substring
+  slug: longest-palindromic-substring
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+  difficulty: Medium
+- name: Decode Ways
+  slug: decode-ways
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Coin Change
+  slug: coin-change
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Maximum Product Subarray
+  slug: maximum-product-subarray
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Word Break
+  slug: word-break
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Longest Increasing Subsequence
+  slug: longest-increasing-subsequence
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Palindromic Substrings
+  slug: palindromic-substrings
+  premium: false
+  lists:
+  - blind75
+  - nc150
+- name: Min Cost Climbing Stairs
+  slug: min-cost-climbing-stairs
+  premium: false
+  lists:
+  - nc150
+- name: Partition Equal Subset Sum
+  slug: partition-equal-subset-sum
+  premium: false
+  lists:
+  - nc150
+  - grind75
+  - grind169
+- name: Unique Paths
+  slug: unique-paths
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+- name: Longest Common Subsequence
+  slug: longest-common-subsequence
+  premium: false
+  lists:
+  - blind75
+  - nc150
+- name: Maximum Profit in Job Scheduling
+  slug: maximum-profit-in-job-scheduling
+  premium: false
+  lists:
+  - grind75
+  - grind169
+- name: Regular Expression Matching
+  slug: regular-expression-matching
+  premium: false
+  lists:
+  - nc150
+  - google50
+- name: Best Time to Buy and Sell Stock with Cooldown
+  slug: best-time-to-buy-and-sell-stock-with-cooldown
+  premium: false
+  lists:
+  - nc150
+- name: Coin Change II
+  slug: coin-change-2
+  premium: false
+  lists:
+  - nc150
+- name: Target Sum
+  slug: target-sum
+  premium: false
+  lists:
+  - nc150
+- name: Interleaving String
+  slug: interleaving-string
+  premium: false
+  lists:
+  - nc150
+- name: Longest Increasing Path in a Matrix
+  slug: longest-increasing-path-in-a-matrix
+  premium: false
+  lists:
+  - nc150
+  - grind169
+- name: Distinct Subsequences
+  slug: distinct-subsequences
+  premium: false
+  lists:
+  - nc150
+- name: Edit Distance
+  slug: edit-distance
+  premium: false
+  lists:
+  - nc150
+- name: Burst Balloons
+  slug: burst-balloons
+  premium: false
+  lists:
+  - nc150
+- name: Maximum Subarray
+  slug: maximum-subarray
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+  difficulty: Medium
+- name: Jump Game
+  slug: jump-game
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+  difficulty: Medium
+- name: Gas Station
+  slug: gas-station
+  premium: false
+  lists:
+  - nc150
+  - grind169
+  difficulty: Medium
+- name: Jump Game II
+  slug: jump-game-ii
+  premium: false
+  lists:
+  - nc150
+- name: Hand of Straights
+  slug: hand-of-straights
+  premium: false
+  lists:
+  - nc150
+- name: Merge Triplets to Form Target Triplet
+  slug: merge-triplets-to-form-target-triplet
+  premium: false
+  lists:
+  - nc150
+- name: Partition Labels
+  slug: partition-labels
+  premium: false
+  lists:
+  - nc150
+- name: Valid Parenthesis String
+  slug: valid-parenthesis-string
+  premium: false
+  lists:
+  - nc150
+- name: Insert Interval
+  slug: insert-interval
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+- name: Merge Intervals
+  slug: merge-intervals
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+  - google50
+  difficulty: Medium
+- name: Non-overlapping Intervals
+  slug: non-overlapping-intervals
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Meeting Rooms
+  slug: meeting-rooms
+  premium: true
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Meeting Rooms II
+  slug: meeting-rooms-ii
+  premium: true
+  lists:
+  - blind75
+  - nc150
+  - grind169
+  - amazon50
+  - google50
+- name: Minimum Interval to Include Each Query
+  slug: minimum-interval-to-include-each-query
+  premium: false
+  lists:
+  - nc150
+- name: Rotate Image
+  slug: rotate-image
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+  difficulty: Medium
+- name: Spiral Matrix
+  slug: spiral-matrix
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind75
+  - grind169
+- name: Set Matrix Zeroes
+  slug: set-matrix-zeroes
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+  difficulty: Medium
+- name: Add Binary
+  slug: add-binary
+  premium: false
+  lists:
+  - grind75
+  - grind169
+  difficulty: Easy
+- name: String to Integer (atoi)
+  slug: string-to-integer-atoi
+  premium: false
+  lists:
+  - grind75
+  - grind169
+  difficulty: Medium
+- name: Happy Number
+  slug: happy-number
+  premium: false
+  lists:
+  - nc150
+  - google50
+  difficulty: Easy
+- name: Plus One
+  slug: plus-one
+  premium: false
+  lists:
+  - nc150
+- name: Pow(x, n)
+  slug: powx-n
+  premium: false
+  lists:
+  - nc150
+  - grind169
+  difficulty: Medium
+- name: Multiply Strings
+  slug: multiply-strings
+  premium: false
+  lists:
+  - nc150
+- name: Detect Squares
+  slug: detect-squares
+  premium: false
+  lists:
+  - nc150
+- name: Sum of Two Integers
+  slug: sum-of-two-integers
+  premium: false
+  lists:
+  - blind75
+  - nc150
+- name: Number of 1 Bits
+  slug: number-of-1-bits
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Counting Bits
+  slug: counting-bits
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Reverse Bits
+  slug: reverse-bits
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+- name: Missing Number
+  slug: missing-number
+  premium: false
+  lists:
+  - blind75
+  - nc150
+  - grind169
+  difficulty: Easy
+- name: Single Number
+  slug: single-number
+  premium: false
+  lists:
+  - nc150
+  - grind169
+- name: Reverse Integer
+  slug: reverse-integer
+  premium: false
+  lists:
+  - nc150
+  - grind169
+  difficulty: Medium
+- name: Move Zeroes
+  slug: move-zeroes
+  premium: false
+  lists:
+  - grind169
+- name: Squares of a Sorted Array
+  slug: squares-of-a-sorted-array
+  premium: false
+  lists:
+  - grind169
+- name: Rotate Array
+  slug: rotate-array
+  premium: false
+  lists:
+  - grind169
+- name: Contiguous Array
+  slug: contiguous-array
+  premium: false
+  lists:
+  - grind169
+- name: Subarray Sum Equals K
+  slug: subarray-sum-equals-k
+  premium: false
+  lists:
+  - grind169
+  - google50
+- name: 3Sum Closest
+  slug: 3sum-closest
+  premium: false
+  lists:
+  - grind169
+- name: Maximal Square
+  slug: maximal-square
+  premium: false
+  lists:
+  - grind169
+- name: Combination Sum IV
+  slug: combination-sum-iv
+  premium: false
+  lists:
+  - grind169
+- name: Shortest Path to Get Food
+  slug: shortest-path-to-get-food
+  premium: true
+  lists:
+  - grind169
+- name: Minimum Knight Moves
+  slug: minimum-knight-moves
+  premium: true
+  lists:
+  - grind169
+- name: Bus Routes
+  slug: bus-routes
+  premium: false
+  lists:
+  - grind169
+- name: Employee Free Time
+  slug: employee-free-time
+  premium: true
+  lists:
+  - grind169
+- name: Palindrome Linked List
+  slug: palindrome-linked-list
+  premium: false
+  lists:
+  - grind169
+  difficulty: Easy
+- name: Swap Nodes in Pairs
+  slug: swap-nodes-in-pairs
+  premium: false
+  lists:
+  - grind169
+- name: Odd Even Linked List
+  slug: odd-even-linked-list
+  premium: false
+  lists:
+  - grind169
+- name: Sort List
+  slug: sort-list
+  premium: false
+  lists:
+  - grind169
+  difficulty: Medium
+- name: Rotate List
+  slug: rotate-list
+  premium: false
+  lists:
+  - grind169
+- name: Sudoku Solver
+  slug: sudoku-solver
+  premium: false
+  lists:
+  - grind169
+- name: Backspace String Compare
+  slug: backspace-string-compare
+  premium: false
+  lists:
+  - grind169
+- name: Decode String
+  slug: decode-string
+  premium: false
+  lists:
+  - grind169
+  - google50
+- name: Asteroid Collision
+  slug: asteroid-collision
+  premium: false
+  lists:
+  - grind169
+- name: Basic Calculator II
+  slug: basic-calculator-ii
+  premium: false
+  lists:
+  - grind169
+- name: Maximum Frequency Stack
+  slug: maximum-frequency-stack
+  premium: false
+  lists:
+  - grind169
+- name: Longest Valid Parentheses
+  slug: longest-valid-parentheses
+  premium: false
+  lists:
+  - grind169
+- name: Longest Common Prefix
+  slug: longest-common-prefix
+  premium: false
+  lists:
+  - grind169
+  - google50
+  difficulty: Easy
+- name: Largest Number
+  slug: largest-number
+  premium: false
+  lists:
+  - grind169
+- name: Palindrome Pairs
+  slug: palindrome-pairs
+  premium: false
+  lists:
+  - grind169
+- name: Convert Sorted Array to Binary Search Tree
+  slug: convert-sorted-array-to-binary-search-tree
+  premium: false
+  lists:
+  - grind169
+  difficulty: Easy
+- name: Symmetric Tree
+  slug: symmetric-tree
+  premium: false
+  lists:
+  - grind169
+  difficulty: Easy
+- name: Path Sum II
+  slug: path-sum-ii
+  premium: false
+  lists:
+  - grind169
+- name: Maximum Width of Binary Tree
+  slug: maximum-width-of-binary-tree
+  premium: false
+  lists:
+  - grind169
+- name: Binary Tree Zigzag Level Order Traversal
+  slug: binary-tree-zigzag-level-order-traversal
+  premium: false
+  lists:
+  - grind169
+  difficulty: Medium
+- name: Path Sum III
+  slug: path-sum-iii
+  premium: false
+  lists:
+  - grind169
+- name: All Nodes Distance K in Binary Tree
+  slug: all-nodes-distance-k-in-binary-tree
+  premium: false
+  lists:
+  - grind169
+  - amazon50
+- name: Inorder Successor in BST
+  slug: inorder-successor-in-bst
+  premium: true
+  lists:
+  - grind169
+- name: Design Hit Counter
+  slug: design-hit-counter
+  premium: true
+  lists:
+  - grind169
+- name: Design In-Memory File System
+  slug: design-in-memory-file-system
+  premium: true
+  lists:
+  - grind169
+  - amazon50
+- name: Insert Delete GetRandom O(1)
+  slug: insert-delete-getrandom-o1
+  premium: false
+  lists:
+  - grind169
+  difficulty: Medium
+- name: First Missing Positive
+  slug: first-missing-positive
+  premium: false
+  lists:
+  - grind169
+- name: Top K Frequent Words
+  slug: top-k-frequent-words
+  premium: false
+  lists:
+  - grind169
+- name: Find K Closest Elements
+  slug: find-k-closest-elements
+  premium: false
+  lists:
+  - grind169
+- name: Smallest Range Covering Elements from K Lists
+  slug: smallest-range-covering-elements-from-k-lists
+  premium: false
+  lists:
+  - grind169
+- name: Next Permutation
+  slug: next-permutation
+  premium: false
+  lists:
+  - grind169
+- name: Roman to Integer
+  slug: roman-to-integer
+  premium: false
+  lists:
+  - grind169
+  - google50
+  difficulty: Easy
+- name: Palindrome Number
+  slug: palindrome-number
+  premium: false
+  lists:
+  - grind169
+  - google50
+  difficulty: Easy
+- name: Random Pick with Weight
+  slug: random-pick-with-weight
+  premium: false
+  lists:
+  - grind169
+  - google50
+- name: Integer to Roman
+  slug: integer-to-roman
+  premium: false
+  lists: []
+  difficulty: Medium
+- name: Find the Index of the First Occurrence in a String
+  slug: find-the-index-of-the-first-occurrence-in-a-string
+  premium: false
+  lists: []
+  difficulty: Easy
+- name: Compare Version Numbers
+  slug: compare-version-numbers
+  premium: false
+  lists: []
+- name: Integer to English Words
+  slug: integer-to-english-words
+  premium: false
+  lists:
+  - amazon50
+- name: First Unique Character in a String
+  slug: first-unique-character-in-a-string
+  premium: false
+  lists: []
+  difficulty: Easy
+- name: Most Common Word
+  slug: most-common-word
+  premium: false
+  lists: []
+- name: Reorder Data in Log Files
+  slug: reorder-data-in-log-files
+  premium: false
+  lists:
+  - amazon50
+- name: Word Ladder II
+  slug: word-ladder-ii
+  premium: false
+  lists: []
+- name: Cut Off Trees for Golf Event
+  slug: cut-off-trees-for-golf-event
+  premium: false
+  lists: []
+- name: Design Tic-Tac-Toe
+  slug: design-tic-tac-toe
+  premium: true
+  lists:
+  - amazon50
+- name: Design Search Autocomplete System
+  slug: design-search-autocomplete-system
+  premium: true
+  lists:
+  - google50
+- name: Prison Cells After N Days
+  slug: prison-cells-after-n-days
+  premium: false
+  lists: []
+- name: Battleships in a Board
+  slug: battleships-in-a-board
+  premium: false
+  lists:
+  - google50
+- name: Bulls and Cows
+  slug: bulls-and-cows
+  premium: false
+  lists:
+  - google50
+- name: Find Duplicate Subtrees
+  slug: find-duplicate-subtrees
+  premium: false
+  lists:
+  - google50
+- name: Find Leaves of Binary Tree
+  slug: find-leaves-of-binary-tree
+  premium: true
+  lists:
+  - google50
+- name: Find Original Array From Doubled Array
+  slug: find-original-array-from-doubled-array
+  premium: false
+  lists:
+  - google50
+- name: Find Winner on a Tic Tac Toe Game
+  slug: find-winner-on-a-tic-tac-toe-game
+  premium: false
+  lists:
+  - google50
+- name: H-Index
+  slug: h-index
+  premium: false
+  lists:
+  - google50
+  difficulty: Medium
+- name: Logger Rate Limiter
+  slug: logger-rate-limiter
+  premium: true
+  lists:
+  - google50
+- name: Maximum Points You Can Obtain from Cards
+  slug: maximum-points-you-can-obtain-from-cards
+  premium: false
+  lists:
+  - google50
+- name: Minimum Time Difference
+  slug: minimum-time-difference
+  premium: false
+  lists:
+  - google50
+- name: Number of Matching Subsequences
+  slug: number-of-matching-subsequences
+  premium: false
+  lists:
+  - google50
+- name: Snapshot Array
+  slug: snapshot-array
+  premium: false
+  lists:
+  - google50
+- name: Stock Price Fluctuation
+  slug: stock-price-fluctuation
+  premium: false
+  lists:
+  - google50
+- name: Student Attendance Record II
+  slug: student-attendance-record-ii
+  premium: false
+  lists:
+  - google50
+- name: Text Justification
+  slug: text-justification
+  premium: false
+  lists:
+  - google50
+- name: Time Needed to Inform All Employees
+  slug: time-needed-to-inform-all-employees
+  premium: false
+  lists:
+  - google50
+- name: Analyze User Website Visit Pattern
+  slug: analyze-user-website-visit-pattern
+  premium: true
+  lists:
+  - amazon50
+- name: Boundary of Binary Tree
+  slug: boundary-of-binary-tree
+  premium: true
+  lists:
+  - amazon50
+- name: Build Binary Expression Tree From Infix Expression
+  slug: build-binary-expression-tree-from-infix-expression
+  premium: true
+  lists:
+  - amazon50
+- name: Concatenated Words
+  slug: concatenated-words
+  premium: false
+  lists:
+  - amazon50
+- name: Count Unique Characters of All Substrings of a Given String
+  slug: count-unique-characters-of-all-substrings-of-a-given-string
+  premium: false
+  lists:
+  - amazon50
+- name: Design an Expression Tree With Evaluate Function
+  slug: design-an-expression-tree-with-evaluate-function
+  premium: true
+  lists:
+  - amazon50
+- name: Design Parking System
+  slug: design-parking-system
+  premium: false
+  lists:
+  - amazon50
+- name: Find Good Days to Rob the Bank
+  slug: find-good-days-to-rob-the-bank
+  premium: false
+  lists:
+  - amazon50
+- name: Find K-th Smallest Pair Distance
+  slug: find-k-th-smallest-pair-distance
+  premium: false
+  lists:
+  - amazon50
+- name: Find the K-Sum of an Array
+  slug: find-the-k-sum-of-an-array
+  premium: false
+  lists:
+  - amazon50
+- name: Find Triangular Sum of an Array
+  slug: find-triangular-sum-of-an-array
+  premium: false
+  lists:
+  - amazon50
+- name: Make Array Zero by Subtracting Equal Amounts
+  slug: make-array-zero-by-subtracting-equal-amounts
+  premium: false
+  lists:
+  - amazon50
+- name: Maximum Length of Subarray With Positive Product
+  slug: maximum-length-of-subarray-with-positive-product
+  premium: false
+  lists:
+  - amazon50
+- name: Maximum Number of Books You Can Take
+  slug: maximum-number-of-books-you-can-take
+  premium: true
+  lists:
+  - amazon50
+- name: Maximum Number of Robots Within Budget
+  slug: maximum-number-of-robots-within-budget
+  premium: false
+  lists:
+  - amazon50
+- name: Maximum Units on a Truck
+  slug: maximum-units-on-a-truck
+  premium: false
+  lists:
+  - amazon50
+- name: Minimum Adjacent Swaps to Make a Valid Array
+  slug: minimum-adjacent-swaps-to-make-a-valid-array
+  premium: false
+  lists:
+  - amazon50
+- name: Minimum Health to Beat Game
+  slug: minimum-health-to-beat-game
+  premium: true
+  lists:
+  - amazon50
+- name: Minimum Number of Keypresses
+  slug: minimum-number-of-keypresses
+  premium: true
+  lists:
+  - amazon50
+- name: Minimum Number of Moves to Make Palindrome
+  slug: minimum-number-of-moves-to-make-palindrome
+  premium: false
+  lists:
+  - amazon50
+- name: Minimum Number of Swaps to Make the Binary String Alternating
+  slug: minimum-number-of-swaps-to-make-the-binary-string-alternating
+  premium: false
+  lists:
+  - amazon50
+- name: Number of Ways to Select Buildings
+  slug: number-of-ways-to-select-buildings
+  premium: false
+  lists:
+  - amazon50
+- name: Plates Between Candles
+  slug: plates-between-candles
+  premium: false
+  lists:
+  - amazon50
+- name: Race Car
+  slug: race-car
+  premium: false
+  lists:
+  - amazon50
+- name: Reorganize String
+  slug: reorganize-string
+  premium: false
+  lists:
+  - amazon50
+- name: Search Suggestions System
+  slug: search-suggestions-system
+  premium: false
+  lists:
+  - amazon50
+- name: Sequential Digits
+  slug: sequential-digits
+  premium: false
+  lists:
+  - amazon50
+- name: Sequentially Ordinal Rank Tracker
+  slug: sequentially-ordinal-rank-tracker
+  premium: false
+  lists:
+  - amazon50
+- name: Substring With Largest Variance
+  slug: substring-with-largest-variance
+  premium: false
+  lists:
+  - amazon50
+- name: Sum of Subarray Ranges
+  slug: sum-of-subarray-ranges
+  premium: false
+  lists:
+  - amazon50
+- name: Sum of Total Strength of Wizards
+  slug: sum-of-total-strength-of-wizards
+  premium: false
+  lists:
+  - amazon50
+- name: Total Appeal of A String
+  slug: total-appeal-of-a-string
+  premium: false
+  lists:
+  - amazon50
+- name: Word Break II
+  slug: word-break-ii
+  premium: false
+  lists:
+  - amazon50

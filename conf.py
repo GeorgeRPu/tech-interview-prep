@@ -10,12 +10,15 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.abspath("./solutions/easy"))
-sys.path.append(os.path.abspath("./solutions/medium"))
-sys.path.append(os.path.abspath("./solutions/hard"))
+_HERE = Path(__file__).resolve().parent
+
+# Structured source: problems/<difficulty>/<slug>/<Pascal>.py
+for _slug_dir in (_HERE / "problems").glob("*/*"):
+    if _slug_dir.is_dir():
+        sys.path.append(str(_slug_dir))
 
 
 # -- Project information -----------------------------------------------------
