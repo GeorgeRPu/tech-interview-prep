@@ -1,3 +1,8 @@
+/* Widen the content area */
+.wy-nav-content {
+  max-width: none;
+}
+
 /* Sidebar text wrapping adjustments */
 
 nav .toctree-wrapper a, /* generic toctree links */
