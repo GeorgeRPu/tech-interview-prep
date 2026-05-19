@@ -3,11 +3,11 @@
 coverage.rst — "Problem Coverage": summary stats and a per-category breakdown
               table (Category | Blind 75 | Grind 75 | NeetCode 150).
 
-problem_index.rst — "Problem Index": full filterable DataTable
-                    (Problem | Pattern | Lists | Status).
+problem_index.rst — "Problem Index": unified filterable DataTable
+                    (Problem | Difficulty | Pattern | Lists | Status).
 
 Scans every solution file's docstring for a LeetCode URL, extracts the problem
-slug, and checks each list problem against that map.
+slug, difficulty, and pattern tags, then checks each list problem against that map.
 
 Both files are rebuilt on every ``make html`` run and removed by ``make clean``.
 Running this script more than once is safe — unchanged files are left untouched.
@@ -66,9 +66,30 @@ PROBLEMS = _load_problems()
 _SLUG_RE = re.compile(r"leetcode\.com/problems/([\w-]+)/")
 
 
-def collect_covered_slugs() -> dict[str, tuple[str, str]]:
-    """Return {slug: (module_name, difficulty)} for every solution that has a LeetCode URL."""
-    slug_map: dict[str, tuple[str, str]] = {}
+def _extract_patterns(docstring: str) -> list[str]:
+    """Return pattern tags from the ``Pattern`` section of a docstring."""
+    lines = docstring.splitlines()
+    for i, line in enumerate(lines):
+        if line.strip() == "Pattern" and i + 1 < len(lines) and set(lines[i + 1].strip()) <= {"-"}:
+            content: list[str] = []
+            j = i + 2
+            while j < len(lines):
+                if (
+                    j + 1 < len(lines)
+                    and lines[j + 1].strip()
+                    and set(lines[j + 1].strip()).issubset(set("-=^~"))
+                ):
+                    break
+                if lines[j].strip():
+                    content.append(lines[j].strip())
+                j += 1
+            return [p.strip() for raw in content for p in raw.split(",") if p.strip()]
+    return []
+
+
+def collect_covered_slugs() -> dict[str, tuple[str, str, list[str]]]:
+    """Return {slug: (module_name, difficulty, patterns)} for every solution that has a LeetCode URL."""
+    slug_map: dict[str, tuple[str, str, list[str]]] = {}
     for difficulty, dirname in DIFFICULTY_DIRS:
         dirpath = SOLUTIONS / dirname
         if not dirpath.is_dir():
@@ -89,7 +110,8 @@ def collect_covered_slugs() -> dict[str, tuple[str, str]]:
             if docstring:
                 m = _SLUG_RE.search(docstring)
                 if m:
-                    slug_map[m.group(1)] = (pyfile.stem, difficulty)
+                    patterns = _extract_patterns(docstring)
+                    slug_map[m.group(1)] = (pyfile.stem, difficulty, patterns)
     return slug_map
 
 
@@ -146,7 +168,7 @@ def _bar(covered: int, total: int, width: int = 20) -> str:
 
 def _count_covered(
     problems: list[tuple],
-    slug_map: dict[str, tuple[str, str]],
+    slug_map: dict[str, tuple[str, str, list[str]]],
 ) -> tuple[int, int]:
     total = len(problems)
     covered = sum(1 for _, slug, *_, premium in problems if not premium and slug in slug_map)
@@ -157,7 +179,7 @@ def _count_covered(
 # Page 1: Problem Coverage (summary stats + per-category breakdown)
 # ---------------------------------------------------------------------------
 
-def build_coverage_rst(slug_map: dict[str, tuple[str, str]]) -> str:
+def build_coverage_rst(slug_map: dict[str, tuple[str, str, list[str]]]) -> str:
     b75  = [(n, s, b, nc, g, g169, a, go, p) for n, s, b, nc, g, g169, a, go, p in PROBLEMS if b]
     nc   = [(n, s, b, nc, g, g169, a, go, p) for n, s, b, nc, g, g169, a, go, p in PROBLEMS if nc]
     g75  = [(n, s, b, nc, g, g169, a, go, p) for n, s, b, nc, g, g169, a, go, p in PROBLEMS if g]
@@ -222,7 +244,14 @@ def build_coverage_rst(slug_map: dict[str, tuple[str, str]]) -> str:
 # Page 2: Problem Index (full filterable table)
 # ---------------------------------------------------------------------------
 
-def build_problem_index_rst(slug_map: dict[str, tuple[str, str]]) -> str:
+DIFFICULTY_EMOJI: dict[str, str] = {
+    "Easy": "🟢",
+    "Medium": "🟡",
+    "Hard": "🔴",
+}
+
+
+def build_problem_index_rst(slug_map: dict[str, tuple[str, str, list[str]]]) -> str:
     title = "Problem Index"
     lines: list[str] = [
         title,
@@ -231,7 +260,7 @@ def build_problem_index_rst(slug_map: dict[str, tuple[str, str]]) -> str:
         "All problems from the Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, and Google Top 50 lists.",
         "Problems marked 🔒 require a LeetCode Premium subscription.",
         "",
-        "Use the dropdowns to filter by pattern, list, or status.",
+        "Use the dropdowns to filter by difficulty, pattern, list, or status.",
         "",
         ".. list-table::",
         "   :header-rows: 1",
@@ -239,6 +268,8 @@ def build_problem_index_rst(slug_map: dict[str, tuple[str, str]]) -> str:
         "   :widths: auto",
         "",
         "   * - Problem",
+        "     - Difficulty",
+        "     - Pattern",
         "     - Lists",
         "     - Status",
     ]
@@ -248,17 +279,26 @@ def build_problem_index_rst(slug_map: dict[str, tuple[str, str]]) -> str:
         lc_url = f"{LEETCODE_BASE}/{slug}/"
 
         if slug in slug_map:
-            module, _difficulty = slug_map[slug]
+            module, difficulty, patterns = slug_map[slug]
             problem_cell = f":doc:`{name} <generated/{module}>`"
+            emoji = DIFFICULTY_EMOJI.get(difficulty, "")
+            difficulty_cell = f"{emoji} {difficulty}"
+            pattern_cell = ", ".join(patterns)
             status = "✅ Covered"
         elif premium:
             problem_cell = f"`{name} <{lc_url}>`__"
+            difficulty_cell = ""
+            pattern_cell = ""
             status = "🔒 Premium"
         else:
             problem_cell = f"`{name} <{lc_url}>`__"
+            difficulty_cell = ""
+            pattern_cell = ""
             status = "⬜ Missing"
 
         lines.append(f"   * - {problem_cell}")
+        lines.append(f"     - {difficulty_cell}")
+        lines.append(f"     - {pattern_cell}")
         lines.append(f"     - {lists_label}")
         lines.append(f"     - {status}")
 

@@ -75,7 +75,6 @@ html_css_files = [
     "css/pyodide_runner.css",
 ]
 html_js_files = [
-    "js/patterns_filter.js",
     "js/coverage_filter.js",
     "js/pyodide_runner.js",
 ]

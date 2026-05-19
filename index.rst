@@ -12,12 +12,6 @@ A collection of solutions to (software engineering) technical interview question
 
 .. toctree::
    :maxdepth: 1
-   :caption: Browse by Pattern
-
-   pattern_index
-
-.. toctree::
-   :maxdepth: 1
    :caption: Browse by Difficulty
 
    easy_index

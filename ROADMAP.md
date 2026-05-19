@@ -13,7 +13,8 @@
 - [x] **Big O annotations** — Add time and space complexity to each solution's docstring and surface it in the documentation.
 - [ ] **CONTRIBUTING.md** — Document the expected file structure, doctest format, and solution explanation style to guide external contributors.
 - [x] **Interactive code snippets** — Embed runnable code snippets in the documentation allowing users to experiment with solutions directly on the site.
-- [ ] **Pattern overview pages** — Create dedicated pages for each solution pattern that explain the concept, common pitfalls, and link to all relevant problems in the repo that use that pattern.
+- [x] **Unified search** — Unify the Problem Index and Pattern Index searches.
+- [ ] **Multiple solutions per problem** — Support more than one solution for a given problem so alternative approaches (e.g., brute-force vs. optimal, iterative vs. recursive) can be compared side by side in the documentation.
 - [x] **Problem list links** — Add links to each canonical problem list from the coverage tracker.
 
 ## Architectural Improvements
@@ -25,3 +26,4 @@
 
 - [x] **Stop showing all solutions in the sidebar** — Restructure the Sphinx sidebar to only show problem categories or patterns, not every individual solution, to reduce clutter.
 - [x] **Put entries per page on same line as dropdown for Patterns Index page** — The current layout has "entries per page" on a separate line from the dropdown.
+- [ ] **Fix spacing after Code block** — The spacing after code blocks is inconsistent with the rest of the sections.

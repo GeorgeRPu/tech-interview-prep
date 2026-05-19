@@ -6,11 +6,25 @@ $(document).on('init.dt', 'table.sphinx-datatable', function (_e, settings) {
 
   var filtersDiv = $('<div style="margin-bottom:1em;display:flex;gap:1.5em;flex-wrap:wrap;align-items:center;"></div>');
 
-  // Pattern dropdown — discover unique values from column 1
+  // Difficulty dropdown (column 1)
+  var diffSel = $('<select><option value="">All Difficulties</option></select>');
+  ['🟢 Easy', '🟡 Medium', '🔴 Hard'].forEach(function (d) {
+    diffSel.append($('<option>').val(d).text(d));
+  });
+  diffSel.on('change', function () {
+    var val = $(this).val();
+    api.column(1).search(val ? '^' + $.fn.dataTable.util.escapeRegex(val) + '$' : '', true, false).draw();
+  });
+  filtersDiv.append($('<label style="font-weight:bold;">Difficulty: </label>').append(diffSel));
+
+  // Pattern dropdown (column 2) — discover unique comma-separated values
   var patterns = [];
-  api.column(1).data().each(function (d) {
-    var text = $('<div>').html(d).text().trim();
-    if (text && patterns.indexOf(text) === -1) patterns.push(text);
+  api.column(2).data().each(function (d) {
+    var text = $('<div>').html(d).text();
+    text.split(',').forEach(function (p) {
+      p = p.trim();
+      if (p && patterns.indexOf(p) === -1) patterns.push(p);
+    });
   });
   patterns.sort();
   var patSel = $('<select><option value="">All Patterns</option></select>');
@@ -18,13 +32,13 @@ $(document).on('init.dt', 'table.sphinx-datatable', function (_e, settings) {
   patSel.on('change', function () {
     var val = $(this).val();
     var esc = val ? $.fn.dataTable.util.escapeRegex(val) : '';
-    api.column(1).search(val ? '^' + esc + '$' : '', true, false).draw();
+    api.column(2).search(val ? '(^|, )' + esc + '(,|$)' : '', true, false).draw();
   });
-  filtersDiv.append($('<label style="font-weight:bold;">Pattern:\u00a0</label>').append(patSel));
+  filtersDiv.append($('<label style="font-weight:bold;">Pattern: </label>').append(patSel));
 
-  // Lists dropdown — discover unique list names from column 2
+  // Lists dropdown (column 3) — discover unique comma-separated values
   var lists = [];
-  api.column(2).data().each(function (d) {
+  api.column(3).data().each(function (d) {
     var text = $('<div>').html(d).text().trim();
     if (!text) return;
     text.split(', ').forEach(function (l) {
@@ -40,21 +54,21 @@ $(document).on('init.dt', 'table.sphinx-datatable', function (_e, settings) {
   listSel.on('change', function () {
     var val = $(this).val();
     var esc = val ? $.fn.dataTable.util.escapeRegex(val) : '';
-    api.column(2).search(val ? '(^|, )' + esc + '(,|$)' : '', true, false).draw();
+    api.column(3).search(val ? '(^|, )' + esc + '(,|$)' : '', true, false).draw();
   });
-  filtersDiv.append($('<label style="font-weight:bold;">List:\u00a0</label>').append(listSel));
+  filtersDiv.append($('<label style="font-weight:bold;">List: </label>').append(listSel));
 
-  // Status dropdown (column 3)
+  // Status dropdown (column 4)
   var statusSel = $('<select><option value="">All Statuses</option></select>');
-  ['\u2705 Covered', '\u2b1c Missing', '\ud83d\udd12 Premium'].forEach(function (s) {
+  ['✅ Covered', '⬜ Missing', '🔒 Premium'].forEach(function (s) {
     statusSel.append($('<option>').val(s).text(s));
   });
   statusSel.on('change', function () {
     var val = $(this).val();
     var esc = val ? $.fn.dataTable.util.escapeRegex(val) : '';
-    api.column(3).search(val ? '^' + esc + '$' : '', true, false).draw();
+    api.column(4).search(val ? '^' + esc + '$' : '', true, false).draw();
   });
-  filtersDiv.append($('<label style="font-weight:bold;">Status:\u00a0</label>').append(statusSel));
+  filtersDiv.append($('<label style="font-weight:bold;">Status: </label>').append(statusSel));
 
   $(wrapper).before(filtersDiv);
 });
