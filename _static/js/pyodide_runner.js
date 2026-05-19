@@ -147,9 +147,12 @@ function buildWidget(codeSection, highlightDiv, initialCode) {
   output.className = 'pyodide-output';
 
   // Replace the static highlight block with our widget
-  highlightDiv.parentNode.insertBefore(toolbar, highlightDiv);
-  highlightDiv.parentNode.insertBefore(editorWrap, highlightDiv);
-  highlightDiv.parentNode.insertBefore(output, highlightDiv);
+  var wrapper = document.createElement('div');
+  wrapper.className = 'pyodide-wrapper';
+  wrapper.appendChild(toolbar);
+  wrapper.appendChild(editorWrap);
+  wrapper.appendChild(output);
+  highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
   highlightDiv.style.display = 'none';
 
   // Load CodeMirror and initialize the editor

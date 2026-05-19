@@ -1,5 +1,9 @@
 /* Interactive code runner widget */
 
+.pyodide-wrapper {
+  margin: 1px 0 24px;
+}
+
 .pyodide-toolbar {
   display: flex;
   align-items: center;

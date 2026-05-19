@@ -26,4 +26,4 @@
 
 - [x] **Stop showing all solutions in the sidebar** — Restructure the Sphinx sidebar to only show problem categories or patterns, not every individual solution, to reduce clutter.
 - [x] **Put entries per page on same line as dropdown for Patterns Index page** — The current layout has "entries per page" on a separate line from the dropdown.
-- [ ] **Fix spacing after Code block** — The spacing after code blocks is inconsistent with the rest of the sections.
+- [x] **Fix spacing after Code block** — The spacing after code blocks is inconsistent with the rest of the sections.
