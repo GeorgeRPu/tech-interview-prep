@@ -1,446 +1,41 @@
 #!/usr/bin/env python3
-"""Unified docs generator: reads the structured ``problems/`` source and emits
-every Sphinx page that the old per-script pipeline produced.
+"""Top-level entry point: discover problems, render every Sphinx page,
+write whatever changed.
 
-Outputs:
-* ``generated/<slug>.rst`` per problem
-* ``coverage.rst``, ``problem_index.rst``
-* ``easy_index.rst``, ``medium_index.rst``, ``hard_index.rst``
+The work itself lives in two sibling modules:
 
-The source tree under ``problems/`` is never modified — line numbers,
-literalinclude paths, and rendered RST all live in the generator's output.
+* :mod:`discovery` — constants, source-file introspection, the ``Problem`` /
+  ``Variant`` model, and the ``problems/`` scanner.
+* :mod:`rendering` — every ``render_*`` function that turns those objects
+  into RST strings.
+
+This file just wires them together.
 """
 
 from __future__ import annotations
 
 import sys
-from dataclasses import dataclass, field
 from pathlib import Path
 
 import yaml
 
-from _solutions import (
+from discovery import (
     DIFFICULTY_DIRS,
-    DIFFICULTY_EMOJI,
     GENERATED_DIR,
-    LEETCODE_BASE,
-    LIST_DISPLAY,
-    LIST_DISPLAY_ORDER,
     PROBLEMS_DIR,
     ROOT,
-    find_module_docstring_bounds,
-    first_nonblank_noncomment_after,
-    list_link,
-    lists_label,
-    pascal_to_words,
-    progress_bar,
-    public_top_level_symbols,
-    read_module_docstring,
-    solution_module_name,
-    truncate_description,
+    discover_problems,
+)
+from rendering import (
+    render_coverage_rst,
+    render_difficulty_rst,
+    render_problem_index_rst,
+    render_problem_rst,
 )
 
 CATALOG_PATH = PROBLEMS_DIR / "catalog.yaml"
 COVERAGE_FILE = ROOT / "coverage.rst"
 PROBLEM_INDEX_FILE = ROOT / "problem_index.rst"
-
-
-@dataclass
-class Variant:
-    """One approach to a problem (one tab on the rendered page)."""
-
-    name: str  # display label, e.g. "Brute Force"
-    module: str  # python module name on sys.path, e.g. "two_sum__brute_force"
-    source_path: Path  # absolute path to the variant's .py file
-    explanation: str
-    complexity: str
-    test_block: str  # raw docstring text containing the doctests
-    first_code_line: int  # 1-based; first executable line after the docstring
-    public_symbols: list[tuple[str, str]]  # (kind, name) for autodoc directives
-
-
-@dataclass
-class Problem:
-    """In-memory model used by every page renderer."""
-
-    slug: str  # canonical identifier ("two-sum"); used as page filename
-    name: str  # display title from catalog.yaml ("Two Sum")
-    difficulty: str  # "Easy" | "Medium" | "Hard"
-    patterns: list[str]
-    description_rst: str  # raw RST block, no surrounding blank lines
-    short_description: str  # for difficulty index bullet
-    problem_url: str  # full URL to the problem (LeetCode or other)
-    in_catalog: bool  # True iff this slug appears in catalog.yaml
-    variants: list[Variant] = field(default_factory=list)
-
-
-# ---------------------------------------------------------------------------
-# Discovery
-# ---------------------------------------------------------------------------
-
-
-def load_catalog() -> list[dict]:
-    if not CATALOG_PATH.exists():
-        print(f"[generate-docs] ERROR: missing {CATALOG_PATH}", file=sys.stderr)
-        return []
-    with CATALOG_PATH.open(encoding="utf-8") as f:
-        return yaml.safe_load(f) or []
-
-
-def _build_variant(slug: str, slug_dir: Path, entry: dict) -> Variant | None:
-    """Parse one ``solutions:`` entry into a Variant, or return None on error."""
-    name = (entry.get("name") or "").strip()
-    if not name:
-        print(
-            f"[generate-docs] WARNING: {slug_dir}/meta.yaml: solution entry "
-            f"missing required 'name'",
-            file=sys.stderr,
-        )
-        return None
-    module = solution_module_name(slug, name)
-    py_path = slug_dir / f"{module}.py"
-    if not py_path.exists():
-        print(
-            f"[generate-docs] WARNING: {slug_dir}/meta.yaml: solution '{name}' "
-            f"expects file {py_path.name} which does not exist",
-            file=sys.stderr,
-        )
-        return None
-    source = py_path.read_text(encoding="utf-8")
-    bounds = find_module_docstring_bounds(source)
-    if bounds is None:
-        print(
-            f"[generate-docs] WARNING: no docstring in {py_path}",
-            file=sys.stderr,
-        )
-        return None
-    _start, end = bounds
-    first_code_line = first_nonblank_noncomment_after(source.splitlines(), end) or 1
-    test_block = (read_module_docstring(py_path) or "").strip("\n")
-    return Variant(
-        name=name,
-        module=module,
-        source_path=py_path,
-        explanation=(entry.get("explanation") or "").rstrip("\n"),
-        complexity=(entry.get("complexity") or "").rstrip("\n"),
-        test_block=test_block,
-        first_code_line=first_code_line,
-        public_symbols=public_top_level_symbols(py_path),
-    )
-
-
-def _new_source_problems(catalog_by_slug: dict[str, dict]) -> dict[str, Problem]:
-    """Scan ``problems/<diff>/<slug>/`` for the new structured source."""
-    out: dict[str, Problem] = {}
-    if not PROBLEMS_DIR.is_dir():
-        return out
-    for difficulty_label, dirname in DIFFICULTY_DIRS:
-        diff_dir = PROBLEMS_DIR / dirname
-        if not diff_dir.is_dir():
-            continue
-        for slug_dir in sorted(p for p in diff_dir.iterdir() if p.is_dir()):
-            slug = slug_dir.name
-            meta_path = slug_dir / "meta.yaml"
-            if not meta_path.exists():
-                continue
-            with meta_path.open(encoding="utf-8") as f:
-                meta = yaml.safe_load(f) or {}
-
-            solutions_meta = meta.get("solutions")
-            if not solutions_meta:
-                print(
-                    f"[generate-docs] WARNING: {meta_path} must define a non-empty "
-                    f"'solutions:' list",
-                    file=sys.stderr,
-                )
-                continue
-
-            variants: list[Variant] = []
-            for entry in solutions_meta:
-                variant = _build_variant(slug, slug_dir, entry or {})
-                if variant is not None:
-                    variants.append(variant)
-            if not variants:
-                continue
-
-            description_rst = (meta.get("description_rst") or "").rstrip("\n")
-            short = truncate_description(description_rst)
-            catalog_entry = catalog_by_slug.get(slug, {})
-            name = catalog_entry.get("name") or pascal_to_words(
-                "".join(part.capitalize() for part in slug.split("-"))
-            )
-            problem_url = meta.get("problem_url") or f"{LEETCODE_BASE}/{slug}/"
-
-            out[slug] = Problem(
-                slug=slug,
-                name=name,
-                difficulty=difficulty_label,
-                patterns=list(meta.get("patterns") or []),
-                description_rst=description_rst,
-                short_description=short,
-                problem_url=problem_url,
-                in_catalog=slug in catalog_by_slug,
-                variants=variants,
-            )
-    return out
-
-
-def discover(catalog: list[dict]) -> dict[str, Problem]:
-    catalog_by_slug = {entry["slug"]: entry for entry in catalog}
-    return _new_source_problems(catalog_by_slug)
-
-
-# ---------------------------------------------------------------------------
-# Per-problem RST
-# ---------------------------------------------------------------------------
-
-
-def _section(header: str, body: str) -> list[str]:
-    return [header, "-" * len(header), body]
-
-
-def _indent(text: str, prefix: str) -> str:
-    """Indent every non-empty line of ``text`` by ``prefix``."""
-    return "\n".join(prefix + line if line else line for line in text.splitlines())
-
-
-def _autodoc_lines(v: Variant) -> list[str]:
-    """Module-qualified autodoc directives for a variant's public symbols."""
-    lines: list[str] = []
-    for kind, name in v.public_symbols:
-        qualified = f"{v.module}.{name}"
-        if kind == "function":
-            lines.append(f".. autofunction:: {qualified}")
-        else:
-            lines.append(f".. autoclass:: {qualified}")
-            lines.append("   :members:")
-            lines.append("   :show-inheritance:")
-            lines.append("   :undoc-members:")
-        lines.append("")
-    return lines
-
-
-def _literalinclude_lines(v: Variant) -> list[str]:
-    rel_source = v.source_path.relative_to(ROOT).as_posix()
-    return [
-        "",
-        f".. literalinclude:: ../{rel_source}",
-        "    :language: python",
-        f"    :lines: {v.first_code_line}-",
-    ]
-
-
-def _render_single_variant_body(v: Variant) -> list[str]:
-    """Flat layout (no tabs): same shape the site has always used."""
-    chunks: list[str] = []
-    chunks += _section("Solution", v.explanation)
-    chunks.append("")
-    chunks += _section("Code", "\n".join(_literalinclude_lines(v)))
-    chunks.append("")
-    chunks += _section("Test", v.test_block)
-    chunks.append("")
-    chunks += _section("Complexity", v.complexity)
-    chunks.append("")
-    chunks += _autodoc_lines(v)
-    return chunks
-
-
-def _render_variant_tab_body(v: Variant) -> str:
-    """Inner content of a single ``.. tab-item::`` block (before indentation)."""
-    lines: list[str] = []
-    if v.explanation:
-        lines.append("**Explanation**")
-        lines.append("")
-        lines.append(v.explanation)
-        lines.append("")
-    lines.append("**Code**")
-    lines.extend(_literalinclude_lines(v))
-    lines.append("")
-    if v.test_block:
-        lines.append("**Test**")
-        lines.append("")
-        lines.append(v.test_block)
-        lines.append("")
-    if v.complexity:
-        lines.append("**Complexity**")
-        lines.append("")
-        lines.append(v.complexity)
-        lines.append("")
-    lines.extend(_autodoc_lines(v))
-    return "\n".join(lines).rstrip()
-
-
-def _render_multi_variant_body(variants: list[Variant]) -> list[str]:
-    chunks: list[str] = []
-    chunks += _section("Approaches", "")
-    chunks.append(".. tab-set::")
-    chunks.append("")
-    for v in variants:
-        chunks.append(f"    .. tab-item:: {v.name}")
-        chunks.append("")
-        body = _render_variant_tab_body(v)
-        chunks.append(_indent(body, "        "))
-        chunks.append("")
-    return chunks
-
-
-def render_problem_rst(p: Problem) -> str:
-    title = p.name
-    chunks: list[str] = [
-        ":orphan:",
-        "",
-        title,
-        "=" * len(title),
-        "",
-        # Disable syntax highlighting for the Problem section: the ``::``
-        # literal blocks there hold sample Input/Output data, not code.
-        # ``.. literalinclude::`` below carries its own :language: option so
-        # the Code section stays Python-highlighted regardless.
-        ".. highlight:: none",
-        "",
-    ]
-    chunks += _section("Problem", f"{p.problem_url}\n\n{p.description_rst}")
-    chunks.append("")
-    chunks.append(".. highlight:: python")
-    chunks.append("")
-    chunks += _section("Pattern", ", ".join(p.patterns))
-    chunks.append("")
-    if len(p.variants) == 1:
-        chunks += _render_single_variant_body(p.variants[0])
-    else:
-        chunks += _render_multi_variant_body(p.variants)
-    return "\n".join(chunks).rstrip() + "\n"
-
-
-# ---------------------------------------------------------------------------
-# coverage.rst + problem_index.rst
-# ---------------------------------------------------------------------------
-
-
-def _count_covered(catalog: list[dict], covered_slugs: set[str], list_key: str) -> tuple[int, int]:
-    rows = [r for r in catalog if list_key in (r.get("lists") or [])]
-    total = len(rows)
-    covered = sum(1 for r in rows if not r.get("premium") and r["slug"] in covered_slugs)
-    return covered, total
-
-
-def render_coverage_rst(catalog: list[dict], covered_slugs: set[str]) -> str:
-    rows_out: list[tuple[str, int, int]] = []
-    for key in LIST_DISPLAY_ORDER:
-        covered, total = _count_covered(catalog, covered_slugs, key)
-        rows_out.append((LIST_DISPLAY[key], covered, total))
-
-    title = "Problem Coverage"
-    lines: list[str] = [
-        title,
-        "=" * len(title),
-        "",
-        "Coverage of canonical interview prep problem lists.",
-        "",
-        ".. list-table::",
-        "   :header-rows: 1",
-        "   :widths: auto",
-        "",
-        "   * - List",
-        "     - Covered",
-        "     - Total",
-        "     - Progress",
-    ]
-    for label, covered, total in rows_out:
-        lines.append(f"   * - {list_link(label)}")
-        lines.append(f"     - {covered}")
-        lines.append(f"     - {total}")
-        lines.append(f"     - {progress_bar(covered, total)}")
-    lines += [
-        "",
-        "See :doc:`problem_index` for the full problem list.",
-        "",
-    ]
-    return "\n".join(lines) + "\n"
-
-
-def render_problem_index_rst(catalog: list[dict], problems: dict[str, Problem]) -> str:
-    title = "Problem Index"
-    lines: list[str] = [
-        title,
-        "=" * len(title),
-        "",
-        "All problems from the Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, and Google Top 50 lists.",
-        "Problems marked 🔒 require a LeetCode Premium subscription.",
-        "",
-        "Use the dropdowns to filter by difficulty, pattern, list, or status.",
-        "",
-        ".. list-table::",
-        "   :header-rows: 1",
-        "   :class: sphinx-datatable coverage-datatable",
-        "   :widths: auto",
-        "",
-        "   * - Problem",
-        "     - Difficulty",
-        "     - Pattern",
-        "     - Lists",
-        "     - Status",
-    ]
-    for row in catalog:
-        slug = row["slug"]
-        name = row["name"]
-        lc_url = f"{LEETCODE_BASE}/{slug}/"
-        lists = row.get("lists") or []
-        lists_cell = lists_label(lists)
-        if slug in problems:
-            p = problems[slug]
-            problem_cell = f":doc:`{name} <generated/{p.slug}>`"
-            emoji = DIFFICULTY_EMOJI.get(p.difficulty, "")
-            difficulty_cell = f"{emoji} {p.difficulty}"
-            pattern_cell = ", ".join(p.patterns)
-            status = "✅ Covered"
-        elif row.get("premium"):
-            problem_cell = f"`{name} <{lc_url}>`__"
-            difficulty_cell = ""
-            pattern_cell = ""
-            status = "🔒 Premium"
-        else:
-            problem_cell = f"`{name} <{lc_url}>`__"
-            difficulty_cell = ""
-            pattern_cell = ""
-            status = "⬜ Missing"
-        lines += [
-            f"   * - {problem_cell}",
-            f"     - {difficulty_cell}",
-            f"     - {pattern_cell}",
-            f"     - {lists_cell}",
-            f"     - {status}",
-        ]
-    lines.append("")
-    return "\n".join(lines) + "\n"
-
-
-# ---------------------------------------------------------------------------
-# Difficulty indexes
-# ---------------------------------------------------------------------------
-
-
-def render_difficulty_rst(difficulty_label: str, problems: dict[str, Problem]) -> str:
-    title = difficulty_label
-    lines = [title, "=" * len(title), ""]
-    matches = sorted(
-        (p for p in problems.values() if p.difficulty == difficulty_label),
-        key=lambda p: p.name,
-    )
-    for p in matches:
-        if p.short_description:
-            lines.append(
-                f"- :doc:`{p.name} <generated/{p.slug}>` -- {p.short_description}"
-            )
-        else:
-            lines.append(f"- :doc:`{p.name} <generated/{p.slug}>`")
-    lines.append("")
-    return "\n".join(lines) + "\n"
-
-
-# ---------------------------------------------------------------------------
-# Entry point
-# ---------------------------------------------------------------------------
 
 
 def _write_if_changed(path: Path, content: str) -> bool:
@@ -452,8 +47,14 @@ def _write_if_changed(path: Path, content: str) -> bool:
 
 
 def main() -> int:
-    catalog = load_catalog()
-    problems = discover(catalog)
+    if not CATALOG_PATH.exists():
+        print(f"[generate-docs] ERROR: missing {CATALOG_PATH}", file=sys.stderr)
+        return 1
+    with CATALOG_PATH.open(encoding="utf-8") as f:
+        catalog: list[dict] = yaml.safe_load(f) or []
+
+    catalog_by_slug = {entry["slug"]: entry for entry in catalog}
+    problems = discover_problems(catalog_by_slug)
 
     GENERATED_DIR.mkdir(exist_ok=True)
     rst_written = 0
