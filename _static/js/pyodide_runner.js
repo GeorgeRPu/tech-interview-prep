@@ -1,12 +1,26 @@
 /**
  * Interactive code runner for solution pages.
  *
- * Detects solution pages by looking for section#code with a Python highlight
- * block, extracts the code and doctests, and replaces the static block with
- * a CodeMirror editor (loaded from CDN).  The editor is always editable.
+ * Single-solution page: the code lives under section#code and the doctests
+ * under section#test (RST sub-section headers).
+ *
+ * Multi-solution page: the code/doctests live inside each .sd-tab-content
+ * under section#approaches (sphinx-design tabs). One widget is wired up per
+ * tab; CodeMirror instances in non-active tabs initialize at zero height,
+ * so we call .refresh() on the active tab when the radio input changes.
+ *
  * Pyodide is loaded lazily on first Run click.
  */
 document.addEventListener('DOMContentLoaded', function () {
+  var approachSection = document.getElementById('approaches');
+  if (approachSection) {
+    setupTabbedRunners(approachSection);
+    return;
+  }
+  setupSingleRunner();
+});
+
+function setupSingleRunner() {
   var codeSection = document.getElementById('code');
   if (!codeSection) return;
 
@@ -19,15 +33,40 @@ document.addEventListener('DOMContentLoaded', function () {
     ? testSection.querySelector('.doctest pre')
     : null;
 
+  buildWidgetFrom(codeSection, highlightDiv, highlightPre, doctestBlock);
+}
+
+function setupTabbedRunners(approachSection) {
+  var tabContents = approachSection.querySelectorAll('.sd-tab-content');
+  tabContents.forEach(function (tabContent) {
+    var highlightDiv = tabContent.querySelector('.highlight-python');
+    var highlightPre = highlightDiv ? highlightDiv.querySelector('pre') : null;
+    if (!highlightPre) return;
+    var doctestBlock = tabContent.querySelector('.doctest pre');
+    buildWidgetFrom(tabContent, highlightDiv, highlightPre, doctestBlock);
+  });
+
+  // CodeMirror instances inside hidden tabs render at zero height. Refresh
+  // whichever tab just became active so its editor measures correctly.
+  var radios = approachSection.querySelectorAll('.sd-tab-set > input[type="radio"]');
+  radios.forEach(function (radio) {
+    radio.addEventListener('change', function () {
+      if (!radio.checked) return;
+      approachSection.querySelectorAll('.pyodide-wrapper').forEach(function (w) {
+        if (w._cmInstance) w._cmInstance.refresh();
+      });
+    });
+  });
+}
+
+function buildWidgetFrom(container, highlightDiv, highlightPre, doctestBlock) {
   var sourceCode = highlightPre.textContent;
   var testCalls = doctestBlock ? parseDoctests(sourceCode, doctestBlock.textContent) : '';
-
   var initialCode = testCalls
     ? sourceCode + '\n\n# --- Test Cases ---\n' + testCalls
     : sourceCode;
-
-  buildWidget(codeSection, highlightDiv, initialCode);
-});
+  buildWidget(container, highlightDiv, initialCode);
+}
 
 /**
  * Parse doctest text into plain Python calls.
@@ -114,21 +153,19 @@ function loadCodeMirrorOnce() {
  * Build the interactive widget: replace the static Pygments block with a
  * CodeMirror editor, plus Run / Reset buttons and an output area.
  */
-function buildWidget(codeSection, highlightDiv, initialCode) {
-  var cmInstance = null;
-
+function buildWidget(container, highlightDiv, initialCode) {
   // Toolbar
   var toolbar = document.createElement('div');
   toolbar.className = 'pyodide-toolbar';
 
   var runBtn = document.createElement('button');
   runBtn.className = 'pyodide-run-btn';
-  runBtn.textContent = '\u25b6 Run';
+  runBtn.textContent = '▶ Run';
   runBtn.title = 'Run code (loads Python runtime on first use)';
 
   var resetBtn = document.createElement('button');
   resetBtn.className = 'pyodide-reset-btn';
-  resetBtn.textContent = '\u21ba Reset';
+  resetBtn.textContent = '↺ Reset';
   resetBtn.title = 'Reset to original code';
 
   var status = document.createElement('span');
@@ -157,7 +194,7 @@ function buildWidget(codeSection, highlightDiv, initialCode) {
 
   // Load CodeMirror and initialize the editor
   loadCodeMirrorOnce().then(function (CodeMirror) {
-    cmInstance = CodeMirror(editorWrap, {
+    var cmInstance = CodeMirror(editorWrap, {
       value: initialCode,
       mode: 'python',
       theme: 'pygments-match',
@@ -168,10 +205,11 @@ function buildWidget(codeSection, highlightDiv, initialCode) {
       extraKeys: { 'Tab': 'indentMore', 'Shift-Tab': 'indentLess' },
       viewportMargin: Infinity
     });
+    wrapper._cmInstance = cmInstance;
   });
 
   function getCode() {
-    return cmInstance ? cmInstance.getValue() : initialCode;
+    return wrapper._cmInstance ? wrapper._cmInstance.getValue() : initialCode;
   }
 
   runBtn.addEventListener('click', function () {
@@ -179,7 +217,7 @@ function buildWidget(codeSection, highlightDiv, initialCode) {
   });
 
   resetBtn.addEventListener('click', function () {
-    if (cmInstance) cmInstance.setValue(initialCode);
+    if (wrapper._cmInstance) wrapper._cmInstance.setValue(initialCode);
     output.textContent = '';
     output.className = 'pyodide-output';
     status.textContent = '';
@@ -215,12 +253,12 @@ function runCode(code, outputEl, runBtn, statusEl) {
   outputEl.textContent = '';
   outputEl.className = 'pyodide-output';
   runBtn.disabled = true;
-  statusEl.textContent = 'Loading Python runtime\u2026';
+  statusEl.textContent = 'Loading Python runtime…';
   statusEl.className = 'pyodide-status pyodide-status-loading';
 
   loadPyodideOnce()
     .then(function (pyodide) {
-      statusEl.textContent = 'Running\u2026';
+      statusEl.textContent = 'Running…';
 
       var collected = '';
       pyodide.setStdout({
