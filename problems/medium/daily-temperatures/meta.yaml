@@ -1,0 +1,10 @@
+slug: daily-temperatures
+patterns:
+- Array
+- Stack
+- Monotonic Stack
+description_rst: "Given an array of integers ``temperatures`` represents the daily\ntemperatures, return *an array* ``answer`` *such that* ``answer[i]`` *is\nthe number of days you have to wait after the* ``i``\\ :sup:```th``` *day\nto get a warmer temperature*. If there is no future day for which this\nis possible, keep ``answer[i] == 0`` instead.\n\n \n\n**Example 1:**\n\n::\n\n   Input: temperatures = [73,74,75,71,69,72,76,73]\n   Output: [1,1,4,2,1,1,0,0]\n\n**Example 2:**\n\n::\n\n   Input: temperatures = [30,40,50,60]\n   Output: [1,1,1,0]\n\n**Example 3:**\n\n::\n\n   Input: temperatures = [30,60,90]\n   Output: [1,1,0]\n\n \n\n**Constraints:**\n\n- ``1 <= temperatures.length <= 10``\\ :sup:```5```\n- ``30 <= temperatures[i] <= 100``\n"
+solutions:
+- name: Monotonic Stack
+  explanation: ''
+  complexity: ''

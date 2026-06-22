@@ -1,0 +1,12 @@
+slug: lowest-common-ancestor-of-a-binary-search-tree
+patterns:
+- Tree
+- Depth-First Search
+- Binary Search Tree
+- Binary Tree
+description_rst: "Given a binary search tree (BST), find the lowest common ancestor (LCA)\nnode of two given nodes in the BST.\n\nAccording to the `definition of LCA on\nWikipedia <https://en.wikipedia.org/wiki/Lowest_common_ancestor>`__:\n“The lowest common ancestor is defined between two nodes ``p`` and ``q``\nas the lowest node in ``T`` that has both ``p`` and ``q`` as descendants\n(where we allow **a node to be a descendant of itself**).”\n\n \n\n**Example 1:**\n\n|image1|\n\n::\n\n\n   Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8\n   Output: 6\n   Explanation: The LCA of nodes 2 and 8 is 6.\n\n**Example 2:**\n\n|image2|\n\n::\n\n\n   Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4\n   Output: 2\n   Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.\n\n**Example 3:**\n\n::\n\n\n   Input: root = [2,1], p = 2, q = 1\n   Output: 2\n\n \n\n**Constraints:**\n\n- The number of nodes in the tree is in\
+  \ the range\n  ``[2, 10``\\ :sup:```5```\\ ``]``.\n- ``-10``\\ :sup:```9```\\ ``<= Node.val <= 10``\\ :sup:```9```\n- All ``Node.val`` are **unique**.\n- ``p != q``\n- ``p`` and ``q`` will exist in the BST.\n\n.. |image1| image:: https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png\n.. |image2| image:: https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png\n"
+solutions:
+- name: Recursive
+  explanation: ''
+  complexity: ''

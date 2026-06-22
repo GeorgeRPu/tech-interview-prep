@@ -1,0 +1,10 @@
+slug: palindrome-partitioning
+patterns:
+- String
+- Dynamic Programming
+- Backtracking
+description_rst: "Given a string ``s``, partition ``s`` such that every substring of the\npartition is a palindrome. Return *all possible palindrome partitioning\nof* ``s``.\n\n \n\n**Example 1:**\n\n::\n\n   Input: s = \"aab\"\n   Output: [[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]\n\n**Example 2:**\n\n::\n\n   Input: s = \"a\"\n   Output: [[\"a\"]]\n\n \n\n**Constraints:**\n\n- ``1 <= s.length <= 16``\n- ``s`` contains only lowercase English letters.\n"
+solutions:
+- name: Backtracking
+  explanation: ''
+  complexity: ''

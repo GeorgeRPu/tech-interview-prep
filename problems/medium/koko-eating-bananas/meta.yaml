@@ -1,0 +1,10 @@
+slug: koko-eating-bananas
+patterns:
+- Array
+- Binary Search
+description_rst: "Koko loves to eat bananas. There are ``n`` piles of bananas, the\n``i``\\ :sup:```th``` pile has ``piles[i]`` bananas. The guards have gone\nand will come back in ``h`` hours.\n\nKoko can decide her bananas-per-hour eating speed of ``k``. Each hour,\nshe chooses some pile of bananas and eats ``k`` bananas from that pile.\nIf the pile has less than ``k`` bananas, she eats all of them instead\nand will not eat any more bananas during this hour.\n\nKoko likes to eat slowly but still wants to finish eating all the\nbananas before the guards return.\n\nReturn *the minimum integer* ``k`` *such that she can eat all the\nbananas within* ``h`` *hours*.\n\n \n\n**Example 1:**\n\n::\n\n\n   Input: piles = [3,6,7,11], h = 8\n   Output: 4\n\n**Example 2:**\n\n::\n\n\n   Input: piles = [30,11,23,4,20], h = 5\n   Output: 30\n\n**Example 3:**\n\n::\n\n\n   Input: piles = [30,11,23,4,20], h = 6\n   Output: 23\n\n \n\n**Constraints:**\n\n- ``1 <= piles.length <= 10``\\ :sup:```4```\n- ``piles.length\
+  \ <= h <= 10``\\ :sup:```9```\n- ``1 <= piles[i] <= 10``\\ :sup:```9```\n"
+solutions:
+- name: Binary Search
+  explanation: ''
+  complexity: ''

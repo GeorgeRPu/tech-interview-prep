@@ -15,17 +15,14 @@ def isPalindrome(s: str) -> bool:
     """Check if ``s`` is a palindrome, ignoring non-alphanumeric characters.
     """
     s = s.lower()
+    s = ''.join(filter(str.isalnum, s))
 
-    i = 0
-    j = len(s) - 1
-    while i < j:
-        if not s[i].isalnum():
-            i += 1
-        elif not s[j].isalnum():
-            j -= 1
-        elif s[i] != s[j]:
+    left = 0
+    right = len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
             return False
         else:
-            i += 1
-            j -= 1
+            left += 1
+            right -= 1
     return True

@@ -51,26 +51,26 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Array, Hash Table, String, Sorting
      - Blind 75, Grind 169, NeetCode 150, Amazon Top 50
      - ✅ Covered
-   * - `Top K Frequent Elements <https://leetcode.com/problems/top-k-frequent-elements/>`__
-     - 
-     - 
+   * - :doc:`Top K Frequent Elements <generated/top-k-frequent-elements>`
+     - 🟡 Medium
+     - Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue)
      - Blind 75, NeetCode 150, Google Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Product of Array Except Self <generated/product-of-array-except-self>`
      - 🟡 Medium
      - Array, Prefix Sum
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - `Encode and Decode Strings <https://leetcode.com/problems/encode-and-decode-strings/>`__
-     - 
-     - 
+   * - :doc:`Encode and Decode Strings <generated/encode-and-decode-strings>`
+     - 🟡 Medium
+     - Array, String, Design
      - Blind 75, Grind 169, NeetCode 150
-     - 🔒 Premium
-   * - `Longest Consecutive Sequence <https://leetcode.com/problems/longest-consecutive-sequence/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Longest Consecutive Sequence <generated/longest-consecutive-sequence>`
+     - 🟡 Medium
+     - Array, Hash Table, Union-Find
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Valid Sudoku <generated/valid-sudoku>`
      - 🟡 Medium
      - Array, Hash Table, Matrix
@@ -101,11 +101,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Array, Two Pointers, Binary Search
      - NeetCode 150
      - ✅ Covered
-   * - `Trapping Rain Water <https://leetcode.com/problems/trapping-rain-water/>`__
-     - 
-     - 
+   * - :doc:`Trapping Rain Water <generated/trapping-rain-water>`
+     - 🔴 Hard
+     - Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack
      - Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Best Time to Buy and Sell Stock <generated/best-time-to-buy-and-sell-stock>`
      - 🟢 Easy
      - Array, Dynamic Programming
@@ -126,21 +126,21 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - `Minimum Window Substring <https://leetcode.com/problems/minimum-window-substring/>`__
-     - 
-     - 
+   * - :doc:`Minimum Window Substring <generated/minimum-window-substring>`
+     - 🔴 Hard
+     - Hash Table, String, Sliding Window
      - Blind 75, Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Permutation in String <https://leetcode.com/problems/permutation-in-string/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Permutation in String <generated/permutation-in-string>`
+     - 🟡 Medium
+     - Hash Table, Two Pointers, String, Sliding Window
      - NeetCode 150
-     - ⬜ Missing
-   * - `Sliding Window Maximum <https://leetcode.com/problems/sliding-window-maximum/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Sliding Window Maximum <generated/sliding-window-maximum>`
+     - 🔴 Hard
+     - Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue
      - Grind 169, NeetCode 150, Amazon Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Valid Parentheses <generated/valid-parentheses>`
      - 🟢 Easy
      - String, Stack
@@ -151,16 +151,16 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169
      - ⬜ Missing
-   * - `Min Stack <https://leetcode.com/problems/min-stack/>`__
-     - 
-     - 
+   * - :doc:`Min Stack <generated/min-stack>`
+     - 🟡 Medium
+     - Stack, Design
      - Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Evaluate Reverse Polish Notation <https://leetcode.com/problems/evaluate-reverse-polish-notation/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Evaluate Reverse Polish Notation <generated/evaluate-reverse-polish-notation>`
+     - 🟡 Medium
+     - Array, Math, Stack
      - Grind 75, Grind 169, NeetCode 150, Google Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - `Basic Calculator <https://leetcode.com/problems/basic-calculator/>`__
      - 
      - 
@@ -171,16 +171,16 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - String, Dynamic Programming, Backtracking
      - Grind 169, NeetCode 150
      - ✅ Covered
-   * - `Daily Temperatures <https://leetcode.com/problems/daily-temperatures/>`__
-     - 
-     - 
+   * - :doc:`Daily Temperatures <generated/daily-temperatures>`
+     - 🟡 Medium
+     - Array, Stack, Monotonic Stack
      - Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Car Fleet <https://leetcode.com/problems/car-fleet/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Car Fleet <generated/car-fleet>`
+     - 🟡 Medium
+     - Array, Stack, Sorting, Monotonic Stack
      - NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Largest Rectangle in Histogram <https://leetcode.com/problems/largest-rectangle-in-histogram/>`__
      - 
      - 
@@ -196,31 +196,31 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169, Google Top 50
      - ⬜ Missing
-   * - `Find Minimum in Rotated Sorted Array <https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/>`__
-     - 
-     - 
+   * - :doc:`Find Minimum in Rotated Sorted Array <generated/find-minimum-in-rotated-sorted-array>`
+     - 🟡 Medium
+     - Array, Binary Search
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Search in Rotated Sorted Array <generated/search-in-rotated-sorted-array>`
      - 🟡 Medium
      - Array, Binary Search
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - `Search a 2D Matrix <https://leetcode.com/problems/search-a-2d-matrix/>`__
-     - 
-     - 
+   * - :doc:`Search a 2D Matrix <generated/search-a-2d-matrix>`
+     - 🟡 Medium
+     - Array, Binary Search, Matrix
      - Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Koko Eating Bananas <https://leetcode.com/problems/koko-eating-bananas/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Koko Eating Bananas <generated/koko-eating-bananas>`
+     - 🟡 Medium
+     - Array, Binary Search
      - NeetCode 150
-     - ⬜ Missing
-   * - `Time Based Key-Value Store <https://leetcode.com/problems/time-based-key-value-store/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Time Based Key-Value Store <generated/time-based-key-value-store>`
+     - 🟡 Medium
+     - Hash Table, String, Binary Search, Design
      - Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Median of Two Sorted Arrays <https://leetcode.com/problems/median-of-two-sorted-arrays/>`__
      - 
      - 
@@ -241,11 +241,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169
      - ⬜ Missing
-   * - `Reorder List <https://leetcode.com/problems/reorder-list/>`__
-     - 
-     - 
+   * - :doc:`Reorder List <generated/reorder-list>`
+     - 🟡 Medium
+     - Linked List, Two Pointers, Stack, Recursion
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Remove Nth Node From End of List <generated/remove-nth-node-from-end-of-list>`
      - 🟡 Medium
      - Linked List, Two Pointers
@@ -266,16 +266,16 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Linked List, Math, Recursion
      - Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
-   * - `Copy List With Random Pointer <https://leetcode.com/problems/copy-list-with-random-pointer/>`__
-     - 
-     - 
+   * - :doc:`Copy List With Random Pointer <generated/copy-list-with-random-pointer>`
+     - 🟡 Medium
+     - Hash Table, Linked List
      - NeetCode 150, Amazon Top 50
-     - ⬜ Missing
-   * - `Find the Duplicate Number <https://leetcode.com/problems/find-the-duplicate-number/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Find the Duplicate Number <generated/find-the-duplicate-number>`
+     - 🟡 Medium
+     - Array, Two Pointers, Binary Search, Bit Manipulation
      - Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`LRU Cache <generated/lru-cache>`
      - 🟡 Medium
      - Hash Table, Linked List, Design, Doubly-Linked List
@@ -316,11 +316,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - `Lowest Common Ancestor of a BST <https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/>`__
-     - 
-     - 
+   * - :doc:`Lowest Common Ancestor of a BST <generated/lowest-common-ancestor-of-a-binary-search-tree>`
+     - 🟡 Medium
+     - Tree, Depth-First Search, Binary Search Tree, Binary Tree
      - Blind 75, Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Lowest Common Ancestor of Binary Tree <https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/>`__
      - 
      - 
@@ -331,21 +331,21 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Tree, Breadth-First Search, Binary Tree
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - `Binary Tree Right Side View <https://leetcode.com/problems/binary-tree-right-side-view/>`__
-     - 
-     - 
+   * - :doc:`Binary Tree Right Side View <generated/binary-tree-right-side-view>`
+     - 🟡 Medium
+     - Tree, Depth-First Search, Breadth-First Search, Binary Tree
      - Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Validate Binary Search Tree <https://leetcode.com/problems/validate-binary-search-tree/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Validate Binary Search Tree <generated/validate-binary-search-tree>`
+     - 🟡 Medium
+     - Tree, Depth-First Search, Binary Search Tree, Binary Tree
      - Blind 75, Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Kth Smallest Element in a BST <https://leetcode.com/problems/kth-smallest-element-in-a-bst/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Kth Smallest Element in a BST <generated/kth-smallest-element-in-a-bst>`
+     - 🟡 Medium
+     - Tree, Depth-First Search, Binary Search Tree, Binary Tree
      - Blind 75, Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Construct Binary Tree from Preorder and Inorder Traversal <generated/construct-binary-tree-from-preorder-and-inorder-traversal>`
      - 🟡 Medium
      - Array, Hash Table, Divide and Conquer, Tree, Binary Tree
@@ -361,21 +361,21 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - `Count Good Nodes in Binary Tree <https://leetcode.com/problems/count-good-nodes-in-binary-tree/>`__
-     - 
-     - 
+   * - :doc:`Count Good Nodes in Binary Tree <generated/count-good-nodes-in-binary-tree>`
+     - 🟡 Medium
+     - Tree, Depth-First Search, Breadth-First Search, Binary Tree
      - NeetCode 150
-     - ⬜ Missing
-   * - `Implement Trie (Prefix Tree) <https://leetcode.com/problems/implement-trie-prefix-tree/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Implement Trie (Prefix Tree) <generated/implement-trie-prefix-tree>`
+     - 🟡 Medium
+     - Hash Table, String, Design, Trie
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
-     - ⬜ Missing
-   * - `Design Add and Search Words <https://leetcode.com/problems/design-add-and-search-words-data-structure/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Design Add and Search Words <generated/design-add-and-search-words-data-structure>`
+     - 🟡 Medium
+     - String, Depth-First Search, Design, Trie
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Word Search II <https://leetcode.com/problems/word-search-ii/>`__
      - 
      - 
@@ -416,16 +416,16 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - NeetCode 150
      - ⬜ Missing
-   * - `Combination Sum <https://leetcode.com/problems/combination-sum/>`__
-     - 
-     - 
+   * - :doc:`Combination Sum <generated/combination-sum>`
+     - 🟡 Medium
+     - Array, Backtracking
      - Blind 75, Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Word Search <https://leetcode.com/problems/word-search/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Word Search <generated/word-search>`
+     - 🟡 Medium
+     - Array, String, Backtracking, Depth-First Search, Matrix
      - Blind 75, Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Subsets <generated/subsets>`
      - 🟡 Medium
      - Array, Backtracking, Bit Manipulation
@@ -441,31 +441,31 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Hash Table, String, Backtracking
      - Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - `Subsets II <https://leetcode.com/problems/subsets-ii/>`__
-     - 
-     - 
+   * - :doc:`Subsets II <generated/subsets-ii>`
+     - 🟡 Medium
+     - Array, Backtracking, Bit Manipulation
      - NeetCode 150
-     - ⬜ Missing
-   * - `Combination Sum II <https://leetcode.com/problems/combination-sum-ii/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Combination Sum II <generated/combination-sum-ii>`
+     - 🟡 Medium
+     - Array, Backtracking
      - NeetCode 150
-     - ⬜ Missing
-   * - `Palindrome Partitioning <https://leetcode.com/problems/palindrome-partitioning/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Palindrome Partitioning <generated/palindrome-partitioning>`
+     - 🟡 Medium
+     - String, Dynamic Programming, Backtracking
      - NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `N-Queens <https://leetcode.com/problems/n-queens/>`__
      - 
      - 
      - Grind 169, NeetCode 150
      - ⬜ Missing
-   * - `Number of Islands <https://leetcode.com/problems/number-of-islands/>`__
-     - 
-     - 
+   * - :doc:`Number of Islands <generated/number-of-islands>`
+     - 🟡 Medium
+     - Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - `Flood Fill <https://leetcode.com/problems/flood-fill/>`__
      - 
      - 
@@ -476,16 +476,16 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169
      - ⬜ Missing
-   * - `Clone Graph <https://leetcode.com/problems/clone-graph/>`__
-     - 
-     - 
+   * - :doc:`Clone Graph <generated/clone-graph>`
+     - 🟡 Medium
+     - Hash Table, Depth-First Search, Breadth-First Search, Graph Theory
      - Blind 75, Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Rotting Oranges <https://leetcode.com/problems/rotting-oranges/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Rotting Oranges <generated/rotting-oranges>`
+     - 🟡 Medium
+     - Array, Breadth-First Search, Matrix
      - Grind 75, Grind 169, NeetCode 150, Amazon Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - `Accounts Merge <https://leetcode.com/problems/accounts-merge/>`__
      - 
      - 
@@ -501,11 +501,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 169, NeetCode 150, Google Top 50
      - ⬜ Missing
-   * - `Course Schedule <https://leetcode.com/problems/course-schedule/>`__
-     - 
-     - 
+   * - :doc:`Course Schedule <generated/course-schedule>`
+     - 🟡 Medium
+     - Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - `Graph Valid Tree <https://leetcode.com/problems/graph-valid-tree/>`__
      - 
      - 
@@ -516,26 +516,26 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 169, NeetCode 150
      - 🔒 Premium
-   * - `Max Area of Island <https://leetcode.com/problems/max-area-of-island/>`__
-     - 
-     - 
+   * - :doc:`Max Area of Island <generated/max-area-of-island>`
+     - 🟡 Medium
+     - Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix
      - NeetCode 150, Google Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - `Surrounded Regions <https://leetcode.com/problems/surrounded-regions/>`__
      - 
      - 
      - NeetCode 150
      - ⬜ Missing
-   * - `Walls and Gates <https://leetcode.com/problems/walls-and-gates/>`__
-     - 
-     - 
+   * - :doc:`Walls and Gates <generated/walls-and-gates>`
+     - 🟡 Medium
+     - Array, Breadth-First Search, Matrix
      - NeetCode 150
-     - 🔒 Premium
-   * - `Course Schedule II <https://leetcode.com/problems/course-schedule-ii/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Course Schedule II <generated/course-schedule-ii>`
+     - 🟡 Medium
+     - Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort
      - Grind 169, NeetCode 150, Google Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - `Redundant Connection <https://leetcode.com/problems/redundant-connection/>`__
      - 
      - 
@@ -556,96 +556,96 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - NeetCode 150
      - ⬜ Missing
-   * - `Min Cost to Connect All Points <https://leetcode.com/problems/min-cost-to-connect-all-points/>`__
-     - 
-     - 
+   * - :doc:`Min Cost to Connect All Points <generated/min-cost-to-connect-all-points>`
+     - 🟡 Medium
+     - Array, Union-Find, Graph Theory, Minimum Spanning Tree
      - NeetCode 150
-     - ⬜ Missing
-   * - `Network Delay Time <https://leetcode.com/problems/network-delay-time/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Network Delay Time <generated/network-delay-time>`
+     - 🟡 Medium
+     - Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path
      - NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Swim in Rising Water <https://leetcode.com/problems/swim-in-rising-water/>`__
      - 
      - 
      - NeetCode 150
      - ⬜ Missing
-   * - `Cheapest Flights Within K Stops <https://leetcode.com/problems/cheapest-flights-within-k-stops/>`__
-     - 
-     - 
+   * - :doc:`Cheapest Flights Within K Stops <generated/cheapest-flights-within-k-stops>`
+     - 🟡 Medium
+     - Dynamic Programming, Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue)
      - Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Climbing Stairs <generated/climbing-stairs>`
      - 🟢 Easy
      - Math, Dynamic Programming, Memoization
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - `House Robber <https://leetcode.com/problems/house-robber/>`__
-     - 
-     - 
+   * - :doc:`House Robber <generated/house-robber>`
+     - 🟡 Medium
+     - Array, Dynamic Programming
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `House Robber II <https://leetcode.com/problems/house-robber-ii/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`House Robber II <generated/house-robber-ii>`
+     - 🟡 Medium
+     - Array, Dynamic Programming
      - Blind 75, NeetCode 150, Google Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Longest Palindromic Substring <generated/longest-palindromic-substring>`
      - 🟡 Medium
      - Two Pointers, String, Dynamic Programming
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
-   * - `Decode Ways <https://leetcode.com/problems/decode-ways/>`__
-     - 
-     - 
+   * - :doc:`Decode Ways <generated/decode-ways>`
+     - 🟡 Medium
+     - String, Dynamic Programming
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Coin Change <https://leetcode.com/problems/coin-change/>`__
      - 
      - 
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - `Maximum Product Subarray <https://leetcode.com/problems/maximum-product-subarray/>`__
-     - 
-     - 
+   * - :doc:`Maximum Product Subarray <generated/maximum-product-subarray>`
+     - 🟡 Medium
+     - Array, Dynamic Programming
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Word Break <https://leetcode.com/problems/word-break/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Word Break <generated/word-break>`
+     - 🟡 Medium
+     - Array, Hash Table, String, Dynamic Programming, Trie
      - Blind 75, Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Longest Increasing Subsequence <https://leetcode.com/problems/longest-increasing-subsequence/>`__
      - 
      - 
      - Blind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - `Palindromic Substrings <https://leetcode.com/problems/palindromic-substrings/>`__
-     - 
-     - 
+   * - :doc:`Palindromic Substrings <generated/palindromic-substrings>`
+     - 🟡 Medium
+     - Two Pointers, String, Dynamic Programming
      - Blind 75, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Min Cost Climbing Stairs <https://leetcode.com/problems/min-cost-climbing-stairs/>`__
      - 
      - 
      - NeetCode 150
      - ⬜ Missing
-   * - `Partition Equal Subset Sum <https://leetcode.com/problems/partition-equal-subset-sum/>`__
-     - 
-     - 
+   * - :doc:`Partition Equal Subset Sum <generated/partition-equal-subset-sum>`
+     - 🟡 Medium
+     - Array, Dynamic Programming
      - Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Unique Paths <https://leetcode.com/problems/unique-paths/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Unique Paths <generated/unique-paths>`
+     - 🟡 Medium
+     - Math, Dynamic Programming, Combinatorics
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
-     - ⬜ Missing
-   * - `Longest Common Subsequence <https://leetcode.com/problems/longest-common-subsequence/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Longest Common Subsequence <generated/longest-common-subsequence>`
+     - 🟡 Medium
+     - String, Dynamic Programming
      - Blind 75, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Maximum Profit in Job Scheduling <https://leetcode.com/problems/maximum-profit-in-job-scheduling/>`__
      - 
      - 
@@ -666,11 +666,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - NeetCode 150
      - ⬜ Missing
-   * - `Target Sum <https://leetcode.com/problems/target-sum/>`__
-     - 
-     - 
+   * - :doc:`Target Sum <generated/target-sum>`
+     - 🟡 Medium
+     - Array, Dynamic Programming, Backtracking
      - NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Interleaving String <https://leetcode.com/problems/interleaving-string/>`__
      - 
      - 
@@ -686,11 +686,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - NeetCode 150
      - ⬜ Missing
-   * - `Edit Distance <https://leetcode.com/problems/edit-distance/>`__
-     - 
-     - 
+   * - :doc:`Edit Distance <generated/edit-distance>`
+     - 🟡 Medium
+     - String, Dynamic Programming
      - NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Burst Balloons <https://leetcode.com/problems/burst-balloons/>`__
      - 
      - 

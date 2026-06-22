@@ -1,0 +1,10 @@
+slug: longest-common-subsequence
+patterns:
+- String
+- Dynamic Programming
+description_rst: "Given two strings ``text1`` and ``text2``, return *the length of their\nlongest* **common subsequence**\\ *.* If there is no **common\nsubsequence**, return ``0``.\n\nA **subsequence** of a string is a new string generated from the\noriginal string with some characters (can be none) deleted without\nchanging the relative order of the remaining characters.\n\n- For example, ``\"ace\"`` is a subsequence of ``\"abcde\"``.\n\nA **common subsequence** of two strings is a subsequence that is common\nto both strings.\n\n \n\n**Example 1:**\n\n::\n\n\n   Input: text1 = \"abcde\", text2 = \"ace\" \n   Output: 3  \n   Explanation: The longest common subsequence is \"ace\" and its length is 3.\n\n**Example 2:**\n\n::\n\n\n   Input: text1 = \"abc\", text2 = \"abc\"\n   Output: 3\n   Explanation: The longest common subsequence is \"abc\" and its length is 3.\n\n**Example 3:**\n\n::\n\n\n   Input: text1 = \"abc\", text2 = \"def\"\n   Output: 0\n   Explanation: There is no such common\
+  \ subsequence, so the result is 0.\n\n \n\n**Constraints:**\n\n- ``1 <= text1.length, text2.length <= 1000``\n- ``text1`` and ``text2`` consist of only lowercase English characters.\n"
+solutions:
+- name: Dynamic Programming
+  explanation: ''
+  complexity: ''

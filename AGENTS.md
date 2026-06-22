@@ -2,11 +2,17 @@
 
 @README.md
 
+- After making code changes, check if `AGENTS.md` or `README.md` needs to be updated to reflect the new project state (e.g. new files, changed tools, updated commands)
+
 ## Before Implementing Features
 
 Always check `ROADMAP.md` before implementing any new features. Use it to align your implementation with the project's direction and avoid duplicating or conflicting with planned work.
 
 When a task from the roadmap is complete, update `ROADMAP.md` to reflect the new status.
+
+## Solution Explanations
+
+Never author the `explanation` or `complexity` fields in `meta.yaml`. These are written by the user. When adding a new solution or problem, leave those fields empty or omit them entirely and let the user fill them in.
 
 ## Commit Messages
 

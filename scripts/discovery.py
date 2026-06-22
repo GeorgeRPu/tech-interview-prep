@@ -129,7 +129,7 @@ def solution_module_name(slug: str, solution_name: str) -> str:
     visually distinct and guarantees uniqueness on ``sys.path`` even when
     multiple problems share a solution name.
     """
-    solution_part = solution_name.lower().replace(" ", "_").replace("-", "_")
+    solution_part = re.sub(r"[^a-z0-9_]", "", solution_name.lower().replace(" ", "_").replace("-", "_"))
     return f"{slug_to_module_prefix(slug)}__{solution_part}"
 
 

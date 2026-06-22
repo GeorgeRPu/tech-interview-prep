@@ -105,21 +105,6 @@ def _literalinclude_lines(v: Variant) -> list[str]:
     ]
 
 
-def _render_single_variant_body(v: Variant) -> list[str]:
-    """Flat layout (no tabs): same shape the site has always used."""
-    chunks: list[str] = []
-    chunks.append(_section("Solution", v.explanation))
-    chunks.append("")
-    chunks.append(_section("Code", "\n".join(_literalinclude_lines(v))))
-    chunks.append("")
-    chunks.append(_section("Test", v.test_block))
-    chunks.append("")
-    chunks.append(_section("Complexity", v.complexity))
-    chunks.append("")
-    chunks += _autodoc_lines(v)
-    return chunks
-
-
 def _render_variant_tab_body(v: Variant) -> str:
     """Inner content of a single ``.. tab-item::`` block (before indentation)."""
     lines: list[str] = []
@@ -179,10 +164,7 @@ def render_problem_rst(p: Problem) -> str:
     chunks.append("")
     chunks.append(_section("Pattern", ", ".join(p.patterns)))
     chunks.append("")
-    if len(p.variants) == 1:
-        chunks += _render_single_variant_body(p.variants[0])
-    else:
-        chunks += _render_multi_variant_body(p.variants)
+    chunks += _render_multi_variant_body(p.variants)
     return "\n".join(chunks).rstrip() + "\n"
 
 
@@ -284,19 +266,38 @@ def render_problem_index_rst(catalog: list[dict], problems: dict[str, Problem]) 
 # ---------------------------------------------------------------------------
 
 
-def render_difficulty_rst(difficulty_label: str, problems: dict[str, Problem]) -> str:
+def render_difficulty_rst(
+    difficulty_label: str,
+    problems: dict[str, Problem],
+    catalog_by_slug: dict[str, dict],
+) -> str:
     title = difficulty_label
-    lines = [title, "=" * len(title), ""]
+    lines = [
+        title,
+        "=" * len(title),
+        "",
+        ".. list-table::",
+        "   :header-rows: 1",
+        "   :class: sphinx-datatable",
+        "   :widths: auto",
+        "",
+        "   * - Problem",
+        "     - Pattern",
+        "     - Lists",
+        "     - Description",
+    ]
     matches = sorted(
         (p for p in problems.values() if p.difficulty == difficulty_label),
         key=lambda p: p.name,
     )
     for p in matches:
-        if p.short_description:
-            lines.append(
-                f"- :doc:`{p.name} <generated/{p.slug}>` -- {p.short_description}"
-            )
-        else:
-            lines.append(f"- :doc:`{p.name} <generated/{p.slug}>`")
+        pattern_cell = ", ".join(p.patterns) if p.patterns else ""
+        cat_entry = catalog_by_slug.get(p.slug, {})
+        lists_cell = lists_label(cat_entry.get("lists") or [])
+        desc_cell = p.short_description or ""
+        lines.append(f"   * - :doc:`{p.name} <generated/{p.slug}>`")
+        lines.append(f"     - {pattern_cell}")
+        lines.append(f"     - {lists_cell}")
+        lines.append(f"     - {desc_cell}")
     lines.append("")
     return "\n".join(lines) + "\n"

@@ -1,0 +1,10 @@
+slug: encode-and-decode-strings
+patterns:
+- Array
+- String
+- Design
+description_rst: ''
+solutions:
+- name: Length Prefix
+  explanation: ''
+  complexity: ''

@@ -1,0 +1,12 @@
+slug: implement-trie-prefix-tree
+patterns:
+- Hash Table
+- String
+- Design
+- Trie
+description_rst: "A `trie <https://en.wikipedia.org/wiki/Trie>`__ (pronounced as \"try\") or\n**prefix tree** is a tree data structure used to efficiently store and\nretrieve keys in a dataset of strings. There are various applications of\nthis data structure, such as autocomplete and spellchecker.\n\nImplement the Trie class:\n\n- ``Trie()`` Initializes the trie object.\n- ``void insert(String word)`` Inserts the string ``word`` into the\n  trie.\n- ``boolean search(String word)`` Returns ``true`` if the string\n  ``word`` is in the trie (i.e., was inserted before), and ``false``\n  otherwise.\n- ``boolean startsWith(String prefix)`` Returns ``true`` if there is a\n  previously inserted string ``word`` that has the prefix ``prefix``,\n  and ``false`` otherwise.\n\n \n\n**Example 1:**\n\n::\n\n\n   Input\n   [\"Trie\", \"insert\", \"search\", \"search\", \"startsWith\", \"insert\", \"search\"]\n   [[], [\"apple\"], [\"apple\"], [\"app\"], [\"app\"], [\"app\"], [\"app\"]]\n   Output\n   [null,\
+  \ null, true, false, true, null, true]\n\n   Explanation\n   Trie trie = new Trie();\n   trie.insert(\"apple\");\n   trie.search(\"apple\");   // return True\n   trie.search(\"app\");     // return False\n   trie.startsWith(\"app\"); // return True\n   trie.insert(\"app\");\n   trie.search(\"app\");     // return True\n\n \n\n**Constraints:**\n\n- ``1 <= word.length, prefix.length <= 2000``\n- ``word`` and ``prefix`` consist only of lowercase English letters.\n- At most ``3 * 10``\\ :sup:```4``` calls **in total** will be made to\n  ``insert``, ``search``, and ``startsWith``.\n"
+solutions:
+- name: Hash Map Children
+  explanation: ''
+  complexity: ''

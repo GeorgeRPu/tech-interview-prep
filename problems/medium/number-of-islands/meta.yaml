@@ -1,0 +1,12 @@
+slug: number-of-islands
+patterns:
+- Array
+- Depth-First Search
+- Breadth-First Search
+- Union-Find
+- Matrix
+description_rst: "Given an ``m x n`` 2D binary grid ``grid`` which represents a map of\n``'1'``\\ s (land) and ``'0'``\\ s (water), return *the number of\nislands*.\n\nAn **island** is surrounded by water and is formed by connecting\nadjacent lands horizontally or vertically. You may assume all four edges\nof the grid are all surrounded by water.\n\n \n\n**Example 1:**\n\n::\n\n\n   Input: grid = [\n     [\"1\",\"1\",\"1\",\"1\",\"0\"],\n     [\"1\",\"1\",\"0\",\"1\",\"0\"],\n     [\"1\",\"1\",\"0\",\"0\",\"0\"],\n     [\"0\",\"0\",\"0\",\"0\",\"0\"]\n   ]\n   Output: 1\n\n**Example 2:**\n\n::\n\n\n   Input: grid = [\n     [\"1\",\"1\",\"0\",\"0\",\"0\"],\n     [\"1\",\"1\",\"0\",\"0\",\"0\"],\n     [\"0\",\"0\",\"1\",\"0\",\"0\"],\n     [\"0\",\"0\",\"0\",\"1\",\"1\"]\n   ]\n   Output: 3\n\n \n\n**Constraints:**\n\n- ``m == grid.length``\n- ``n == grid[i].length``\n- ``1 <= m, n <= 300``\n- ``grid[i][j]`` is ``'0'`` or ``'1'``.\n"
+solutions:
+- name: BFS
+  explanation: ''
+  complexity: ''

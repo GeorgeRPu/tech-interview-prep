@@ -1,0 +1,13 @@
+slug: word-search
+patterns:
+- Array
+- String
+- Backtracking
+- Depth-First Search
+- Matrix
+description_rst: "Given an ``m x n`` grid of characters ``board`` and a string ``word``,\nreturn ``true`` *if* ``word`` *exists in the grid*.\n\nThe word can be constructed from letters of sequentially adjacent cells,\nwhere adjacent cells are horizontally or vertically neighboring. The\nsame letter cell may not be used more than once.\n\n \n\n**Example 1:**\n\n|image1|\n\n::\n\n\n   Input: board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCCED\"\n   Output: true\n\n**Example 2:**\n\n|image2|\n\n::\n\n\n   Input: board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"SEE\"\n   Output: true\n\n**Example 3:**\n\n|image3|\n\n::\n\n\n   Input: board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCB\"\n   Output: false\n\n \n\n**Constraints:**\n\n- ``m == board.length``\n- ``n = board[i].length``\n- ``1 <= m, n <= 6``\n- ``1 <= word.length <= 15``\n- ``board``\
+  \ and ``word`` consists of only lowercase and uppercase\n  English letters.\n\n \n\n**Follow up:** Could you use search pruning to make your solution faster\nwith a larger ``board``?\n\n.. |image1| image:: https://assets.leetcode.com/uploads/2020/11/04/word2.jpg\n.. |image2| image:: https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg\n.. |image3| image:: https://assets.leetcode.com/uploads/2020/10/15/word3.jpg\n"
+solutions:
+- name: Backtracking
+  explanation: ''
+  complexity: ''

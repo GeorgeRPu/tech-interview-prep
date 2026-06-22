@@ -1,0 +1,10 @@
+slug: walls-and-gates
+patterns:
+- Array
+- Breadth-First Search
+- Matrix
+description_rst: ''
+solutions:
+- name: Multi Source BFS
+  explanation: ''
+  complexity: ''

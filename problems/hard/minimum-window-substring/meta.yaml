@@ -1,0 +1,11 @@
+slug: minimum-window-substring
+patterns:
+- Hash Table
+- String
+- Sliding Window
+description_rst: "Given two strings ``s`` and ``t`` of lengths ``m`` and ``n``\nrespectively, return *the* **minimum window** substring *of* ``s`` *such\nthat every character in* ``t`` *(*\\ **including duplicates**\\ *) is\nincluded in the window*. If there is no such substring, return *the\nempty string* ``\"\"``.\n\nThe testcases will be generated such that the answer is **unique**.\n\n \n\n**Example 1:**\n\n::\n\n\n   Input: s = \"ADOBECODEBANC\", t = \"ABC\"\n   Output: \"BANC\"\n   Explanation: The minimum window substring \"BANC\" includes 'A', 'B', and 'C' from string t.\n\n**Example 2:**\n\n::\n\n\n   Input: s = \"a\", t = \"a\"\n   Output: \"a\"\n   Explanation: The entire string s is the minimum window.\n\n**Example 3:**\n\n::\n\n\n   Input: s = \"a\", t = \"aa\"\n   Output: \"\"\n   Explanation: Both 'a's from t must be included in the window.\n   Since the largest window of s only has one 'a', return empty string.\n\n \n\n**Constraints:**\n\n- ``m == s.length``\n- ``n == t.length``\n\
+  - ``1 <= m, n <= 10``\\ :sup:```5```\n- ``s`` and ``t`` consist of uppercase and lowercase English letters.\n\n \n\n**Follow up:** Could you find an algorithm that runs in ``O(m + n)``\ntime?\n"
+solutions:
+- name: Sliding Window
+  explanation: ''
+  complexity: ''
