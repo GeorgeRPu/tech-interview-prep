@@ -48,7 +48,7 @@ description_rst: |
 
   **Follow up:** Could you solve it without loops/recursion?
 solutions:
-- name: Approach 1
+- name: Recursive
   explanation: |
     Note that, if :math:`n = 3^x`, :math:`n` can never be negative. For positive
     :math:`n``, check if :math:`n` is divisble by 3. If it is, divide :math:`n` by

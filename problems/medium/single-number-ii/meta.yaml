@@ -35,7 +35,7 @@ description_rst: |
   - Each element in ``nums`` appears exactly **three times** except for
     one element which appears **once**.
 solutions:
-- name: Approach 1
+- name: Bit Counting
   explanation: |
     For each bit position, we sum the bits in that position across ``nums``. For
     the integers in ``nums`` that appear 3 times, the number of 1s in each position

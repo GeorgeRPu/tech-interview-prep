@@ -67,7 +67,7 @@ description_rst: |
   **Follow up:** Could you implement a solution using only ``O(1)`` extra
   space complexity and ``O(n)`` runtime complexity?
 solutions:
-- name: Approach 1
+- name: Gauss Sum
   explanation: |
     Let :math:`m \in \{1, ..., n\}` be the missing number. Since ``nums``
     :math:`= \{1, ..., n\} - \{m\}`,

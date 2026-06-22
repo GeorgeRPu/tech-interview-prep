@@ -35,7 +35,7 @@ description_rst: |
 
   .. |image1| image:: https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif
 solutions:
-- name: Approach 1
+- name: Iterative
   explanation: |
     Right align the normal presentation of Pascal's Triangle. ::
 

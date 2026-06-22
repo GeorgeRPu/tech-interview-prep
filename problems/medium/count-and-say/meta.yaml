@@ -64,7 +64,7 @@ description_rst: |
 
   **Follow up:** Could you solve it iteratively?
 solutions:
-- name: Approach 1
+- name: Recursive
   explanation: |
     If ``n == 1``, return ``'1'``. Otherwise, get the previous count-and-say
     string. Iterate through the digits of the previous string. If the current digit

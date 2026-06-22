@@ -44,7 +44,7 @@ description_rst: |
   - Either ``x`` is not zero or ``n > 0``.
   - ``-10``\ :sup:```4```\ ``<= x``\ :sup:```n```\ ``<= 10``\ :sup:```4```
 solutions:
-- name: Approach 1
+- name: Fast Exponentiation
   explanation: |
     We assume that using Python's built in exponentiation operator is not allowed.
 

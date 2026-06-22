@@ -46,7 +46,7 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/tree.jpg
 solutions:
-- name: Approach 1
+- name: Recursive
   explanation: |
     Since preorder traversal prints the root node first, we extract the value
     ``val`` of the root node from the tip of ``preorder``. The same value ``val``

@@ -1,0 +1,34 @@
+r"""
+>>> from valid_parentheses__approach_1 import isValid
+>>> isValid('()')
+True
+>>> isValid('()[]{}')
+True
+>>> isValid('(]')
+False
+"""
+
+from collections import deque
+
+
+def isValid(s: str) -> bool:
+    """Checks if a string of parentheses is valid.
+    """
+    stack = deque()
+    for char in s:
+        if char in '({[':
+            stack.append(char)
+        else:
+            opening = stack.pop()
+            if len(stack) == 0 or not parentheses_match(opening, char):
+                return False
+
+    return len(stack) == 0
+
+
+def parentheses_match(opening, closing):
+    """Checks if a pair of opening and closing parentheses match.
+    """
+    return (opening == '(' and closing == ')') or \
+        (opening == '{' and closing == '}') or \
+        (opening == '[' and closing == ']')

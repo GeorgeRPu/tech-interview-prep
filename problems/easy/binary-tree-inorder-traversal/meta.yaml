@@ -65,7 +65,7 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2024/08/29/screenshot-2024-08-29-202743.png
   .. |image2| image:: https://assets.leetcode.com/uploads/2024/08/29/tree_2.png
 solutions:
-- name: Approach 1
+- name: Recursive
   explanation: |
     For an inorder traversal, visit the left subtree, then the root, then the right
     subtree recursively. ::

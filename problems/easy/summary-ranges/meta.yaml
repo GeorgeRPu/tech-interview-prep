@@ -53,7 +53,7 @@ description_rst: |
   - All the values of ``nums`` are **unique**.
   - ``nums`` is sorted in ascending order.
 solutions:
-- name: Approach 1
+- name: Linear Scan
   explanation: |
     Note that subarray of consecutive numbers is a range. Iterate through the array
     and keep track of the start of the range. Keep iterating as long as the next

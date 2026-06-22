@@ -48,7 +48,7 @@ description_rst: |
   - ``-2``\ :sup:```31```\ ``<= dividend, divisor <= 2``\ :sup:```31```\ ``- 1``
   - ``divisor != 0``
 solutions:
-- name: Approach 1
+- name: Subtraction
   explanation: |
     We can use repeated subtraction of the dividend by the divisor to find the
     quotient without using multiplication, division, or modulus. However, loops in

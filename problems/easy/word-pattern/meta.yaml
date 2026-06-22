@@ -61,7 +61,7 @@ description_rst: |
   - ``s`` **does not contain** any leading or trailing spaces.
   - All the words in ``s`` are separated by a **single space**.
 solutions:
-- name: Approach 1
+- name: Hash Map
   explanation: |
     Split ``s`` into a list of words. The problem reduces to IsomorphicStrings but
     with characters in ``pattern`` and elements in ``s``. Since ``pattern`` and

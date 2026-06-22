@@ -51,7 +51,7 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg
 solutions:
-- name: Approach 1
+- name: Iterative
   explanation: |
     Track the current ``node`` and ``prev`` node. At each step, store ``node.next``
     in a temporary variable. Set ``node.next`` to ``prev`` and then advance

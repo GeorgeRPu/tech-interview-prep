@@ -32,7 +32,7 @@ description_rst: |
   - ``a`` and ``b`` consist only of ``'0'`` or ``'1'`` characters.
   - Each string does not contain leading zeros except for the zero itself.
 solutions:
-- name: Approach 1
+- name: Bit By Bit
   explanation: |
     To make the problem easier, reverse the bit strings into least significant bit
     first order and pad the shorter bit string with 0s. Then, add the bits with the

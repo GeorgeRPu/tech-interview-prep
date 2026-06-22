@@ -68,7 +68,7 @@ description_rst: |
 
   .. |image1| image:: https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png
 solutions:
-- name: Approach 1
+- name: Hash Sets
   explanation: |
     Check that each row, column, and 3x3 square contains no duplicates and contains
     the digits 1-9. Return ``False`` if these conditions don't hold.

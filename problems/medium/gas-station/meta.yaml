@@ -58,7 +58,7 @@ description_rst: |
   - ``0 <= gas[i], cost[i] <= 10``\ :sup:```4```
   - The input is generated such that the answer is unique.
 solutions:
-- name: Approach 1
+- name: Greedy
   explanation: |
     Create a ``surplus`` array, which stores the difference between gas and cost.
     If the sum of ``surplus`` is negative, then there is not enough gas to complete

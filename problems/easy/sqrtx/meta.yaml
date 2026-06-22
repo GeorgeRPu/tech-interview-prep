@@ -38,7 +38,7 @@ description_rst: |
 
   - ``0 <= x <= 2``\ :sup:```31```\ ``- 1``
 solutions:
-- name: Approach 1
+- name: Binary Search
   explanation: |
     Finding the square root of :math:`x` is equivalent to finding :math:`y` such
     that :math:`y^2 = x`. We can use binary search to find :math:`y` in the range

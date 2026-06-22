@@ -45,7 +45,7 @@ description_rst: |
 
   - ``1 <= n <= 2``\ :sup:```31```\ ``- 1``
 solutions:
-- name: Approach 1
+- name: Hash Set
   explanation: |
     For 1000 iterations, sum the squares of each digit. If the sum is 1, return
     ``True``. If the sum has been seen before, return ``False``. Otherwise,

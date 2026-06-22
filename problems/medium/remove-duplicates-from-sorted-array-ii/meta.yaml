@@ -73,7 +73,7 @@ description_rst: |
   - ``-10``\ :sup:```4```\ ``<= nums[i] <= 10``\ :sup:```4```
   - ``nums`` is sorted in **non-decreasing** order.
 solutions:
-- name: Approach 1
+- name: Two Pointers
   explanation: |
     Position ``i = 2`` to start from the third element of ``nums``. If the current
     element ``nums[i]`` equals the element two indices before ``nums[i - 2]``, look

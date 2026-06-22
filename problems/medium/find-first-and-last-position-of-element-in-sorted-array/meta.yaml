@@ -42,7 +42,7 @@ description_rst: |
   - ``nums`` is a non-decreasing array.
   - ``-10``\ :sup:```9```\ `` <= target <= 10``\ :sup:```9```
 solutions:
-- name: Approach 1
+- name: Binary Search
   explanation: |
     First perform binary search to find the ``index`` of any ``target`` in the
     array. Divide ``nums`` into 2 halves: left of ``index`` and right of ``index``.

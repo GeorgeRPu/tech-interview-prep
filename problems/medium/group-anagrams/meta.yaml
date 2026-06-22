@@ -51,7 +51,7 @@ description_rst: |
   - ``0 <= strs[i].length <= 100``
   - ``strs[i]`` consists of lowercase English letters.
 solutions:
-- name: Approach 1
+- name: Character Count
   explanation: |
     We can check whether 2 strings are anagrams by counting the number of each
     letter in a dictionary. If the 2 strings are anagrams, then the dictionaries

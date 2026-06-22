@@ -56,7 +56,7 @@ description_rst: |
   - There will be **at least one** element in the data structure when
     ``getRandom`` is called.
 solutions:
-- name: Approach 1
+- name: Hash Map With Array
   explanation: |
     By default, we can insert and getRandom elements from an array in :math:`O(1)`
     time. To remove an element from an array in :math:`O(1)` time, it needs to be

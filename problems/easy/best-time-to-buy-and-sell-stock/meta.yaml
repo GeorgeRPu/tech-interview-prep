@@ -40,7 +40,7 @@ description_rst: |
   - ``1 <= prices.length <= 10``\ :sup:```5```
   - ``0 <= prices[i] <= 10``\ :sup:```4```
 solutions:
-- name: Approach 1
+- name: One Pass
   explanation: |
     Note that we only need to find the maximum possible profit, not the buy and
     sell days which simplifies the problem. We make money by buying low and

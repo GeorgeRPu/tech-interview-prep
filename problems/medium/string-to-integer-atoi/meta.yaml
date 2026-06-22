@@ -126,7 +126,7 @@ description_rst: |
   - ``s`` consists of English letters (lower-case and upper-case), digits
     (``0-9``), ``' '``, ``'+'``, ``'-'``, and ``'.'``.
 solutions:
-- name: Approach 1
+- name: Linear Scan
   explanation: |
     Track the value of the integer as in separate ``sign`` and ``value`` variables.
 

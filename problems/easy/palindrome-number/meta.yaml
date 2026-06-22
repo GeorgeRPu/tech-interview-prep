@@ -45,7 +45,7 @@ description_rst: |
   **Follow up:** Could you solve it without converting the integer to a
   string?
 solutions:
-- name: Approach 1
+- name: Digit Extraction
   explanation: |
     Extract the digits from a number and store them in a list ``digits``. Then
     compare the list with its reverse ``digits[::-1]`` to check if the number is a

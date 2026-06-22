@@ -55,7 +55,7 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/09/14/sort_list_1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2020/09/14/sort_list_2.jpg
 solutions:
-- name: Approach 1
+- name: Merge Sort
   explanation: |
     Use merge sort.
   complexity: |

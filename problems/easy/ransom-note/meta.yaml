@@ -40,7 +40,7 @@ description_rst: |
   - ``1 <= ransomNote.length, magazine.length <= 10``\ :sup:```5```
   - ``ransomNote`` and ``magazine`` consist of lowercase English letters.
 solutions:
-- name: Approach 1
+- name: Character Count
   explanation: |
     Track the number of times each letter appears in the magazine. Then, when the
     letter appears in the ransom note, decrement the count. If the count is ever

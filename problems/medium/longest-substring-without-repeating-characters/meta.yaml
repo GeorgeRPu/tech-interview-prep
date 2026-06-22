@@ -44,7 +44,7 @@ description_rst: |
   - ``0 <= s.length <= 5 * 10``\ :sup:```4```
   - ``s`` consists of English letters, digits, symbols and spaces.
 solutions:
-- name: Approach 1
+- name: Sliding Window
   explanation: |
     The longest substring can start from any position in the string. So, we must
     iterate through each position in the entire string. For each position, we look

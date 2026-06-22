@@ -63,7 +63,7 @@ description_rst: |
   - ``1 <= s.length <= 10``\ :sup:```4```
   - ``s`` consists of parentheses only ``'()[]{}'``.
 solutions:
-- name: Approach 1
+- name: Stack
   explanation: |
     This is a classic use case for stacks. For each opening parenthesis, push it
     onto the stack. For each closing parenthesis, pop the stack and check if the

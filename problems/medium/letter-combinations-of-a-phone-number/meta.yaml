@@ -40,7 +40,7 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2022/03/15/1200px-telephone-keypad2svg.png
 solutions:
-- name: Approach 1
+- name: Backtracking
   explanation: |
     First map each digit to a group of letters. We can generate letter combinations
     by appending each letter in the group to each combination.

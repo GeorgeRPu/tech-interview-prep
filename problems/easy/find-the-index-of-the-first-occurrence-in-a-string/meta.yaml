@@ -37,7 +37,7 @@ description_rst: |
   - ``haystack`` and ``needle`` consist of only lowercase English
     characters.
 solutions:
-- name: Approach 1
+- name: Linear Scan
   explanation: |
     Iterate through each character in ``haystack`` and check if the substring
     ``haystack[i:i + len(needle)]`` is equal to ``needle``.

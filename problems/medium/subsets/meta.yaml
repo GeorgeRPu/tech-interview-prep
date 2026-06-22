@@ -36,7 +36,7 @@ description_rst: |
   - ``-10 <= nums[i] <= 10``
   - All the numbers of ``nums`` are **unique**.
 solutions:
-- name: Approach 1
+- name: Recursive
   explanation: |
     We can generate the power set recursively. Every subset of ``nums`` either
     includes ``nums[0]`` or it doesn't. If we already have the power set of

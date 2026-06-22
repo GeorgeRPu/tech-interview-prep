@@ -43,7 +43,7 @@ description_rst: |
 
   - ``-2``\ :sup:```31```\ ``<= x <= 2``\ :sup:```31```\ ``- 1``
 solutions:
-- name: Approach 1
+- name: Digit Extraction
   explanation: |
     Extract the sign of ``x``. We can use modulus and division to get the digits of
     ``x``. Reverse the list of digits. Then check that the digits are in the range

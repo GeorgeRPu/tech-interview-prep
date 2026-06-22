@@ -45,7 +45,7 @@ description_rst: |
   - ``s`` consists of only English letters and spaces ``' '``.
   - There will be at least one word in ``s``.
 solutions:
-- name: Approach 1
+- name: String Split
   explanation: |
     Strip all the whitespace from the end of the string, then split the string by
     spaces. The last element in the list is the last word in the string.

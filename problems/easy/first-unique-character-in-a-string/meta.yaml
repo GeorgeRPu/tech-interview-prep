@@ -46,7 +46,7 @@ description_rst: |
   - ``1 <= s.length <= 10``\ :sup:```5```
   - ``s`` consists of only lowercase English letters.
 solutions:
-- name: Approach 1
+- name: Hash Map
   explanation: |
     Use a dictionary to count the number of times each character appears in ``s``.
     Iterate through the string again. The first character that has a count of 1 is

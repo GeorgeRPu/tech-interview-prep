@@ -65,7 +65,7 @@ description_rst: |
   **Follow up:** Can you come up with an algorithm that runs in
   ``O(m + n)`` time?
 solutions:
-- name: Approach 1
+- name: Three Pointers
   explanation: |
     To merge 2 sorted lists, pick the least element from the 2 lists and add
     it to the result. Repeat until both of the input lists are empty. However, here

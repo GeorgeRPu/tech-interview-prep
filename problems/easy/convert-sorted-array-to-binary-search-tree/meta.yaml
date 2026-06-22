@@ -45,7 +45,7 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/18/btree1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2021/02/18/btree.jpg
 solutions:
-- name: Approach 1
+- name: Recursive
   explanation: |
     A balanced binary tree will have the middle element of ``nums`` as the root,
     the 1/4 and 3/4 elements as the left and right children, and so on. Find the

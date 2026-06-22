@@ -57,7 +57,7 @@ description_rst: |
   **Follow-up: **\ If the string data type is mutable in your language,
   can you solve it **in-place** with ``O(1)`` extra space?
 solutions:
-- name: Approach 1
+- name: String Split
   explanation: |
     Use the built in Python functions for strings ``split`` to split the string,
     ``reversed`` to reverse the list, and ``join`` to join the list back into a

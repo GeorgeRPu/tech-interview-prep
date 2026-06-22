@@ -58,7 +58,7 @@ description_rst: |
   - At most ``2 * 10``\ :sup:```5``` calls will be made to ``get`` and
     ``put``.
 solutions:
-- name: Approach 1
+- name: Hash Map With Linked List
   explanation: |
     We want all ``get(key)`` and ``put(key, value)`` operations to be :math:`O(1)`. This
     nessecitaties the use of a hashmap. The hashmap key-value pairs must be orderd

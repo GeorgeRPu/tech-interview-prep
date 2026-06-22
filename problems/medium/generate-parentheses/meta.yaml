@@ -29,7 +29,7 @@ description_rst: |
 
   - ``1 <= n <= 8``
 solutions:
-- name: Approach 1
+- name: Backtracking
   explanation: |
     Let's construct a well-formed parentheses string of size 3 from left to right. ::
 

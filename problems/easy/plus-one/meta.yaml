@@ -55,7 +55,7 @@ description_rst: |
   - ``0 <= digits[i] <= 9``
   - ``digits`` does not contain any leading ``0``'s.
 solutions:
-- name: Approach 1
+- name: Right To Left Carry
   explanation: |
     Add 1 to the end of the array. Start from the least signfinicant digit and
     carry any 1s to the next digit.

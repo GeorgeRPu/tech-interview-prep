@@ -54,7 +54,7 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/08/17/mat1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2020/08/17/mat2.jpg
 solutions:
-- name: Approach 1
+- name: In Place
   explanation: |
     We make 2 passes over  ``matrix``. In the first pass, we find all the indices
     where ``matrix[i][j] == 0`` and store them in a list. In the second pass, we

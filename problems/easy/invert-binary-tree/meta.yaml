@@ -48,7 +48,7 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg
 solutions:
-- name: Approach 1
+- name: Recursive
   explanation: |
     Observe that when we invert the tree, we can do it in 2 steps:
     1. Swap the left and right children of the root.

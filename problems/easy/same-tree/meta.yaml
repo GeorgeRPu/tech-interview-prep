@@ -54,7 +54,7 @@ description_rst: |
   .. |image2| image:: https://assets.leetcode.com/uploads/2020/12/20/ex2.jpg
   .. |image3| image:: https://assets.leetcode.com/uploads/2020/12/20/ex3.jpg
 solutions:
-- name: Approach 1
+- name: Recursive
   explanation: |
     Two tree are equal if and only if their roots are equal and their left and
     right subtrees are equal. To check if the left and right subtrees are equal, we

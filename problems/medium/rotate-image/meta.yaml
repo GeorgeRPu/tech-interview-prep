@@ -45,7 +45,7 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg
 solutions:
-- name: Approach 1
+- name: Layer By Layer
   explanation: |
     Because we need to rotate the square ``matrix`` in-place, we must rotate
     related entries in a spiral. Let :math:`m` be the length of ``matrix`` minus 1.

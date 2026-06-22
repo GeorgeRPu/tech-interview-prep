@@ -45,7 +45,7 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/03/03/pal1linked-list.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2021/03/03/pal2linked-list.jpg
 solutions:
-- name: Approach 1
+- name: Reverse Second Half
   explanation: |
     Save the contents of the linked list in a regular list ``list``. Then, use two
     pointers``i`` and ``j`` to check if ``list`` is a palindrome, moving them

@@ -78,7 +78,7 @@ description_rst: |
   - It is **guaranteed** that ``s`` is a valid roman numeral in the range
     ``[1, 3999]``.
 solutions:
-- name: Approach 1
+- name: Lookup Table
   explanation: |
     Observe that the value of a Roman numeral is the sum of the value of the
     letters, but the letters may be negative or positive depending on their

@@ -4,7 +4,7 @@ patterns:
 - Trie
 description_rst: ''
 solutions:
-- name: Approach 1
+- name: Trie
   explanation: |
     https://www.youtube.com/watch?v=zIjfhVPRZCg
 

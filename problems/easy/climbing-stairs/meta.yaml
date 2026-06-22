@@ -40,7 +40,7 @@ description_rst: |
 
   - ``1 <= n <= 45``
 solutions:
-- name: Approach 1
+- name: Memoization
   explanation: |
     Let's start at the top and work backwards. If we are at the top, our last move
     must be either a 1 or a 2 step jump. Thus ::

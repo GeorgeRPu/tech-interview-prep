@@ -46,7 +46,7 @@ description_rst: |
 
   .. |image1| image:: https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg
 solutions:
-- name: Approach 1
+- name: Two Pointers
   explanation: |
     Since the area of a container is the product of its width and height, set the
     ``left`` and ``right`` pointer to ends. Compute the area and store it as the

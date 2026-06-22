@@ -44,7 +44,7 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg
 solutions:
-- name: Approach 1
+- name: Recursive
   explanation: |
     Starting at the root, observe that it does not affect the symmetry of the tree.
     Only the left and right subtrees with roots ``left = root.left`` and

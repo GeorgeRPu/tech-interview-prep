@@ -42,7 +42,7 @@ description_rst: |
   - ``1 <= n <= 5000``
   - ``0 <= citations[i] <= 1000``
 solutions:
-- name: Approach 1
+- name: Sorting
   explanation: |
     Sort the citations in descending order. Then the h-index is the largest index
     of ``citations`` such that all the citation counts to the left are at least as

@@ -37,7 +37,7 @@ description_rst: |
   - ``strs[i]`` consists of only lowercase English letters if it is
     non-empty.
 solutions:
-- name: Approach 1
+- name: Vertical Scan
   explanation: |
     Iterate through each character in the shortest string and check if it is in all
     other strings in ``strs``.

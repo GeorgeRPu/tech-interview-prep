@@ -45,7 +45,7 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg
 solutions:
-- name: Approach 1
+- name: BFS
   explanation: |
     The solution is the same as level order traversal, but reverse the order of the
     values if the depth is odd, starting at 0. The reason we reverse the order of

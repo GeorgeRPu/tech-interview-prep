@@ -44,7 +44,7 @@ description_rst: |
   complexity? (The output array **does not** count as extra space for
   space complexity analysis.)
 solutions:
-- name: Approach 1
+- name: Prefix And Suffix Products
   explanation: |
     Observe that the product of all elements except the element at index i is the
     product of all elements ``nums[:i - 1]`` multiplied by the product of all

@@ -37,7 +37,7 @@ description_rst: |
   - ``-10 <= nums[i] <= 10``
   - All the integers of ``nums`` are **unique**.
 solutions:
-- name: Approach 1
+- name: Recursive
   explanation: |
     We can generate permutations inductively. Suppose we have all the permutations
     of ``nums[1:]``. If we prepend ``nums[1]`` to these permutations, we now have

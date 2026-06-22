@@ -52,7 +52,7 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg
 solutions:
-- name: Approach 1
+- name: Iterative
   explanation: |
     When adding 2 numbers ``l1`` and ``l2``, the addition stops only when we run
     out of nodes in ``l1`` and ``l2`` and the carry is empty. We get the next digit

@@ -55,7 +55,7 @@ description_rst: |
   - ``lists[i]`` is sorted in **ascending order**.
   - The sum of ``lists[i].length`` will not exceed ``10``\ :sup:```4```.
 solutions:
-- name: Approach 1
+- name: Min Heap
   explanation: |
     Same as merge 2 sorted linked lists: pick the smallest head and add it to the
     end of the new list.

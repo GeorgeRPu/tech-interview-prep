@@ -52,7 +52,7 @@ description_rst: |
   - ``nums`` is an ascending array that is possibly rotated.
   - ``-10``\ :sup:```4```\ ``<= target <= 10``\ :sup:```4```
 solutions:
-- name: Approach 1
+- name: Binary Search
   explanation: |
     https://www.youtube.com/watch?v=U8XENwh8Oy8
 

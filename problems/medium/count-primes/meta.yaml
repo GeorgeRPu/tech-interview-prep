@@ -41,7 +41,7 @@ description_rst: |
 
   - ``0 <= n <= 5 * 10``\ :sup:```6```
 solutions:
-- name: Approach 1
+- name: Sieve Of Eratosthenes
   explanation: |
     Use the Sieve of Eratosthenes. Ordinarily, we would start with a list of
     integers ``primes = list(range(2, n))`` and remove multiples of ``primes[0]``

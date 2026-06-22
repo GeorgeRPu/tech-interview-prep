@@ -49,7 +49,7 @@ description_rst: |
   another solution using the **divide and conquer** approach, which is
   more subtle.
 solutions:
-- name: Approach 1
+- name: Kadane's Algorithm
   explanation: |
     Observe that the maximum sum of a contiguous subarray of ``nums`` ending at
     index ``i`` is

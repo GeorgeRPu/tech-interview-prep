@@ -44,7 +44,7 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg
 solutions:
-- name: Approach 1
+- name: BFS
   explanation: |
     A level order traversal is a breadth-first traversal of a binary tree. Track
     all the nodes in the current level and add their values to the traversal. At

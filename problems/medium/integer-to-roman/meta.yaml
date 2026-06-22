@@ -101,7 +101,7 @@ description_rst: |
 
   - ``1 <= num <= 3999``
 solutions:
-- name: Approach 1
+- name: Greedy
   explanation: |
     Observe that the Roman numeral for a number is composed of the Roman numerals
     for each digit. Suppose our digit is in the ones place. Then, the Roman

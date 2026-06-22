@@ -45,7 +45,7 @@ description_rst: |
   - ``intervals[i].length == 2``
   - ``0 <= start``\ :sub:```i```\ ``<= end``\ :sub:```i```\ ``<= 10``\ :sup:```4```
 solutions:
-- name: Approach 1
+- name: Sorting
   explanation: |
     The key step is to sort ``intervals`` by their start point. We start merging
     intervals from left to right. Add the first interval to ``merged_intervals``.

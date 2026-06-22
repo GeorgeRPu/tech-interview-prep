@@ -68,7 +68,7 @@ description_rst: |
   .. |image2| image:: https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png
   .. |image3| image:: https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png
 solutions:
-- name: Approach 1
+- name: Floyd's Cycle Detection
   explanation: |
     Set two pointers, ``a`` and ``b``, to ``head``. Move ``a`` 1 node at a time but
     move ``b`` 2 nodes at a time. If ``a`` and ``b`` ever point to the same node,

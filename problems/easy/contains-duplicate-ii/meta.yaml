@@ -42,7 +42,7 @@ description_rst: |
   - ``-10``\ :sup:```9```\ ``<= nums[i] <= 10``\ :sup:```9```
   - ``0 <= k <= 10``\ :sup:```5```
 solutions:
-- name: Approach 1
+- name: Hash Map
   explanation: |
     Track the indices of each number in a dictionary. We only need to track the
     most recent index for each number as, if there is a preceding index ``i1`` for

@@ -101,7 +101,7 @@ description_rst: |
   .. |image3| image:: https://assets.leetcode.com/uploads/2021/03/05/160_example_2.png
   .. |image4| image:: https://assets.leetcode.com/uploads/2021/03/05/160_example_3.png
 solutions:
-- name: Approach 1
+- name: Two Pointers
   explanation: |
     Use a set to store the nodes in the first linked list with ``headA``. Then,
     check if any node in the second linked list with ``headB`` is in the set.

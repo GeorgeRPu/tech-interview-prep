@@ -38,7 +38,7 @@ description_rst: |
   - ``1 <= nums.length <= 10``\ :sup:```4```
   - ``0 <= nums[i] <= 10``\ :sup:```5```
 solutions:
-- name: Approach 1
+- name: Greedy
   explanation: |
     The idea is to keep track of the furthest index that can be reached. If the
     furthest reachable index is less than the current index, then we cannot jump

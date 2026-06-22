@@ -38,7 +38,7 @@ description_rst: |
 
   - ``0 <= left <= right <= 2``\ :sup:```31```\ ``- 1``
 solutions:
-- name: Approach 1
+- name: Common Prefix
   explanation: |
     Consider 2 binary numbers :math:`left < right`. Observe that :math:`left` and
     :math:`left + 1` differ only in the 1's bit. Then :math:`left \land (left + 1)`

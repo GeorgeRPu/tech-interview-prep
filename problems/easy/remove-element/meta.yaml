@@ -71,7 +71,7 @@ description_rst: |
   - ``0 <= nums[i] <= 50``
   - ``0 <= val <= 100``
 solutions:
-- name: Approach 1
+- name: Two Pointers
   explanation: |
     Start from the first element of ``nums``. If the current element ``nums[i]``
     equals ``val``, look ahead to the next element by incrementing an offset. If

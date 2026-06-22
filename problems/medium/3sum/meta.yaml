@@ -51,7 +51,7 @@ description_rst: |
   - ``3 <= nums.length <= 3000``
   - ``-10``\ :sup:```5```\ ``<= nums[i] <= 10``\ :sup:```5```
 solutions:
-- name: Approach 1
+- name: Sorting With Two Pointers
   explanation: |
     Sort ``nums``. We can apply the 2Sum solution by iterating ``i`` from 0 to
     ``len(nums) - 1`` through ``nums`` and finding any remaining 2 numbers

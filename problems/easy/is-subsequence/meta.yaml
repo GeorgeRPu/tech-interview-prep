@@ -46,7 +46,7 @@ description_rst: |
   if ``t`` has its subsequence. In this scenario, how would you change
   your code?
 solutions:
-- name: Approach 1
+- name: Two Pointers
   explanation: |
     If ``s`` is a subsequence of ``t``, then the characters in ``s`` should appear
     in ``t`` in order. Iterate through ``t`` and check if each character in ``s``

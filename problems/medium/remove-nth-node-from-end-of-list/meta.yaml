@@ -49,7 +49,7 @@ description_rst: |
 
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg
 solutions:
-- name: Approach 1
+- name: Two Pointers
   explanation: |
     First, iterate through the linked list and get its length :math:`l`. The
     problem reduces to remove the :math:`i = l - n` th node.

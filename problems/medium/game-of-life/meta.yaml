@@ -80,7 +80,7 @@ description_rst: |
   .. |image1| image:: https://assets.leetcode.com/uploads/2020/12/26/grid1.jpg
   .. |image2| image:: https://assets.leetcode.com/uploads/2020/12/26/grid2.jpg
 solutions:
-- name: Approach 1
+- name: In Place
   explanation: |
     Observe that we can calulate the number of live neighbors by summing the
     surrounding :math:`\mathtt{board[i'][j']}` values. Use a list comprehension to

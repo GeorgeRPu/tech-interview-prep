@@ -58,7 +58,7 @@ description_rst: |
   - ``t.length == s.length``
   - ``s`` and ``t`` consist of any valid ascii character.
 solutions:
-- name: Approach 1
+- name: Hash Map
   explanation: |
     Observe that if two strings are isomorphic, then the first character in ``s``
     must map to the first character in ``t``. Similarly, for the second character

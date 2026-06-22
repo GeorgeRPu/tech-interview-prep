@@ -33,7 +33,7 @@ description_rst: |
   - ``1 <= s.length <= 1000``
   - ``s`` consist of only digits and English letters.
 solutions:
-- name: Approach 1
+- name: Expand From Center
   explanation: |
     Any palindromic substring can have odd or even length. If the substring has odd
     length, then the center of the palindrome is a single character. If the

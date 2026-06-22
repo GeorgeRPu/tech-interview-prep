@@ -63,7 +63,7 @@ description_rst: |
     and ``'.'``.
   - ``1 <= numRows <= 1000``
 solutions:
-- name: Approach 1
+- name: Row Simulation
   explanation: |
     Create a 2d array ``rows`` that is ``numRows`` rows by ``len(s)`` columns. The
     zigzag pattern has 2 parts. The zig is a vertical line and the zag is diagonal.
