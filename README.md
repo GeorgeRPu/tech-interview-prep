@@ -17,8 +17,15 @@ uv sync
 ## 📖 Building the Documentation
 
 ```bash
+uv run make all
+```
+
+This runs `clean`, `format`, `lint`, and `html` in sequence. You can also run each step individually:
+
+```bash
 uv run make clean
 uv run make format
+uv run make lint
 uv run make html
 ```
 
@@ -35,6 +42,16 @@ uv run make doctest
 ```
 
 The CI pipeline also runs doctests before building the site, so every solution is verified against its embedded examples.
+
+### 🔍 Linting
+
+Run flake8 to check for style and correctness issues:
+
+```bash
+uv run make lint
+```
+
+The CI pipeline runs linting before the build. Configuration is in [`.flake8`](.flake8).
 
 ### 🧪 Testing GitHub Actions with `act`
 

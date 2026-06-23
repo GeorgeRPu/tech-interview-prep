@@ -38,10 +38,18 @@ clean:
 	       easy_index.rst medium_index.rst hard_index.rst
 	@echo "[clean] Done."
 
+.PHONY: lint
+lint:
+	@echo "[flake8] Linting Python sources"
+	@$(PYTHON) -m flake8 problems scripts
+
 .PHONY: format fmt
 format fmt:
 	@echo "[black] Formatting Python sources"
 	@$(PYTHON) -m black problems scripts conf.py
+
+.PHONY: all
+all: clean format lint html
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
