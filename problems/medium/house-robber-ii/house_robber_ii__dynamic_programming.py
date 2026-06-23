@@ -8,9 +8,8 @@ r"""
 3
 """
 
-from typing import List
 
-def rob(nums: List[int]) -> int:
+def rob(nums: list[int]) -> int:
     N = len(nums)
 
     if len(nums) == 1:

@@ -8,8 +8,6 @@ r"""
 [3, 1]
 """
 
-from typing import List
-
 
 class TreeNode:
     """Node in a binary tree.
@@ -21,7 +19,7 @@ class TreeNode:
         self.right = right
 
 
-def sortedArrayToBST(nums: List[int]) -> TreeNode | None:
+def sortedArrayToBST(nums: list[int]) -> TreeNode | None:
     """Convert the sorted array ``nums`` to a balanced binary search tree.
     """
     if len(nums) == 0:
@@ -33,7 +31,7 @@ def sortedArrayToBST(nums: List[int]) -> TreeNode | None:
     return root
 
 
-def tree2list(root: TreeNode | None) -> List[int]:
+def tree2list(root: TreeNode | None) -> list[int]:
     """Convert a binary tree preorder to a list.
     """
     if root is None:

@@ -18,7 +18,6 @@ r"""
 """
 
 from __future__ import annotations
-from typing import Dict, List
 
 
 class LRUCache:
@@ -28,7 +27,7 @@ class LRUCache:
     def __init__(self, capacity: int):
         self.capacity: int = capacity
         self.length: int = 0
-        self.dict: Dict[str, Node] = {}
+        self.dict: dict[str, Node] = {}
         self.ll: LinkedList = LinkedList()
 
     def get(self, key: int) -> int:
@@ -59,7 +58,7 @@ class LRUCache:
 
     def __str__(self) -> str:
         node = self.ll.head
-        strings: List[str] = []
+        strings: list[str] = []
         while node is not None:
             strings.append(str(node))
             node = node.next
@@ -110,7 +109,7 @@ class LinkedList:
 
     def __str__(self) -> str:
         node = self.head
-        strings: List[str] = []
+        strings: list[str] = []
         while node is not None:
             strings.append(str(node))
             node = node.next

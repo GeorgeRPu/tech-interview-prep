@@ -6,9 +6,8 @@ r"""
 12
 """
 
-from typing import List
 
-def rob(nums: List[int]) -> int:
+def rob(nums: list[int]) -> int:
     money = [0] * len(nums)
     for i, n in enumerate(nums):
         if i == 0:

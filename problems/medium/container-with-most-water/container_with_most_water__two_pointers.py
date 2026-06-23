@@ -6,10 +6,8 @@ r"""
 1
 """
 
-from typing import List
 
-
-def maxArea(height: List[int]) -> int:
+def maxArea(height: list[int]) -> int:
     """Finds the maximum area of a container that can hold water when given a
     list of heights ``height`` at positions 0 to ``len(height) - 1``.
     """

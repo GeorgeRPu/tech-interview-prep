@@ -6,10 +6,8 @@ r"""
 [4, 9]
 """
 
-from typing import List
 
-
-def intersect(nums1: List[int], nums2: List[int]) -> List[int]:
+def intersect(nums1: list[int], nums2: list[int]) -> list[int]:
     dict1 = counts(nums1)
     dict2 = counts(nums2)
 

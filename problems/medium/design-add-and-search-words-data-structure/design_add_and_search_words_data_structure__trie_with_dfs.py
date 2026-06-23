@@ -43,7 +43,10 @@ class WordDictionary:
 
         char = word[0]
         if char == '.':
-            return any(self._search(child, word[1:]) for child in node.children.values())
+            return any(
+                self._search(child, word[1:])
+                for child in node.children.values()
+            )
         elif char not in node.children:
             return False
         else:

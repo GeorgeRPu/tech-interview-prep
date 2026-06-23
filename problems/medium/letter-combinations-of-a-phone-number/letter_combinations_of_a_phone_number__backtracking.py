@@ -8,10 +8,8 @@ r"""
 ['a', 'b', 'c']
 """
 
-from typing import List
 
-
-def letterCombinations(digits: str) -> List[str]:
+def letterCombinations(digits: str) -> list[str]:
     """Generate letter combinations from a phone number.
     """
     if len(digits) == 0:
@@ -34,6 +32,10 @@ def letterCombinations(digits: str) -> List[str]:
 
     letter_combinations = ['']
     for group in letter_groups:
-        letter_combinations = [combination + letter for letter in group for combination in letter_combinations]
+        letter_combinations = [
+            combination + letter
+            for letter in group
+            for combination in letter_combinations
+        ]
 
     return letter_combinations

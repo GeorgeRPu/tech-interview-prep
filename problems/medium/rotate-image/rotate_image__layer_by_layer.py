@@ -10,10 +10,8 @@ r"""
 [[15, 13, 2, 5], [14, 3, 4, 1], [12, 6, 8, 9], [16, 7, 10, 11]]
 """
 
-from typing import List
 
-
-def rotate(matrix: List[List[int]]) -> None:
+def rotate(matrix: list[list[int]]) -> None:
     """Do not return anything, modify matrix in-place instead.
     """
     n = len(matrix)

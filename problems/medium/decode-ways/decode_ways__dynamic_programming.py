@@ -8,8 +8,8 @@ r"""
 0
 """
 
-
 CODES = {str(i) for i in range(1, 27)}
+
 
 def numDecodings(s: str) -> int:
     N = len(s)

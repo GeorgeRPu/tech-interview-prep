@@ -8,9 +8,8 @@ r"""
 3
 """
 
-from typing import List
 
-def findDuplicate(nums: List[int]) -> int:
+def findDuplicate(nums: list[int]) -> int:
     for i in range(len(nums)):
         n = abs(nums[i])
         if nums[n] < 0:

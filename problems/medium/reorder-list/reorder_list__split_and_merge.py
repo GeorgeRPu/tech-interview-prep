@@ -12,8 +12,6 @@ r"""
 
 from __future__ import annotations
 
-from typing import List, Optional
-from typing import Optional
 
 class ListNode:
     """Node in a linked list.
@@ -24,7 +22,7 @@ class ListNode:
         self.next = next
 
     @classmethod
-    def from_list(cls, vals: List[int]) -> ListNode | None:
+    def from_list(cls, vals: list[int]) -> ListNode | None:
         head: ListNode | None = None
         for v in vals:
             if head is None:
@@ -44,7 +42,7 @@ class ListNode:
         return result
 
 
-def reorderList(head: Optional[ListNode]) -> None:
+def reorderList(head: ListNode | None) -> None:
     """
     Do not return anything, modify head in-place instead.
     """

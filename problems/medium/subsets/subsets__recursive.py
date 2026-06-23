@@ -10,10 +10,8 @@ True
 True
 """
 
-from typing import List
 
-
-def subsets(nums: List[int]) -> List[List[int]]:
+def subsets(nums: list[int]) -> list[list[int]]:
     """Return the power set of ``nums``.
     """
     if len(nums) == 0:
@@ -25,7 +23,10 @@ def subsets(nums: List[int]) -> List[List[int]]:
             + [[element] + subset for subset in subsets(new_nums)]
 
 
-def compare_collections(collection1: List[List[int]], collection2: List[List[int]]) -> bool:
+def compare_collections(
+    collection1: list[list[int]],
+    collection2: list[list[int]],
+) -> bool:
     """Helper function to compare whether two collections (as lists of lists)
     are equal.
     """

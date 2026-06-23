@@ -6,9 +6,8 @@ r"""
 1
 """
 
-from typing import List
 
-def findTargetSumWays(nums: List[int], target: int) -> int:
+def findTargetSumWays(nums: list[int], target: int) -> int:
     memo = {}
 
     def target_sum_ways(i, t):

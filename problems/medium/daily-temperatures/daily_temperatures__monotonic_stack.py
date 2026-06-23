@@ -8,9 +8,8 @@ r"""
 [1, 1, 0]
 """
 
-from typing import List
 
-def dailyTemperatures(temperatures: List[int]) -> List[int]:
+def dailyTemperatures(temperatures: list[int]) -> list[int]:
     stack = []
 
     output = [0] * len(temperatures)

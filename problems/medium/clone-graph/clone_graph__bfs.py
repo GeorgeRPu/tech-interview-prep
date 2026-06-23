@@ -10,9 +10,10 @@ True
 True
 """
 
-from typing import Optional
-from collections import deque, defaultdict
+from __future__ import annotations
+
 from collections import defaultdict, deque
+
 
 class Node:
     """Node in a graph with adjacency list.
@@ -30,7 +31,8 @@ class Node:
         self.neighbors = neighbors if neighbors is not None else []
 """
 
-def cloneGraph(node: Optional['Node']) -> Optional['Node']:
+
+def cloneGraph(node: 'Node' | None) -> 'Node' | None:
     if node is None:
         return None
 

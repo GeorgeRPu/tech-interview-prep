@@ -8,10 +8,8 @@ r"""
 [-1, -1]
 """
 
-from typing import List
 
-
-def searchRange(nums: List[int], target: int) -> List[int]:
+def searchRange(nums: list[int], target: int) -> list[int]:
     """Finds the first and last position of ``target`` in the sorted array
     ``nums``.
     """
@@ -33,7 +31,7 @@ def searchRange(nums: List[int], target: int) -> List[int]:
     return [left, right]
 
 
-def binary_search(nums: List[int], target: int, left: int, right: int) -> int:
+def binary_search(nums: list[int], target: int, left: int, right: int) -> int:
     """Performs binary search on the sorted array ``nums`` between ``left`` and
     ``right`` to find ``target``.
     """

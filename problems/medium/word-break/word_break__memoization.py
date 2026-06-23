@@ -8,9 +8,8 @@ True
 False
 """
 
-from typing import List
 
-def wordBreak(s: str, wordDict: List[str]) -> bool:
+def wordBreak(s: str, wordDict: list[str]) -> bool:
     wordDict = set(wordDict)
 
     memo = {len(s): True}

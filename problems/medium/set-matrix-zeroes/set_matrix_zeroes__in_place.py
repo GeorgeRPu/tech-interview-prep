@@ -10,10 +10,8 @@ r"""
 [[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]
 """
 
-from typing import List
 
-
-def setZeroes(matrix: List[List[int]]) -> None:
+def setZeroes(matrix: list[list[int]]) -> None:
     """Set rows and columns to zero if an element is zero.
 
     Do not return anything, modify matrix in-place instead.

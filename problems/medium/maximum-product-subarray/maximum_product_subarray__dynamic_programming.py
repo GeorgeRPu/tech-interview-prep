@@ -6,9 +6,8 @@ r"""
 0
 """
 
-from typing import List
 
-def maxProduct(nums: List[int]) -> int:
+def maxProduct(nums: list[int]) -> int:
     max_product = nums[0]
     min_product = nums[0]
     result = nums[0]

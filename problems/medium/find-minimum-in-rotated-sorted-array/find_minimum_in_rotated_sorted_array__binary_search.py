@@ -8,10 +8,8 @@ r"""
 11
 """
 
-from typing import List
 
-
-def findMin(nums: List[int]) -> int:
+def findMin(nums: list[int]) -> int:
     left = 0
     right = len(nums) - 1
     while left < right:

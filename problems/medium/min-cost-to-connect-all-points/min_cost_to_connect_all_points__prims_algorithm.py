@@ -6,17 +6,14 @@ r"""
 18
 """
 
-from typing import List
 import heapq
-from collections import defaultdict
+
 
 def dist(p, q):
     return abs(p[0] - q[0]) + abs(p[1] - q[1])
 
 
-def minCostConnectPoints(points: List[List[int]]) -> int:
-    graph = defaultdict(list)
-
+def minCostConnectPoints(points: list[list[int]]) -> int:
     points = [(x, y) for [x, y] in points]
 
     visited = set()

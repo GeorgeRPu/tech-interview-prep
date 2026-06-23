@@ -10,10 +10,8 @@ r"""
 -1
 """
 
-from typing import List
 
-
-def canCompleteCircuit(gas: List[int], cost: List[int]) -> int:
+def canCompleteCircuit(gas: list[int], cost: list[int]) -> int:
     """Return the starting gas station index if we can complete the circuit, -1
     otherwise.
     """

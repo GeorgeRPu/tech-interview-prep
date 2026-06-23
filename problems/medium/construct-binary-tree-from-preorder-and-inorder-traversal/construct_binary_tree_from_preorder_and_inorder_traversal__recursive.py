@@ -16,8 +16,6 @@ r"""
 [-1]
 """
 
-from typing import List, Tuple
-
 
 class TreeNode:
     """Node in a binary tree.
@@ -45,13 +43,15 @@ class TreeNode:
         return inorder
 
 
-def buildTree(preorder: List[int], inorder: List[int]) -> TreeNode | None:
+def buildTree(preorder: list[int], inorder: list[int]) -> TreeNode | None:
     """Build a binary tree from its preorder and inorder traversals.
     """
     return build_tree(preorder, inorder)[0]
 
 
-def build_tree(preorder: List[int], inorder: List[int]) -> Tuple[TreeNode | None, List[int]]:
+def build_tree(
+    preorder: list[int], inorder: list[int],
+) -> tuple[TreeNode | None, list[int]]:
     """Recursively build a binary tree from part of its preorder and inorder
     traversals.
     """

@@ -10,7 +10,6 @@ r"""
 
 from __future__ import annotations
 
-from typing import List, Optional
 from collections import deque
 
 
@@ -24,7 +23,7 @@ class TreeNode:
         self.right = right
 
     @classmethod
-    def from_list(cls, vals: List[int | None]) -> TreeNode | None:
+    def from_list(cls, vals: list[int | None]) -> TreeNode | None:
         if not vals:
             return None
         root = TreeNode(vals[0])
@@ -58,7 +57,7 @@ class TreeNode:
         return result
 
 
-def rightSideView(root: Optional[TreeNode]) -> List[int]:
+def rightSideView(root: TreeNode | None) -> list[int]:
     if root is None:
         return []
 

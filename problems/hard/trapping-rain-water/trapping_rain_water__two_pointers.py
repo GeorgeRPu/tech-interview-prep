@@ -6,9 +6,8 @@ r"""
 9
 """
 
-from typing import List
 
-def trap(height: List[int]) -> int:
+def trap(height: list[int]) -> int:
     left = 0
     right = len(height) - 1
 

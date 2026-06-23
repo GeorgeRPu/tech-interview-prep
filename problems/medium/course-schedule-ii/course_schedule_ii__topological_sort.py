@@ -8,10 +8,10 @@ True
 [0]
 """
 
-from typing import List
 from collections import deque
 
-def findOrder(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+
+def findOrder(numCourses: int, prerequisites: list[list[int]]) -> list[int]:
 
     graph = {course: [] for course in range(numCourses)}
     in_degrees = {course: 0 for course in range(numCourses)}

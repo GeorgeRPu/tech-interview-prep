@@ -7,10 +7,7 @@ r"""
 """
 
 
-from typing import List
-
-
-def longestCommonPrefix(strs: List[str]) -> str:
+def longestCommonPrefix(strs: list[str]) -> str:
     """Find longest common prefix of all strings in ``strs``.
     """
     shortest = min(strs, key=len)

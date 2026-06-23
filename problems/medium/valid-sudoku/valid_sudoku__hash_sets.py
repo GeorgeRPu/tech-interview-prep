@@ -28,10 +28,8 @@ True
 False
 """
 
-from typing import List
 
-
-def isValidSudoku(board: List[List[str]]) -> bool:
+def isValidSudoku(board: list[list[str]]) -> bool:
     """Check that ``board`` is a valid sudoku board.
     """
     for i in range(9):
@@ -53,7 +51,7 @@ def isValidSudoku(board: List[List[str]]) -> bool:
     return True
 
 
-def is_valid(cells: List[str]) -> bool:
+def is_valid(cells: list[str]) -> bool:
     """Check that ``cells`` has no duplicates and contains the digits 1-9.
     """
     nums = [cell for cell in cells if cell != '.']

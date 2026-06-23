@@ -10,10 +10,8 @@ r"""
 47
 """
 
-from typing import List
 
-
-def missingNumber(nums: List[int]) -> int:
+def missingNumber(nums: list[int]) -> int:
     """Find the single missing number in a list of integers.
     """
     n = len(nums)

@@ -6,12 +6,12 @@ r"""
 0
 """
 
-from typing import List
 from collections import deque
 
 VISITED = -1
 
-def maxAreaOfIsland(grid: List[List[int]]) -> int:
+
+def maxAreaOfIsland(grid: list[list[int]]) -> int:
     M = len(grid)
     N = len(grid[0])
 

@@ -8,8 +8,6 @@ False
 
 from __future__ import annotations
 
-from typing import List, Optional
-from typing import Optional
 
 class TreeNode:
     """Node in a binary tree.
@@ -21,7 +19,7 @@ class TreeNode:
         self.right = right
 
     @classmethod
-    def from_list(cls, vals: List[int | None]) -> TreeNode | None:
+    def from_list(cls, vals: list[int | None]) -> TreeNode | None:
         if not vals:
             return None
         root = TreeNode(vals[0])
@@ -55,7 +53,6 @@ class TreeNode:
         return result
 
 
-
 def is_valid_bst(node, left, right):
     if node is None:
         return True
@@ -63,8 +60,11 @@ def is_valid_bst(node, left, right):
     if not (left < node.val < right):
         return False
 
-    return is_valid_bst(node.left, left, node.val) and is_valid_bst(node.right, node.val, right)
+    return (
+        is_valid_bst(node.left, left, node.val)
+        and is_valid_bst(node.right, node.val, right)
+    )
 
 
-def isValidBST(root: Optional[TreeNode]) -> bool:
+def isValidBST(root: TreeNode | None) -> bool:
     return is_valid_bst(root, float('-inf'), float('inf'))

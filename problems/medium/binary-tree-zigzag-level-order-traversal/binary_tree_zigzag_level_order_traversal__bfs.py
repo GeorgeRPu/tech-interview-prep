@@ -9,8 +9,6 @@ r"""
 []
 """
 
-from typing import List
-
 
 class TreeNode:
     """Node in a binary tree.
@@ -22,7 +20,7 @@ class TreeNode:
         self.right = right
 
 
-def zigzagLevelOrder(root: TreeNode | None) -> List[List[int]]:
+def zigzagLevelOrder(root: TreeNode | None) -> list[list[int]]:
     """Traverse a binary tree in level order but zigzaging from left to right
     and right to left.
     """

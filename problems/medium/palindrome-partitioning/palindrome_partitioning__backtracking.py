@@ -6,9 +6,8 @@ r"""
 [['a']]
 """
 
-from typing import List
 
-def partition(s: str) -> List[List[str]]:
+def partition(s: str) -> list[list[str]]:
     partitions = []
 
     def backtrack(partition, i):

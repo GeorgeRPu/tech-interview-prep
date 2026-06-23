@@ -6,10 +6,8 @@ r"""
 [0, 0, 9, 0, 0]
 """
 
-from typing import List
 
-
-def productExceptSelf(nums: List[int]) -> List[int]:
+def productExceptSelf(nums: list[int]) -> list[int]:
     """Product of all elements except the element at index ``i`` for each index
     ``i`` in ``nums``.
     """

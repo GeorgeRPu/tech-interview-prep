@@ -6,10 +6,8 @@ r"""
 [1, 0]
 """
 
-from typing import List
 
-
-def plusOne(digits: List[int]) -> List[int]:
+def plusOne(digits: list[int]) -> list[int]:
     """Add 1 to the integer, represented in base 10, ``digits``.
     """
     n = len(digits)

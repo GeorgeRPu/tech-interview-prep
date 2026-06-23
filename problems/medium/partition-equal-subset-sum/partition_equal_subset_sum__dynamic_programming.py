@@ -6,9 +6,8 @@ True
 False
 """
 
-from typing import List
 
-def canPartition(nums: List[int]) -> bool:
+def canPartition(nums: list[int]) -> bool:
     S = sum(nums)
     if S % 2 != 0:
         return False

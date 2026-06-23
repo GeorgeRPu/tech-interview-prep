@@ -10,10 +10,8 @@ r"""
 [0, 1, 3, 0, 4]
 """
 
-from typing import List
 
-
-def removeElement(nums: List[int], val: int) -> int:
+def removeElement(nums: list[int], val: int) -> int:
     """Removes all instances of ``val`` from the array ``nums`` in-place.
     """
     i = 0

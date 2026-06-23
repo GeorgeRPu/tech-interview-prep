@@ -11,7 +11,6 @@ r"""
 from __future__ import annotations
 
 import heapq
-from typing import List
 
 
 class ListNode:
@@ -29,10 +28,11 @@ class ListNode:
         return self.val == node.val
 
     def __str__(self) -> str:
-        return str(self.val) + (' -> ' + str(self.next) if self.next is not None else '')
+        suffix = ' -> ' + str(self.next) if self.next else ''
+        return str(self.val) + suffix
 
     @classmethod
-    def from_list(cls, list: List[int]) -> ListNode | None:
+    def from_list(cls, list: list[int]) -> ListNode | None:
         head: ListNode | None = None
         prev_node: ListNode | None = None
         for el in list:
@@ -46,10 +46,10 @@ class ListNode:
         return head
 
 
-def merge_k_lists(heads: List[ListNode | None]) -> ListNode | None:
+def merge_k_lists(heads: list[ListNode | None]) -> ListNode | None:
     """Merge k sorted linked lists.
     """
-    not_none_heads: List[ListNode] = [head for head in heads if head is not None]
+    not_none_heads: list[ListNode] = [head for head in heads if head is not None]
     heapq.heapify(not_none_heads)
     new_head: ListNode | None = None
     prev_node: ListNode | None = None

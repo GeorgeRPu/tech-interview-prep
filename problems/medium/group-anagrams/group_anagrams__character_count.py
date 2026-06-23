@@ -9,10 +9,9 @@ r"""
 """
 
 from collections import Counter
-from typing import List
 
 
-def groupAnagrams(strs: List[str]) -> List[List[str]]:
+def groupAnagrams(strs: list[str]) -> list[list[str]]:
     """Group ``strs`` into anagrams.
     """
     dicts = []

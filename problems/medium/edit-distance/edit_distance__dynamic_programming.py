@@ -24,6 +24,10 @@ def minDistance(word1: str, word2: str) -> int:
             if word1[i - 1] == word2[j - 1]:
                 edit_dist[i][j] = edit_dist[i - 1][j - 1]
             else:
-                edit_dist[i][j] = 1 + min(edit_dist[i][j - 1], edit_dist[i - 1][j], edit_dist[i - 1][j - 1])
+                edit_dist[i][j] = 1 + min(
+                    edit_dist[i][j - 1],
+                    edit_dist[i - 1][j],
+                    edit_dist[i - 1][j - 1],
+                )
 
     return edit_dist[-1][-1]

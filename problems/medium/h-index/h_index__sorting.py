@@ -6,10 +6,8 @@ r"""
 1
 """
 
-from typing import List
 
-
-def hIndex(citations: List[int]) -> int:
+def hIndex(citations: list[int]) -> int:
     citations = reversed(sorted(citations))
     for h, citation_count in enumerate(citations):
         if h >= citation_count:

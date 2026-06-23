@@ -6,13 +6,12 @@ r"""
 [1]
 """
 
-from typing import List
 from collections import deque
 
-def maxSlidingWindow(nums: List[int], k: int) -> List[int]:
+
+def maxSlidingWindow(nums: list[int], k: int) -> list[int]:
     output = []
     q = deque()
-
 
     left = 0
     right = 0

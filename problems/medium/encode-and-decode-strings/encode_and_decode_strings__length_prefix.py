@@ -9,12 +9,10 @@ r"""
 []
 """
 
-from typing import List
-
 
 class Codec:
 
-    def encode(self, strs: List[str]) -> str:
+    def encode(self, strs: list[str]) -> str:
         if strs == []:
             return ""
 
@@ -23,7 +21,7 @@ class Codec:
             s += str(len(t)) + "#" + t
         return s
 
-    def decode(self, s: str) -> List[str]:
+    def decode(self, s: str) -> list[str]:
         if s == "":
             return []
 

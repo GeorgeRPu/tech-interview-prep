@@ -13,8 +13,6 @@ r"""
 
 from __future__ import annotations
 
-from typing import List
-
 
 class ListNode:
     """Node in a linked list.
@@ -24,7 +22,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-    def to_list(self) -> List[int]:
+    def to_list(self) -> list[int]:
         list = []
         while self is not None:
             list.append(self.val)
@@ -32,7 +30,7 @@ class ListNode:
         return list
 
     @classmethod
-    def from_list(cls, list: List[int]) -> ListNode | None:
+    def from_list(cls, list: list[int]) -> ListNode | None:
         head: ListNode | None = None
         for el in list:
             if head is None:

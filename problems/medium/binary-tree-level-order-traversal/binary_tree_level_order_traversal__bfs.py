@@ -12,9 +12,6 @@ r"""
 """
 
 
-from typing import List
-
-
 class TreeNode:
     """Node in a binary tree.
     """
@@ -25,7 +22,7 @@ class TreeNode:
         self.right = right
 
 
-def levelOrder(root: TreeNode | None) -> List[List[int]]:
+def levelOrder(root: TreeNode | None) -> list[list[int]]:
     """Return the level order traversal of a binary tree.
     """
     traversal = []

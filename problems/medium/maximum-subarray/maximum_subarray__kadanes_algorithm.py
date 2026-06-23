@@ -6,10 +6,8 @@ r"""
 1
 """
 
-from typing import List
 
-
-def maxSubArray(nums: List[int]) -> int:
+def maxSubArray(nums: list[int]) -> int:
     """Returns the maximum sum of a contiguous subarray of ``nums``.
     """
     s = 0

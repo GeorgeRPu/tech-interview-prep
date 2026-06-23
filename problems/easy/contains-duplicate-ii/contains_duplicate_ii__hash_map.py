@@ -8,10 +8,8 @@ True
 False
 """
 
-from typing import List
 
-
-def containsNearbyDuplicate(nums: List[int], k: int) -> bool:
+def containsNearbyDuplicate(nums: list[int], k: int) -> bool:
     """Returns whether there are two distinct indices ``i`` and ``j`` such that
     ``nums[i] == nums[j]`` and ``abs(i - j) <= k``.
     """

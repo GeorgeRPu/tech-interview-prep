@@ -8,10 +8,8 @@ r"""
 24
 """
 
-from typing import List
 
-
-def permutations(nums: List[int]) -> List[List[int]]:
+def permutations(nums: list[int]) -> list[list[int]]:
     """Generate all permutations of ``nums``.
     """
     if len(nums) > 0:

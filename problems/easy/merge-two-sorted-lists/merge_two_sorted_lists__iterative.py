@@ -9,8 +9,6 @@ r"""
 
 from __future__ import annotations
 
-from typing import List, Tuple
-
 
 class ListNode:
     """Node in a linked list.
@@ -21,10 +19,11 @@ class ListNode:
         self.next = next
 
     def __str__(self) -> str:
-        return str(self.val) + (' -> ' + str(self.next) if self.next is not None else '')
+        suffix = ' -> ' + str(self.next) if self.next else ''
+        return str(self.val) + suffix
 
     @classmethod
-    def from_list(cls, list: List[int]) -> ListNode | None:
+    def from_list(cls, list: list[int]) -> ListNode | None:
         head = None
         for el in list:
             if head is None:
@@ -39,32 +38,17 @@ class ListNode:
 def merge_2_lists(list1: ListNode | None, list2: ListNode | None) -> ListNode | None:
     """Merge two sorted linked lists.
     """
-    new_head = None
-    prev_node = None
+    dummy = node = ListNode(0)
+    while list1 and list2:
+        if list1.val < list2.val:
+            node.next = list1
+            list1 = list1.next
+        else:
+            node.next = list2
+            list2 = list2.next
 
-    while list1 is not None or list2 is not None:
-        node, list1, list2 = minimum(list1, list2)
-        if new_head is None:
-            new_head = node
-        elif prev_node is not None:
-            prev_node.next = node
-        prev_node = node
         node = node.next
 
-    return new_head
+    node.next = list1 or list2
 
-
-def minimum(list1: ListNode | None, list2: ListNode | None) -> Tuple[ListNode | None]:
-    """Return the minimum node of ``list1`` and ``list2`` and advances the that
-    pointer.
-    """
-    if list1 is None and list2 is None:
-        return None, None, None
-    elif list1 is None:
-        return list2, None, None
-    elif list2 is None:
-        return list1, None, None
-    elif list1.val < list2.val:
-        return list1, list1.next, list2
-    else:
-        return list2, list1, list2.next
+    return dummy.next

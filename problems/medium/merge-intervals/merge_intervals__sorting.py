@@ -8,10 +8,8 @@ r"""
 
 from __future__ import annotations
 
-from typing import List
 
-
-def merge(intervals: List[List[int]]) -> List[List[int]]:
+def merge(intervals: list[list[int]]) -> list[list[int]]:
     """Merge overlapping intervals.
     """
     intervals = sorted(intervals, key=lambda interval: interval[0])

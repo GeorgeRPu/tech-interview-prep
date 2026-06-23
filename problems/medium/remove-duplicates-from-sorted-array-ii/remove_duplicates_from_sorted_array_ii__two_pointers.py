@@ -10,10 +10,8 @@ r"""
 [0, 0, 1, 1, 2, 3, 3]
 """
 
-from typing import List
 
-
-def removeDuplicates(nums: List[int]) -> int:
+def removeDuplicates(nums: list[int]) -> int:
     """Removes duplicates from the sorted array ``nums`` in-place such that
     each element appears at most twice.
     """

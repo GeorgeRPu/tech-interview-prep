@@ -8,10 +8,8 @@ r"""
 -1
 """
 
-from typing import List
 
-
-def search(nums: List[int], target: int) -> int:
+def search(nums: list[int], target: int) -> int:
     """Searches for ``target`` in sorted array ``nums`` rotated by a pivot.
     """
     left = 0

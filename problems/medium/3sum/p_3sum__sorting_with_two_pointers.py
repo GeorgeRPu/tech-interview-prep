@@ -8,10 +8,8 @@ r"""
 [[0, 0, 0]]
 """
 
-from typing import List
 
-
-def threeSum(nums: List[int]) -> List[List[int]]:
+def threeSum(nums: list[int]) -> list[list[int]]:
     """Returns a list of triplets in ``nums`` with distinct indices that sum to
     0.
     """

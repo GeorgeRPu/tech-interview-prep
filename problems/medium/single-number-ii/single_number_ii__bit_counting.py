@@ -6,10 +6,8 @@ r"""
 99
 """
 
-from typing import List
 
-
-def singleNumber(nums: List[int]) -> int:
+def singleNumber(nums: list[int]) -> int:
     """Finds the integer that appears once in ``nums`` where all other integers
     appear 3 times.
     """

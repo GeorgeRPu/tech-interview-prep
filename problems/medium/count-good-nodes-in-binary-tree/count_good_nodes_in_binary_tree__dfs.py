@@ -8,7 +8,6 @@ r"""
 
 from __future__ import annotations
 
-from typing import List
 
 class TreeNode:
     """Node in a binary tree.
@@ -20,7 +19,7 @@ class TreeNode:
         self.right = right
 
     @classmethod
-    def from_list(cls, vals: List[int | None]) -> TreeNode | None:
+    def from_list(cls, vals: list[int | None]) -> TreeNode | None:
         if not vals:
             return None
         root = TreeNode(vals[0])
@@ -54,7 +53,6 @@ class TreeNode:
         return result
 
 
-
 def good_nodes(node, max_val):
     if node is None:
         return 0
@@ -65,6 +63,7 @@ def good_nodes(node, max_val):
     result += good_nodes(node.right, max_val)
 
     return result
+
 
 def goodNodes(root: TreeNode) -> int:
     return good_nodes(root, root.val)

@@ -13,8 +13,6 @@ True
 
 from __future__ import annotations
 
-from typing import List
-
 
 class TreeNode:
     """Node in a binary tree.
@@ -26,7 +24,7 @@ class TreeNode:
         self.right = right
 
     @classmethod
-    def from_list(cls, list: List[int]) -> TreeNode | None:
+    def from_list(cls, list: list[int]) -> TreeNode | None:
         """Creates a binary tree from a list of integers pre-order.
         """
         if len(list) == 0:

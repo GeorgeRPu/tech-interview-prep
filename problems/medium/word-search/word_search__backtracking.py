@@ -8,9 +8,8 @@ True
 False
 """
 
-from typing import List
 
-def exist(board: List[List[str]], word: str) -> bool:
+def exist(board: list[list[str]], word: str) -> bool:
     M = len(board)
     N = len(board[0])
 

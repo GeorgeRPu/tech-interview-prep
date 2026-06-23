@@ -8,11 +8,17 @@ r"""
 500
 """
 
-from typing import List
 import heapq
 from collections import defaultdict
 
-def findCheapestPrice(n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
+
+def findCheapestPrice(
+    n: int,
+    flights: list[list[int]],
+    src: int,
+    dst: int,
+    k: int,
+) -> int:
     graph = defaultdict(list)
     for [u, v, price] in flights:
         graph[u].append((v, price))

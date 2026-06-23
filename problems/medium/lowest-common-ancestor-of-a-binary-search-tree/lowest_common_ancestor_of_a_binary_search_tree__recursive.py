@@ -9,8 +9,6 @@ r"""
 
 from __future__ import annotations
 
-from typing import List
-
 
 class TreeNode:
     """Node in a binary tree.
@@ -22,7 +20,7 @@ class TreeNode:
         self.right = right
 
     @classmethod
-    def from_list(cls, vals: List[int | None]) -> TreeNode | None:
+    def from_list(cls, vals: list[int | None]) -> TreeNode | None:
         if not vals:
             return None
         root = TreeNode(vals[0])
@@ -41,7 +39,9 @@ class TreeNode:
         return root
 
 
-def lowestCommonAncestor(root: TreeNode | None, p: TreeNode, q: TreeNode) -> TreeNode | None:
+def lowestCommonAncestor(
+    root: TreeNode | None, p: TreeNode, q: TreeNode,
+) -> TreeNode | None:
     if root is None:
         return None
     elif max(p.val, q.val) < root.val:

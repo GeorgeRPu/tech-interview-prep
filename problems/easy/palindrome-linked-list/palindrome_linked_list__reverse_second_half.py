@@ -10,8 +10,6 @@ False
 
 from __future__ import annotations
 
-from typing import List
-
 
 class ListNode:
     """Node in a linked list.
@@ -22,7 +20,7 @@ class ListNode:
         self.next = next
 
     @classmethod
-    def from_list(cls, list: List[int]) -> ListNode | None:
+    def from_list(cls, list: list[int]) -> ListNode | None:
         head: ListNode | None = None
         for el in list:
             if head is None:

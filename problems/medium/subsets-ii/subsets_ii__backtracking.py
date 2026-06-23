@@ -6,9 +6,8 @@ r"""
 [[], [0]]
 """
 
-from typing import List
 
-def subsetsWithDup(nums: List[int]) -> List[List[int]]:
+def subsetsWithDup(nums: list[int]) -> list[list[int]]:
     nums = sorted(nums)
     result = []
 

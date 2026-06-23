@@ -8,10 +8,8 @@ r"""
 [0, 1]
 """
 
-from typing import List
 
-
-def twoSum(nums: List[int], target: int) -> List[int]:
+def twoSum(nums: list[int], target: int) -> list[int]:
     """Find two numbers in ``nums`` that add up to ``target``.
     """
     nums = list(enumerate(nums))  # keep track of the orignal indices

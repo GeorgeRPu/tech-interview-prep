@@ -8,10 +8,10 @@ r"""
 0
 """
 
-from typing import List
 from collections import deque
 
-def orangesRotting(grid: List[List[int]]) -> int:
+
+def orangesRotting(grid: list[list[int]]) -> int:
     M = len(grid)
     N = len(grid[0])
 

@@ -6,15 +6,14 @@ r"""
 3
 """
 
-from typing import List
 from collections import deque
 
 VISITED = "*"
 
-def numIslands(grid: List[List[str]]) -> int:
+
+def numIslands(grid: list[list[str]]) -> int:
     M = len(grid)
     N = len(grid[0])
-
 
     def bfs(start_i, start_j):
         queue = deque()

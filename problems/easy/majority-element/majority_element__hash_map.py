@@ -8,10 +8,8 @@ r"""
 1
 """
 
-from typing import List
 
-
-def majorityElement(nums: List[int]) -> int:
+def majorityElement(nums: list[int]) -> int:
     """Returns the element that appears more than :math:`\\lfloor n/2 \\rfloor`
     times in the list.
     """

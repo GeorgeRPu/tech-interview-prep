@@ -6,10 +6,8 @@ True
 False
 """
 
-from typing import List
 
-
-def canJump(nums: List[int]) -> bool:
+def canJump(nums: list[int]) -> bool:
     """Whether it is possible to reach the last index given a list of jumps.
     """
     reachable = 0

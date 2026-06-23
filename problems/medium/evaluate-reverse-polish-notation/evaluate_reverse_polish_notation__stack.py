@@ -8,8 +8,8 @@ r"""
 22
 """
 
-from typing import List
 from collections import deque
+
 
 def exec_op(x, y, op_token):
     match op_token:
@@ -23,7 +23,7 @@ def exec_op(x, y, op_token):
             return int(float(x) / y)
 
 
-def evalRPN(tokens: List[str]) -> int:
+def evalRPN(tokens: list[str]) -> int:
     num_stack = deque()
     operators = {'+', '-', '*', '/'}
     for token in tokens:

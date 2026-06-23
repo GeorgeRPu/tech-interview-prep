@@ -7,7 +7,7 @@ False
 """
 
 from collections import Counter, defaultdict
-from collections import defaultdict
+
 
 def checkInclusion(s1: str, s2: str) -> bool:
     n = len(s1)

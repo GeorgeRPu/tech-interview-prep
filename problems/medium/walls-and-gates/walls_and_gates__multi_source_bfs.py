@@ -6,12 +6,12 @@ r"""
 [[3, -1, 0, 1], [2, 2, 1, -1], [1, -1, 2, -1], [0, -1, 3, 4]]
 """
 
-from typing import List
 from collections import deque
 
 INF = 2147483647
 
-def wallsAndGates(rooms: List[List[int]]) -> None:
+
+def wallsAndGates(rooms: list[list[int]]) -> None:
     """
     Do not return anything, modify rooms in-place instead.
     """

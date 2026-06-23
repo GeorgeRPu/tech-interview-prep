@@ -6,9 +6,8 @@ r"""
 [1]
 """
 
-from typing import List
 
-def topKFrequent(nums: List[int], k: int) -> List[int]:
+def topKFrequent(nums: list[int], k: int) -> list[int]:
     counter = {}
     for n in nums:
         if n in counter:
@@ -20,5 +19,3 @@ def topKFrequent(nums: List[int], k: int) -> List[int]:
     counter_list = sorted(counter_list, key=lambda tup: tup[1], reverse=True)
     topk = counter_list[:k]
     return [n for n, count in topk]
-
-

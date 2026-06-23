@@ -13,20 +13,24 @@ True
 from __future__ import annotations
 
 from collections import defaultdict
-from typing import Optional
 
 
 class Node:
     """Node in a linked list with a random pointer.
     """
 
-    def __init__(self, x: int = 0, next: Node | None = None, random: Node | None = None):
+    def __init__(
+        self,
+        x: int = 0,
+        next: Node | None = None,
+        random: Node | None = None,
+    ):
         self.val = x
         self.next = next
         self.random = random
 
 
-def copyRandomList(head: Optional[Node]) -> Optional[Node]:
+def copyRandomList(head: Node | None) -> Node | None:
     if head is None:
         return None
 

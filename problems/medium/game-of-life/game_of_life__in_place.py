@@ -10,10 +10,8 @@ r"""
 [[1, 1], [1, 1]]
 """
 
-from typing import List
 
-
-def gameOfLife(board: List[List[int]]) -> None:
+def gameOfLife(board: list[list[int]]) -> None:
     """Advance the board for Conway's Game of Life by one step.
 
     Do not return anything, modify board in-place instead.

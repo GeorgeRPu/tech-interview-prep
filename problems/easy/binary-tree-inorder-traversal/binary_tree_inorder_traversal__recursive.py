@@ -11,8 +11,6 @@ r"""
 [1]
 """
 
-from typing import List
-
 
 class TreeNode:
     """Node in a binary tree.
@@ -24,7 +22,7 @@ class TreeNode:
         self.right = right
 
 
-def inorderTraversal(root: TreeNode | None) -> List[int]:
+def inorderTraversal(root: TreeNode | None) -> list[int]:
     """Traverse a binary tree in order from left to right.
     """
     if root is None:

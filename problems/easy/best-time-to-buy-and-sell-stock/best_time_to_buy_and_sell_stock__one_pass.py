@@ -7,10 +7,7 @@ r"""
 """
 
 
-from typing import List
-
-
-def maxProfit(prices: List[int]) -> int:
+def maxProfit(prices: list[int]) -> int:
     """Find the maximum profit that can be made by buying and selling a stock
     once on different days.
     """

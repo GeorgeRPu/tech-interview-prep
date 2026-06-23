@@ -6,9 +6,8 @@ r"""
 [[1, 2, 2], [5]]
 """
 
-from typing import List
 
-def combinationSum2(candidates: List[int], target: int) -> List[List[int]]:
+def combinationSum2(candidates: list[int], target: int) -> list[list[int]]:
     result = []
 
     candidates = sorted(candidates)

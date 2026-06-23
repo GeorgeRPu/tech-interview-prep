@@ -15,7 +15,6 @@ False
 """
 
 
-
 class TreeNode:
     """Node in a binary tree.
     """
@@ -34,4 +33,8 @@ def isSameTree(p: TreeNode | None, q: TreeNode | None) -> bool:
     elif p is None or q is None:
         return False
     else:
-        return p.val == q.val and isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
+        return (
+            p.val == q.val
+            and isSameTree(p.left, q.left)
+            and isSameTree(p.right, q.right)
+        )

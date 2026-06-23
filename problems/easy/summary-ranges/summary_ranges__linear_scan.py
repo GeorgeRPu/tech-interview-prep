@@ -6,10 +6,8 @@ r"""
 ['0', '2->4', '6', '8->9']
 """
 
-from typing import List
 
-
-def summaryRanges(nums: List[int]) -> List[str]:
+def summaryRanges(nums: list[int]) -> list[str]:
     """Return the smallest sorted list of ranges that cover all the numbers in
     ``nums``.
     """

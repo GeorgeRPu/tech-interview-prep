@@ -8,11 +8,11 @@ r"""
 -1
 """
 
-from typing import List
 import heapq
 from collections import defaultdict
 
-def networkDelayTime(times: List[List[int]], n: int, k: int) -> int:
+
+def networkDelayTime(times: list[list[int]], n: int, k: int) -> int:
     graph = defaultdict(list)
     for [u, v, time] in times:
         graph[u].append((v, time))

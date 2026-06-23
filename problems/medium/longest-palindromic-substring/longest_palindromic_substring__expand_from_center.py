@@ -12,8 +12,12 @@ def longestPalindrome(s: str) -> str:
     """
     longest_substr = ''
     for center, char in enumerate(s):
-        longest_substr = longestPalindromeAtCenter(s, center, longest_substr=longest_substr)
-        longest_substr = longestPalindromeAtCenter(s, center, offset=1, longest_substr=longest_substr)
+        longest_substr = longestPalindromeAtCenter(
+            s, center, longest_substr=longest_substr,
+        )
+        longest_substr = longestPalindromeAtCenter(
+            s, center, offset=1, longest_substr=longest_substr,
+        )
 
     return longest_substr
 

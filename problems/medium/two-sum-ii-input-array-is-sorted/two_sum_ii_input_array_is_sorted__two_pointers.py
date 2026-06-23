@@ -8,10 +8,8 @@ r"""
 [1, 2]
 """
 
-from typing import List
 
-
-def twoSum(numbers: List[int], target: int) -> List[int]:
+def twoSum(numbers: list[int], target: int) -> list[int]:
     """Find two numbers in ``numbers`` that add up to ``target`` and return
     their one offset indicies.
     """

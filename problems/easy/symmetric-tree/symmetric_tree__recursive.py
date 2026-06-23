@@ -9,8 +9,6 @@ False
 """
 
 
-
-
 class TreeNode:
     """Node in a binary tree.
     """
@@ -43,4 +41,7 @@ def check_subtrees(left: TreeNode | None, right: TreeNode | None) -> bool:
     elif left.val != right.val:
         return False
     else:
-        return check_subtrees(left.left, right.right) and check_subtrees(left.right, right.left)
+        return (
+            check_subtrees(left.left, right.right)
+            and check_subtrees(left.right, right.left)
+        )

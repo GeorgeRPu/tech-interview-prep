@@ -6,10 +6,10 @@ True
 False
 """
 
-from typing import List
 from collections import defaultdict, deque
 
-def canFinish(numCourses: int, prerequisites: List[List[int]]) -> bool:
+
+def canFinish(numCourses: int, prerequisites: list[list[int]]) -> bool:
     graph = defaultdict(list)
     in_degrees = defaultdict(int)
 

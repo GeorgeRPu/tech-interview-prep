@@ -17,10 +17,8 @@ r"""
 [1]
 """
 
-from typing import List
 
-
-def merge(nums1: List[int], m: int, nums2: List[int], n: int):
+def merge(nums1: list[int], m: int, nums2: list[int], n: int):
     """Merge the n-length array ``nums2`` into the (m + n)-length array
     ``nums1``.
     """

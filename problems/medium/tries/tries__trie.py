@@ -13,8 +13,6 @@ r"""
 
 from __future__ import annotations
 
-from typing import List
-
 SOS_char = '<'
 EOS_char = '>'
 
@@ -25,7 +23,7 @@ class TrieNode:
 
     def __init__(self, char: str):
         self.char: str = char
-        self.children: List[TrieNode] = []
+        self.children: list[TrieNode] = []
 
     def add_child(self, node: TrieNode):
         self.children.append(node)
@@ -37,7 +35,7 @@ class TrieNode:
         return None
 
     def descendant_strings(self, string: str):
-        strings: List[str] = []
+        strings: list[str] = []
         for child in self.children:
             if child.char == EOS_char:
                 strings.append(string + self.char)
@@ -66,7 +64,7 @@ class Trie:
         EOS = TrieNode(EOS_char)
         node.add_child(EOS)
 
-    def strings_starting_with(self, string: str) -> List[str]:
+    def strings_starting_with(self, string: str) -> list[str]:
         # loop to end of string
         node = self.root
         for char in string:

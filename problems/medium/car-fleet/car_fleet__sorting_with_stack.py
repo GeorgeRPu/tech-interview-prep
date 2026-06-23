@@ -8,9 +8,8 @@ r"""
 1
 """
 
-from typing import List
 
-def carFleet(target: int, position: List[int], speed: List[int]) -> int:
+def carFleet(target: int, position: list[int], speed: list[int]) -> int:
     cars = list(zip(position, speed))
     cars = sorted(cars, key=lambda tup: tup[0], reverse=True)
 

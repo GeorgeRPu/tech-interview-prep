@@ -8,9 +8,8 @@ r"""
 
 from __future__ import annotations
 
-from typing import List, Optional
 from collections import deque
-from typing import Optional
+
 
 class TreeNode:
     """Node in a binary tree.
@@ -22,7 +21,7 @@ class TreeNode:
         self.right = right
 
     @classmethod
-    def from_list(cls, vals: List[int | None]) -> TreeNode | None:
+    def from_list(cls, vals: list[int | None]) -> TreeNode | None:
         if not vals:
             return None
         root = TreeNode(vals[0])
@@ -56,9 +55,7 @@ class TreeNode:
         return result
 
 
-
-
-def kthSmallest(root: Optional[TreeNode], k: int) -> int:
+def kthSmallest(root: TreeNode | None, k: int) -> int:
     stack = deque()
     curr = root
 

@@ -7,10 +7,8 @@ True
 ['()']
 """
 
-from typing import List
 
-
-def generateParenthesis(n: int) -> List[str]:
+def generateParenthesis(n: int) -> list[str]:
     """Generate all combinations of well-formed parentheses.
     """
     paren = []
@@ -18,7 +16,7 @@ def generateParenthesis(n: int) -> List[str]:
     return paren
 
 
-def genParen(left: int, right: int, s: str, paren: List[str]):
+def genParen(left: int, right: int, s: str, paren: list[str]):
     """Recursively add parenthesis to ``s``, finally appending ``s`` to
     ``paren``.
     """
