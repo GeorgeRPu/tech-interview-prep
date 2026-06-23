@@ -44,6 +44,18 @@ solutions:
     incrementing for ``s`` and decrementing for ``t``. If the dictionary only
     contanins 0's, then ``s`` and ``t`` are anagrams.
   complexity: |
-    | :math:`n` is the length of ``s`` and ``t``.
-    | Time: :math:`O(n)` — count characters in ``s`` and ``t``
-    | Auxiliary Space: :math:`O(1)` — dictionary size bounded by character set (26 lowercase letters)
+    :math:`n` is the length of ``s`` and ``t``.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - count characters in ``s`` and ``t``
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - dictionary size bounded by character set (26 lowercase letters)

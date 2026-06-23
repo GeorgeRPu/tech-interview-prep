@@ -61,6 +61,18 @@ solutions:
     3. End: Set ``prev.next = None``` where ``prev`` is the penultimate node. Note
     that this is equivalent to the middle case since ``Node = prev.next.next``.
   complexity: |
-    | :math:`n` is the length of the linked list
-    | Time: :math:`O(n)` — two passes
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the linked list
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - two passes
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

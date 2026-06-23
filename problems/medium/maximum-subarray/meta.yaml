@@ -62,6 +62,18 @@ solutions:
     ``nums``, summing each element and updating the maximum sum as we go. If the
     sum dips below 0, reset it to 0.
   complexity: |
-    | :math:`n` is the length of the input array
-    | Time: :math:`O(n)` — single pass through array
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input array
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through array
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

@@ -72,5 +72,16 @@ solutions:
     ``f'{count}{previous_digit}'`` to the count-and-say string and reset ``count``
     to 1.
   complexity: |
-    | Time: :math:`O(n \cdot m)` — n iterations, m is sequence length
-    | Space: :math:`O(m)` — stores previous sequence
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n \cdot m)`
+         - n iterations, m is sequence length
+       * - Space
+         - :math:`O(m)`
+         - stores previous sequence

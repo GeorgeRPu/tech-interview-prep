@@ -72,6 +72,18 @@ solutions:
     through the string, setting a cell in rows to the current character. Join
     ``rows`` together row-wise to get the converted string.
   complexity: |
-    | :math:`n` is the length of the input string and :math:`m` is the number of rows.
-    | Time: :math:`O(n + m)` — pass through the string to build each row and then join them together
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input string and :math:`m` is the number of rows.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n + m)`
+         - pass through the string to build each row and then join them together
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

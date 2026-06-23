@@ -68,5 +68,16 @@ solutions:
     because the car had a non-empty tank until ``i``. Thus, if there is a solution,
     it must be in ``[i + 1, n]``.
   complexity: |
-    | Time: :math:`O(n)` — single pass through stations
-    | Auxiliary Space: :math:`O(n)` — surplus array
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through stations
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - surplus array

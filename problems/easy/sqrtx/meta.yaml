@@ -46,5 +46,16 @@ solutions:
     of possible square roots to within 1, within 1, we return the beginning of the
     range.
   complexity: |
-    | Time: :math:`O(\log n)` — binary search
-    | Auxiliary Space: :math:`O(1)`
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(\log n)`
+         - binary search
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

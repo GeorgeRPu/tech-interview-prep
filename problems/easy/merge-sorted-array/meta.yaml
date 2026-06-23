@@ -73,6 +73,18 @@ solutions:
     overwrite entries in ``nums1`` that we still need to compare. To get around this,
     shift the entries in ``nums1`` to the end of the list, and then merge the lists.
   complexity: |
-    | :math:`m` is the length of the first input list and :math:`n` is the length of the second input
-    | Time: :math:`O(m + n)` — shift the first list and then merge the two lists
-    | Auxiliary Space: :math:`O(1)` — in-place merge
+    :math:`m` is the length of the first input list and :math:`n` is the length of the second input
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(m + n)`
+         - shift the first list and then merge the two lists
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - in-place merge

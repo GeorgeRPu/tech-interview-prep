@@ -70,6 +70,18 @@ solutions:
     set. If the character in ``s`` is in the dictionary, then check if it maps to
     the character in ``t``.
   complexity: |
-    | :math:`n` is the length of the shortest string
-    | Time: :math:`O(n)` — single pass through the strings
-    | Auxiliary Space: :math:`O(n)` — dictionary and range set store at most :math:`n` key-value pairs
+    :math:`n` is the length of the shortest string
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through the strings
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - dictionary and range set store at most :math:`n` key-value pairs

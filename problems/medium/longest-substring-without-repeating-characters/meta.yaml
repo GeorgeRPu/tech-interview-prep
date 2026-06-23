@@ -52,6 +52,18 @@ solutions:
     substring is longer than the longest, we update the length of the longest
     substring. Once we find a duplicate character, reset the seen characters.
   complexity: |
-    | :math:`n` is the length of the input string
-    | Time: :math:`O(n^2)` — attempt to build substring starting at each character
-    | Auxiliary Space: :math:`O(n)` — substring storage
+    :math:`n` is the length of the input string
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n^2)`
+         - attempt to build substring starting at each character
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - substring storage

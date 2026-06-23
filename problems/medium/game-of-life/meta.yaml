@@ -88,6 +88,18 @@ solutions:
     :math:`0 \leq j < n`. Make sure to calculate the number of live neighbors for
     each cell before updating the board.
   complexity: |
-    | :math:`m` is the number of rows and :math:`n` is the number of columns in the input board
-    | Time: :math:`O(m \cdot n)` — pass through board twice
-    | Auxiliary Space: :math:`O(m \cdot n)` — neighbor count matrix
+    :math:`m` is the number of rows and :math:`n` is the number of columns in the input board
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(m \cdot n)`
+         - pass through board twice
+       * - Auxiliary Space
+         - :math:`O(m \cdot n)`
+         - neighbor count matrix

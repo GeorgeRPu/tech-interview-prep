@@ -90,6 +90,18 @@ solutions:
     from 1 to :math:`n` quickly. Note that :math:`n` is one more than the number of
     elements in ``nums``.
   complexity: |
-    | :math:`n` is the length of the input list
-    | Time: :math:`O(n)` — sum the array
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input list
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - sum the array
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

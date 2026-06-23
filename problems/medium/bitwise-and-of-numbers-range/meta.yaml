@@ -49,5 +49,16 @@ solutions:
     and :math:`right` with all other bits set to 0, as the subsequent bits will
     vary in :math:`[left, right]`.
   complexity: |
-    | Time: :math:`O(1)` — at most 32 bit comparisons
-    | Auxiliary Space: :math:`O(1)`
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(1)`
+         - at most 32 bit comparisons
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

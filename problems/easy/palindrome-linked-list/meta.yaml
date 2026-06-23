@@ -51,6 +51,18 @@ solutions:
     pointers``i`` and ``j`` to check if ``list`` is a palindrome, moving them
     inwards if ``list[i] == list[j]``.
   complexity: |
-    | :math:`n` is the number of nodes in the linked list
-    | Time: :math:`O(n)` — traverse list twice
-    | Auxiliary Space: :math:`O(n)` — store linked list values in list
+    :math:`n` is the number of nodes in the linked list
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - traverse list twice
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - store linked list values in list

@@ -44,6 +44,18 @@ solutions:
     palindrome exceeds the previous longest palindrome, replace the longest
     plaindrome.
   complexity: |
-    | :math:`n` is the length of the input string
-    | Time: :math:`O(n^2)` — expand around each character
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input string
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n^2)`
+         - expand around each character
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

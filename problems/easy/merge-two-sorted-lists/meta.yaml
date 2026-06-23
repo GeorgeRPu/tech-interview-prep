@@ -51,10 +51,32 @@ description_rst: |
 solutions:
 - name: Iterative
   explanation: |
-    Create the new list by selecting the minimum node of ``list1`` and ``list2``,
-    checking if either is ``None``. Set the ``next`` field of the previous node to
-    the minimum node. Advance the ``list1``/``list2`` and previous node pointers.
+    The general idea is to merge the lists by selecting the smaller node from
+    ``list1`` and ``list2``. We then set the ``next`` field of the current node
+    to the minimum node, advancing the ``list1``/``list2`` and node pointers.
+    We can apply 2 tricks to simplify the code at the beginning and the end of
+    the merge process.
+
+    1. Rather than have a special case for the head of the merged list, start
+       with a dummy node. New nodes are added after the dummy node, and we
+       return ``dummy.next`` as the head of the merged list.
+    2. Once we reach the end of one of the lists, we can simply point the
+       ``next`` field of the current node to the other list, since it is
+       already sorted.
+
   complexity: |
-    | :math:`m` is the length of the first input list and :math:`n` is the length of the second input list
-    | Time: :math:`O(m + n)` — go through both lists
-    | Auxiliary Space: :math:`O(1)`
+    :math:`m` is the length of the first input list and :math:`n` is the length of the second input list
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(m + n)`
+         - go through both lists
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

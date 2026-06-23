@@ -48,6 +48,18 @@ solutions:
     Observe that a middle entry is the sum of the entry directly above and to the
     north-west. The first/last entry is always 1.
   complexity: |
-    | :math:`n` is the number of rows in the triangle
-    | Time: :math:`O(n^2)` — triangle is half of a square of side :math:`n`
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the number of rows in the triangle
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n^2)`
+         - triangle is half of a square of side :math:`n`
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

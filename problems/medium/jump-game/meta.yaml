@@ -47,6 +47,18 @@ solutions:
     furthest reachable index with the jump distance plus the current index if it is
     greater than the current furthest reachable index.
   complexity: |
-    | :math:`n` is the length of ``nums``
-    | Time: :math:`O(n)` — single pass through ``nums``
-    | Auxiliary Space: :math:`O(1)` — single variable for tracking reachability
+    :math:`n` is the length of ``nums``
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through ``nums``
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - single variable for tracking reachability

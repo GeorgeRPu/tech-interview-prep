@@ -53,5 +53,16 @@ solutions:
     if statement. Finally we can check if the output string is empty to determine
     whether we need to print the index.
   complexity: |
-    | Time: :math:`O(n)` — single pass through the numbers from 1 to n
-    | Auxiliary Space: :math:`O(1)`
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through the numbers from 1 to n
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

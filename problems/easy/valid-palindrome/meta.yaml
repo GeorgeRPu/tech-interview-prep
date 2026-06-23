@@ -56,6 +56,18 @@ solutions:
     of ``s`` and at the end of ``s``. When both pointers are on non-alphanumeric
     characters, move them inwards.
   complexity: |
-    | :math:`n` is the length of ``s``.
-    | Time: :math:`O(n)` — single pass through ``s``.
-    | Auxiliary Space: :math:`O(n)` — lowercase copy
+    :math:`n` is the length of ``s``.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through ``s``.
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - lowercase copy

@@ -62,6 +62,18 @@ solutions:
     optimization to convert the indices to a seet to avoid setting a row or column
     to zero twice.
   complexity: |
-    | :math:`m` is the number of rows and :math:`n` is the number of columns in the input matrix
-    | Time: :math:`O(m n)` — pass through matrix twice
-    | Auxiliary Space: :math:`O(m n)` — indices of zeros which is :math:`m n` in the worst case when all elements are zero
+    :math:`m` is the number of rows and :math:`n` is the number of columns in the input matrix
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(m n)`
+         - pass through matrix twice
+       * - Auxiliary Space
+         - :math:`O(m n)`
+         - indices of zeros which is :math:`m n` in the worst case when all elements are zero

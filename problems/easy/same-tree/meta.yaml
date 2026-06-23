@@ -61,6 +61,18 @@ solutions:
     can use recursion. If both roots are ``None``, then they are equal. If one is
     ``None`` and the other is not, then they are not equal.
   complexity: |
-    | :math:`n` is the number of nodes in tree 1
-    | Time: :math:`O(n)` — visit each node once
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the number of nodes in tree 1
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - visit each node once
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

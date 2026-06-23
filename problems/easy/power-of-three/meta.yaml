@@ -54,5 +54,16 @@ solutions:
     :math:`n``, check if :math:`n` is divisble by 3. If it is, divide :math:`n` by
     3 and check again. If it is not, then :math:`n` is not a power of 3.
   complexity: |
-    | Time: :math:`O(\log_3 n)` — divide by 3 at each step
-    | Auxiliary Space: :math:`O(1)`
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(\log_3 n)`
+         - divide by 3 at each step
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

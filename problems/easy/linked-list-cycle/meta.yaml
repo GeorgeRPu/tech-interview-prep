@@ -74,6 +74,18 @@ solutions:
     move ``b`` 2 nodes at a time. If ``a`` and ``b`` ever point to the same node,
     then ``b`` must have wrapped around the linked list and caught up to ``a``.
   complexity: |
-    | :math:`n` is the number of nodes in the linked list
-    | Time: :math:`O(n)` — pointers will reach end or meet after at most :math:`n` steps
-    | Auxiliary Space: :math:`O(1)` — 2 pointers only
+    :math:`n` is the number of nodes in the linked list
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - pointers will reach end or meet after at most :math:`n` steps
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - 2 pointers only

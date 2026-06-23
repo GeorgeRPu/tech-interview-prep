@@ -53,6 +53,18 @@ solutions:
     ``max_area``. Then, move the pointer with the smaller height inwards. If the
     heights are equal, move the pointer whose inward height is larger.
   complexity: |
-    | :math:`n` is the length of the input array
-    | Time: :math:`O(n)` — single pass with two pointers
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input array
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass with two pointers
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

@@ -51,5 +51,16 @@ solutions:
     setting ``is_prime[c * i] = False`` for :math:`c > 2`. The number of primes is
     the number of ``True``.
   complexity: |
-    | Time: :math:`O(n \log \log n)` — Sieve of Eratosthenes
-    | Space: :math:`O(n)` — boolean sieve array
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n \log \log n)`
+         - Sieve of Eratosthenes
+       * - Space
+         - :math:`O(n)`
+         - boolean sieve array

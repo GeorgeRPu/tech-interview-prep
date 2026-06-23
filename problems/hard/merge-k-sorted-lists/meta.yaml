@@ -60,6 +60,18 @@ solutions:
     Same as merge 2 sorted linked lists: pick the smallest head and add it to the
     end of the new list.
   complexity: |
-    | :math:`n` is the total number of nodes across all lists, and :math:`k` is the number of lists
-    | Time: :math:`O(n \log k)` — :math:`O(\log k)` to pop from the heap of size :math:`k` for each of the :math:`n` nodes
-    | Auxiliary Space: :math:`O(k)` — heap size
+    :math:`n` is the total number of nodes across all lists, and :math:`k` is the number of lists
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n \log k)`
+         - :math:`O(\log k)` to pop from the heap of size :math:`k` for each of the :math:`n` nodes
+       * - Auxiliary Space
+         - :math:`O(k)`
+         - heap size

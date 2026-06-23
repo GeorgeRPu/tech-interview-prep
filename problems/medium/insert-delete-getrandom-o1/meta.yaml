@@ -65,7 +65,22 @@ solutions:
     :math:`O(1)` time. We can use a dictionary to store the indices of each element
     in the array.
   complexity: |
-    | Insert Time: :math:`O(1)` — list expansion is amortized
-    | Remove Time: :math:`O(1)` — constant time to find index and move element to end
-    | Get Random Time: :math:`O(1)` — constant time to choose random element
-    | Auxiliary Space: :math:`O(n)` — array and hash map storage
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Insert Time
+         - :math:`O(1)`
+         - list expansion is amortized
+       * - Remove Time
+         - :math:`O(1)`
+         - constant time to find index and move element to end
+       * - Get Random Time
+         - :math:`O(1)`
+         - constant time to choose random element
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - array and hash map storage

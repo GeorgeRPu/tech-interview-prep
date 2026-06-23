@@ -72,6 +72,18 @@ solutions:
     ``node.next``. Instead we can shift the values in the linked list to the left,
     dropping the tail node.
   complexity: |
-    | :math:`n` is the number of nodes in the linked list
-    | Time: :math:`O(n)` — shift values of all nodes after ``node``
-    | Auxiliary Space: :math:`O(1)` — in-place modification
+    :math:`n` is the number of nodes in the linked list
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - shift values of all nodes after ``node``
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - in-place modification

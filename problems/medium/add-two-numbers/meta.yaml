@@ -66,6 +66,18 @@ solutions:
     Otherwise, set the next node ``node.next = ListNode(digit)`` and advance the
     ``node`` pointer.
   complexity: |
-    | :math:`n` is the total number of nodes in both lists
-    | Time: :math:`O(n)` — single pass through both lists
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the total number of nodes in both lists
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through both lists
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

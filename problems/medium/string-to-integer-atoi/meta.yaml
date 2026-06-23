@@ -136,6 +136,18 @@ solutions:
     4. Get all the numeric digits in the string.
     5. From the end, increase ``value`` by :math:`\\textrm{digit}_i * 10^i`. If ``value`` exceeds the int32 limits of :math:`[-2^{32}, 2^{32} - 1]`, clamp ``value``.
   complexity: |
-    | :math:`n` is the length of the input string
-    | Time: :math:`O(n)` — single pass through the string
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input string
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through the string
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

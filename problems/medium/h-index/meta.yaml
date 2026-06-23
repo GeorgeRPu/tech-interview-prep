@@ -49,6 +49,18 @@ solutions:
     large as h. We can find this index by iterating through ``citations`` and
     breaking when the index becomes greater than the citation count.
   complexity: |
-    | :math:`n` is the length of the input array
-    | Time: :math:`O(n \log n)` — sort the array, then single pass through the array
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input array
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n \log n)`
+         - sort the array, then single pass through the array
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

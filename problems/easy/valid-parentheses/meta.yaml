@@ -70,6 +70,18 @@ solutions:
     popped parenthesis belongs with the closing parenthesis. If it doesn't, return
     False. At the end, the stack should be empty for the string to be valid.
   complexity: |
-    | :math:`n` is the length of ``s``.
-    | Time: :math:`O(n)` — single pass through ``s``.
-    | Auxiliary Space: :math:`O(n)` — stack
+    :math:`n` is the length of ``s``.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through ``s``.
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - stack

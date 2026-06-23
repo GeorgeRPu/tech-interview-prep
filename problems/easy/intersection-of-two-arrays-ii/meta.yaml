@@ -60,6 +60,18 @@ solutions:
     times to the intersection
     list.
   complexity: |
-    | :math:`m` is the length of ``nums1`` and :math:`n` is the length of ``nums2``
-    | Time: :math:`O(m + n)` — count each array and then iterate through the keys of the smaller dictionary
-    | Auxiliary Space: :math:`O(m + n)` — 2 dictionaries store at most :math:`m` and :math:`n` key-value pairs respectively
+    :math:`m` is the length of ``nums1`` and :math:`n` is the length of ``nums2``
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(m + n)`
+         - count each array and then iterate through the keys of the smaller dictionary
+       * - Auxiliary Space
+         - :math:`O(m + n)`
+         - 2 dictionaries store at most :math:`m` and :math:`n` key-value pairs respectively

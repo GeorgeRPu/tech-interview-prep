@@ -48,6 +48,18 @@ solutions:
     optimization is to initialize the counter dictionary with all letters in the
     alphabet.
   complexity: |
-    | :math:`m` is the length of ``ransomNote`` and :math:`n` is the length of ``magazine``
-    | Time: :math:`O(m + n)` — pass through both strings to build the counter and then check it
-    | Auxiliary Space: :math:`O(1)` — fixed-size counter
+    :math:`m` is the length of ``ransomNote`` and :math:`n` is the length of ``magazine``
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(m + n)`
+         - pass through both strings to build the counter and then check it
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - fixed-size counter

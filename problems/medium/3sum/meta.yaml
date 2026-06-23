@@ -59,5 +59,16 @@ solutions:
     avoid duplicates. Moreover, if ``nums[i]`` is a repeat, we can continue to the
     next iteration.
   complexity: |
-    | Time: :math:`O(n^2)` — sort then, for each element, perform a two-pointer scan through the array
-    | Auxiliary Space: :math:`O(1)`
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n^2)`
+         - sort then, for each element, perform a two-pointer scan through the array
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

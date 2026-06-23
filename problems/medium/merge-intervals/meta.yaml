@@ -55,6 +55,18 @@ solutions:
     the next interval in ``intervals`` against the rightmost merged interval. This
     is because the merged intervals are all disjoint and sorted from left to right.
   complexity: |
-    | :math:`n` is the number of intervals
-    | Time: :math:`O(n \log n)` — sort then merge intervals
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the number of intervals
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n \log n)`
+         - sort then merge intervals
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

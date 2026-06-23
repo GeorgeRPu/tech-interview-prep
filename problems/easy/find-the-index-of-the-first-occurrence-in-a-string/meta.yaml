@@ -42,6 +42,18 @@ solutions:
     Iterate through each character in ``haystack`` and check if the substring
     ``haystack[i:i + len(needle)]`` is equal to ``needle``.
   complexity: |
-    | :math:`m` is the length of the needle and :math:`n` is the length of the haystack.
-    | Time: :math:`O(n - m)` — single pass through the haystack
-    | Auxiliary Space: :math:`O(1)`
+    :math:`m` is the length of the needle and :math:`n` is the length of the haystack.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n - m)`
+         - single pass through the haystack
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

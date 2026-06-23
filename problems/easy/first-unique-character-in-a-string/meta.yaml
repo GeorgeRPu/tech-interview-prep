@@ -52,6 +52,18 @@ solutions:
     Iterate through the string again. The first character that has a count of 1 is
     the first unique character.
   complexity: |
-    | :math:`n` is the length of the input string.
-    | Time: :math:`O(n)` — 2 passes through the string
-    | Auxiliary Space: :math:`O(n)` — dictionary stores at most :math:`n` key-value pairs
+    :math:`n` is the length of the input string.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - 2 passes through the string
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - dictionary stores at most :math:`n` key-value pairs

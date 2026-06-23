@@ -48,6 +48,18 @@ solutions:
     Use a dictionary to count the occurrences of each element in ``nums``. We can
     break early once the count of an element exceeds :math:`\\lfloor n/2 \\rfloor`.
   complexity: |
-    | :math:`n` is the length of the input array.
-    | Time: :math:`O(n)` — single pass with early exit
-    | Auxiliary Space: :math:`O(n)` — dictionary stores at most :math:`n` key-value pairs
+    :math:`n` is the length of the input array.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass with early exit
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - dictionary stores at most :math:`n` key-value pairs

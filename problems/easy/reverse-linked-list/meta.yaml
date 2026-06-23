@@ -57,6 +57,18 @@ solutions:
     in a temporary variable. Set ``node.next`` to ``prev`` and then advance
     ``prev`` and ``node``.
   complexity: |
-    | :math:`n` is the number of nodes in the linked list
-    | Time: :math:`O(n)` — single pass through the list
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the number of nodes in the linked list
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through the list
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

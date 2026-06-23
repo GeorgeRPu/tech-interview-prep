@@ -60,6 +60,18 @@ solutions:
     element is consecutive. When the next element is not consecutive, create the
     range string based on whether the start equals the end.
   complexity: |
-    | :math:`n` is the length of the input array
-    | Time: :math:`O(n)` — single pass through the array
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input array
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through the array
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

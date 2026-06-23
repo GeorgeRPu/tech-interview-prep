@@ -54,5 +54,16 @@ solutions:
 
         r = \\sum_{i=0}^{n-1} 10^i d_i.
   complexity: |
-    | Time: :math:`O(\log_{10} x)` — extract each digit, reverse list of digits, and calculate reversed integer
-    | Auxiliary Space: :math:`O(\log_{10} x)` — digits list
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(\log_{10} x)`
+         - extract each digit, reverse list of digits, and calculate reversed integer
+       * - Auxiliary Space
+         - :math:`O(\log_{10} x)`
+         - digits list

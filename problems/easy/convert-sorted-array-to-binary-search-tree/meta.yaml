@@ -52,6 +52,18 @@ solutions:
     middle element of ``nums`` and divide ``nums`` into two halves. Repeat on the
     left half to form the left subtree and the right half to form the right subtree.
   complexity: |
-    | :math:`n` is the length of the input array.
-    | Time: :math:`O(n)` — visit every element
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input array.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - visit every element
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

@@ -60,6 +60,18 @@ solutions:
     Add 1 to the end of the array. Start from the least signfinicant digit and
     carry any 1s to the next digit.
   complexity: |
-    | :math:`n` is the length of the input list
-    | Time: :math:`O(n)` — single reverse pass
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input list
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single reverse pass
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

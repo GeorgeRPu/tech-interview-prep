@@ -106,6 +106,18 @@ solutions:
     Use a set to store the nodes in the first linked list with ``headA``. Then,
     check if any node in the second linked list with ``headB`` is in the set.
   complexity: |
-    | :math:`m` is the length of the first linked list and :math:`n` is the length of the second linked list
-    | Time: :math:`O(m + n)` — single pass through both lists
-    | Space: :math:`O(m)` — set for first list
+    :math:`m` is the length of the first linked list and :math:`n` is the length of the second linked list
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(m + n)`
+         - single pass through both lists
+       * - Space
+         - :math:`O(m)`
+         - set for first list

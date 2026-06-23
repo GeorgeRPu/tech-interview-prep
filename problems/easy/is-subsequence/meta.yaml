@@ -52,6 +52,18 @@ solutions:
     in ``t`` in order. Iterate through ``t`` and check if each character in ``s``
     appears in ``t`` in order.
   complexity: |
-    | :math:`n` is the length of ``t``
-    | Time: :math:`O(n)` — single pass through ``t`` to check for characters in ``s``
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of ``t``
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through ``t`` to check for characters in ``s``
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

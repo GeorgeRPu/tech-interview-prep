@@ -111,6 +111,18 @@ solutions:
     numeral is 'IX'. For digits in the tens, hundreds, and thousands places, the
     pattern holds, but with different symbols for ones, fives, and tens.
   complexity: |
-    | :math:`n` is the number of digits in ``num``
-    | Time: :math:`O(\log_{10} n)` — extract each digit and convert to Roman numeral
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the number of digits in ``num``
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(\log_{10} n)`
+         - extract each digit and convert to Roman numeral
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

@@ -59,5 +59,16 @@ solutions:
   explanation: |
     Use merge sort.
   complexity: |
-    | Time: :math:`O(n \log n)` — merge sort
-    | Auxiliary Space: :math:`O(\log n)`
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n \log n)`
+         - merge sort
+       * - Auxiliary Space
+         - :math:`O(\log n)`
+         -

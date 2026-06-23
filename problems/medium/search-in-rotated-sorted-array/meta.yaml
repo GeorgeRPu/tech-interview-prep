@@ -81,6 +81,18 @@ solutions:
       * If ``nums[mid] > target and nums[right] > target``, then ``target`` must be
         in :math:`R`.
   complexity: |
-    | :math:`n` is the length of the input array
-    | Time: :math:`O(\log n)` — modified binary search
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input array
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(\log n)`
+         - modified binary search
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

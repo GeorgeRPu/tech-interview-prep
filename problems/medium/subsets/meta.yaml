@@ -50,6 +50,18 @@ solutions:
 
     The base case is the empty array, whose only subset is the empty set.
   complexity: |
-    | :math:`n` is the length of the input array
-    | Time: :math:`O(2^n)` — there are :math:`2^n` subsets of an :math:`n`-element set, and we need to generate each one
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input array
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(2^n)`
+         - there are :math:`2^n` subsets of an :math:`n`-element set, and we need to generate each one
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

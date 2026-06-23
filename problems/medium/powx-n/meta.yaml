@@ -61,5 +61,16 @@ solutions:
     Adjust for the case where :math:`n` is odd and for the case where :math:`n` is
     negative.
   complexity: |
-    | Time: :math:`O(\log_2 n)` — exponentiation by squaring
-    | Auxiliary Space: :math:`O(1)`
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(\log_2 n)`
+         - exponentiation by squaring
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

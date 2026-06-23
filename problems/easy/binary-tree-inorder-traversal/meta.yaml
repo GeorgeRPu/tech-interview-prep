@@ -74,6 +74,18 @@ solutions:
             /        \\
         left (1)  right (3)
   complexity: |
-    | :math:`n` is the number of nodes in the binary tree.
-    | Time: :math:`O(n)` — visit every node
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the number of nodes in the binary tree.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - visit every node
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

@@ -79,6 +79,18 @@ solutions:
     ``nums[i + offset]`` to ``nums[i]`` and increment ``i``. Repeat until
     ``i + offset`` is out of bounds.
   complexity: |
-    | :math:`n` is the length of the input list
-    | Time: :math:`O(n)` — single pass
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input list
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

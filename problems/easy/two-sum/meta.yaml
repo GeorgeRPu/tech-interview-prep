@@ -60,9 +60,21 @@ solutions:
     ``i`` right; if greater, decrease the sum by moving ``j`` left. Stop when
     the sum equals ``target`` and return the two original indices.
   complexity: |
-    | :math:`n` is the length of the input array.
-    | Time: :math:`O(n \log n)` — dominated by the sort.
-    | Auxiliary Space: :math:`O(n)` — the enumerated-and-sorted copy.
+    :math:`n` is the length of the input array.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n \log n)`
+         - dominated by the sort.
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - the enumerated-and-sorted copy.
 - name: Hash Map
   explanation: |
     Single pass: for each ``nums[i]``, check whether ``target - nums[i]`` is
@@ -70,6 +82,18 @@ solutions:
     If so, the two indices form the answer; otherwise record ``nums[i]`` for
     later lookups.
   complexity: |
-    | :math:`n` is the length of the input array.
-    | Time: :math:`O(n)` — one pass with :math:`O(1)` average-case dict lookups.
-    | Auxiliary Space: :math:`O(n)` — the dict stores at most :math:`n` entries.
+    :math:`n` is the length of the input array.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - one pass with :math:`O(1)` average-case dict lookups.
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - the dict stores at most :math:`n` entries.

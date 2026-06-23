@@ -51,5 +51,16 @@ solutions:
     compare the list with its reverse ``digits[::-1]`` to check if the number is a
     palindrome.
   complexity: |
-    | Time: :math:`O(\log_{10} x)` — extract each digit and then compare the list with its reverse
-    | Auxiliary Space: :math:`O(\log_{10} x)` — store digits list
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(\log_{10} x)`
+         - extract each digit and then compare the list with its reverse
+       * - Auxiliary Space
+         - :math:`O(\log_{10} x)`
+         - store digits list

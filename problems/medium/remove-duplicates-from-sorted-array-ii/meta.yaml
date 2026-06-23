@@ -82,6 +82,18 @@ solutions:
     ``nums[i + offset]`` to ``nums[i]`` and increment ``i``. Repeat until
     ``i + offset`` is out of bounds.
   complexity: |
-    | :math:`n` is the length of the input array
-    | Time: :math:`O(n)` — single pass through array
-    | Space: :math:`O(1)` — in-place modification
+    :math:`n` is the length of the input array
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass through array
+       * - Space
+         - :math:`O(1)`
+         - in-place modification

@@ -70,6 +70,18 @@ solutions:
     algorithm can find the ``twosum`` in :math:`O(n \\log n)` time and no extra
     space.
   complexity: |
-    | :math:`n` is the length of the input array
-    | Time: :math:`O(n)` — two-pointer go through the array at most once
-    | Auxiliary Space: :math:`O(1)` — only 2 pointers
+    :math:`n` is the length of the input array
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - two-pointer go through the array at most once
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - only 2 pointers

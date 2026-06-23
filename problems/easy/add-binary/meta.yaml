@@ -39,6 +39,18 @@ solutions:
     carry. The next bit is the sum modulo 2 and the carry is the sum divided by 2.
     At the end, if the carry is not 0, add it to the front of the string.
   complexity: |
-    | :math:`m` and :math:`n` are the lengths of the two bit strings.
-    | Time: :math:`O(\max(m, n))` — single pass through the bits
-    | Auxiliary Space: :math:`O(1)` — only the carry bit
+    :math:`m` and :math:`n` are the lengths of the two bit strings.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(\max(m, n))`
+         - single pass through the bits
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - only the carry bit

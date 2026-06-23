@@ -68,6 +68,18 @@ solutions:
     ``s`` can have different lenghts, we first check that they have the same
     length.
   complexity: |
-    | :math:`n` is the length of ``pattern`` and the number of words in ``s``
-    | Time: :math:`O(n)` — single pass over ``pattern`` and words in ``s``
-    | Auxiliary Space: :math:`O(n)` — dictionary for mapping characters to words and set for tracking mapped words
+    :math:`n` is the length of ``pattern`` and the number of words in ``s``
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - single pass over ``pattern`` and words in ``s``
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - dictionary for mapping characters to words and set for tracking mapped words

@@ -51,6 +51,18 @@ solutions:
     ``True``. If the sum has been seen before, return ``False``. Otherwise,
     continue.
   complexity: |
-    | :math:`k` is the number of iterations
-    | Time: :math:`O(k)` — each iteration requires summing the squares of the digits
-    | Auxiliary Space: :math:`O(k)` — set stores at most :math:`k` key-value pairs
+    :math:`k` is the number of iterations
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(k)`
+         - each iteration requires summing the squares of the digits
+       * - Auxiliary Space
+         - :math:`O(k)`
+         - set stores at most :math:`k` key-value pairs

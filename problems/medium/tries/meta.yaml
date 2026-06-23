@@ -21,7 +21,21 @@ solutions:
                \\
                 x - e - EOS
   complexity: |
-    | :math:`n` is the length of the string to insert
-    | Insertion Time: :math:`O(n)` — to insert a string of length :math:`n` into the trie, we need to create at most :math:`n` nodes
-    | Search Time: :math:`O(n)` — to find the node corresponding to the last character of the input string, we need to traverse :math:`n` nodes
-    | Space: :math:`O(n)` — trie node storage
+    :math:`n` is the length of the string to insert
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Insertion Time
+         - :math:`O(n)`
+         - to insert a string of length :math:`n` into the trie, we need to create at most :math:`n` nodes
+       * - Search Time
+         - :math:`O(n)`
+         - to find the node corresponding to the last character of the input string, we need to traverse :math:`n` nodes
+       * - Space
+         - :math:`O(n)`
+         - trie node storage

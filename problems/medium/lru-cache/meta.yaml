@@ -68,7 +68,21 @@ solutions:
     implementation, we use a dummy head and tail node whose keys are negative
     values.
   complexity: |
-    | :math:`n` is the number of entries in the cache
-    | Get Time: :math:`O(1)`
-    | Put Time: :math:`O(1)`
-    | Auxiliary Space: :math:`O(n)` — hash map and linked list
+    :math:`n` is the number of entries in the cache
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Get Time
+         - :math:`O(1)`
+         -
+       * - Put Time
+         - :math:`O(1)`
+         -
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - hash map and linked list

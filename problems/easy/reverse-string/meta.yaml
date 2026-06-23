@@ -41,6 +41,18 @@ solutions:
 
         s[i], s[end - i] = s[end - i], s[i]
   complexity: |
-    | :math:`n` is the length of the input string
-    | Time: :math:`O(n)` — swap half the elements
-    | Space: :math:`O(1)`
+    :math:`n` is the length of the input string
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - swap half the elements
+       * - Space
+         - :math:`O(1)`
+         -

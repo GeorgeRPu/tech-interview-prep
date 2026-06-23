@@ -47,5 +47,16 @@ solutions:
 
         climbStairs(n) = climbStairs(n - 1) + climbStairs(n - 2)
   complexity: |
-    | Time: :math:`O(n)` — each value from 1 to n is calculated once
-    | Auxiliary Space: :math:`O(n)` — dictionary stores each value from 1 to n
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - each value from 1 to n is calculated once
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - dictionary stores each value from 1 to n

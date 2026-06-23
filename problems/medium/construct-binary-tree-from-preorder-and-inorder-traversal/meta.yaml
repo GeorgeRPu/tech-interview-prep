@@ -56,6 +56,18 @@ solutions:
     we build the right subtree by using the rest of the ``preorder`` from buliding
     the left subtree and the right half of ``inorder``.
   complexity: |
-    | :math:`n` is the number of nodes in the binary tree
-    | Time: :math:`O(n^2)` — finding index of element in array per recursive call
-    | Auxiliary Space: :math:`O(1)` — we only slice and pass references to the input arrays
+    :math:`n` is the number of nodes in the binary tree
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n^2)`
+         - finding index of element in array per recursive call
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - we only slice and pass references to the input arrays

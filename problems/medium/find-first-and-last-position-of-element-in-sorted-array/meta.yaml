@@ -54,6 +54,18 @@ solutions:
     the lower bound. Similarly, we recursively perform binary search on the right
     half until we can no longer find target.
   complexity: |
-    | :math:`n` is the length of the input array
-    | Time: :math:`O(\log n)` — repeated binary search
-    | Auxiliary Space: :math:`O(1)` — constant extra space
+    :math:`n` is the length of the input array
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(\log n)`
+         - repeated binary search
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - constant extra space

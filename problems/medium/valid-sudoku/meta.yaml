@@ -73,6 +73,18 @@ solutions:
     Check that each row, column, and 3x3 square contains no duplicates and contains
     the digits 1-9. Return ``False`` if these conditions don't hold.
   complexity: |
-    | :math:`n` is the size of a block (3 for a 9x9 board)
-    | Time: :math:`O(n^4)` — number of rows, columns, and squares to check is :math:`3n^2` and there are :math:`n^2` cells in each row, column, and square
-    | Auxiliary Space: :math:`O(n^2)` — numbers in each row, column, and square are stored in a set for checking duplicates and valid digits
+    :math:`n` is the size of a block (3 for a 9x9 board)
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n^4)`
+         - number of rows, columns, and squares to check is :math:`3n^2` and there are :math:`n^2` cells in each row, column, and square
+       * - Auxiliary Space
+         - :math:`O(n^2)`
+         - numbers in each row, column, and square are stored in a set for checking duplicates and valid digits

@@ -45,6 +45,18 @@ solutions:
     First map each digit to a group of letters. We can generate letter combinations
     by appending each letter in the group to each combination.
   complexity: |
-    | :math:`n` is the length of ``digits``.
-    | Time: :math:`O(4^n)` — at each step, we append 4 letters to each combination
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of ``digits``.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(4^n)`
+         - at each step, we append 4 letters to each combination
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

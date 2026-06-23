@@ -51,7 +51,18 @@ solutions:
     the same time, add their children to the next level. We finish traversing once
     all the chilren are ``None``.
   complexity: |
-    | :math:`n` is the number of nodes in the binary tree
-    | Time: :math:`O(n)` — visit each node once
-    | Auxiliary Space: :math:`O(n)` — `next_level` holds one level of nodes, up to
-    :math:`O(n / 2)` for a full binary tree
+    :math:`n` is the number of nodes in the binary tree
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - visit each node once
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - ``next_level`` holds one level of nodes, up to :math:`O(n / 2)` for a full binary tree

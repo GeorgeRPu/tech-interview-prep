@@ -43,5 +43,16 @@ solutions:
     We can recursively add parenthesis according to these 2 rules until we exhaust
     the limit of left and right parentheses.
   complexity: |
-    | Time: :math:`O(4^n / \sqrt{n})` — Catalan number of combinations
-    | Auxiliary Space: :math:`O(n)` — recursive call stack and string storage
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(4^n / \sqrt{n})`
+         - Catalan number of combinations
+       * - Auxiliary Space
+         - :math:`O(n)`
+         - recursive call stack and string storage

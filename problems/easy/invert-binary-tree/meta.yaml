@@ -55,6 +55,18 @@ solutions:
     2. Invert the left and right subtrees.
     This gives a recursive algorithm to invert a binary tree.
   complexity: |
-    | :math:`n` is the number of nodes in the tree
-    | Time: :math:`O(n)` — visit every node
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the number of nodes in the tree
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n)`
+         - visit every node
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -

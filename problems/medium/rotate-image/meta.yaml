@@ -63,6 +63,18 @@ solutions:
     ``matrix`` is rotated. For each :math:`i = 0, 1, \dots, m - 1`, we only perform
     a rotation for :math:`j = i, 2, \dots, m - i`.
   complexity: |
-    | :math:`n` is the length of the input matrix
-    | Time: :math:`O(n^2)` — visit each element
-    | Auxiliary Space: :math:`O(1)`
+    :math:`n` is the length of the input matrix
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(n^2)`
+         - visit each element
+       * - Auxiliary Space
+         - :math:`O(1)`
+         -
