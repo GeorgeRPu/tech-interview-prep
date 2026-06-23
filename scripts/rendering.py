@@ -24,7 +24,10 @@ DIFFICULTY_EMOJI: dict[str, str] = {
 LIST_URLS: dict[str, str] = {
     "Blind 75": "https://neetcode.io/practice?tab=blind75",
     "Grind 75": "https://www.techinterviewhandbook.org/grind75",
-    "Grind 169": "https://www.techinterviewhandbook.org/grind75?hours=40&grouping=topics",
+    "Grind 169": (
+        "https://www.techinterviewhandbook.org"
+        "/grind75?hours=40&grouping=topics"
+    ),
     "NeetCode 150": "https://neetcode.io/practice?tab=neetcode150",
     "Amazon Top 50": "https://leetcode.com/problem-list/top-amazon-questions/",
     "Google Top 50": "https://leetcode.com/problem-list/top-google-questions/",
@@ -193,7 +196,10 @@ def render_coverage_rst(catalog: list[dict], covered_slugs: set[str]) -> str:
     for key in LIST_DISPLAY_ORDER:
         rows = [r for r in catalog if key in (r.get("lists") or [])]
         total = len(rows)
-        covered = sum(1 for r in rows if not r.get("premium") and r["slug"] in covered_slugs)
+        covered = sum(
+            1 for r in rows
+            if not r.get("premium") and r["slug"] in covered_slugs
+        )
         lines.append(f"   * - {list_link(LIST_DISPLAY[key])}")
         lines.append(f"     - {covered}")
         lines.append(f"     - {total}")
@@ -212,7 +218,8 @@ def render_problem_index_rst(catalog: list[dict], problems: dict[str, Problem]) 
         title,
         "=" * len(title),
         "",
-        "All problems from the Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, and Google Top 50 lists.",
+        "All problems from the Blind 75, Grind 75, Grind 169,"
+        " NeetCode 150, Amazon Top 50, and Google Top 50 lists.",
         "Problems marked 🔒 require a LeetCode Premium subscription.",
         "",
         "Use the dropdowns to filter by difficulty, pattern, list, or status.",

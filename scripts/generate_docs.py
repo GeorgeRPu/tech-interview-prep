@@ -73,7 +73,10 @@ def main() -> int:
     diff_changed = 0
     for label, dirname in DIFFICULTY_DIRS:
         out = ROOT / f"{dirname}_index.rst"
-        if _write_if_changed(out, render_difficulty_rst(label, problems, catalog_by_slug)):
+        content = render_difficulty_rst(
+            label, problems, catalog_by_slug,
+        )
+        if _write_if_changed(out, content):
             diff_changed += 1
 
     print(

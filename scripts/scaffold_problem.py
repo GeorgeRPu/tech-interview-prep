@@ -49,7 +49,7 @@ class TreeNode:
         self.right = right
 
     @classmethod
-    def from_list(cls, vals: List[int | None]) -> TreeNode | None:
+    def from_list(cls, vals: list[int | None]) -> TreeNode | None:
         if not vals:
             return None
         root = TreeNode(vals[0])
@@ -75,7 +75,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-    def to_list(self) -> List[int]:
+    def to_list(self) -> list[int]:
         result = []
         node = self
         while node is not None:
@@ -84,7 +84,7 @@ class ListNode:
         return result
 
     @classmethod
-    def from_list(cls, vals: List[int]) -> ListNode | None:
+    def from_list(cls, vals: list[int]) -> ListNode | None:
         head: ListNode | None = None
         tail: ListNode | None = None
         for v in vals:
@@ -159,10 +159,10 @@ def _parse_commented_class(comment_lines: list[str]) -> str | None:
     return match.group(1).rstrip() if match else None
 
 
-def extract_code(snippet: str) -> tuple[str, str, list[str], set[str]]:
+def extract_code(snippet: str) -> tuple[str, str, list[str]]:
     """Parse LeetCode's Python3 snippet.
 
-    Returns ``(code_body, main_name, helpers, typing_imports)``.
+    Returns ``(code_body, main_name, helpers)``.
     """
     lines = snippet.splitlines()
 
@@ -178,11 +178,15 @@ def extract_code(snippet: str) -> tuple[str, str, list[str], set[str]]:
 
     code_str = "\n".join(lines[code_start:]).strip()
 
-    # Detect typing imports needed
-    typing_imports: set[str] = set()
-    for tok in ("List", "Optional", "Dict", "Tuple", "Set"):
-        if f"{tok}[" in code_str:
-            typing_imports.add(tok)
+    # Replace legacy typing generics with modern builtins
+    for old, new in (
+        ("List[", "list["),
+        ("Dict[", "dict["),
+        ("Tuple[", "tuple["),
+        ("Set[", "set["),
+    ):
+        code_str = code_str.replace(old, new)
+    code_str = re.sub(r"Optional\[([^\]]+)\]", r"\1 | None", code_str)
 
     # Determine which helpers to include
     helpers: list[str] = []
@@ -192,10 +196,8 @@ def extract_code(snippet: str) -> tuple[str, str, list[str], set[str]]:
 
     if needs_tree:
         helpers.append(TREE_NODE)
-        typing_imports.add("List")
     if needs_list:
         helpers.append(LIST_NODE)
-        typing_imports.add("List")
     if needs_node and comment_lines:
         parsed = _parse_commented_class(comment_lines)
         if parsed:
@@ -210,7 +212,7 @@ def extract_code(snippet: str) -> tuple[str, str, list[str], set[str]]:
         body = re.sub(r"\(self\)", "()", body)
         match = re.search(r"def (\w+)\(", body)
         main_name = match.group(1) if match else "solve"
-        return body.strip(), main_name, helpers, typing_imports
+        return body.strip(), main_name, helpers
 
     # Data-structure problem: keep class, strip trailing usage comments
     stripped_lines = code_str.splitlines()
@@ -222,14 +224,15 @@ def extract_code(snippet: str) -> tuple[str, str, list[str], set[str]]:
 
     match = re.search(r"class (\w+)", code_str)
     main_name = match.group(1) if match else "Solution"
-    return code_str, main_name, helpers, typing_imports
+    return code_str, main_name, helpers
 
 
 def _solution_module_name(slug: str, approach: str) -> str:
     prefix = slug.replace("-", "_")
     if prefix and prefix[0].isdigit():
         prefix = "p_" + prefix
-    solution_part = re.sub(r"[^a-z0-9_]", "", approach.lower().replace(" ", "_").replace("-", "_"))
+    normalized = approach.lower().replace(" ", "_").replace("-", "_")
+    solution_part = re.sub(r"[^a-z0-9_]", "", normalized)
     return f"{prefix}__{solution_part}"
 
 
@@ -238,7 +241,6 @@ def build_py_file(
     code_body: str,
     main_name: str,
     helpers: list[str],
-    typing_imports: set[str],
     approach: str = "TODO",
 ) -> str:
     module = _solution_module_name(slug, approach)
@@ -252,10 +254,6 @@ def build_py_file(
     # from __future__ import annotations (needed for forward refs in helpers)
     if helpers:
         parts.append("\nfrom __future__ import annotations")
-
-    # Typing imports
-    if typing_imports:
-        parts.append(f"\nfrom typing import {', '.join(sorted(typing_imports))}")
 
     # Helper classes
     for h in helpers:
@@ -371,7 +369,7 @@ def main():
     desc_rst = html_to_rst(html) if html else "TODO: add problem description"
 
     # Parse code snippet
-    code_body, main_name, helpers, typing_imports = extract_code(py_code)
+    code_body, main_name, helpers = extract_code(py_code)
 
     # Create directory
     problem_dir = ROOT / "problems" / difficulty.lower() / slug
@@ -397,7 +395,7 @@ def main():
     module = _solution_module_name(slug, args.approach)
     py_path = problem_dir / f"{module}.py"
     py_path.write_text(
-        build_py_file(slug, code_body, main_name, helpers, typing_imports, args.approach)
+        build_py_file(slug, code_body, main_name, helpers, args.approach)
     )
     print(f"  Created {py_path.relative_to(ROOT)}")
 
