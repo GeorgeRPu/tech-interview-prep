@@ -1,5 +1,5 @@
 r"""
->>> from valid_parentheses__approach_1 import isValid
+>>> from valid_parentheses__stack import isValid
 >>> isValid('()')
 True
 >>> isValid('()[]{}')
@@ -19,8 +19,10 @@ def isValid(s: str) -> bool:
         if char in '({[':
             stack.append(char)
         else:
+            if len(stack) == 0:
+                return False
             opening = stack.pop()
-            if len(stack) == 0 or not parentheses_match(opening, char):
+            if not parentheses_match(opening, char):
                 return False
 
     return len(stack) == 0
