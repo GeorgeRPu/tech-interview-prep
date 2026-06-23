@@ -60,7 +60,7 @@ description_rst: |
   - ``-1000 <= target <= 1000``
   - The tests are generated such that there is **exactly one solution**.
 solutions:
-- name: Approach 1
+- name: Two Pointers
   explanation: |
     Set two pointers ``i`` and ``j`` to the beginning and end of ``numbers``. If
     ``twosum = numbers[i] + numbers[j]`` is less than ``target``, we can increase
