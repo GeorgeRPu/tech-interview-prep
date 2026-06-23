@@ -29,7 +29,10 @@ DIFFICULTY_DIRS = [("Easy", "easy"), ("Medium", "medium"), ("Hard", "hard")]
 
 UNDERLINE_CHARS = set("-=^~")
 MAX_DESC_LEN = 120
-TRIPLE_QUOTE_RE = re.compile(r'^(?P<indent>\s*)(?P<prefix>[rubfRUBF]*)(?P<quote>"""|\'\'\')')
+TRIPLE_QUOTE_RE = re.compile(
+    r'^(?P<indent>\s*)(?P<prefix>[rubfRUBF]*)'
+    r'(?P<quote>"""|\'\'\')'
+)
 
 
 def _warn(msg: str) -> None:
@@ -129,7 +132,8 @@ def solution_module_name(slug: str, solution_name: str) -> str:
     visually distinct and guarantees uniqueness on ``sys.path`` even when
     multiple problems share a solution name.
     """
-    solution_part = re.sub(r"[^a-z0-9_]", "", solution_name.lower().replace(" ", "_").replace("-", "_"))
+    normalized = solution_name.lower().replace(" ", "_").replace("-", "_")
+    solution_part = re.sub(r"[^a-z0-9_]", "", normalized)
     return f"{slug_to_module_prefix(slug)}__{solution_part}"
 
 
@@ -163,7 +167,17 @@ def truncate_description(description_rst: str, max_len: int = MAX_DESC_LEN) -> s
     desc = " ".join(parts).strip()
     if len(desc) > max_len:
         desc = desc[:max_len].rsplit(" ", 1)[0] + "..."
+    desc = _strip_rst_markup(desc)
     return desc
+
+
+def _strip_rst_markup(text: str) -> str:
+    """Remove residual RST inline markup from a plain-text summary."""
+    text = text.replace("\\", "")
+    text = re.sub(r"\*+", "", text)
+    text = re.sub(r"`+", "", text)
+    text = re.sub(r" {2,}", " ", text)
+    return text.strip(). strip(".")
 
 
 # ---------------------------------------------------------------------------
