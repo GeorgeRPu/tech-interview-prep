@@ -20,7 +20,7 @@ uv sync
 uv run make all
 ```
 
-This runs `clean`, `format`, `lint`, and `html` in sequence. You can also run each step individually:
+This runs `clean`, `format`, `lint`, `doctest`, and `html` in sequence. You can also run each step individually:
 
 ```bash
 uv run make clean
@@ -77,27 +77,27 @@ act push -P ubuntu-latest=catthehacker/ubuntu:act-latest
 
 ```
 tech-interview-prep/
-├── solutions/              # Python solution files
-│   ├── easy/               # Easy difficulty solutions
-│   ├── medium/             # Medium difficulty solutions
-│   └── hard/               # Hard difficulty solutions
-├── generated/              # Auto-generated RST files (from sphinx-apidoc)
+├── problems/               # Structured problem source
+│   ├── catalog.yaml        # Problem titles and ordering
+│   ├── easy/               # Easy difficulty problems
+│   ├── medium/             # Medium difficulty problems
+│   └── hard/               # Hard difficulty problems
+├── generated/              # Auto-generated per-problem RST (from generate_docs.py)
 ├── scripts/                # Build-time utility scripts
-│   ├── fetch_leetcode_description.py
-│   ├── generate_patterns_index.py
-│   ├── update_literalinclude.py
-│   └── prune_module_suffix.py
+│   ├── generate_docs.py    # Entry point: discover problems, render RST
+│   ├── discovery.py        # Scan problems/ into in-memory models
+│   ├── rendering.py        # Turn models into RST pages
+│   └── scaffold_problem.py # Scaffold a new problem directory
 ├── _static/                # Static assets (CSS, JS)
 ├── _templates/             # Sphinx HTML templates
 ├── build/                  # Build output (gitignored)
 ├── conf.py                 # Sphinx configuration
 ├── index.rst               # Documentation homepage
-├── patterns.rst            # Auto-generated technique index
 ├── Makefile                # Build automation
 └── pyproject.toml          # Project metadata and dependencies
 ```
 
-Each solution in `solutions/` is a standalone `.py` file containing the problem description, implementation, and embedded doctests in its docstring. The `generated/` directory is populated automatically during the build by `sphinx-apidoc` and should not be edited by hand.
+Each problem lives under `problems/<difficulty>/<slug>/` with a `meta.yaml` and one `.py` file per approach. Running `make generate` (invoked automatically by `make html` and `make doctest`) scans that source and writes the per-problem pages into `generated/`, plus `coverage.rst`, `problem_index.rst`, and the per-difficulty index pages. None of those generated files should be edited by hand.
 
 ## 🧩 Multiple solutions per problem
 

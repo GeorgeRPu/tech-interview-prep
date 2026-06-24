@@ -39,8 +39,7 @@ jobs:
       - name: Lint
         run: uv run make lint
       - name: Make
-        run: |
-          uv run make clean && uv run make doctest && uv run make html
+        run: uv run make clean doctest html
       - name: Setup Pages
         if: ${{ !env.ACT }}
         uses: actions/configure-pages@v5

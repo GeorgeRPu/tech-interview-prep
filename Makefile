@@ -34,7 +34,7 @@ clean:
 	@echo "[clean] Removing build/ and all generated rst files"
 	@rm -rf "$(BUILDDIR)"
 	@find generated -type f -name '*.rst' -maxdepth 1 -delete 2>/dev/null || true
-	@rm -f patterns.rst pattern_index.rst coverage.rst problem_index.rst \
+	@rm -f coverage.rst problem_index.rst \
 	       easy_index.rst medium_index.rst hard_index.rst
 	@echo "[clean] Done."
 
@@ -49,7 +49,7 @@ format fmt:
 	@$(PYTHON) -m black problems scripts conf.py
 
 .PHONY: all
-all: clean format lint html
+all: clean format lint doctest html
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).

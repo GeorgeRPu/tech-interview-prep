@@ -1,10 +1,6 @@
 [tool.black]
 line-length = 80
 target-version = ["py311", "py312", "py313"]
-include = '\\.(py|pyi)$'
-exclude = '''
-/(\n  build\n  | \\.git\n  | \\.venv\n  | _static\n  | _templates\n  | generated\n  | build/html/.venv\n)/
-'''
 
 [project]
 name = "tech-interview-prep"
@@ -28,9 +24,4 @@ dependencies = [
     "sphinxcontrib-jquery>=4.1",
     "sphinx-datatables>=1.0.0",
     "pyyaml>=6.0",
-]
-
-[project.optional-dependencies]
-dev = [
-  "black>=24.0.0",
 ]
