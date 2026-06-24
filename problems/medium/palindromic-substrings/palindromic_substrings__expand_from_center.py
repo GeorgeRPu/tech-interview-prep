@@ -15,7 +15,10 @@ def countSubstrings(s: str) -> int:
             left = i
             right = i + j
 
-            while 0 <= left < right <= len(s) and s[left:right] == s[left:right][::-1]:
+            while (
+                0 <= left < right <= len(s)
+                and s[left:right] == s[left:right][::-1]
+            ):
                 substrs += 1
                 left -= 1
                 right += 1

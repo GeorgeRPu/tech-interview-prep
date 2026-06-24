@@ -16,8 +16,7 @@ False
 
 
 class TreeNode:
-    """Node in a binary tree.
-    """
+    """Node in a binary tree."""
 
     def __init__(self, val, left=None, right=None):
         self.val = val
@@ -26,8 +25,7 @@ class TreeNode:
 
 
 def isSameTree(p: TreeNode | None, q: TreeNode | None) -> bool:
-    """Checks if two binary trees with roots ``p`` and ``q`` are equal.
-    """
+    """Checks if two binary trees with roots ``p`` and ``q`` are equal."""
     if p is None and q is None:
         return True
     elif p is None or q is None:

@@ -10,8 +10,7 @@ False
 
 
 def isPowerOfThree(n: int) -> bool:
-    """Check if ``n`` is a power of 3.
-    """
+    """Check if ``n`` is a power of 3."""
     if n <= 0:
         return False
     elif n == 1:

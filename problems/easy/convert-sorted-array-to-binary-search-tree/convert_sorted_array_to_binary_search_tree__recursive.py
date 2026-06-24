@@ -10,8 +10,7 @@ r"""
 
 
 class TreeNode:
-    """Node in a binary tree.
-    """
+    """Node in a binary tree."""
 
     def __init__(self, val, left=None, right=None):
         self.val = val
@@ -20,20 +19,18 @@ class TreeNode:
 
 
 def sortedArrayToBST(nums: list[int]) -> TreeNode | None:
-    """Convert the sorted array ``nums`` to a balanced binary search tree.
-    """
+    """Convert the sorted array ``nums`` to a balanced binary search tree."""
     if len(nums) == 0:
         return None
     mid = len(nums) // 2
     root = TreeNode(nums[mid])
     root.left = sortedArrayToBST(nums[:mid])
-    root.right = sortedArrayToBST(nums[mid + 1:])
+    root.right = sortedArrayToBST(nums[mid + 1 :])
     return root
 
 
 def tree2list(root: TreeNode | None) -> list[int]:
-    """Convert a binary tree preorder to a list.
-    """
+    """Convert a binary tree preorder to a list."""
     if root is None:
         return []
     else:

@@ -12,10 +12,9 @@ False
 
 
 def isPalindrome(s: str) -> bool:
-    """Check if ``s`` is a palindrome, ignoring non-alphanumeric characters.
-    """
+    """Check if ``s`` is a palindrome, ignoring non-alphanumeric characters."""
     s = s.lower()
-    s = ''.join(filter(str.isalnum, s))
+    s = "".join(filter(str.isalnum, s))
 
     left = 0
     right = len(s) - 1

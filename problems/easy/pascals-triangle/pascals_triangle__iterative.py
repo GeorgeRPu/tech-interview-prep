@@ -8,8 +8,7 @@ r"""
 
 
 def generate(n_rows: int) -> list[list[int]]:
-    """Generate Pascal's Triangle with ``n_rows``.
-    """
+    """Generate Pascal's Triangle with ``n_rows``."""
     rows = [[1]]
     for i in range(1, n_rows):
         row = []

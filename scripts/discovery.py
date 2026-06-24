@@ -30,8 +30,7 @@ DIFFICULTY_DIRS = [("Easy", "easy"), ("Medium", "medium"), ("Hard", "hard")]
 UNDERLINE_CHARS = set("-=^~")
 MAX_DESC_LEN = 120
 TRIPLE_QUOTE_RE = re.compile(
-    r'^(?P<indent>\s*)(?P<prefix>[rubfRUBF]*)'
-    r'(?P<quote>"""|\'\'\')'
+    r"^(?P<indent>\s*)(?P<prefix>[rubfRUBF]*)" r'(?P<quote>"""|\'\'\')'
 )
 
 
@@ -71,7 +70,9 @@ def find_module_docstring_bounds(text: str) -> tuple[int, int] | None:
     return None
 
 
-def first_nonblank_noncomment_after(lines: list[str], end_idx: int) -> int | None:
+def first_nonblank_noncomment_after(
+    lines: list[str], end_idx: int
+) -> int | None:
     """1-based line number of first executable line after the docstring."""
     j = end_idx + 1
     while j < len(lines):
@@ -142,7 +143,9 @@ def solution_module_name(slug: str, solution_name: str) -> str:
 # ---------------------------------------------------------------------------
 
 
-def truncate_description(description_rst: str, max_len: int = MAX_DESC_LEN) -> str:
+def truncate_description(
+    description_rst: str, max_len: int = MAX_DESC_LEN
+) -> str:
     """Plain-text truncation for the difficulty bullet lists."""
     parts: list[str] = []
     for raw in description_rst.splitlines():
@@ -177,7 +180,7 @@ def _strip_rst_markup(text: str) -> str:
     text = re.sub(r"\*+", "", text)
     text = re.sub(r"`+", "", text)
     text = re.sub(r" {2,}", " ", text)
-    return text.strip(). strip(".")
+    return text.strip().strip(".")
 
 
 # ---------------------------------------------------------------------------
@@ -239,7 +242,9 @@ def _build_variant(slug: str, slug_dir: Path, entry: dict) -> Variant | None:
         _warn(f"no docstring in {py_path}")
         return None
     _start, end = bounds
-    first_code_line = first_nonblank_noncomment_after(source.splitlines(), end) or 1
+    first_code_line = (
+        first_nonblank_noncomment_after(source.splitlines(), end) or 1
+    )
     test_block = (read_module_docstring(py_path) or "").strip("\n")
     return Variant(
         name=name,

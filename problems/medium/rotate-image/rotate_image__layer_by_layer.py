@@ -12,8 +12,7 @@ r"""
 
 
 def rotate(matrix: list[list[int]]) -> None:
-    """Do not return anything, modify matrix in-place instead.
-    """
+    """Do not return anything, modify matrix in-place instead."""
     n = len(matrix)
     m = n - 1
 

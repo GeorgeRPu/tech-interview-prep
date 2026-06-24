@@ -10,8 +10,7 @@ r"""
 
 
 def myAtoi(s: str) -> int:
-    """Convert string to integer.
-    """
+    """Convert string to integer."""
     sign = 1
     value = 0
 
@@ -22,12 +21,12 @@ def myAtoi(s: str) -> int:
 
     sign_char = s[0]
     num_start = 0
-    if sign_char in {'-', '+'}:
+    if sign_char in {"-", "+"}:
         num_start = 1
-    if sign_char == '-':
+    if sign_char == "-":
         sign = -1
 
-    num_string = ''
+    num_string = ""
     for char in s[num_start:]:
         if not char.isnumeric():
             break
@@ -39,6 +38,6 @@ def myAtoi(s: str) -> int:
         if sign == 1 and value >= 2**31 - 1:
             return 2**31 - 1
         elif sign == -1 and value >= 2**31:
-            return -2**31
+            return -(2**31)
 
     return sign * value

@@ -21,8 +21,7 @@ from __future__ import annotations
 
 
 class LRUCache:
-    """Implemented using a hashmap and a linked list.
-    """
+    """Implemented using a hashmap and a linked list."""
 
     def __init__(self, capacity: int):
         self.capacity: int = capacity
@@ -62,12 +61,11 @@ class LRUCache:
         while node is not None:
             strings.append(str(node))
             node = node.next
-        return '{' + ', '.join(strings) + '}'
+        return "{" + ", ".join(strings) + "}"
 
 
 class Node:
-    """Entry in the LRU cache.
-    """
+    """Entry in the LRU cache."""
 
     def __init__(self, key: int, value: int):
         self.key: int = key
@@ -76,10 +74,10 @@ class Node:
         self.prev: Node | None = None
 
     def __str__(self) -> str:
-        return f'{self.key}: {self.value}'
+        return f"{self.key}: {self.value}"
 
     def __repr__(self) -> str:
-        return f'Node({self.key}, {self.value})'
+        return f"Node({self.key}, {self.value})"
 
     def none_ref(self):
         self.next = None
@@ -87,8 +85,7 @@ class Node:
 
 
 class LinkedList:
-    """Linked list of entries in the LRU cache.
-    """
+    """Linked list of entries in the LRU cache."""
 
     def __init__(self):
         self.head = Node(-1, -1)
@@ -113,4 +110,4 @@ class LinkedList:
         while node is not None:
             strings.append(str(node))
             node = node.next
-        return '[' + ', '.join(strings[1:-1]) + ']'
+        return "[" + ", ".join(strings[1:-1]) + "]"

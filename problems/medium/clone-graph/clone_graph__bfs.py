@@ -16,8 +16,7 @@ from collections import defaultdict, deque
 
 
 class Node:
-    """Node in a graph with adjacency list.
-    """
+    """Node in a graph with adjacency list."""
 
     def __init__(self, val: int = 0, neighbors: list | None = None):
         self.val = val
@@ -32,7 +31,7 @@ class Node:
 """
 
 
-def cloneGraph(node: 'Node' | None) -> 'Node' | None:
+def cloneGraph(node: "Node" | None) -> "Node" | None:
     if node is None:
         return None
 
@@ -51,7 +50,9 @@ def cloneGraph(node: 'Node' | None) -> 'Node' | None:
 
         new_node = old2new[old_node]
         new_node.val = old_node.val
-        new_node.neighbors = [old2new[neighbor] for neighbor in old_node.neighbors]
+        new_node.neighbors = [
+            old2new[neighbor] for neighbor in old_node.neighbors
+        ]
 
         stack.extend(old_node.neighbors)
 

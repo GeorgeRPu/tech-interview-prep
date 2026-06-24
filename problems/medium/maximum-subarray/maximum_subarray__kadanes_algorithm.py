@@ -8,10 +8,9 @@ r"""
 
 
 def maxSubArray(nums: list[int]) -> int:
-    """Returns the maximum sum of a contiguous subarray of ``nums``.
-    """
+    """Returns the maximum sum of a contiguous subarray of ``nums``."""
     s = 0
-    max_sum = float('-inf')
+    max_sum = float("-inf")
     for num in nums:
         s += num
         if s > max_sum:

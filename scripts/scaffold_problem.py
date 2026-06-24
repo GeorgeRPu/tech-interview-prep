@@ -101,6 +101,7 @@ class ListNode:
 # YAML helpers — force literal-block style for multiline strings
 # ---------------------------------------------------------------------------
 
+
 class _Literal(str):
     pass
 
@@ -115,6 +116,7 @@ yaml.add_representer(_Literal, _literal_representer)
 # ---------------------------------------------------------------------------
 # LeetCode API
 # ---------------------------------------------------------------------------
+
 
 def fetch_problem(slug: str) -> dict:
     resp = requests.post(
@@ -133,6 +135,7 @@ def fetch_problem(slug: str) -> dict:
 # ---------------------------------------------------------------------------
 # Converters
 # ---------------------------------------------------------------------------
+
 
 def html_to_rst(html: str) -> str:
     rst = pypandoc.convert_text(html, "rst", format="html")
@@ -266,7 +269,10 @@ def build_py_file(
 
 
 def build_meta(
-    slug: str, patterns: list[str], description_rst: str, approach: str,
+    slug: str,
+    patterns: list[str],
+    description_rst: str,
+    approach: str,
 ) -> dict:
     return {
         "slug": slug,
@@ -286,6 +292,7 @@ def build_meta(
 # Catalog
 # ---------------------------------------------------------------------------
 
+
 def update_catalog(slug: str, title: str, difficulty: str) -> bool:
     """Add to catalog.yaml if absent. Returns True when a new entry is added."""
     with open(CATALOG) as f:
@@ -297,7 +304,8 @@ def update_catalog(slug: str, title: str, difficulty: str) -> bool:
                 entry["difficulty"] = difficulty
                 with open(CATALOG, "w") as f:
                     yaml.dump(
-                        catalog, f,
+                        catalog,
+                        f,
                         default_flow_style=False,
                         sort_keys=False,
                         allow_unicode=True,
@@ -315,7 +323,8 @@ def update_catalog(slug: str, title: str, difficulty: str) -> bool:
     )
     with open(CATALOG, "w") as f:
         yaml.dump(
-            catalog, f,
+            catalog,
+            f,
             default_flow_style=False,
             sort_keys=False,
             allow_unicode=True,
@@ -326,6 +335,7 @@ def update_catalog(slug: str, title: str, difficulty: str) -> bool:
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
+
 
 def main():
     parser = argparse.ArgumentParser(

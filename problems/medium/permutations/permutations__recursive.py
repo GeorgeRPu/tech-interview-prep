@@ -10,11 +10,12 @@ r"""
 
 
 def permutations(nums: list[int]) -> list[list[int]]:
-    """Generate all permutations of ``nums``.
-    """
+    """Generate all permutations of ``nums``."""
     if len(nums) > 0:
-        return [[n] + p
-                for i, n in enumerate(nums)
-                for p in permutations(nums[:i] + nums[i + 1:])]
+        return [
+            [n] + p
+            for i, n in enumerate(nums)
+            for p in permutations(nums[:i] + nums[i + 1 :])
+        ]
     else:
         return [[]]

@@ -8,8 +8,7 @@ False
 
 
 def isAnagram(s: str, t: str) -> bool:
-    """Checks if ``s`` and ``t`` are anagrams of each other.
-    """
+    """Checks if ``s`` and ``t`` are anagrams of each other."""
     d = {}
     for char in s:
         if char in d:

@@ -8,8 +8,7 @@ r"""
 
 
 def mySqrt(x: int) -> int:
-    """Finds the largest integer :math:`y` such that :math:`y^2 \\leq x`.
-    """
+    """Finds the largest integer :math:`y` such that :math:`y^2 \\leq x`."""
     start = 0
     end = 65536
     while start + 1 < end:

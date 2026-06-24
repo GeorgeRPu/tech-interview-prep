@@ -16,8 +16,7 @@ from collections import defaultdict
 
 
 class Node:
-    """Node in a linked list with a random pointer.
-    """
+    """Node in a linked list with a random pointer."""
 
     def __init__(
         self,

@@ -10,8 +10,7 @@ r"""
 
 
 class TreeNode:
-    """Node in a binary tree.
-    """
+    """Node in a binary tree."""
 
     def __init__(self, val, left=None, right=None):
         self.val = val
@@ -20,8 +19,7 @@ class TreeNode:
 
 
 def maxDepth(root: TreeNode | None) -> int:
-    """Find the maximum depth or total height of a binary tree.
-    """
+    """Find the maximum depth or total height of a binary tree."""
     if root is None:
         return 0
     return 1 + max(maxDepth(root.left), maxDepth(root.right))

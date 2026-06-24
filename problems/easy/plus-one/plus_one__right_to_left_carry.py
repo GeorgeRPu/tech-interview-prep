@@ -8,8 +8,7 @@ r"""
 
 
 def plusOne(digits: list[int]) -> list[int]:
-    """Add 1 to the integer, represented in base 10, ``digits``.
-    """
+    """Add 1 to the integer, represented in base 10, ``digits``."""
     n = len(digits)
     digits[-1] += 1
     for i in range(n - 1, -1, -1):

@@ -8,8 +8,7 @@ False
 
 
 def isSubsequence(s: str, t: str) -> bool:
-    """Returns whether ``s`` is a subsequence of ``t``.
-    """
+    """Returns whether ``s`` is a subsequence of ``t``."""
     i = 0
     j = 0
     while i < len(s) and j < len(t):

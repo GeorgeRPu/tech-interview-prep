@@ -13,8 +13,7 @@ r"""
 
 
 class TreeNode:
-    """Node in a binary tree.
-    """
+    """Node in a binary tree."""
 
     def __init__(self, val, left=None, right=None) -> None:
         self.val = val
@@ -23,9 +22,12 @@ class TreeNode:
 
 
 def inorderTraversal(root: TreeNode | None) -> list[int]:
-    """Traverse a binary tree in order from left to right.
-    """
+    """Traverse a binary tree in order from left to right."""
     if root is None:
         return []
     else:
-        return inorderTraversal(root.left) + [root.val] + inorderTraversal(root.right)
+        return (
+            inorderTraversal(root.left)
+            + [root.val]
+            + inorderTraversal(root.right)
+        )

@@ -10,8 +10,7 @@ from __future__ import annotations
 
 
 class TreeNode:
-    """Node in a binary tree.
-    """
+    """Node in a binary tree."""
 
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -60,11 +59,10 @@ def is_valid_bst(node, left, right):
     if not (left < node.val < right):
         return False
 
-    return (
-        is_valid_bst(node.left, left, node.val)
-        and is_valid_bst(node.right, node.val, right)
+    return is_valid_bst(node.left, left, node.val) and is_valid_bst(
+        node.right, node.val, right
     )
 
 
 def isValidBST(root: TreeNode | None) -> bool:
-    return is_valid_bst(root, float('-inf'), float('inf'))
+    return is_valid_bst(root, float("-inf"), float("inf"))

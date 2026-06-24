@@ -10,8 +10,7 @@ r"""
 
 
 def lengthOfLongestSubstring(s: str) -> int:
-    """Finds the length of the longest substring without repeating characters.
-    """
+    """Finds the length of the longest substring without repeating characters."""
     longest_len = 0
     for i in range(len(s)):
         j = i

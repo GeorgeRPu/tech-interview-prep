@@ -10,8 +10,7 @@ r"""
 
 
 def rangeBitwiseAnd(left: int, right: int) -> int:
-    """Bitwise AND all numbers from ``left`` to ``right``, inclusive.
-    """
+    """Bitwise AND all numbers from ``left`` to ``right``, inclusive."""
     bit_and = 0
     for i in range(32, -1, -1):
         leftBit = getBit(left, i)
@@ -24,6 +23,5 @@ def rangeBitwiseAnd(left: int, right: int) -> int:
 
 
 def getBit(num, i):
-    """Gets the ``i``-th bit of ``num``.
-    """
+    """Gets the ``i``-th bit of ``num``."""
     return (num >> i) & 1

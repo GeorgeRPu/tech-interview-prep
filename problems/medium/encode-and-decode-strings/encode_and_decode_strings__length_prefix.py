@@ -33,7 +33,7 @@ class Codec:
                 j += 1
             length = int(s[i:j])
             i = j + 1
-            strs.append(s[i:i + length])
+            strs.append(s[i : i + length])
             i = i + length
 
         return strs

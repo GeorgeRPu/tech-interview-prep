@@ -12,11 +12,10 @@ from collections import deque
 
 
 def isValid(s: str) -> bool:
-    """Checks if a string of parentheses is valid.
-    """
+    """Checks if a string of parentheses is valid."""
     stack = deque()
     for char in s:
-        if char in '({[':
+        if char in "({[":
             stack.append(char)
         else:
             if len(stack) == 0:
@@ -29,8 +28,9 @@ def isValid(s: str) -> bool:
 
 
 def parentheses_match(opening, closing):
-    """Checks if a pair of opening and closing parentheses match.
-    """
-    return (opening == '(' and closing == ')') or \
-        (opening == '{' and closing == '}') or \
-        (opening == '[' and closing == ']')
+    """Checks if a pair of opening and closing parentheses match."""
+    return (
+        (opening == "(" and closing == ")")
+        or (opening == "{" and closing == "}")
+        or (opening == "[" and closing == "]")
+    )

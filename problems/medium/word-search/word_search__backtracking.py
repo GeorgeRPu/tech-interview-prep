@@ -26,12 +26,14 @@ def exist(board: list[list[str]], word: str) -> bool:
         if w == len(word):
             return True
 
-        return any([
-            backtrack(w + 1, path.copy(), i - 1, j),
-            backtrack(w + 1, path.copy(), i + 1, j),
-            backtrack(w + 1, path.copy(), i, j - 1),
-            backtrack(w + 1, path.copy(), i, j + 1)
-        ])
+        return any(
+            [
+                backtrack(w + 1, path.copy(), i - 1, j),
+                backtrack(w + 1, path.copy(), i + 1, j),
+                backtrack(w + 1, path.copy(), i, j - 1),
+                backtrack(w + 1, path.copy(), i, j + 1),
+            ]
+        )
 
     for i in range(M):
         for j in range(N):

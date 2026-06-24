@@ -26,6 +26,5 @@ def singleNumber(nums: list[int]) -> int:
 
 
 def getBit(num, i):
-    """Gets the ``i``-th bit of ``num``.
-    """
+    """Gets the ``i``-th bit of ``num``."""
     return (num >> i) & 1

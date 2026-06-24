@@ -24,7 +24,7 @@ class TrieNode:
 class WordDictionary:
 
     def __init__(self):
-        self.root = TrieNode('<SOW>')
+        self.root = TrieNode("<SOW>")
 
     def addWord(self, word: str) -> None:
         node = self.root
@@ -42,7 +42,7 @@ class WordDictionary:
             return node.end_of_word
 
         char = word[0]
-        if char == '.':
+        if char == ".":
             return any(
                 self._search(child, word[1:])
                 for child in node.children.values()

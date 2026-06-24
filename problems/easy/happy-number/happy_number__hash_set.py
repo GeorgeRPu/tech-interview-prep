@@ -8,8 +8,7 @@ False
 
 
 def isHappy(n: int) -> bool:
-    """Checks if a number is happy.
-    """
+    """Checks if a number is happy."""
     old_n = set()
     for i in range(1000):
         if n == 1:

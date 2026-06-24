@@ -43,7 +43,14 @@ LIST_DISPLAY = {
 }
 
 # Display order for the "Lists" column in problem_index.rst.
-LIST_DISPLAY_ORDER = ("blind75", "grind75", "grind169", "nc150", "amazon50", "google50")
+LIST_DISPLAY_ORDER = (
+    "blind75",
+    "grind75",
+    "grind169",
+    "nc150",
+    "amazon50",
+    "google50",
+)
 
 
 # ---------------------------------------------------------------------------
@@ -79,7 +86,9 @@ def _section(header: str, body: str) -> str:
 
 def _indent(text: str, prefix: str) -> str:
     """Indent every non-empty line of ``text`` by ``prefix``."""
-    return "\n".join(prefix + line if line else line for line in text.splitlines())
+    return "\n".join(
+        prefix + line if line else line for line in text.splitlines()
+    )
 
 
 def _autodoc_lines(v: Variant) -> list[str]:
@@ -161,7 +170,9 @@ def render_problem_rst(p: Problem) -> str:
         ".. highlight:: none",
         "",
     ]
-    chunks.append(_section("Problem", f"{p.problem_url}\n\n{p.description_rst}"))
+    chunks.append(
+        _section("Problem", f"{p.problem_url}\n\n{p.description_rst}")
+    )
     chunks.append("")
     chunks.append(".. highlight:: python")
     chunks.append("")
@@ -197,7 +208,8 @@ def render_coverage_rst(catalog: list[dict], covered_slugs: set[str]) -> str:
         rows = [r for r in catalog if key in (r.get("lists") or [])]
         total = len(rows)
         covered = sum(
-            1 for r in rows
+            1
+            for r in rows
             if not r.get("premium") and r["slug"] in covered_slugs
         )
         lines.append(f"   * - {list_link(LIST_DISPLAY[key])}")
@@ -212,7 +224,9 @@ def render_coverage_rst(catalog: list[dict], covered_slugs: set[str]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def render_problem_index_rst(catalog: list[dict], problems: dict[str, Problem]) -> str:
+def render_problem_index_rst(
+    catalog: list[dict], problems: dict[str, Problem]
+) -> str:
     title = "Problem Index"
     lines: list[str] = [
         title,

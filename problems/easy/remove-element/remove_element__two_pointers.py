@@ -12,8 +12,7 @@ r"""
 
 
 def removeElement(nums: list[int], val: int) -> int:
-    """Removes all instances of ``val`` from the array ``nums`` in-place.
-    """
+    """Removes all instances of ``val`` from the array ``nums`` in-place."""
     i = 0
     offset = 0
     while i + offset < len(nums):

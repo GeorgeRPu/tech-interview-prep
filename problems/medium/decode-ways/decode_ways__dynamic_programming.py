@@ -20,11 +20,11 @@ def numDecodings(s: str) -> int:
             num_ways[i] = 1 if s[i] in CODES else 0
         elif i == 1:
             one_digit = num_ways[i - 1] if s[i] in CODES else 0
-            two_digit = 1 if s[i - 1:i + 1] in CODES else 0
+            two_digit = 1 if s[i - 1 : i + 1] in CODES else 0
             num_ways[i] = one_digit + two_digit
         else:
             one_digit = num_ways[i - 1] if s[i] in CODES else 0
-            two_digit = num_ways[i - 2] if s[i - 1:i + 1] in CODES else 0
+            two_digit = num_ways[i - 2] if s[i - 1 : i + 1] in CODES else 0
             num_ways[i] = one_digit + two_digit
 
     return num_ways[-1]

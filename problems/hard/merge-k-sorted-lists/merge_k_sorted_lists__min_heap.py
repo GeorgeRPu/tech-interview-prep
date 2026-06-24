@@ -14,8 +14,7 @@ import heapq
 
 
 class ListNode:
-    """Node in a linked list.
-    """
+    """Node in a linked list."""
 
     def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
@@ -28,7 +27,7 @@ class ListNode:
         return self.val == node.val
 
     def __str__(self) -> str:
-        suffix = ' -> ' + str(self.next) if self.next else ''
+        suffix = " -> " + str(self.next) if self.next else ""
         return str(self.val) + suffix
 
     @classmethod
@@ -47,9 +46,10 @@ class ListNode:
 
 
 def merge_k_lists(heads: list[ListNode | None]) -> ListNode | None:
-    """Merge k sorted linked lists.
-    """
-    not_none_heads: list[ListNode] = [head for head in heads if head is not None]
+    """Merge k sorted linked lists."""
+    not_none_heads: list[ListNode] = [
+        head for head in heads if head is not None
+    ]
     heapq.heapify(not_none_heads)
     new_head: ListNode | None = None
     prev_node: ListNode | None = None

@@ -8,21 +8,25 @@ r"""
 
 
 def longestPalindrome(s: str) -> str:
-    """Return the longest palindromic substring of ``s``.
-    """
-    longest_substr = ''
+    """Return the longest palindromic substring of ``s``."""
+    longest_substr = ""
     for center, char in enumerate(s):
         longest_substr = longestPalindromeAtCenter(
-            s, center, longest_substr=longest_substr,
+            s,
+            center,
+            longest_substr=longest_substr,
         )
         longest_substr = longestPalindromeAtCenter(
-            s, center, offset=1, longest_substr=longest_substr,
+            s,
+            center,
+            offset=1,
+            longest_substr=longest_substr,
         )
 
     return longest_substr
 
 
-def longestPalindromeAtCenter(s, center, offset=0, longest_substr=''):
+def longestPalindromeAtCenter(s, center, offset=0, longest_substr=""):
     """Return the longest palindromic substring of ``s`` centered at
     ``center``.
     """
@@ -33,7 +37,7 @@ def longestPalindromeAtCenter(s, center, offset=0, longest_substr=''):
         if s[start] != s[end - 1]:
             break
         elif 2 * i + offset > len(longest_substr):
-            longest_substr = s[start:center + i + offset]
+            longest_substr = s[start : center + i + offset]
 
         i += 1
         start, end = getSubstringBounds(center, i, offset)

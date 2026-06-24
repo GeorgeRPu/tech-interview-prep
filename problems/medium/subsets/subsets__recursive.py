@@ -12,15 +12,15 @@ True
 
 
 def subsets(nums: list[int]) -> list[list[int]]:
-    """Return the power set of ``nums``.
-    """
+    """Return the power set of ``nums``."""
     if len(nums) == 0:
         return [[]]
     else:
         element = nums[0]
         new_nums = nums[1:]
-        return [subset for subset in subsets(new_nums)] \
-            + [[element] + subset for subset in subsets(new_nums)]
+        return [subset for subset in subsets(new_nums)] + [
+            [element] + subset for subset in subsets(new_nums)
+        ]
 
 
 def compare_collections(

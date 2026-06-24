@@ -10,8 +10,7 @@ False
 
 
 def isPalindrome(x: int) -> bool:
-    """Check if a number is a palindrome.
-    """
+    """Check if a number is a palindrome."""
     if x < 0:
         return False
 

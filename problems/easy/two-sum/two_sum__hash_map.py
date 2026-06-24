@@ -10,8 +10,7 @@ r"""
 
 
 def twoSum(nums: list[int], target: int) -> list[int]:
-    """Find two numbers in ``nums`` that add up to ``target``.
-    """
+    """Find two numbers in ``nums`` that add up to ``target``."""
     seen: dict[int, int] = {}
     for i, value in enumerate(nums):
         complement = target - value

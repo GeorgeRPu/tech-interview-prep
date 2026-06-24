@@ -32,7 +32,7 @@ def gameOfLife(board: list[list[int]]) -> None:
                 (i, j + 1),
                 (i + 1, j - 1),
                 (i + 1, j),
-                (i + 1, j + 1)
+                (i + 1, j + 1),
             ]
             neighbors = [
                 board[i_][j_]

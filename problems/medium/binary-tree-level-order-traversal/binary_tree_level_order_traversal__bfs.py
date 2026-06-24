@@ -13,8 +13,7 @@ r"""
 
 
 class TreeNode:
-    """Node in a binary tree.
-    """
+    """Node in a binary tree."""
 
     def __init__(self, val, left=None, right=None):
         self.val = val
@@ -23,8 +22,7 @@ class TreeNode:
 
 
 def levelOrder(root: TreeNode | None) -> list[list[int]]:
-    """Return the level order traversal of a binary tree.
-    """
+    """Return the level order traversal of a binary tree."""
     traversal = []
     level = [root] if root is not None else []
     while len(level) > 0:

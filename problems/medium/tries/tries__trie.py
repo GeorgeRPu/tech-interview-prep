@@ -13,13 +13,12 @@ r"""
 
 from __future__ import annotations
 
-SOS_char = '<'
-EOS_char = '>'
+SOS_char = "<"
+EOS_char = ">"
 
 
 class TrieNode:
-    """Node in the trie.
-    """
+    """Node in the trie."""
 
     def __init__(self, char: str):
         self.char: str = char
@@ -45,8 +44,7 @@ class TrieNode:
 
 
 class Trie:
-    """Implemented as a n-ary tree of nodes.
-    """
+    """Implemented as a n-ary tree of nodes."""
 
     def __init__(self):
         self.root = TrieNode(SOS_char)

@@ -11,11 +11,11 @@ def fizzBuzz(n: int) -> list[str]:
     """
     strings = []
     for i in range(1, n + 1):
-        string = ''
+        string = ""
         if i % 3 == 0:
-            string += 'Fizz'
+            string += "Fizz"
         if i % 5 == 0:
-            string += 'Buzz'
+            string += "Buzz"
         if len(string) == 0:
             string += str(i)
         strings.append(string)

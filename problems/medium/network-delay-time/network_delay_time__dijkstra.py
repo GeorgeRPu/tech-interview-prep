@@ -17,7 +17,7 @@ def networkDelayTime(times: list[list[int]], n: int, k: int) -> int:
     for [u, v, time] in times:
         graph[u].append((v, time))
 
-    dist = {u: float('inf') for u in range(1, n + 1)}
+    dist = {u: float("inf") for u in range(1, n + 1)}
     dist[k] = 0
 
     heap = [(0, k)]
@@ -32,4 +32,4 @@ def networkDelayTime(times: list[list[int]], n: int, k: int) -> int:
                 heapq.heappush(heap, (next_time, neighbor))
 
     result = max(dist.values())
-    return result if result < float('inf') else -1
+    return result if result < float("inf") else -1

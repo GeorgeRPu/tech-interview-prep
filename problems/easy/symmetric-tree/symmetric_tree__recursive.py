@@ -10,8 +10,7 @@ False
 
 
 class TreeNode:
-    """Node in a binary tree.
-    """
+    """Node in a binary tree."""
 
     def __init__(self, val, left=None, right=None):
         self.val = val
@@ -20,8 +19,7 @@ class TreeNode:
 
 
 def isSymmetric(root: TreeNode | None) -> bool:
-    """Returns whether a binary tree is symmetric.
-    """
+    """Returns whether a binary tree is symmetric."""
     if root is None:
         return True
     else:
@@ -41,7 +39,6 @@ def check_subtrees(left: TreeNode | None, right: TreeNode | None) -> bool:
     elif left.val != right.val:
         return False
     else:
-        return (
-            check_subtrees(left.left, right.right)
-            and check_subtrees(left.right, right.left)
+        return check_subtrees(left.left, right.right) and check_subtrees(
+            left.right, right.left
         )

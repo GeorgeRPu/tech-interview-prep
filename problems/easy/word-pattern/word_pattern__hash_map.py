@@ -10,8 +10,7 @@ False
 
 
 def wordPattern(pattern: str, s: str) -> bool:
-    """Given a pattern and a string ``s``, finds if ``s`` follows the same pattern.
-    """
+    """Given a pattern and a string ``s``, finds if ``s`` follows the same pattern."""
     words = s.split()
 
     if len(pattern) != len(words):

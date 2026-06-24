@@ -10,9 +10,8 @@ r"""
 
 
 def convert(s: str, numRows: int) -> str:
-    """Convert a string ``s`` to a zigzag pattern with ``numRows`` rows.
-    """
-    rows = [len(s) * [''] for i in range(numRows)]
+    """Convert a string ``s`` to a zigzag pattern with ``numRows`` rows."""
+    rows = [len(s) * [""] for i in range(numRows)]
     i = 0
     j = 0
 
@@ -32,5 +31,5 @@ def convert(s: str, numRows: int) -> str:
 
         i %= numRows
 
-    joined_rows = [''.join(row) for row in rows]
-    return ''.join(joined_rows)
+    joined_rows = ["".join(row) for row in rows]
+    return "".join(joined_rows)

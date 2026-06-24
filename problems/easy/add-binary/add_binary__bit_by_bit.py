@@ -8,17 +8,16 @@ r"""
 
 
 def addBinary(a: str, b: str) -> str:
-    """Add two binary numbers ``a`` and ``b``.
-    """
-    s = ''
+    """Add two binary numbers ``a`` and ``b``."""
+    s = ""
     carry = 0
 
     a = a[::-1]
     b = b[::-1]
     if len(a) < len(b):
-        a += '0' * (len(b) - len(a))
+        a += "0" * (len(b) - len(a))
     else:
-        b += '0' * (len(a) - len(b))
+        b += "0" * (len(a) - len(b))
 
     for i in range(len(a)):
         a_bit = int(a[i])
@@ -28,4 +27,4 @@ def addBinary(a: str, b: str) -> str:
         carry = raw_sum // 2
         s = str(next_bit) + s
 
-    return s if carry == 0 else '1' + s
+    return s if carry == 0 else "1" + s

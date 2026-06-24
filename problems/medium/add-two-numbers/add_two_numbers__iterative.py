@@ -18,8 +18,7 @@ from __future__ import annotations
 
 
 class ListNode:
-    """Node in a linked list.
-    """
+    """Node in a linked list."""
 
     def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
@@ -46,8 +45,7 @@ class ListNode:
 
 
 def addTwoNumbers(l1: ListNode | None, l2: ListNode | None):
-    """Add two numbers whose digits are stored in little endian linked lists.
-    """
+    """Add two numbers whose digits are stored in little endian linked lists."""
     head = None
 
     carry = 0

@@ -10,8 +10,7 @@ r"""
 
 
 def search(nums: list[int], target: int) -> int:
-    """Searches for ``target`` in sorted array ``nums`` rotated by a pivot.
-    """
+    """Searches for ``target`` in sorted array ``nums`` rotated by a pivot."""
     left = 0
     right = len(nums) - 1
     while left <= right:

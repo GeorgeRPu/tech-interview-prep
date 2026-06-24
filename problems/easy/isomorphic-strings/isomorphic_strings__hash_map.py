@@ -10,8 +10,7 @@ True
 
 
 def isIsomorphic(s: str, t: str) -> bool:
-    """Checks if 2 strings are isomorphic.
-    """
+    """Checks if 2 strings are isomorphic."""
     d = {}
     d_range = set()
     for s_char, t_char in zip(s, t):

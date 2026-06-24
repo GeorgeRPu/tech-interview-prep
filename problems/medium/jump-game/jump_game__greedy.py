@@ -8,8 +8,7 @@ False
 
 
 def canJump(nums: list[int]) -> bool:
-    """Whether it is possible to reach the last index given a list of jumps.
-    """
+    """Whether it is possible to reach the last index given a list of jumps."""
     reachable = 0
     for i, num in enumerate(nums):
         if i <= reachable:

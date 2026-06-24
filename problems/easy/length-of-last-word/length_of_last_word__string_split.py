@@ -10,6 +10,5 @@ r"""
 
 
 def lengthOfLastWord(s: str) -> int:
-    """Finds the length of the last word in a string.
-    """
-    return len(s.strip().split(' ')[-1])
+    """Finds the length of the last word in a string."""
+    return len(s.strip().split(" ")[-1])

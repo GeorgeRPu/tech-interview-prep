@@ -13,7 +13,7 @@ def canConstruct(ransomNote: str, magazine: str) -> bool:
     """Checks if ``ransomNote`` can be constructed from ``magazine`` by cutting
     and gluing letters.
     """
-    letters = 'abcdefghijklmnopqrstuvwxyz'
+    letters = "abcdefghijklmnopqrstuvwxyz"
     counter = {letter: 0 for letter in letters}
     for char in magazine:
         counter[char] += 1

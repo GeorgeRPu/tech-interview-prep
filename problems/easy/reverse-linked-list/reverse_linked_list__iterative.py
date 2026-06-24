@@ -15,8 +15,7 @@ from __future__ import annotations
 
 
 class ListNode:
-    """Node in a linked list.
-    """
+    """Node in a linked list."""
 
     def __init__(self, val: int, next: ListNode | None = None):
         self.val = val

@@ -8,9 +8,8 @@ r"""
 
 
 def strStr(haystack: str, needle: str) -> int:
-    """Find the first occurrence of ``needle`` in ``haystack``.
-    """
+    """Find the first occurrence of ``needle`` in ``haystack``."""
     for i, char in enumerate(haystack):
-        if haystack[i:i + len(needle)] == needle:
+        if haystack[i : i + len(needle)] == needle:
             return i
     return -1

@@ -10,8 +10,7 @@ from __future__ import annotations
 
 
 def merge(intervals: list[list[int]]) -> list[list[int]]:
-    """Merge overlapping intervals.
-    """
+    """Merge overlapping intervals."""
     intervals = sorted(intervals, key=lambda interval: interval[0])
     merged_intervals = [intervals[0]]
 

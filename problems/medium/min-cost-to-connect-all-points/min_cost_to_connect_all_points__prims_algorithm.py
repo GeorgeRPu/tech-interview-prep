@@ -19,10 +19,7 @@ def minCostConnectPoints(points: list[list[int]]) -> int:
     visited = set()
     p = points[0]
     visited.add(p)
-    edges = [
-                (dist(p, q), p, q)
-                for q in points if p != q
-            ]
+    edges = [(dist(p, q), p, q) for q in points if p != q]
     heapq.heapify(edges)
 
     total_cost = 0

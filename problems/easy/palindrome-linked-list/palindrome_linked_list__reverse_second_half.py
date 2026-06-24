@@ -12,8 +12,7 @@ from __future__ import annotations
 
 
 class ListNode:
-    """Node in a linked list.
-    """
+    """Node in a linked list."""
 
     def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
@@ -33,8 +32,7 @@ class ListNode:
 
 
 def isPalindrome(head: ListNode | None) -> bool:
-    """Checks if the linked list is a palindrome.
-    """
+    """Checks if the linked list is a palindrome."""
     list = []
     while head is not None:
         list.append(head.val)

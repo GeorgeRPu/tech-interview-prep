@@ -10,27 +10,26 @@ r"""
 
 
 def letterCombinations(digits: str) -> list[str]:
-    """Generate letter combinations from a phone number.
-    """
+    """Generate letter combinations from a phone number."""
     if len(digits) == 0:
         return []
 
     digit2group = {
-        '2': 'abc',
-        '3': 'def',
-        '4': 'ghi',
-        '5': 'jkl',
-        '6': 'mno',
-        '7': 'pqrs',
-        '8': 'tuv',
-        '9': 'wxyz'
+        "2": "abc",
+        "3": "def",
+        "4": "ghi",
+        "5": "jkl",
+        "6": "mno",
+        "7": "pqrs",
+        "8": "tuv",
+        "9": "wxyz",
     }
 
     letter_groups = []
     for digit in digits:
         letter_groups.append(digit2group[digit])
 
-    letter_combinations = ['']
+    letter_combinations = [""]
     for group in letter_groups:
         letter_combinations = [
             combination + letter

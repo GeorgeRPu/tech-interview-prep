@@ -10,8 +10,7 @@ r"""
 
 
 def twoSum(nums: list[int], target: int) -> list[int]:
-    """Find two numbers in ``nums`` that add up to ``target``.
-    """
+    """Find two numbers in ``nums`` that add up to ``target``."""
     nums = list(enumerate(nums))  # keep track of the orignal indices
     nums = sorted(nums, key=lambda x: x[1])
     i = 0

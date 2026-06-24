@@ -25,7 +25,7 @@ class TrieNode:
 class Trie:
 
     def __init__(self):
-        self.root = TrieNode('<start_of_word>')
+        self.root = TrieNode("<start_of_word>")
 
     def insert(self, word: str) -> None:
         node = self.root

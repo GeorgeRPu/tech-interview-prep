@@ -18,8 +18,7 @@ r"""
 
 
 class TreeNode:
-    """Node in a binary tree.
-    """
+    """Node in a binary tree."""
 
     def __init__(self, val, left=None, right=None) -> None:
         self.val = val
@@ -44,13 +43,13 @@ class TreeNode:
 
 
 def buildTree(preorder: list[int], inorder: list[int]) -> TreeNode | None:
-    """Build a binary tree from its preorder and inorder traversals.
-    """
+    """Build a binary tree from its preorder and inorder traversals."""
     return build_tree(preorder, inorder)[0]
 
 
 def build_tree(
-    preorder: list[int], inorder: list[int],
+    preorder: list[int],
+    inorder: list[int],
 ) -> tuple[TreeNode | None, list[int]]:
     """Recursively build a binary tree from part of its preorder and inorder
     traversals.
@@ -63,7 +62,7 @@ def build_tree(
 
     root = TreeNode(val)
     left_child, preorder = build_tree(preorder[1:], inorder[:idx])
-    right_child, preorder = build_tree(preorder, inorder[idx + 1:])
+    right_child, preorder = build_tree(preorder, inorder[idx + 1 :])
 
     root.left = left_child
     root.right = right_child

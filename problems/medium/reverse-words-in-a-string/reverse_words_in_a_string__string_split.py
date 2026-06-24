@@ -10,7 +10,6 @@ r"""
 
 
 def reverseWords(s: str) -> str:
-    """Reverse the words in a string, separated by 1 space.
-    """
+    """Reverse the words in a string, separated by 1 space."""
     words = s.strip().split()
-    return ' '.join(reversed(words))
+    return " ".join(reversed(words))

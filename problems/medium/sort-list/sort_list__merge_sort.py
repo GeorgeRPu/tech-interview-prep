@@ -14,15 +14,14 @@ from __future__ import annotations
 
 
 class ListNode:
-    """Node in a linked list.
-    """
+    """Node in a linked list."""
 
     def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
         self.next = next
 
     def __str__(self) -> str:
-        suffix = ' -> ' + str(self.next) if self.next else ''
+        suffix = " -> " + str(self.next) if self.next else ""
         return str(self.val) + suffix
 
     @classmethod
@@ -39,8 +38,7 @@ class ListNode:
 
 
 def sortList(head: ListNode | None) -> ListNode | None:
-    """Sort linked list.
-    """
+    """Sort linked list."""
     node = head
     length = 0
     while node is not None:
@@ -51,8 +49,7 @@ def sortList(head: ListNode | None) -> ListNode | None:
 
 
 def sort_list(head: ListNode | None, length: int):
-    """Sort a linked list of length ``length`` with merge sort.
-    """
+    """Sort a linked list of length ``length`` with merge sort."""
     if length <= 1:
         return head
 
@@ -81,7 +78,9 @@ def sort_list(head: ListNode | None, length: int):
     return new_head
 
 
-def minimum(list1: ListNode | None, list2: ListNode | None) -> tuple[ListNode | None]:
+def minimum(
+    list1: ListNode | None, list2: ListNode | None
+) -> tuple[ListNode | None]:
     """Return the minimum node of ``list1`` and ``list2`` and advances the that
     pointer.
     """

@@ -10,8 +10,7 @@ from __future__ import annotations
 
 
 class TreeNode:
-    """Node in a binary tree.
-    """
+    """Node in a binary tree."""
 
     def __init__(self, val=0, left=None, right=None):
         self.val = val

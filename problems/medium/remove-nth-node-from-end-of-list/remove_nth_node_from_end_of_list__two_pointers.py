@@ -15,8 +15,7 @@ from __future__ import annotations
 
 
 class ListNode:
-    """Node in a linked list.
-    """
+    """Node in a linked list."""
 
     def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
@@ -45,8 +44,7 @@ class ListNode:
 
 
 def removeNthFromEnd(head: ListNode | None, n: int) -> ListNode | None:
-    """Remove the nth node from the end of the linked list starting at ``head``.
-    """
+    """Remove the nth node from the end of the linked list starting at ``head``."""
     node = head
     length = 0
     while node is not None:

@@ -23,7 +23,7 @@ def findCheapestPrice(
     for [u, v, price] in flights:
         graph[u].append((v, price))
 
-    dist = [[float('inf')] * (k + 2) for _ in range(n)]
+    dist = [[float("inf")] * (k + 2) for _ in range(n)]
 
     min_heap = [(0, src, 0)]
     while min_heap:

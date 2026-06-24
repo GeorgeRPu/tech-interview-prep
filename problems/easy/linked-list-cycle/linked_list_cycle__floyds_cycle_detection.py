@@ -17,8 +17,7 @@ from __future__ import annotations
 
 
 class ListNode:
-    """Node in a linked list.
-    """
+    """Node in a linked list."""
 
     def __init__(self, val: int, next: ListNode | None = None):
         self.val = val
@@ -38,8 +37,7 @@ class ListNode:
 
 
 def hasCycle(head: ListNode | None) -> bool:
-    """Whether the linked list has a cycle.
-    """
+    """Whether the linked list has a cycle."""
     if head is None:
         return False
 

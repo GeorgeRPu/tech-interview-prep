@@ -30,8 +30,7 @@ False
 
 
 def isValidSudoku(board: list[list[str]]) -> bool:
-    """Check that ``board`` is a valid sudoku board.
-    """
+    """Check that ``board`` is a valid sudoku board."""
     for i in range(9):
         row = board[i]
         if not is_valid(row):
@@ -52,9 +51,8 @@ def isValidSudoku(board: list[list[str]]) -> bool:
 
 
 def is_valid(cells: list[str]) -> bool:
-    """Check that ``cells`` has no duplicates and contains the digits 1-9.
-    """
-    nums = [cell for cell in cells if cell != '.']
+    """Check that ``cells`` has no duplicates and contains the digits 1-9."""
+    nums = [cell for cell in cells if cell != "."]
     one_through_nine = {str(i) for i in range(1, 10)}
 
     if len(set(nums)) < len(nums):

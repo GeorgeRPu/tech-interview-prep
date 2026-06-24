@@ -15,8 +15,7 @@ from __future__ import annotations
 
 
 class TreeNode:
-    """Node in a binary tree.
-    """
+    """Node in a binary tree."""
 
     def __init__(self, val, left=None, right=None):
         self.val = val
@@ -25,8 +24,7 @@ class TreeNode:
 
     @classmethod
     def from_list(cls, list: list[int]) -> TreeNode | None:
-        """Creates a binary tree from a list of integers pre-order.
-        """
+        """Creates a binary tree from a list of integers pre-order."""
         if len(list) == 0:
             return None
 
@@ -46,12 +44,11 @@ class TreeNode:
         return root
 
     def __repr__(self) -> str:
-        return f'TreeNode({self.val}, {self.left}, {self.right})'
+        return f"TreeNode({self.val}, {self.left}, {self.right})"
 
 
 def invertTree(root: TreeNode | None) -> TreeNode | None:
-    """Inverts a binary tree by swapping the left and right nodes.
-    """
+    """Inverts a binary tree by swapping the left and right nodes."""
     if root is None:
         return None
 

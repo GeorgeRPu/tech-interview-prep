@@ -10,8 +10,7 @@ r"""
 
 
 def countPrimes(n: int) -> int:
-    """Count of primes less than ``n``.
-    """
+    """Count of primes less than ``n``."""
     if n < 3:
         return 0
 

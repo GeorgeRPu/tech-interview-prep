@@ -10,14 +10,13 @@ r"""
 
 
 def intToRoman(num: int) -> str:
-    """Convert an integer between 0 and 3999 to a Roman numeral.
-    """
+    """Convert an integer between 0 and 3999 to a Roman numeral."""
     thousands_digit = (num % 10000) // 1000
     hundreds_digit = (num % 1000) // 100
     tens_digit = (num % 100) // 10
     ones_digit = num % 10
 
-    symbols = ['I', 'V', 'X', 'L', 'C', 'D', 'M', '?', '!']
+    symbols = ["I", "V", "X", "L", "C", "D", "M", "?", "!"]
 
     thousands_roman = roman_subnumeral(thousands_digit, *symbols[6:9])
     hundreds_roman = roman_subnumeral(hundreds_digit, *symbols[4:7])
@@ -28,8 +27,7 @@ def intToRoman(num: int) -> str:
 
 
 def roman_subnumeral(digit, symbol, five_symbol, ten_symbol):
-    """Generate the Roman sub-numberal for a single digit.
-    """
+    """Generate the Roman sub-numberal for a single digit."""
     if digit < 4:
         return digit * symbol
     elif digit == 4:

@@ -25,7 +25,7 @@ def exec_op(x, y, op_token):
 
 def evalRPN(tokens: list[str]) -> int:
     num_stack = deque()
-    operators = {'+', '-', '*', '/'}
+    operators = {"+", "-", "*", "/"}
     for token in tokens:
         if token in operators:
             y = num_stack.pop()

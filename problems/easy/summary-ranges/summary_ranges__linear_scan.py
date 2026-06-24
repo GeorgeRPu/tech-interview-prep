@@ -27,6 +27,5 @@ def summaryRanges(nums: list[int]) -> list[str]:
 
 
 def get_range_str(start, end):
-    """Get the range from ``start`` to ``end`` as a formatted string.
-    """
-    return str(start) if start == end else f'{start}->{end}'
+    """Get the range from ``start`` to ``end`` as a formatted string."""
+    return str(start) if start == end else f"{start}->{end}"

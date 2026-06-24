@@ -12,8 +12,7 @@ from collections import Counter
 
 
 def groupAnagrams(strs: list[str]) -> list[list[str]]:
-    """Group ``strs`` into anagrams.
-    """
+    """Group ``strs`` into anagrams."""
     dicts = []
     groups = []
     for s in strs:

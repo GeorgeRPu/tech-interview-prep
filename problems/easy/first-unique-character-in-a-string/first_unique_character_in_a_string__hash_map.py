@@ -10,8 +10,7 @@ r"""
 
 
 def firstUniqChar(s: str) -> int:
-    """Returns the first character in ``s`` that doens't repeat.
-    """
+    """Returns the first character in ``s`` that doens't repeat."""
     counts = {}
     for char in s:
         if char in counts:
