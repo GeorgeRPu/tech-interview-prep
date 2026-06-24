@@ -29,9 +29,6 @@ DIFFICULTY_DIRS = [("Easy", "easy"), ("Medium", "medium"), ("Hard", "hard")]
 
 UNDERLINE_CHARS = set("-=^~")
 MAX_DESC_LEN = 120
-TRIPLE_QUOTE_RE = re.compile(
-    r"^(?P<indent>\s*)(?P<prefix>[rubfRUBF]*)" r'(?P<quote>"""|\'\'\')'
-)
 
 
 def _warn(msg: str) -> None:
@@ -43,69 +40,47 @@ def _warn(msg: str) -> None:
 # ---------------------------------------------------------------------------
 
 
-def find_module_docstring_bounds(text: str) -> tuple[int, int] | None:
-    """Return ``(start_line, end_line)`` (0-based) of the module docstring."""
-    lines = text.splitlines()
-    idx = 0
-    while idx < len(lines) and (
-        not lines[idx].strip()
-        or lines[idx].startswith("#")
-        or lines[idx].startswith(("#!/", "#!"))
-        or lines[idx].startswith("# -*-")
-    ):
-        idx += 1
-    if idx >= len(lines):
-        return None
-    m = TRIPLE_QUOTE_RE.match(lines[idx])
-    if not m:
-        return None
-    quote = m.group("quote")
-    if lines[idx].count(quote) >= 2:
-        return (idx, idx)
-    j = idx + 1
-    while j < len(lines):
-        if quote in lines[j]:
-            return (idx, j)
-        j += 1
-    return None
+@dataclass
+class ModuleInfo:
+    """Everything the renderer needs from one solution ``.py`` file."""
+
+    docstring: str  # raw module docstring (holds the doctests)
+    first_code_line: int  # 1-based start line for the literalinclude block
+    public_symbols: list[tuple[str, str]]  # (kind, name) for autodoc directives
 
 
-def first_nonblank_noncomment_after(
-    lines: list[str], end_idx: int
-) -> int | None:
-    """1-based line number of first executable line after the docstring."""
-    j = end_idx + 1
-    while j < len(lines):
-        stripped = lines[j].strip()
-        if stripped and not stripped.startswith("#"):
-            return j + 1
-        j += 1
-    return None
+def inspect_module(py_path: Path) -> ModuleInfo | None:
+    """Parse a solution module once and pull out all build-time metadata.
 
-
-def read_module_docstring(py_path: Path) -> str | None:
+    Returns ``None`` when the file cannot be parsed or has no module
+    docstring (the docstring carries the doctests, so it is required).
+    """
     try:
         tree = ast.parse(py_path.read_text(encoding="utf-8"))
     except SyntaxError:
         return None
-    return ast.get_docstring(tree, clean=False)
+    docstring = ast.get_docstring(tree, clean=False)
+    if docstring is None:
+        return None
 
+    # The docstring is ``tree.body[0]``; the first statement after it gives
+    # the literalinclude start line (counting a leading decorator if present).
+    first_code_line = 1
+    if len(tree.body) > 1:
+        node = tree.body[1]
+        decorators = getattr(node, "decorator_list", None)
+        first_code_line = decorators[0].lineno if decorators else node.lineno
 
-def public_top_level_symbols(py_path: Path) -> list[tuple[str, str]]:
-    """Return ``(kind, name)`` for public top-level functions and classes."""
-    try:
-        tree = ast.parse(py_path.read_text(encoding="utf-8"))
-    except SyntaxError:
-        return []
-    out: list[tuple[str, str]] = []
+    symbols: list[tuple[str, str]] = []
     for node in tree.body:
         if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
             if not node.name.startswith("_"):
-                out.append(("function", node.name))
+                symbols.append(("function", node.name))
         elif isinstance(node, ast.ClassDef):
             if not node.name.startswith("_"):
-                out.append(("class", node.name))
-    return out
+                symbols.append(("class", node.name))
+
+    return ModuleInfo(docstring, first_code_line, symbols)
 
 
 # ---------------------------------------------------------------------------
@@ -236,25 +211,19 @@ def _build_variant(slug: str, slug_dir: Path, entry: dict) -> Variant | None:
             f"{py_path.name} which does not exist"
         )
         return None
-    source = py_path.read_text(encoding="utf-8")
-    bounds = find_module_docstring_bounds(source)
-    if bounds is None:
-        _warn(f"no docstring in {py_path}")
+    info = inspect_module(py_path)
+    if info is None:
+        _warn(f"no parseable module docstring in {py_path}")
         return None
-    _start, end = bounds
-    first_code_line = (
-        first_nonblank_noncomment_after(source.splitlines(), end) or 1
-    )
-    test_block = (read_module_docstring(py_path) or "").strip("\n")
     return Variant(
         name=name,
         module=module,
         source_path=py_path,
         explanation=(entry.get("explanation") or "").rstrip("\n"),
         complexity=(entry.get("complexity") or "").rstrip("\n"),
-        test_block=test_block,
-        first_code_line=first_code_line,
-        public_symbols=public_top_level_symbols(py_path),
+        test_block=info.docstring.strip("\n"),
+        first_code_line=info.first_code_line,
+        public_symbols=info.public_symbols,
     )
 
 

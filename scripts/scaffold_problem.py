@@ -19,6 +19,8 @@ import pypandoc
 import requests
 import yaml
 
+from discovery import solution_module_name
+
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "problems" / "catalog.yaml"
 
@@ -143,10 +145,6 @@ def html_to_rst(html: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
 
 
-def slug_to_snake(slug: str) -> str:
-    return slug.replace("-", "_")
-
-
 def _parse_commented_class(comment_lines: list[str]) -> str | None:
     """Uncomment a class definition from LeetCode's header comments."""
     uncommented = []
@@ -246,7 +244,7 @@ def build_py_file(
     helpers: list[str],
     approach: str = "TODO",
 ) -> str:
-    module = _solution_module_name(slug, approach)
+    module = solution_module_name(slug, approach)
     parts: list[str] = []
 
     # Docstring with placeholder doctest
@@ -402,7 +400,7 @@ def main():
     print(f"  Created {meta_path.relative_to(ROOT)}")
 
     # Write stub .py
-    module = _solution_module_name(slug, args.approach)
+    module = solution_module_name(slug, args.approach)
     py_path = problem_dir / f"{module}.py"
     py_path.write_text(
         build_py_file(slug, code_body, main_name, helpers, args.approach)
