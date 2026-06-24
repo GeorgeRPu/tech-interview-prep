@@ -21,11 +21,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Array, Hash Table
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
-   * - `Contains Duplicate <https://leetcode.com/problems/contains-duplicate/>`__
-     - 
-     - 
+   * - :doc:`Contains Duplicate <generated/contains-duplicate>`
+     - 🟢 Easy
+     - Array, Hash Table, Sorting
      - Blind 75, Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Valid Anagram <generated/valid-anagram>`
      - 🟢 Easy
      - Hash Table, String, Sorting
@@ -186,11 +186,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - `Binary Search <https://leetcode.com/problems/binary-search/>`__
-     - 
-     - 
+   * - :doc:`Binary Search <generated/binary-search>`
+     - 🟢 Easy
+     - Array, Binary Search
      - Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `First Bad Version <https://leetcode.com/problems/first-bad-version/>`__
      - 
      - 
@@ -296,26 +296,26 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Tree, Depth-First Search, Breadth-First Search, Binary Tree
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - `Diameter of Binary Tree <https://leetcode.com/problems/diameter-of-binary-tree/>`__
-     - 
-     - 
+   * - :doc:`Diameter of Binary Tree <generated/diameter-of-binary-tree>`
+     - 🟢 Easy
+     - Tree, Depth-First Search, Binary Tree
      - Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Balanced Binary Tree <https://leetcode.com/problems/balanced-binary-tree/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Balanced Binary Tree <generated/balanced-binary-tree>`
+     - 🟢 Easy
+     - Tree, Depth-First Search, Binary Tree
      - Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Same Tree <generated/same-tree>`
      - 🟢 Easy
      - Tree, Depth-First Search, Breadth-First Search, Binary Tree
      - Blind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - `Subtree of Another Tree <https://leetcode.com/problems/subtree-of-another-tree/>`__
-     - 
-     - 
+   * - :doc:`Subtree of Another Tree <generated/subtree-of-another-tree>`
+     - 🟢 Easy
+     - Tree, Depth-First Search, String Matching, Binary Tree, Hash Function
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Lowest Common Ancestor of a BST <generated/lowest-common-ancestor-of-a-binary-search-tree>`
      - 🟡 Medium
      - Tree, Depth-First Search, Binary Search Tree, Binary Tree
@@ -396,16 +396,16 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169, NeetCode 150
      - ⬜ Missing
-   * - `Kth Largest Element in a Stream <https://leetcode.com/problems/kth-largest-element-in-a-stream/>`__
-     - 
-     - 
+   * - :doc:`Kth Largest Element in a Stream <generated/kth-largest-element-in-a-stream>`
+     - 🟢 Easy
+     - Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream
      - NeetCode 150
-     - ⬜ Missing
-   * - `Last Stone Weight <https://leetcode.com/problems/last-stone-weight/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Last Stone Weight <generated/last-stone-weight>`
+     - 🟢 Easy
+     - Array, Heap (Priority Queue)
      - NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Kth Largest Element in an Array <https://leetcode.com/problems/kth-largest-element-in-an-array/>`__
      - 
      - 
@@ -626,11 +626,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Two Pointers, String, Dynamic Programming
      - Blind 75, NeetCode 150
      - ✅ Covered
-   * - `Min Cost Climbing Stairs <https://leetcode.com/problems/min-cost-climbing-stairs/>`__
-     - 
-     - 
+   * - :doc:`Min Cost Climbing Stairs <generated/min-cost-climbing-stairs>`
+     - 🟢 Easy
+     - Array, Dynamic Programming
      - NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Partition Equal Subset Sum <generated/partition-equal-subset-sum>`
      - 🟡 Medium
      - Array, Dynamic Programming

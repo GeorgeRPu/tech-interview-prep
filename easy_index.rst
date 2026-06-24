@@ -14,10 +14,18 @@ Easy
      - Math, String, Bit Manipulation, Simulation
      - Grind 75, Grind 169
      - Given two binary strings a and b, return their sum as a binary string
+   * - :doc:`Balanced Binary Tree <generated/balanced-binary-tree>`
+     - Tree, Depth-First Search, Binary Tree
+     - Grind 75, Grind 169, NeetCode 150
+     - Given a binary tree, determine if it is height-balanced
    * - :doc:`Best Time to Buy and Sell Stock <generated/best-time-to-buy-and-sell-stock>`
      - Array, Dynamic Programming
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - You are given an array prices where prices[i] is the price of a given stock on the i :sup:th day. You want to
+   * - :doc:`Binary Search <generated/binary-search>`
+     - Array, Binary Search
+     - Grind 75, Grind 169, NeetCode 150
+     - Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search
    * - :doc:`Binary Tree Inorder Traversal <generated/binary-tree-inorder-traversal>`
      - Stack, Tree, Depth-First Search, Binary Tree
      - 
@@ -26,6 +34,10 @@ Easy
      - Math, Dynamic Programming, Memoization
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how
+   * - :doc:`Contains Duplicate <generated/contains-duplicate>`
+     - Array, Hash Table, Sorting
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
+     - Given an integer array nums, return true if any value appears at least twice in the array, and return false if every
    * - :doc:`Contains Duplicate Ii <generated/contains-duplicate-ii>`
      - Array, Hash Table, Sliding Window
      - 
@@ -34,6 +46,10 @@ Easy
      - Array, Divide and Conquer, Tree, Binary Search Tree, Binary Tree
      - Grind 169
      - Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary
+   * - :doc:`Diameter of Binary Tree <generated/diameter-of-binary-tree>`
+     - Tree, Depth-First Search, Binary Tree
+     - Grind 75, Grind 169, NeetCode 150
+     - Given the root of a binary tree, return the length of the diameter of the tree. The diameter of a binary tree is the
    * - :doc:`Find the Index of the First Occurrence in a String <generated/find-the-index-of-the-first-occurrence-in-a-string>`
      - Two Pointers, String, String Matching
      - 
@@ -70,6 +86,14 @@ Easy
      - Hash Table, String
      - 
      - Given two strings s and t, determine if they are isomorphic. Two strings s and t are isomorphic if the characters in s
+   * - :doc:`Kth Largest Element in a Stream <generated/kth-largest-element-in-a-stream>`
+     - Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream
+     - NeetCode 150
+     - You are part of a university admissions office and need to keep track of the kth highest test score from applicants in
+   * - :doc:`Last Stone Weight <generated/last-stone-weight>`
+     - Array, Heap (Priority Queue)
+     - NeetCode 150
+     - You are given an array of integers stones where stones[i] is the weight of the i :sup:th stone. We are playing a
    * - :doc:`Length Of Last Word <generated/length-of-last-word>`
      - String
      - 
@@ -98,6 +122,10 @@ Easy
      - Linked List, Recursion
      - Blind 75, Grind 75, Grind 169, NeetCode 150
      - You are given the heads of two sorted linked lists list1 and list2. Merge the two lists into one sorted list. The list
+   * - :doc:`Min Cost Climbing Stairs <generated/min-cost-climbing-stairs>`
+     - Array, Dynamic Programming
+     - NeetCode 150
+     - You are given an integer array cost where cost[i] is the cost of i :sup:th step on a staircase. Once you pay the
    * - :doc:`Missing Number <generated/missing-number>`
      - Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting
      - Blind 75, Grind 169, NeetCode 150
@@ -150,6 +178,10 @@ Easy
      - Math, Binary Search
      - 
      - Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer
+   * - :doc:`Subtree of Another Tree <generated/subtree-of-another-tree>`
+     - Tree, Depth-First Search, String Matching, Binary Tree, Hash Function
+     - Blind 75, Grind 169, NeetCode 150
+     - Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure
    * - :doc:`Summary Ranges <generated/summary-ranges>`
      - Array
      - 

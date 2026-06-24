@@ -16,6 +16,7 @@
   - nc150
   - grind75
   - grind169
+  difficulty: Easy
 - name: Valid Anagram
   slug: valid-anagram
   premium: false
@@ -261,6 +262,7 @@
   - nc150
   - grind75
   - grind169
+  difficulty: Easy
 - name: First Bad Version
   slug: first-bad-version
   premium: false
@@ -428,6 +430,7 @@
   - nc150
   - grind75
   - grind169
+  difficulty: Easy
 - name: Balanced Binary Tree
   slug: balanced-binary-tree
   premium: false
@@ -435,6 +438,7 @@
   - nc150
   - grind75
   - grind169
+  difficulty: Easy
 - name: Same Tree
   slug: same-tree
   premium: false
@@ -450,6 +454,7 @@
   - blind75
   - nc150
   - grind169
+  difficulty: Easy
 - name: Lowest Common Ancestor of a BST
   slug: lowest-common-ancestor-of-a-binary-search-tree
   premium: false
@@ -577,11 +582,13 @@
   premium: false
   lists:
   - nc150
+  difficulty: Easy
 - name: Last Stone Weight
   slug: last-stone-weight
   premium: false
   lists:
   - nc150
+  difficulty: Easy
 - name: Kth Largest Element in an Array
   slug: kth-largest-element-in-an-array
   premium: false
@@ -885,6 +892,7 @@
   premium: false
   lists:
   - nc150
+  difficulty: Easy
 - name: Partition Equal Subset Sum
   slug: partition-equal-subset-sum
   premium: false

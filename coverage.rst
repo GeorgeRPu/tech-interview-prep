@@ -12,21 +12,21 @@ Coverage of canonical interview prep problem lists.
      - Total
      - Progress
    * - `Blind 75 <https://neetcode.io/practice?tab=blind75>`__
-     - 52
+     - 54
      - 75
-     - ■■■■■■■■■■■■■■□□□□□□ 69%
+     - ■■■■■■■■■■■■■■□□□□□□ 72%
    * - `Grind 75 <https://www.techinterviewhandbook.org/grind75>`__
-     - 49
+     - 53
      - 75
-     - ■■■■■■■■■■■■■□□□□□□□ 65%
+     - ■■■■■■■■■■■■■■□□□□□□ 70%
    * - `Grind 169 <https://www.techinterviewhandbook.org/grind75?hours=40&grouping=topics>`__
-     - 84
+     - 89
      - 169
-     - ■■■■■■■■■■□□□□□□□□□□ 49%
+     - ■■■■■■■■■■■□□□□□□□□□ 52%
    * - `NeetCode 150 <https://neetcode.io/practice?tab=neetcode150>`__
-     - 91
+     - 99
      - 150
-     - ■■■■■■■■■■■■□□□□□□□□ 60%
+     - ■■■■■■■■■■■■■□□□□□□□ 66%
    * - `Amazon Top 50 <https://leetcode.com/problem-list/top-amazon-questions/>`__
      - 8
      - 50
