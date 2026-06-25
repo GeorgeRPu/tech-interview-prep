@@ -4,8 +4,58 @@ patterns:
 - Union-Find
 - Graph Theory
 - Minimum Spanning Tree
-description_rst: "You are given an array ``points`` representing integer coordinates of\nsome points on a 2D-plane, where\n``points[i] = [x``\\ :sub:```i```\\ ``, y``\\ :sub:```i```\\ ``]``.\n\nThe cost of connecting two points\n``[x``\\ :sub:```i```\\ ``, y``\\ :sub:```i```\\ ``]`` and\n``[x``\\ :sub:```j```\\ ``, y``\\ :sub:```j```\\ ``]`` is the **manhattan\ndistance** between them:\n``|x``\\ :sub:```i```\\ ``- x``\\ :sub:```j```\\ ``| + |y``\\ :sub:```i```\\ ``- y``\\ :sub:```j```\\ ``|``,\nwhere ``|val|`` denotes the absolute value of ``val``.\n\nReturn *the minimum cost to make all points connected.* All points are\nconnected if there is **exactly one** simple path between any two\npoints.\n\n \n\n**Example 1:**\n\n|image1|\n\n::\n\n\n   Input: points = [[0,0],[2,2],[3,10],[5,2],[7,0]]\n   Output: 20\n   Explanation: \n\n   We can connect the points as shown above to get the minimum cost of 20.\n   Notice that there is a unique path between every pair of points.\n\n**Example 2:**\n\
-  \n::\n\n\n   Input: points = [[3,12],[-2,5],[-4,1]]\n   Output: 18\n\n \n\n**Constraints:**\n\n- ``1 <= points.length <= 1000``\n- ``-10``\\ :sup:```6```\\ ``<= x``\\ :sub:```i```\\ ``, y``\\ :sub:```i```\\ ``<= 10``\\ :sup:```6```\n- All pairs ``(x``\\ :sub:```i```\\ ``, y``\\ :sub:```i```\\ ``)`` are\n  distinct.\n\n.. |image1| image:: https://assets.leetcode.com/uploads/2020/08/26/d.png\n"
+description_rst: |
+  You are given an array ``points`` representing integer coordinates of
+  some points on a 2D-plane, where
+  ``points[i] = [x``\ :sub:```i```\ ``, y``\ :sub:```i```\ ``]``.
+
+  The cost of connecting two points
+  ``[x``\ :sub:```i```\ ``, y``\ :sub:```i```\ ``]`` and
+  ``[x``\ :sub:```j```\ ``, y``\ :sub:```j```\ ``]`` is the **manhattan
+  distance** between them:
+  ``|x``\ :sub:```i```\ ``- x``\ :sub:```j```\ ``| + |y``\ :sub:```i```\ ``- y``\ :sub:```j```\ ``|``,
+  where ``|val|`` denotes the absolute value of ``val``.
+
+  Return *the minimum cost to make all points connected.* All points are
+  connected if there is **exactly one** simple path between any two
+  points.
+
+
+
+  **Example 1:**
+
+  |image1|
+
+  ::
+
+
+     Input: points = [[0,0],[2,2],[3,10],[5,2],[7,0]]
+     Output: 20
+     Explanation: 
+
+     We can connect the points as shown above to get the minimum cost of 20.
+     Notice that there is a unique path between every pair of points.
+
+  **Example 2:**
+  \
+
+  ::
+
+
+     Input: points = [[3,12],[-2,5],[-4,1]]
+     Output: 18
+
+
+
+  **Constraints:**
+
+  - ``1 <= points.length <= 1000``
+  - ``-10``\ :sup:```6```\ ``<= x``\ :sub:```i```\ ``, y``\ :sub:```i```\ ``<= 10``\ :sup:```6```
+  - All pairs ``(x``\ :sub:```i```\ ``, y``\ :sub:```i```\ ``)`` are
+    distinct.
+
+  .. |image1| image:: https://assets.leetcode.com/uploads/2020/08/26/d.png
+
 solutions:
 - name: Prim's Algorithm
   explanation: ''

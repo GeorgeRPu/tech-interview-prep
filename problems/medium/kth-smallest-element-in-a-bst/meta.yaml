@@ -4,7 +4,50 @@ patterns:
 - Depth-First Search
 - Binary Search Tree
 - Binary Tree
-description_rst: "Given the ``root`` of a binary search tree, and an integer ``k``, return\n*the* ``k``\\ :sup:```th``` *smallest value (*\\ **1-indexed**\\ *) of all\nthe values of the nodes in the tree*.\n\n \n\n**Example 1:**\n\n|image1|\n\n::\n\n\n   Input: root = [3,1,4,null,2], k = 1\n   Output: 1\n\n**Example 2:**\n\n|image2|\n\n::\n\n\n   Input: root = [5,3,6,2,4,null,null,1], k = 3\n   Output: 3\n\n \n\n**Constraints:**\n\n- The number of nodes in the tree is ``n``.\n- ``1 <= k <= n <= 10``\\ :sup:```4```\n- ``0 <= Node.val <= 10``\\ :sup:```4```\n\n \n\n**Follow up:** If the BST is modified often (i.e., we can do insert and\ndelete operations) and you need to find the kth smallest frequently, how\nwould you optimize?\n\n.. |image1| image:: https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg\n.. |image2| image:: https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg\n"
+description_rst: |
+  Given the ``root`` of a binary search tree, and an integer ``k``, return
+  *the* ``k``\ :sup:```th``` *smallest value (*\ **1-indexed**\ *) of all
+  the values of the nodes in the tree*.
+
+
+
+  **Example 1:**
+
+  |image1|
+
+  ::
+
+
+     Input: root = [3,1,4,null,2], k = 1
+     Output: 1
+
+  **Example 2:**
+
+  |image2|
+
+  ::
+
+
+     Input: root = [5,3,6,2,4,null,null,1], k = 3
+     Output: 3
+
+
+
+  **Constraints:**
+
+  - The number of nodes in the tree is ``n``.
+  - ``1 <= k <= n <= 10``\ :sup:```4```
+  - ``0 <= Node.val <= 10``\ :sup:```4```
+
+
+
+  **Follow up:** If the BST is modified often (i.e., we can do insert and
+  delete operations) and you need to find the kth smallest frequently, how
+  would you optimize?
+
+  .. |image1| image:: https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg
+  .. |image2| image:: https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg
+
 solutions:
 - name: Inorder Traversal
   explanation: ''

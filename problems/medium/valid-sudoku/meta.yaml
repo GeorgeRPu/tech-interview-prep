@@ -88,3 +88,4 @@ solutions:
        * - Auxiliary Space
          - :math:`O(n^2)`
          - numbers in each row, column, and square are stored in a set for checking duplicates and valid digits
+- name: One Pass

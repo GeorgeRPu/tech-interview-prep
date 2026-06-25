@@ -3,7 +3,42 @@ patterns:
 - Two Pointers
 - String
 - Dynamic Programming
-description_rst: "Given a string ``s``, return *the number of* **palindromic substrings**\n*in it*.\n\nA string is a **palindrome** when it reads the same backward as forward.\n\nA **substring** is a contiguous sequence of characters within the\nstring.\n\n \n\n**Example 1:**\n\n::\n\n\n   Input: s = \"abc\"\n   Output: 3\n   Explanation: Three palindromic strings: \"a\", \"b\", \"c\".\n\n**Example 2:**\n\n::\n\n\n   Input: s = \"aaa\"\n   Output: 6\n   Explanation: Six palindromic strings: \"a\", \"a\", \"a\", \"aa\", \"aa\", \"aaa\".\n\n \n\n**Constraints:**\n\n- ``1 <= s.length <= 1000``\n- ``s`` consists of lowercase English letters.\n"
+description_rst: |
+  Given a string ``s``, return *the number of* **palindromic substrings**
+  *in it*.
+
+  A string is a **palindrome** when it reads the same backward as forward.
+
+  A **substring** is a contiguous sequence of characters within the
+  string.
+
+
+
+  **Example 1:**
+
+  ::
+
+
+     Input: s = "abc"
+     Output: 3
+     Explanation: Three palindromic strings: "a", "b", "c".
+
+  **Example 2:**
+
+  ::
+
+
+     Input: s = "aaa"
+     Output: 6
+     Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+
+
+
+  **Constraints:**
+
+  - ``1 <= s.length <= 1000``
+  - ``s`` consists of lowercase English letters.
+
 solutions:
 - name: Expand From Center
   explanation: ''
