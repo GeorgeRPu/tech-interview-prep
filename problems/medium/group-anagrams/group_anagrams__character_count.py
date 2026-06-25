@@ -8,22 +8,20 @@ r"""
 [['a']]
 """
 
-from collections import Counter
+from collections import defaultdict
 
 
 def groupAnagrams(strs: list[str]) -> list[list[str]]:
-    """Group ``strs`` into anagrams."""
-    dicts = []
-    groups = []
+    counters = []
     for s in strs:
-        d = Counter(s)
+        counter = [0] * 26
+        for char in s:
+            counter[ord(char) - ord("a")] += 1
 
-        for i, group in enumerate(groups):
-            if d == dicts[i]:
-                groups[i].append(s)
-                break
-        else:
-            groups.append([s])
-            dicts.append(d)
+        counters.append((s, counter))
 
-    return groups
+    groups = defaultdict(list)
+    for s, counter in counters:
+        groups[tuple(counter)].append(s)
+
+    return list(groups.values())

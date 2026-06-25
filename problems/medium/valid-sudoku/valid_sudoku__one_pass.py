@@ -1,5 +1,5 @@
 r"""
->>> from valid_sudoku__hash_sets import isValidSudoku
+>>> from valid_sudoku__one_pass import isValidSudoku
 >>> board = [
 ...     ['5', '3', '.', '.', '7', '.', '.', '.', '.'],
 ...     ['6', '.', '.', '1', '9', '5', '.', '.', '.'],
@@ -28,36 +28,31 @@ True
 False
 """
 
+from collections import defaultdict
+
 
 def isValidSudoku(board: list[list[str]]) -> bool:
-    """Check that ``board`` is a valid sudoku board."""
-    for i in range(9):
-        row = board[i]
-        if not is_valid(row):
-            return False
+    """Check that ``board`` is a valid sudoku board in a single pass."""
+    rows = defaultdict(set)
+    columns = defaultdict(set)
+    squares = defaultdict(set)
 
-    for j in range(9):
-        col = [board[i][j] for i in range(9)]
-        if not is_valid(col):
-            return False
+    for i in range(len(board)):
+        for j in range(len(board[0])):
+            cell = board[i][j]
 
-    for x in range(0, 9, 3):
-        for y in range(0, 9, 3):
-            square = [board[x + i][y + j] for i in range(3) for j in range(3)]
-            if not is_valid(square):
+            if cell == ".":
+                continue
+
+            if (
+                cell in rows[i]
+                or cell in columns[j]
+                or cell in squares[(i // 3, j // 3)]
+            ):
                 return False
 
-    return True
-
-
-def is_valid(cells: list[str]) -> bool:
-    """Check that ``cells`` has no duplicates."""
-    seen = set()
-
-    for num in cells:
-        if num != "." and num in seen:
-            return False
-        else:
-            seen.add(num)
+            rows[i].add(cell)
+            columns[j].add(cell)
+            squares[(i // 3, j // 3)].add(cell)
 
     return True

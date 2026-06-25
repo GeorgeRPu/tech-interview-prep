@@ -6,17 +6,20 @@ r"""
 9
 """
 
-from collections import defaultdict
-
 
 def longestConsecutive(nums: list[int]) -> int:
-    mp = defaultdict(int)
-    res = 0
+    """Return the length of the longest consecutive elements sequence."""
+    if not nums:
+        return 0
 
-    for num in nums:
-        if not mp[num]:
-            mp[num] = mp[num - 1] + mp[num + 1] + 1
-            mp[num - mp[num - 1]] = mp[num]
-            mp[num + mp[num + 1]] = mp[num]
-            res = max(res, mp[num])
-    return res
+    num_set = set(nums)
+
+    longest = 0
+    for num in num_set:
+        if num - 1 not in num_set:
+            length = 0
+            while num + length in num_set:
+                length += 1
+            longest = max(longest, length)
+
+    return longest

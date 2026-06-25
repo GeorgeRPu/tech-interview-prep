@@ -33,20 +33,16 @@ def copyRandomList(head: Node | None) -> Node | None:
     if head is None:
         return None
 
-    old2copy: dict[Node | None, Node | None] = defaultdict(lambda: Node(0))
+    old2copy = defaultdict(lambda: Node(0))
     old2copy[None] = None
 
     node = head
-    copy_head = None
     while node:
         copy = old2copy[node]
         copy.val = node.val
         copy.next = old2copy[node.next]
         copy.random = old2copy[node.random]
 
-        if copy_head is None:
-            copy_head = copy
-
         node = node.next
 
-    return copy_head
+    return old2copy[head]
