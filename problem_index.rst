@@ -386,16 +386,16 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
      - ⬜ Missing
-   * - `K Closest Points to Origin <https://leetcode.com/problems/k-closest-points-to-origin/>`__
-     - 
-     - 
+   * - :doc:`K Closest Points to Origin <generated/k-closest-points-to-origin>`
+     - 🟡 Medium
+     - Heap, Sorting
      - Grind 75, Grind 169, NeetCode 150, Amazon Top 50
-     - ⬜ Missing
-   * - `Task Scheduler <https://leetcode.com/problems/task-scheduler/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Task Scheduler <generated/task-scheduler>`
+     - 🟡 Medium
+     - Heap, Greedy, Hash Table
      - Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Kth Largest Element in a Stream <generated/kth-largest-element-in-a-stream>`
      - 🟢 Easy
      - Tree, Design, Binary Search Tree, Heap (Priority Queue), Binary Tree, Data Stream
@@ -406,11 +406,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Array, Heap (Priority Queue)
      - NeetCode 150
      - ✅ Covered
-   * - `Kth Largest Element in an Array <https://leetcode.com/problems/kth-largest-element-in-an-array/>`__
-     - 
-     - 
+   * - :doc:`Kth Largest Element in an Array <generated/kth-largest-element-in-an-array>`
+     - 🟡 Medium
+     - Heap, Sorting
      - Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Design Twitter <https://leetcode.com/problems/design-twitter/>`__
      - 
      - 
@@ -496,11 +496,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - Grind 75, Grind 169
      - ⬜ Missing
-   * - `Pacific Atlantic Water Flow <https://leetcode.com/problems/pacific-atlantic-water-flow/>`__
-     - 
-     - 
+   * - :doc:`Pacific Atlantic Water Flow <generated/pacific-atlantic-water-flow>`
+     - 🟡 Medium
+     - Graph, DFS, Matrix
      - Blind 75, Grind 169, NeetCode 150, Google Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Course Schedule <generated/course-schedule>`
      - 🟡 Medium
      - Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort
@@ -521,11 +521,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix
      - NeetCode 150, Google Top 50
      - ✅ Covered
-   * - `Surrounded Regions <https://leetcode.com/problems/surrounded-regions/>`__
-     - 
-     - 
+   * - :doc:`Surrounded Regions <generated/surrounded-regions>`
+     - 🟡 Medium
+     - Graph, DFS, Matrix
      - NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Walls and Gates <generated/walls-and-gates>`
      - 🟡 Medium
      - Array, Breadth-First Search, Matrix
@@ -736,21 +736,21 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - 
      - NeetCode 150
      - ⬜ Missing
-   * - `Insert Interval <https://leetcode.com/problems/insert-interval/>`__
-     - 
-     - 
+   * - :doc:`Insert Interval <generated/insert-interval>`
+     - 🟡 Medium
+     - Array, Intervals
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Merge Intervals <generated/merge-intervals>`
      - 🟡 Medium
      - Array, Sorting
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
      - ✅ Covered
-   * - `Non-overlapping Intervals <https://leetcode.com/problems/non-overlapping-intervals/>`__
-     - 
-     - 
+   * - :doc:`Non-overlapping Intervals <generated/non-overlapping-intervals>`
+     - 🟡 Medium
+     - Array, Greedy, Intervals, Sorting
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - `Meeting Rooms <https://leetcode.com/problems/meeting-rooms/>`__
      - 
      - 
@@ -771,11 +771,11 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Array, Math, Matrix
      - Blind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - `Spiral Matrix <https://leetcode.com/problems/spiral-matrix/>`__
-     - 
-     - 
+   * - :doc:`Spiral Matrix <generated/spiral-matrix>`
+     - 🟡 Medium
+     - Array, Matrix
      - Blind 75, Grind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Set Matrix Zeroes <generated/set-matrix-zeroes>`
      - 🟡 Medium
      - Array, Hash Table, Matrix
@@ -806,46 +806,46 @@ Use the dropdowns to filter by difficulty, pattern, list, or status.
      - Math, Recursion
      - Grind 169, NeetCode 150
      - ✅ Covered
-   * - `Multiply Strings <https://leetcode.com/problems/multiply-strings/>`__
-     - 
-     - 
+   * - :doc:`Multiply Strings <generated/multiply-strings>`
+     - 🟡 Medium
+     - Math, String
      - NeetCode 150
-     - ⬜ Missing
-   * - `Detect Squares <https://leetcode.com/problems/detect-squares/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Detect Squares <generated/detect-squares>`
+     - 🟡 Medium
+     - Hash Table, Math
      - NeetCode 150
-     - ⬜ Missing
-   * - `Sum of Two Integers <https://leetcode.com/problems/sum-of-two-integers/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Sum of Two Integers <generated/sum-of-two-integers>`
+     - 🟡 Medium
+     - Bit Manipulation
      - Blind 75, NeetCode 150
-     - ⬜ Missing
-   * - `Number of 1 Bits <https://leetcode.com/problems/number-of-1-bits/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Number of 1 Bits <generated/number-of-1-bits>`
+     - 🟡 Medium
+     - Bit Manipulation
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Counting Bits <https://leetcode.com/problems/counting-bits/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Counting Bits <generated/counting-bits>`
+     - 🟡 Medium
+     - Bit Manipulation, Dynamic Programming
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
-   * - `Reverse Bits <https://leetcode.com/problems/reverse-bits/>`__
-     - 
-     - 
+     - ✅ Covered
+   * - :doc:`Reverse Bits <generated/reverse-bits>`
+     - 🟡 Medium
+     - Bit Manipulation
      - Blind 75, Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Missing Number <generated/missing-number>`
      - 🟢 Easy
      - Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting
      - Blind 75, Grind 169, NeetCode 150
      - ✅ Covered
-   * - `Single Number <https://leetcode.com/problems/single-number/>`__
-     - 
-     - 
+   * - :doc:`Single Number <generated/single-number>`
+     - 🟡 Medium
+     - Bit Manipulation
      - Grind 169, NeetCode 150
-     - ⬜ Missing
+     - ✅ Covered
    * - :doc:`Reverse Integer <generated/reverse-integer>`
      - 🟡 Medium
      - Math

@@ -78,6 +78,10 @@ Medium
      - Array, Math, Enumeration, Number Theory
      - 
      - Given an integer n, return the number of prime numbers that are strictly less than n
+   * - :doc:`Counting Bits <generated/counting-bits>`
+     - Bit Manipulation, Dynamic Programming
+     - Blind 75, Grind 169, NeetCode 150
+     - Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1
    * - :doc:`Course Schedule <generated/course-schedule>`
      - Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50
@@ -102,6 +106,10 @@ Medium
      - String, Depth-First Search, Design, Trie
      - Blind 75, Grind 169, NeetCode 150
      - Design a data structure that supports adding new words and finding if a string matches any previously added string
+   * - :doc:`Detect Squares <generated/detect-squares>`
+     - Hash Table, Math
+     - NeetCode 150
+     - You are given a stream of points on the X-Y plane. Design a data structure that: - Adds new points from the stream into
    * - :doc:`Divide Two Integers <generated/divide-two-integers>`
      - Math, Bit Manipulation
      - 
@@ -166,6 +174,10 @@ Medium
      - Array, Hash Table, Math, Design, Randomized
      - Grind 169
      - Implement the RandomizedSet class: - RandomizedSet() Initializes the RandomizedSet object. - bool insert(int val)
+   * - :doc:`Insert Interval <generated/insert-interval>`
+     - Array, Intervals
+     - Blind 75, Grind 75, Grind 169, NeetCode 150, Google Top 50
+     - You are given an array of non-overlapping intervals intervals where intervals[i] = [start :sub:i , end :sub:i ]
    * - :doc:`Integer to Roman <generated/integer-to-roman>`
      - Hash Table, Math, String
      - 
@@ -174,10 +186,18 @@ Medium
      - Array, Dynamic Programming, Greedy
      - Blind 75, Grind 169, NeetCode 150
      - You are given an integer array nums. You are initially positioned at the array's first index, and each element in the
+   * - :doc:`K Closest Points to Origin <generated/k-closest-points-to-origin>`
+     - Heap, Sorting
+     - Grind 75, Grind 169, NeetCode 150, Amazon Top 50
+     - Given an array of points where points[i] = [x :sub:i , y :sub:i ] represents a point on the X-Y plane and
    * - :doc:`Koko Eating Bananas <generated/koko-eating-bananas>`
      - Array, Binary Search
      - NeetCode 150
      - Koko loves to eat bananas. There are n piles of bananas, the i :sup:th pile has piles[i] bananas. The guards have
+   * - :doc:`Kth Largest Element in an Array <generated/kth-largest-element-in-an-array>`
+     - Heap, Sorting
+     - Grind 169, NeetCode 150
+     - Given an integer array nums and an integer k, return the k :sup:th largest element in the array. Note that it is the
    * - :doc:`Kth Smallest Element in a BST <generated/kth-smallest-element-in-a-bst>`
      - Tree, Depth-First Search, Binary Search Tree, Binary Tree
      - Blind 75, Grind 75, Grind 169, NeetCode 150
@@ -234,14 +254,30 @@ Medium
      - Stack, Design
      - Grind 75, Grind 169, NeetCode 150
      - Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. Implement the
+   * - :doc:`Multiply Strings <generated/multiply-strings>`
+     - Math, String
+     - NeetCode 150
+     - Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also
    * - :doc:`Network Delay Time <generated/network-delay-time>`
      - Depth-First Search, Breadth-First Search, Graph Theory, Heap (Priority Queue), Shortest Path
      - NeetCode 150
      - You are given a network of n nodes, labeled from 1 to n. You are also given times, a list of travel times as directed
+   * - :doc:`Non-overlapping Intervals <generated/non-overlapping-intervals>`
+     - Array, Greedy, Intervals, Sorting
+     - Blind 75, Grind 169, NeetCode 150
+     - Given an array of intervals intervals where intervals[i] = [start :sub:i , end :sub:i ], return the
+   * - :doc:`Number of 1 Bits <generated/number-of-1-bits>`
+     - Bit Manipulation
+     - Blind 75, Grind 169, NeetCode 150
+     - Write a function that takes the binary representation of a positive integer and returns the number of set bits it has
    * - :doc:`Number of Islands <generated/number-of-islands>`
      - Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix
      - Blind 75, Grind 75, Grind 169, NeetCode 150, Amazon Top 50, Google Top 50
      - Given an m x n 2D binary grid grid which represents a map of '1' s (land) and '0' s (water), return the number of
+   * - :doc:`Pacific Atlantic Water Flow <generated/pacific-atlantic-water-flow>`
+     - Graph, DFS, Matrix
+     - Blind 75, Grind 169, NeetCode 150, Google Top 50
+     - There is an m x n rectangular island that borders both the Pacific Ocean and Atlantic Ocean. The Pacific Ocean touches
    * - :doc:`Palindrome Partitioning <generated/palindrome-partitioning>`
      - String, Dynamic Programming, Backtracking
      - NeetCode 150
@@ -282,6 +318,10 @@ Medium
      - Linked List, Two Pointers, Stack, Recursion
      - Blind 75, Grind 169, NeetCode 150
      - You are given the head of a singly linked-list. The list can be represented as: :: L0 → L1 → … → Ln - 1 → Ln Reorder
+   * - :doc:`Reverse Bits <generated/reverse-bits>`
+     - Bit Manipulation
+     - Blind 75, Grind 169, NeetCode 150
+     - Reverse bits of a given 32 bits unsigned integer
    * - :doc:`Reverse Integer <generated/reverse-integer>`
      - Math
      - Grind 169, NeetCode 150
@@ -310,6 +350,10 @@ Medium
      - Array, Hash Table, Matrix
      - Blind 75, Grind 169, NeetCode 150
      - Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's. You must do it in
+   * - :doc:`Single Number <generated/single-number>`
+     - Bit Manipulation
+     - Grind 169, NeetCode 150
+     - Given a non-empty array of integers nums, every element appears twice except for one. Find that single one. You must
    * - :doc:`Single Number Ii <generated/single-number-ii>`
      - Array, Bit Manipulation
      - 
@@ -318,6 +362,10 @@ Medium
      - Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort
      - Grind 169
      - Given the head of a linked list, return the list after sorting it in ascending order
+   * - :doc:`Spiral Matrix <generated/spiral-matrix>`
+     - Array, Matrix
+     - Blind 75, Grind 75, Grind 169, NeetCode 150
+     - Given an m x n matrix, return all elements of the matrix in spiral order
    * - :doc:`String to Integer (atoi) <generated/string-to-integer-atoi>`
      - String
      - Grind 75, Grind 169
@@ -330,10 +378,22 @@ Medium
      - Array, Backtracking, Bit Manipulation
      - NeetCode 150
      - Given an integer array nums that may contain duplicates, return all possible subsets (the power set). The solution
+   * - :doc:`Sum of Two Integers <generated/sum-of-two-integers>`
+     - Bit Manipulation
+     - Blind 75, NeetCode 150
+     - Given two integers a and b, return the sum of the two integers without using the operators + and -
+   * - :doc:`Surrounded Regions <generated/surrounded-regions>`
+     - Graph, DFS, Matrix
+     - NeetCode 150
+     - You are given an m x n matrix board containing letters 'X' and 'O', capture regions that are surrounded: - Connect: A
    * - :doc:`Target Sum <generated/target-sum>`
      - Array, Dynamic Programming, Backtracking
      - NeetCode 150
      - You are given an integer array nums and an integer target. You want to build an expression out of nums by adding one of
+   * - :doc:`Task Scheduler <generated/task-scheduler>`
+     - Heap, Greedy, Hash Table
+     - Grind 75, Grind 169, NeetCode 150
+     - You are given an array of CPU tasks, each represented by letters A to Z, and a cooling time, n. Each cycle or interval
    * - :doc:`Time Based Key-Value Store <generated/time-based-key-value-store>`
      - Hash Table, String, Binary Search, Design
      - Grind 75, Grind 169, NeetCode 150
