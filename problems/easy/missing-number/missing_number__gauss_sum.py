@@ -14,5 +14,6 @@ r"""
 def missingNumber(nums: list[int]) -> int:
     """Find the single missing number in a list of integers."""
     n = len(nums)
-    s = sum(nums)
-    return n * (n + 1) // 2 - s
+    actual_sum = sum(nums)
+    expected_sum = n * (n + 1) // 2
+    return expected_sum - actual_sum

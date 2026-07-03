@@ -80,6 +80,19 @@ def inspect_module(py_path: Path) -> ModuleInfo | None:
             if not node.name.startswith("_"):
                 symbols.append(("class", node.name))
 
+    if symbols:
+        kind, name = symbols[0]
+        first_def = next(
+            n
+            for n in tree.body
+            if isinstance(
+                n, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)
+            )
+            and n.name == name
+        )
+        if ast.get_docstring(first_def) is None:
+            _warn(f"{py_path}: {kind} '{name}' is missing a docstring")
+
     return ModuleInfo(docstring, first_code_line, symbols)
 
 
@@ -215,12 +228,25 @@ def _build_variant(slug: str, slug_dir: Path, entry: dict) -> Variant | None:
     if info is None:
         _warn(f"no parseable module docstring in {py_path}")
         return None
+    explanation = (entry.get("explanation") or "").rstrip("\n")
+    complexity = (entry.get("complexity") or "").rstrip("\n")
+    missing = [
+        f
+        for f, v in [("explanation", explanation), ("complexity", complexity)]
+        if not v
+    ]
+    if missing:
+        _warn(
+            f"{slug_dir}/meta.yaml: solution '{name}' is missing "
+            + ", ".join(missing)
+        )
+
     return Variant(
         name=name,
         module=module,
         source_path=py_path,
-        explanation=(entry.get("explanation") or "").rstrip("\n"),
-        complexity=(entry.get("complexity") or "").rstrip("\n"),
+        explanation=explanation,
+        complexity=complexity,
         test_block=info.docstring.strip("\n"),
         first_code_line=info.first_code_line,
         public_symbols=info.public_symbols,

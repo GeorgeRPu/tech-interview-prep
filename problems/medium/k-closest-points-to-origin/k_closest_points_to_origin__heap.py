@@ -11,6 +11,6 @@ import heapq
 
 def kClosest(points: list[list[int]], k: int) -> list[list[int]]:
     """Return the *k* closest points to the origin."""
-    heap = [(x * x + y * y, x, y) for x, y in points]
+    heap = [(x**2 + y**2, x, y) for x, y in points]
     heapq.heapify(heap)
     return [[x, y] for _, x, y in heapq.nsmallest(k, heap)]

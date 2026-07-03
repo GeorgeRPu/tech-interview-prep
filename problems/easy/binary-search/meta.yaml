@@ -33,4 +33,32 @@ description_rst: |
   - All the integers in ``nums`` are **unique**.
   - ``nums`` is sorted in ascending order.
 solutions:
-- name: Iterative
+- name: Binary Search
+  explanation: |
+    We can use binary search to find an element in a sorted array. The idea
+    behind binary search is that because the array is sorted, we can eliminate
+    half of the elements in each iteration by comparing ``target`` with the
+    midpoint of the array, repeating until we find ``target`` or the search
+    space is empty.
+
+    We use ``left`` and ``right`` pointers to track the current search space.
+    Each iteration, we calculate the midpoint ``mid`` and compare ``nums[mid]``
+    with ``target``. If they are equal, we return ``mid``. Otherwise, we
+    adjust the search space by moving the ``left`` or ``right`` pointer to
+    ``mid + 1`` or ``mid - 1`` respectively.
+  complexity: |
+    :math:`n` is the length of the input array.
+
+    .. list-table::
+       :header-rows: 1
+       :widths: auto
+
+       * - Measure
+         - Complexity
+         - Notes
+       * - Time
+         - :math:`O(\log n)`
+         - search space halves each iteration
+       * - Auxiliary Space
+         - :math:`O(1)`
+         - only two pointers
