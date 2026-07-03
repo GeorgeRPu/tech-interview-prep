@@ -13,6 +13,8 @@ True
 
 from __future__ import annotations
 
+from collections import deque
+
 
 class TreeNode:
     """Node in a binary tree."""
@@ -23,24 +25,23 @@ class TreeNode:
         self.right = right
 
     @classmethod
-    def from_list(cls, list: list[int]) -> TreeNode | None:
-        """Creates a binary tree from a list of integers pre-order."""
-        if len(list) == 0:
+    def from_list(cls, vals: list[int | None]) -> TreeNode | None:
+        if not vals:
             return None
 
-        root = TreeNode(list[0])
-        queue = [root]
-        i = 1
-        while i < len(list):
-            node = queue.pop()
-            if list[i] is not None:
-                node.left = TreeNode(list[i])
-                queue.insert(0, node.left)
-            i += 1
-            if i < len(list) and list[i] is not None:
-                node.right = TreeNode(list[i])
-                queue.insert(0, node.right)
-            i += 1
+        root = cls(vals[0])
+        queue = deque([root])
+        children = iter(vals[1:])
+
+        while queue:
+            node = queue.popleft()
+            for side in ("left", "right"):
+                val = next(children, None)
+                if val is not None:
+                    child = cls(val)
+                    setattr(node, side, child)
+                    queue.append(child)
+
         return root
 
     def __repr__(self) -> str:

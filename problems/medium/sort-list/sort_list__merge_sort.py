@@ -25,16 +25,13 @@ class ListNode:
         return str(self.val) + suffix
 
     @classmethod
-    def from_list(cls, list: list[int]) -> ListNode | None:
-        head = None
-        for el in list:
-            if head is None:
-                head = ListNode(el)
-                node = head
-            else:
-                node.next = ListNode(el)
-                node = node.next
-        return head
+    def from_list(cls, vals: list[int]) -> ListNode | None:
+        dummy = cls(0)
+        node = dummy
+        for val in vals:
+            node.next = cls(val)
+            node = node.next
+        return dummy.next
 
 
 def sortList(head: ListNode | None) -> ListNode | None:

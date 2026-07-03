@@ -8,6 +8,8 @@ r"""
 
 from __future__ import annotations
 
+from collections import deque
+
 
 class TreeNode:
     """Node in a binary tree."""
@@ -21,19 +23,20 @@ class TreeNode:
     def from_list(cls, vals: list[int | None]) -> TreeNode | None:
         if not vals:
             return None
-        root = TreeNode(vals[0])
-        queue = [root]
-        i = 1
-        while i < len(vals):
-            node = queue.pop(0)
-            if i < len(vals) and vals[i] is not None:
-                node.left = TreeNode(vals[i])
-                queue.append(node.left)
-            i += 1
-            if i < len(vals) and vals[i] is not None:
-                node.right = TreeNode(vals[i])
-                queue.append(node.right)
-            i += 1
+
+        root = cls(vals[0])
+        queue = deque([root])
+        children = iter(vals[1:])
+
+        while queue:
+            node = queue.popleft()
+            for side in ("left", "right"):
+                val = next(children, None)
+                if val is not None:
+                    child = cls(val)
+                    setattr(node, side, child)
+                    queue.append(child)
+
         return root
 
 

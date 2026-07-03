@@ -29,18 +29,13 @@ class ListNode:
         return list
 
     @classmethod
-    def from_list(cls, list: list[int]) -> ListNode | None:
-        head: ListNode | None = None
-        prev_node: ListNode | None = None
-        for el in list:
-            node = ListNode(el)
-            if head is None:
-                head = node
-            elif prev_node is not None:
-                prev_node.next = node
-                prev_node = node
-            prev_node = node
-        return head
+    def from_list(cls, vals: list[int]) -> ListNode | None:
+        dummy = cls(0)
+        node = dummy
+        for val in vals:
+            node.next = cls(val)
+            node = node.next
+        return dummy.next
 
 
 def removeNthFromEnd(head: ListNode | None, n: int) -> ListNode | None:

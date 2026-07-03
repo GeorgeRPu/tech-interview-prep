@@ -22,15 +22,12 @@ class ListNode:
 
     @classmethod
     def from_list(cls, vals: list[int]) -> ListNode | None:
-        head: ListNode | None = None
-        for v in vals:
-            if head is None:
-                head = ListNode(v)
-                node = head
-            else:
-                node.next = ListNode(v)
-                node = node.next
-        return head
+        dummy = cls(0)
+        node = dummy
+        for val in vals:
+            node.next = cls(val)
+            node = node.next
+        return dummy.next
 
     def to_list(self) -> list:
         result = []
