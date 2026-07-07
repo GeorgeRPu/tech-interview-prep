@@ -10,7 +10,7 @@ r"""
 def minCostClimbingStairs(cost: list[int]) -> int:
     """Return the minimum cost to reach the top of the staircase."""
     n = len(cost)
-    dp = [0] * (n + 1)
+    min_cost_to_climb = [0] * (n + 1)
     for i in range(2, n + 1):
-        dp[i] = min(dp[i - 1] + cost[i - 1], dp[i - 2] + cost[i - 2])
-    return dp[n]
+        min_cost_to_climb[i] = min(min_cost_to_climb[i - 1] + cost[i - 1], min_cost_to_climb[i - 2] + cost[i - 2])
+    return min_cost_to_climb[n]

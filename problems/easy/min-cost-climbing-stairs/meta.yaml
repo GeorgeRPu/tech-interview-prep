@@ -42,4 +42,18 @@ description_rst: |
   - ``2 <= cost.length <= 1000``
   - ``0 <= cost[i] <= 999``
 solutions:
-- name: Tabulation
+- name: Dynamic Programming
+  explanation: |
+    Note that the minimum cost to reach step ``i`` is the the minimum of 2
+    values:
+    1. the minimum cost to reach step ``i-1`` plus the cost of step ``i-1``
+    2. the minimum cost to reach step ``i-2`` plus the cost of step ``i-2``
+    The base cases are the minimum cost to reach step ``0`` and step ``1`` are
+    ``cost[0]`` and ``cost[1]``.
+
+    Thus, we can use dynamic programming to solve this problem. We create an
+    array ``min_cost_to_climb`` where ``min_cost_to_climb[i]`` is the minimum
+    cost to reach step ``i``. We then calculate the minimum cost to reach each
+    step from ``2`` to ``n+1`` (``n+1`` because the top is 1 step past
+    ``cost[-1]``) using the recurrence relation above. The value
+    ``min_cost_to_climb[n + 1]`` is the final answer.
