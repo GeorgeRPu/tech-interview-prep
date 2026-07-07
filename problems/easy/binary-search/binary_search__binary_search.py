@@ -1,5 +1,5 @@
 r"""
->>> from binary_search__iterative import search
+>>> from binary_search__binary_search import search
 >>> search([-1, 0, 3, 5, 9, 12], 9)
 4
 >>> search([-1, 0, 3, 5, 9, 12], 2)
